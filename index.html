@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="theme-color" content="#053658"/>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+     <link rel="stylesheet" href="./globleStyles.css">
+    <title>Soler Palau USA | App</title>
+     <style>
+        body {
+            background-color: whitesmoke;
+            overflow: hidden; /* This prevents scrolling */
+        }
+    </style>
+
+    
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+     navigator.serviceWorker.register('/sp-app/service-worker.js', {
+  scope: '/sp-app/'
+   })
+          .then((registration) => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch((error) => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+
+</head>
+<body>
+
+   <div style="color: whitesmoke; background-color: #053658 ; width: 100%; position: fixed; top: 0; display: flex; justify-content: space-between; opacity: 1 ;">
+        <div style="
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            align-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: 500;
+            
+        "></div>
+       <div style="padding: .5rem; display: block; margin-left: auto; margin-right: auto;">Soler Palau USA</div>
+    </div>
+
+
+   <main style="height: 100vh;">
+
+
+
+        
+        <!-- Grid of icons and links -->
+
+        <div class="grid-container">
+            <div style="font-size: 30px;
+            align-self: center;
+            display: flex; margin-bottom: 5px;
+            color: #053658;
+            font-weight: 600;
+            ">WELCOME ! </div>
+            <div style="font-size: 35px;
+            margin-top: 5px;
+            display: flex;
+            align-self: center; margin-bottom: 50px;
+            color: #053658;
+            font-weight: 600;
+            ">Explore S&P Rep Hub</div>
+        <div class="icon-grid">
+            <div class="icon">
+                <a href="./pages/products.html">
+                    <img src="assets/images/fan-solid.svg" alt="Products" class="icon-color">
+                    <p>Products</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="./pages/library.html">
+                    <img src="assets/images/file-pdf-solid.svg" alt="Documents" class="icon-color">
+                    <p>Documents</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="./pages/cross-ref.html">
+                    <img src="assets/images/right-left-solid.svg" alt="Cross References" class="icon-color">
+                    <p>Cross References</p>
+                </a>
+            </div>
+           <div class="icon">
+                <a href="#Links">
+                    <img src="assets/images/links.svg" alt="links" class="icon-color">
+                    <p>Important Links</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+<button id="install-button" hidden>Install App</button>
+
+    </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  let deferredPrompt;
+  const installButton = document.getElementById('install-button');
+
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    deferredPrompt = event;
+    installButton.removeAttribute('hidden');
+  });
+
+  installButton.addEventListener('click', async () => {
+    if (!deferredPrompt) {
+      return;
+    }
+
+    const result = await deferredPrompt.prompt();
+    console.log(`Install prompt result: ${result.outcome}`);
+
+    if (result.outcome === 'accepted') {
+      console.log('User accepted the install prompt');
+    } else {
+      console.log('User dismissed the install prompt');
+    }
+
+    // Reset the install button's visibility
+    installButton.setAttribute('hidden', '');
+    deferredPrompt = null;
+  });
+});
+
+</script>
+
+
+
+</body>
+</html>
