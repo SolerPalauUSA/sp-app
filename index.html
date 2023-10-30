@@ -32,49 +32,7 @@
         }
   </script>
 
-<script>
 
-           document.addEventListener('DOMContentLoaded', () => {
-            let deferredPrompt;
-            const installButton = document.getElementById('install-button');
-
-            // Function to check if it's an iOS device
-            const isIos = () => {
-                const userAgent = window.navigator.userAgent.toLowerCase();
-                return /iphone|ipad|ipod/.test(userAgent);
-            };
-
-            window.addEventListener('beforeinstallprompt', (event) => {
-                event.preventDefault();
-                deferredPrompt = event;
-
-                // Check if it's an iOS device, and if so, hide the installButton
-                if (isIos()) {
-                    installButton.style.display = 'none';
-                }
-            });
-
-            installButton.addEventListener('click', async () => {
-                if (!deferredPrompt) {
-                    return;
-                }
-
-                const result = await deferredPrompt.prompt();
-                console.log(`Install prompt result: ${result.outcome}`);
-
-                if (result.outcome === 'accepted') {
-                    console.log('User accepted the install prompt');
-                } else {
-                    console.log('User dismissed the install prompt');
-                }
-
-                // Reset the install button's visibility
-                installButton.setAttribute('hidden', '');
-                deferredPrompt = null;
-            });
-        });
-    
-</script>
 
 </head>
 <body>
@@ -143,17 +101,85 @@
 
     </div>
 
-  <!-- Android/Desktop Install Prompt -->
 
-        <button id="install-button">Install App</button>
- 
-  <!-- iOS Install Instructions (Initially hidden) -->
-    <div id="ios-install-instructions" style="display: none;">
+<div id="ios-install-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
         <div>Install this application on your home screen for quick, easy, and offline access when you're on the go.</div>
         <div>Close this modal, tap the "share" icon, and then tap on "Add to home screen".</div>
     </div>
+</div>
 
-    </main>
+
+<button id="install-button-android">Install App (Android)</button>
+
+   </main>
+
+<script>
+// Function to check if the device is on iOS
+const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
+};
+
+// Function to show the iOS Install Instructions Modal
+const showIosInstallModal = () => {
+    const iosInstallModal = document.getElementById("ios-install-modal");
+    const closeBtn = iosInstallModal.querySelector(".close");
+
+    // Display the iOS Install Instructions Modal
+    iosInstallModal.style.display = "block";
+
+    // Close the modal when the close button is clicked
+    closeBtn.addEventListener("click", () => {
+        iosInstallModal.style.display = "none";
+    });
+
+    // Close the modal if the user clicks outside of it
+    window.addEventListener("click", (event) => {
+        if (event.target === iosInstallModal) {
+            iosInstallModal.style.display = "none";
+        }
+    });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    let deferredPrompt;
+    const installButtonAndroid = document.getElementById('install-button-android');
+
+    window.addEventListener('beforeinstallprompt', (event) => {
+        event.preventDefault();
+        deferredPrompt = event;
+        installButtonAndroid.removeAttribute('hidden');
+    });
+
+    installButtonAndroid.addEventListener('click', async () => {
+        if (!deferredPrompt) {
+            return;
+        }
+
+        const result = await deferredPrompt.prompt();
+        console.log(`Install prompt result: ${result.outcome}`);
+
+        if (result.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
+        } else {
+            console.log('User dismissed the install prompt');
+        }
+
+        // Reset the install button's visibility
+        installButtonAndroid.setAttribute('hidden', '');
+        deferredPrompt = null;
+    });
+    
+    // Check if it's an iOS device and show the modal or hide Android install button
+    if (isIos()) {
+        showIosInstallModal();
+        installButtonAndroid.style.display = "none"; // Hide Android install button
+    }
+});
+</script>
+
 
 
 
