@@ -100,6 +100,13 @@
     </div>
  
 <button id="install-button">Install App</button>
+       
+  <div id="install-prompt" class="hidden">
+        <p>Install this application on your home screen for quick, easy, and offline access when you're on the go. Close this modal, tap the "share" icon, and then tap on "Add to home screen".</p>
+        <button id="install-button">Install</button>
+    </div>
+
+
     </main>
 
 <script>
@@ -137,6 +144,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </script>
 
+<script>
+
+// Check if the device is on iOS
+const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
+};
+
+// Check if the device is in standalone mode
+const isInStandaloneMode = () => {
+    return (
+        "standalone" in window.navigator &&
+        window.navigator.standalone
+    );
+};
+
+// Show the modal only once
+const localStorageKey = "iosInstallPromptShown";
+const iosInstallModalShown = localStorage.getItem(localStorageKey)
+    ? JSON.parse(localStorage.getItem(localStorageKey))
+    : false;
+const shouldShowModalResponse =
+    isIos() && !isInStandaloneMode() && !iosInstallModalShown;
+
+if (shouldShowModalResponse) {
+    const installPrompt = document.getElementById("install-prompt");
+    const installButton = document.getElementById("install-button");
+
+    // Show the modal
+    installPrompt.classList.remove("hidden");
+
+    // Handle the "Install" button click
+    installButton.addEventListener("click", async () => {
+        // Perform actions when the user clicks the "Install" button
+        
+        // Set a flag in localStorage to prevent showing the modal again
+        localStorage.setItem(localStorageKey, "true");
+
+        // Hide the modal
+        installPrompt.classList.add("hidden");
+    });
+}
+
+
+</script>
 
 
 </body>
