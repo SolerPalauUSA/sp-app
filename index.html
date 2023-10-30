@@ -32,6 +32,50 @@
         }
   </script>
 
+<script>
+
+           document.addEventListener('DOMContentLoaded', () => {
+            let deferredPrompt;
+            const installButton = document.getElementById('install-button');
+
+            // Function to check if it's an iOS device
+            const isIos = () => {
+                const userAgent = window.navigator.userAgent.toLowerCase();
+                return /iphone|ipad|ipod/.test(userAgent);
+            };
+
+            window.addEventListener('beforeinstallprompt', (event) => {
+                event.preventDefault();
+                deferredPrompt = event;
+
+                // Check if it's an iOS device, and if so, hide the installButton
+                if (isIos()) {
+                    installButton.style.display = 'none';
+                }
+            });
+
+            installButton.addEventListener('click', async () => {
+                if (!deferredPrompt) {
+                    return;
+                }
+
+                const result = await deferredPrompt.prompt();
+                console.log(`Install prompt result: ${result.outcome}`);
+
+                if (result.outcome === 'accepted') {
+                    console.log('User accepted the install prompt');
+                } else {
+                    console.log('User dismissed the install prompt');
+                }
+
+                // Reset the install button's visibility
+                installButton.setAttribute('hidden', '');
+                deferredPrompt = null;
+            });
+        });
+    
+</script>
+
 </head>
 <body>
 
@@ -110,92 +154,6 @@
     </div>
 
     </main>
-
- <script>
-        // Check for Android/Desktop Install Prompt
-document.addEventListener('DOMContentLoaded', () => {
-  let deferredPrompt;
-  const installButton = document.getElementById('install-button');
-
-  // Function to check if it's an iOS device
-  const isIos = () => {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    return /iphone|ipad|ipod/.test(userAgent);
-  };
-
-  window.addEventListener('beforeinstallprompt', (event) => {
-    event.preventDefault();
-    deferredPrompt = event;
-
-    // Check if it's an iOS device, and if so, hide the installButton
-    if (isIos()) {
-      installButton.style.display = 'none';
-    }
-  });
-
-  installButton.addEventListener('click', async () => {
-    if (!deferredPrompt) {
-      return;
-    }
-
-    const result = await deferredPrompt.prompt();
-    console.log(`Install prompt result: ${result.outcome}`);
-
-    if (result.outcome === 'accepted') {
-      console.log('User accepted the install prompt');
-    } else {
-      console.log('User dismissed the install prompt');
-    }
-
-    // Reset the install button's visibility
-    installButton.setAttribute('hidden', '');
-    deferredPrompt = null;
-  });
-});
-
-
-  // Function to check if it's an iOS device
-  const isIos = () => {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    return /iphone|ipad|ipod/.test(userAgent);
-  };
-});
-
-
-        // Check for iOS and Show Install Instructions
-        document.addEventListener('DOMContentLoaded', () => {
-            const iosInstallInstructions = document.getElementById('ios-install-instructions');
-            
-            // Check if the device is on iOS
-            const isIos = () => {
-                const userAgent = window.navigator.userAgent.toLowerCase();
-                return /iphone|ipad|ipod/.test(userAgent);
-            };
-
-            // Check if the device is in standalone mode
-            const isInStandaloneMode = () => {
-                return (
-                    "standalone" in window.navigator &&
-                    window.navigator.standalone
-                );
-            };
-
-            // Show the iOS install instructions only once
-            const localStorageKey = "iosInstallInstructionsShown";
-            const iosInstallInstructionsShown = localStorage.getItem(localStorageKey)
-                ? JSON.parse(localStorage.getItem(localStorageKey))
-                : false;
-            const shouldShowInstructions =
-                isIos() && !isInStandaloneMode() && !iosInstallInstructionsShown;
-
-            if (shouldShowInstructions) {
-                iosInstallInstructions.style.display = 'block';
-                
-                // Set a flag in localStorage to prevent showing the instructions again
-                localStorage.setItem(localStorageKey, "true");
-            }
-        });
-    </script>
 
 
 
