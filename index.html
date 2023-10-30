@@ -103,78 +103,79 @@
 
         <button id="install-button">Install App</button>
  
-
+  <!-- iOS Install Instructions (Initially hidden) -->
+    <div id="ios-install-instructions" style="display: none;">
+        <p>Install this application on your home screen for quick, easy, and offline access when you're on the go.</p>
+        <p>Close this modal, tap the "share" icon, and then tap on "Add to home screen".</p>
+    </div>
 
     </main>
 
 
-    <!-- Check if iOS device -->
     <script>
-        const isIos = () => {
-            const userAgent = window.navigator.userAgent.toLowerCase();
-            return /iphone|ipad|ipod/.test(userAgent);
-        };
-
-        // Check if the device is in standalone mode (iOS PWA)
-        const isInStandaloneMode = () => {
-            return (
-                "standalone" in window.navigator &&
-                window.navigator.standalone
-            );
-        };
-
-        if (isIos() && !isInStandaloneMode()) {
-            // Show the iOS-specific install prompt
-            const iosInstallPrompt = document.createElement("div");
-            iosInstallPrompt.innerHTML = `
-                <p>Install this application on your home screen for quick, easy, and offline access when you're on the go. Close this modal, tap the "share" icon, and then tap on "Add to home screen".</p>
-                <button id="ios-install-button">Install</button>
-            `;
-            document.body.appendChild(iosInstallPrompt);
-
-            const iosInstallButton = document.getElementById("ios-install-button");
-
-            // Handle the "Install" button click for iOS
-            iosInstallButton.addEventListener("click", async () => {
-                // Perform actions when the user clicks the "Install" button for iOS
-                // You can add specific iOS installation logic here
-                
-                // Hide the modal
-                iosInstallPrompt.style.display = "none";
-            });
-        }
-    </script>
-
-    <!-- Your existing Android/Desktop Install Prompt code -->
-    <script>
+        // Check for Android/Desktop Install Prompt
         document.addEventListener('DOMContentLoaded', () => {
             let deferredPrompt;
             const installButton = document.getElementById('install-button');
-
+        
             window.addEventListener('beforeinstallprompt', (event) => {
                 event.preventDefault();
                 deferredPrompt = event;
                 installButton.removeAttribute('hidden');
             });
-
+        
             installButton.addEventListener('click', async () => {
                 if (!deferredPrompt) {
                     return;
                 }
-
+        
                 const result = await deferredPrompt.prompt();
                 console.log(`Install prompt result: ${result.outcome}`);
-
+        
                 if (result.outcome === 'accepted') {
                     console.log('User accepted the install prompt');
                 } else {
                     console.log('User dismissed the install prompt');
                 }
-
+        
                 // Reset the install button's visibility
                 installButton.setAttribute('hidden', '');
                 deferredPrompt = null;
             });
+        });
+
+        // Check for iOS and Show Install Instructions
+        document.addEventListener('DOMContentLoaded', () => {
+            const iosInstallInstructions = document.getElementById('ios-install-instructions');
+            
+            // Check if the device is on iOS
+            const isIos = () => {
+                const userAgent = window.navigator.userAgent.toLowerCase();
+                return /iphone|ipad|ipod/.test(userAgent);
+            };
+
+            // Check if the device is in standalone mode
+            const isInStandaloneMode = () => {
+                return (
+                    "standalone" in window.navigator &&
+                    window.navigator.standalone
+                );
+            };
+
+            // Show the iOS install instructions only once
+            const localStorageKey = "iosInstallInstructionsShown";
+            const iosInstallInstructionsShown = localStorage.getItem(localStorageKey)
+                ? JSON.parse(localStorage.getItem(localStorageKey))
+                : false;
+            const shouldShowInstructions =
+                isIos() && !isInStandaloneMode() && !iosInstallInstructionsShown;
+
+            if (shouldShowInstructions) {
+                iosInstallInstructions.style.display = 'block';
+                
+                // Set a flag in localStorage to prevent showing the instructions again
+                localStorage.setItem(localStorageKey, "true");
+            }
         });
     </script>
 
