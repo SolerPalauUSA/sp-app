@@ -111,22 +111,25 @@
 
     </main>
 
-
-    <script>
+ <script>
         // Check for Android/Desktop Install Prompt
-    document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   let deferredPrompt;
   const installButton = document.getElementById('install-button');
+
+  // Function to check if it's an iOS device
+  const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
+  };
 
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     deferredPrompt = event;
-    
+
     // Check if it's an iOS device, and if so, hide the installButton
     if (isIos()) {
       installButton.style.display = 'none';
-    } else {
-      installButton.removeAttribute('hidden');
     }
   });
 
@@ -148,6 +151,8 @@
     installButton.setAttribute('hidden', '');
     deferredPrompt = null;
   });
+});
+
 
   // Function to check if it's an iOS device
   const isIos = () => {
