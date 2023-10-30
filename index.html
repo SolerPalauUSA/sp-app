@@ -114,35 +114,48 @@
 
     <script>
         // Check for Android/Desktop Install Prompt
-        document.addEventListener('DOMContentLoaded', () => {
-            let deferredPrompt;
-            const installButton = document.getElementById('install-button');
-        
-            window.addEventListener('beforeinstallprompt', (event) => {
-                event.preventDefault();
-                deferredPrompt = event;
-                installButton.removeAttribute('hidden');
-            });
-        
-            installButton.addEventListener('click', async () => {
-                if (!deferredPrompt) {
-                    return;
-                }
-        
-                const result = await deferredPrompt.prompt();
-                console.log(`Install prompt result: ${result.outcome}`);
-        
-                if (result.outcome === 'accepted') {
-                    console.log('User accepted the install prompt');
-                } else {
-                    console.log('User dismissed the install prompt');
-                }
-        
-                // Reset the install button's visibility
-                installButton.setAttribute('hidden', '');
-                deferredPrompt = null;
-            });
-        });
+    document.addEventListener('DOMContentLoaded', () => {
+  let deferredPrompt;
+  const installButton = document.getElementById('install-button');
+
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    deferredPrompt = event;
+    
+    // Check if it's an iOS device, and if so, hide the installButton
+    if (isIos()) {
+      installButton.style.display = 'none';
+    } else {
+      installButton.removeAttribute('hidden');
+    }
+  });
+
+  installButton.addEventListener('click', async () => {
+    if (!deferredPrompt) {
+      return;
+    }
+
+    const result = await deferredPrompt.prompt();
+    console.log(`Install prompt result: ${result.outcome}`);
+
+    if (result.outcome === 'accepted') {
+      console.log('User accepted the install prompt');
+    } else {
+      console.log('User dismissed the install prompt');
+    }
+
+    // Reset the install button's visibility
+    installButton.setAttribute('hidden', '');
+    deferredPrompt = null;
+  });
+
+  // Function to check if it's an iOS device
+  const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
+  };
+});
+
 
         // Check for iOS and Show Install Instructions
         document.addEventListener('DOMContentLoaded', () => {
