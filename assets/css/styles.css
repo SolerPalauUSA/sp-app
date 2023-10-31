@@ -205,9 +205,10 @@ button#close-ios-instructions {
     background-color: whitesmoke!important;
     color: #053658!important;
     position: absolute!important;
-    top: 520px!important;
+    top: 515px!important;
     border-radius: 5px!important;
     right: 25px!important;
+    font-weight: 700!important;
     
 }
 
