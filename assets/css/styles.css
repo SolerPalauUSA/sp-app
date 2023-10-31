@@ -219,6 +219,22 @@ button#close-ios-instructions {
     margin-right: 1.5rem;
 }
 
+.safari-style::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: -0.5em;
+    bottom: -2em;
+    left: 50%;
+    box-sizing: border-box;
+    border: 1em solid black;
+    border-color: transparent transparent whitesmoke whitesmoke;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
 
 .literature-dropdown-container {
     padding-left: 1rem;

@@ -172,12 +172,20 @@
         };
 
         if (isIos()) {
-            iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
+            iosInstallInstructions.style.display = 'block'; // Show the modal for iOS users
 
             // Add an event listener to close the modal
             closeIosInstructions.addEventListener('click', () => {
                 iosInstallInstructions.style.display = 'none'; // Hide the modal
             });
+
+            // Check if the browser is Safari
+            if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                // Add a class to the iOS modal container for Safari
+                const iosModelContainer = document.getElementById('ios-model-container');
+                iosModelContainer.classList.add('safari-style');
+                iosModelContainer.style.alignSelf = 'end'; // Add the align-self style
+            }
         }
     });
 </script>
