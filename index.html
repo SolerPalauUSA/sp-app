@@ -149,7 +149,7 @@
 
                 if (!iosInstructionsClosed) {
                  iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
-                 installButtonAndroid.style.display = 'none'; // Hide install banner for iOS
+                 
 
                 // Add an event listener to close the modal and set the flag
                  closeIosInstructions.addEventListener('click', () => {
@@ -159,6 +159,7 @@
 
                   // Check if the browser is Safari
                   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                    installButtonAndroid.style.display = 'none'; // Hide install banner for iOS
                    // Add a class to the iOS modal container for Safari
                     const iosModelContainer = document.getElementById('ios-model-container');
                     iosModelContainer.classList.add('safari-style');
