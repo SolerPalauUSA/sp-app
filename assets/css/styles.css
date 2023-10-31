@@ -227,7 +227,7 @@ button#close-ios-instructions {
     width: 0;
     height: 0;
     margin-left: -1.5em;
-    bottom: -2em;
+    bottom: -1em;
     left: 50%;
     box-sizing: border-box;
     border: 1em solid black;
