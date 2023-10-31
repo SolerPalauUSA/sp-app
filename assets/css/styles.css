@@ -205,8 +205,9 @@ button#close-ios-instructions {
     background-color: whitesmoke!important;
     color: #053658!important;
     position: absolute!important;
-    top: 250px!important;
+    top: 559px!important;
     border-radius: 5px!important;
+    right: 25px!important;
     
 }
 
