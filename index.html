@@ -164,7 +164,7 @@
         // JavaScript to show the iOS instructions modal
         const iosInstallInstructions = document.getElementById('ios-install-instructions');
         const closeIosInstructions = document.getElementById('close-ios-instructions');
-
+        const installButtonAndroid = document.getElementById('install-button-android')
         // Check if the device is on iOS
         const isIos = () => {
             const userAgent = window.navigator.userAgent.toLowerCase();
@@ -173,7 +173,7 @@
 
         if (isIos()) {
             iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
-
+            installButtonAndroid.style.display = 'none'; // Hide install banner for none IOS
             // Add an event listener to close the modal
             closeIosInstructions.addEventListener('click', () => {
                 iosInstallInstructions.style.display = 'none'; // Hide the modal
