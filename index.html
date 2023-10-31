@@ -147,8 +147,8 @@
         
                 // Check if the app is installed on iOS and show/hide instructions accordingly
                 if (isIos() && !isAppInstalled()) {
-                    iosInstallInstructions.style.display = 'block'; // Show the modal for iOS users
-        
+                    iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
+                    installButtonAndroid.style.display = "none"; // Hide none IOS install banner
                     // Add an event listener to close the modal
                     closeIosInstructions.addEventListener('click', () => {
                         iosInstallInstructions.style.display = 'none'; // Hide the modal
