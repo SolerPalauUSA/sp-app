@@ -149,6 +149,31 @@
             });
         </script>
 
+        <script>
+
+        // JavaScript to show the iOS instructions modal
+                const iosInstallInstructions = document.getElementById('ios-install-instructions');
+                const closeIosInstructions = document.getElementById('close-ios-instructions');
+
+        // Check if the device is on iOS
+                const isIos = () => {
+                const userAgent = window.navigator.userAgent.toLowerCase();
+                return /iphone|ipad|ipod/.test(userAgent);
+        };
+
+                if (isIos()) {
+                iosInstallInstructions.style.display = 'block'; // Show the modal for iOS users
+
+        // Add an event listener to close the modal
+                closeIosInstructions.addEventListener('click', () => {
+                iosInstallInstructions.style.display = 'none'; // Hide the modal
+         });
+    }
+    
+
+
+        </script>
+
 
 
 
