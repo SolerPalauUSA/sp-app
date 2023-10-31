@@ -210,6 +210,15 @@ button#close-ios-instructions {
     
 }
 
+.ios-model {
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
 
 .literature-dropdown-container {
     padding-left: 1rem;
