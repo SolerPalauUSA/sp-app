@@ -143,23 +143,29 @@
                     return /iphone|ipad|ipod/.test(userAgent);
                 };
         
-                if (isIos()) {
-                    iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
-                    installButtonAndroid.style.display = 'none'; // Hide install banner for iOS
-                    // Add an event listener to close the modal
-                    closeIosInstructions.addEventListener('click', () => {
-                        iosInstallInstructions.style.display = 'none'; // Hide the modal
-                    });
-        
-                    // Check if the browser is Safari
-                    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-                        // Add a class to the iOS modal container for Safari
-                        const iosModelContainer = document.getElementById('ios-model-container');
-                        iosModelContainer.classList.add('safari-style');
-                        iosModelContainer.style.alignSelf = 'end'; // Add the align-self style
-                    }
-                }
-        
+                if (isIos() && !isAppInstalled()) {
+                // Check if the user has closed the instructions
+                const iosInstructionsClosed = localStorage.getItem('iosInstructionsClosed');
+
+                if (!iosInstructionsClosed) {
+                 iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
+                 installButtonAndroid.style.display = 'none'; // Hide install banner for iOS
+
+                // Add an event listener to close the modal and set the flag
+                 closeIosInstructions.addEventListener('click', () => {
+                 iosInstallInstructions.style.display = 'none'; // Hide the modal
+                 localStorage.setItem('iosInstructionsClosed', 'true');
+             });
+
+                  // Check if the browser is Safari
+                  if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                   // Add a class to the iOS modal container for Safari
+                    const iosModelContainer = document.getElementById('ios-model-container');
+                    iosModelContainer.classList.add('safari-style');
+                    iosModelContainer.style.alignSelf = 'end'; // Add the align-self style
+               }
+             }
+            }
                 window.addEventListener('beforeinstallprompt', (event) => {
                     // Check if the app is not installed
                     if (!isAppInstalled()) {
