@@ -101,15 +101,15 @@
 
     </div>
 
-<div id="ios-install-instructions" style="display: none;">
-    <div style="background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999; display: flex; justify-content: center; align-items: center;">
-        <div style="background-color: white; padding: 20px; border-radius: 10px; text-align: center;">
-            <p>Install this application on your home screen for quick, easy, and offline access when you're on the go.</p>
-            <p>Close this modal, tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon" style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon, and then tap on "Add to home screen".</p>
-            <button id="close-ios-instructions">Close</button>
+    <div id="ios-install-instructions" style="display: none;">
+        <div style="background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999; display: flex; justify-content: center; align-items: center;">
+            <div style="background-color: white; padding: 20px; border-radius: 10px; text-align: center;">
+                <p>Install this application on your home screen for quick, easy, and offline access when you're on the go.</p>
+                <p>Close this modal, tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon" style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon, and then tap on "Add to home screen".</p>
+                <button id="close-ios-instructions">Close</button>
+            </div>
         </div>
     </div>
-</div>
 
 
    </main>
@@ -149,30 +149,29 @@
             });
         </script>
 
-        <script>
-
+<script>
+    // Wrap your JavaScript code in a DOMContentLoaded event listener
+    document.addEventListener('DOMContentLoaded', () => {
         // JavaScript to show the iOS instructions modal
-                const iosInstallInstructions = document.getElementById('ios-install-instructions');
-                const closeIosInstructions = document.getElementById('close-ios-instructions');
+        const iosInstallInstructions = document.getElementById('ios-install-instructions');
+        const closeIosInstructions = document.getElementById('close-ios-instructions');
 
         // Check if the device is on iOS
-                const isIos = () => {
-                const userAgent = window.navigator.userAgent.toLowerCase();
-                return /iphone|ipad|ipod/.test(userAgent);
+        const isIos = () => {
+            const userAgent = window.navigator.userAgent.toLowerCase();
+            return /iphone|ipad|ipod/.test(userAgent);
         };
 
-                if (isIos()) {
-                iosInstallInstructions.style.display = 'block'; // Show the modal for iOS users
+        if (isIos()) {
+            iosInstallInstructions.style.display = 'block'; // Show the modal for iOS users
 
-        // Add an event listener to close the modal
-                closeIosInstructions.addEventListener('click', () => {
+            // Add an event listener to close the modal
+            closeIosInstructions.addEventListener('click', () => {
                 iosInstallInstructions.style.display = 'none'; // Hide the modal
-         });
-    }
-    
-
-
-        </script>
+            });
+        }
+    });
+</script>
 
 
 
