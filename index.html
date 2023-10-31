@@ -127,68 +127,14 @@
         <button id="install-button-android">Install App</button>
 
         <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                let deferredPrompt;
-                const installButtonAndroid = document.getElementById('install-button-android');
-                const iosInstallInstructions = document.getElementById('ios-install-instructions');
-                const closeIosInstructions = document.getElementById('close-ios-instructions');
-        
-                // Check if the device is on iOS
-                const isIos = () => {
-                    const userAgent = window.navigator.userAgent.toLowerCase();
-                    return /iphone|ipad|ipod/.test(userAgent);
-                };
-        
-                if (isIos()) {
-                    iosInstallInstructions.style.display = 'block'; // Show the modal for iOS users
-        
-                    // Add an event listener to close the modal
-                    closeIosInstructions.addEventListener('click', () => {
-                        iosInstallInstructions.style.display = 'none'; // Hide the modal
-                    });
-                }
-        
-                window.addEventListener('beforeinstallprompt', (event) => {
-                    event.preventDefault();
-                    deferredPrompt = event;
-                    installButtonAndroid.removeAttribute('hidden');
-        
-                    // Check if the app is already installed
-                    if (window.matchMedia('(display-mode: standalone)').matches) {
-                        // The app is installed to the home screen
-                        installButtonAndroid.style.display = 'none'; // Hide the Android install button
-                        iosInstallInstructions.style.display = 'none'; // Hide the iOS instructions
-                    }
-                });
-        
-                installButtonAndroid.addEventListener('click', async () => {
-                    if (!deferredPrompt) {
-                        return;
-                    }
-        
-                    const result = await deferredPrompt.prompt();
-                    console.log(`Install prompt result: ${result.outcome}`);
-        
-                    if (result.outcome === 'accepted') {
-                        console.log('User accepted the install prompt');
-                    } else {
-                        console.log('User dismissed the install prompt');
-                    }
-        
-                    // Reset the install button's visibility
-                    installButtonAndroid.setAttribute('hidden', '');
-                    deferredPrompt = null;
-                });
-            });
-        </script>
-        
-<script>
+
     // Wrap your JavaScript code in a DOMContentLoaded event listener
     document.addEventListener('DOMContentLoaded', () => {
-        // JavaScript to show the iOS instructions modal
+        let deferredPrompt;
+        const installButtonAndroid = document.getElementById('install-button-android');
         const iosInstallInstructions = document.getElementById('ios-install-instructions');
         const closeIosInstructions = document.getElementById('close-ios-instructions');
-        const installButtonAndroid = document.getElementById('install-button-android')
+
         // Check if the device is on iOS
         const isIos = () => {
             const userAgent = window.navigator.userAgent.toLowerCase();
@@ -197,7 +143,8 @@
 
         if (isIos()) {
             iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
-            installButtonAndroid.style.display = 'none'; // Hide install banner for none IOS
+            installButtonAndroid.style.display = 'none'; // Hide install banner for non-iOS
+
             // Add an event listener to close the modal
             closeIosInstructions.addEventListener('click', () => {
                 iosInstallInstructions.style.display = 'none'; // Hide the modal
@@ -211,7 +158,42 @@
                 iosModelContainer.style.alignSelf = 'end'; // Add the align-self style
             }
         }
+
+        window.addEventListener('beforeinstallprompt', (event) => {
+            event.preventDefault();
+            deferredPrompt = event;
+
+            // Check if the app is already installed
+            if (window.matchMedia('(display-mode: standalone)').matches) {
+                // The app is installed to the home screen
+                installButtonAndroid.style.display = 'none'; // Hide the Android install button
+                iosInstallInstructions.style.display = 'none'; // Hide the iOS instructions
+            } else {
+                installButtonAndroid.removeAttribute('hidden');
+            }
+        });
+
+        installButtonAndroid.addEventListener('click', async () => {
+            if (!deferredPrompt) {
+                return;
+            }
+
+            const result = await deferredPrompt.prompt();
+            console.log(`Install prompt result: ${result.outcome}`);
+
+            if (result.outcome === 'accepted') {
+                console.log('User accepted the install prompt');
+            } else {
+                console.log('User dismissed the install prompt');
+            }
+
+            // Reset the install button's visibility
+            installButtonAndroid.setAttribute('hidden', '');
+            deferredPrompt = null;
+        });
     });
+
+
 </script>
 
 
