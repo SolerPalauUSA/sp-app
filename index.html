@@ -146,6 +146,7 @@
                 if (isIos() && !isAppInstalled()) {
                 // Check if the user has closed the instructions
                 const iosInstructionsClosed = localStorage.getItem('iosInstructionsClosed');
+                installButtonAndroid.style.display = 'none'; // hide none IOS
 
                 if (!iosInstructionsClosed) {
                  iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
