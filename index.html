@@ -201,17 +201,14 @@
             });
         </script>
         
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
-            import { getDatabase } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-          
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
+    
+
+
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth-compat.js"></script>
+<script>
+   const firebaseApp = firebase.initializeApp({
               apiKey: "AIzaSyAGetl1nDkIyuX-Z326TdJVOPFWgx8rx3E",
               authDomain: "sp-app-99ed1.firebaseapp.com",
               projectId: "sp-app-99ed1",
@@ -219,28 +216,10 @@
               messagingSenderId: "891995334019",
               appId: "1:891995334019:web:92325ef3e4db1a0b7142b6",
               measurementId: "G-5T89QEGBKP"
-            };
-          
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
-            const database = getDatabase(app);
-
-            
-  // Verify the Firebase connection
-  const testRef = database.ref('test');
-  testRef.set('Firebase connection is working!');
-
-  // Check if the Firebase database is properly linked
-  testRef.once('value', (snapshot) => {
-    const testValue = snapshot.val();
-    if (testValue === 'Firebase connection is working!') {
-      console.log('Firebase is properly linked.');
-    } else {
-      console.error('Firebase is not properly linked.');
-    }
-  });
-          </script>
+            } );
+   const db = firebaseApp.firestore();
+   const auth = firebaseApp.auth();
+</script>
 
 </body>
 </html>
