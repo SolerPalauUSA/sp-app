@@ -219,7 +219,26 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const db = getDatabase();
+
+// Reference to a location in the database
+const dataRef = ref(db, 'testData');
+
+// Data to be written
+const testData = {
+  message: 'Hello, Firebase!'
+};
+
+// Write data to the database
+set(dataRef, testData)
+  .then(() => {
+    console.log('Data was successfully written to the database.');
+  })
+  .catch((error) => {
+    console.error('Error writing data to the database:', error);
+  });
 
 </script>
 
