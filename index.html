@@ -224,6 +224,21 @@
             const app = initializeApp(firebaseConfig);
             const analytics = getAnalytics(app);
             const database = firebase.database();
+
+            
+  // Verify the Firebase connection
+  const testRef = database.ref('test');
+  testRef.set('Firebase connection is working!');
+
+  // Check if the Firebase database is properly linked
+  testRef.once('value', (snapshot) => {
+    const testValue = snapshot.val();
+    if (testValue === 'Firebase connection is working!') {
+      console.log('Firebase is properly linked.');
+    } else {
+      console.error('Firebase is not properly linked.');
+    }
+  });
           </script>
 
 </body>
