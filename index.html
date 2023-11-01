@@ -201,6 +201,25 @@
             });
         </script>
         
+<script>
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAGetl1nDkIyuX-Z326TdJVOPFWgx8rx3E",
+  authDomain: "sp-app-99ed1.firebaseapp.com",
+  databaseURL: "https://sp-app-99ed1-default-rtdb.firebaseio.com",
+  projectId: "sp-app-99ed1",
+  storageBucket: "sp-app-99ed1.appspot.com",
+  messagingSenderId: "891995334019",
+  appId: "1:891995334019:web:92325ef3e4db1a0b7142b6",
+  measurementId: "G-5T89QEGBKP"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
 
 
 </body>
