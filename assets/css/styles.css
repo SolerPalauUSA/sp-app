@@ -187,15 +187,23 @@ select.series-dropdown {
     margin-top: -2rem;
 }
 
- button {
+button {
     font-size: 18px!important;
     padding: .75rem!important;
+    border-radius: 8px!important;
     border: none!important;
     background-color: whitesmoke!important;
     color: #053658!important;
-    position: static!important;
-    
+}
 
+button#install-button-android {
+    font-size: 18px!important;
+    padding: 0.75rem!important;
+    border: none!important;
+    background-color: whitesmoke!important;
+    color: #053658!important;
+    position: absolute!important;
+    top: 0;
 }
 
 button#close-ios-instructions {
