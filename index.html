@@ -203,6 +203,7 @@
         
 <script type="module">
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js';
+import  { getDatabase } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js';
 
 
 const firebaseConfig = {
@@ -213,7 +214,8 @@ const firebaseConfig = {
   storageBucket: "sp-app-99ed1.appspot.com",
   messagingSenderId: "891995334019",
   appId: "1:891995334019:web:92325ef3e4db1a0b7142b6",
-  measurementId: "G-5T89QEGBKP"
+  measurementId: "G-5T89QEGBKP",
+  databaseURL: "https://sp-app-99ed1-default-rtdb.firebaseio.com/"
 };
 
 // Initialize Firebase
