@@ -210,6 +210,7 @@
 <script type="module">
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js';
 import  { getDatabase, ref, set } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js';
+import { getAuth, signInAnonymously } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js';
 
 
 const firebaseConfig = {
@@ -245,6 +246,19 @@ set(dataRef, testData)
     console.error('Error writing data to the database:', error);
   });
 
+
+// Get the Auth object
+const auth = getAuth(app);
+
+// Sign in anonymously
+signInAnonymously(auth)
+  .then((userCredential) => {
+    const user = userCredential.user;
+    console.log('Anonymous user ID:', user.uid);
+  })
+  .catch((error) => {
+    console.error('Error signing in anonymously:', error);
+  });
 </script>
 
 
