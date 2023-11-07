@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
             firebase.auth().signInAnonymously()
                 .then(() => {
                     // Installation authentication successful
-                    const user = firebase.auth().currentUser;
+                    const user = firebase.auth(app).currentUser;
                     console.log("Anonymous user ID:", user.uid);
                 })
                 .catch((error) => {
