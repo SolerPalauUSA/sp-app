@@ -143,12 +143,12 @@
             };
             
                     // Initialize Firebase
-                    const app = firebase.initializeApp(firebaseConfig);
-                    const db = firebase.getDatabase(app);
-                    const auth = firebase.getAuth(app);
+                    const app = initializeApp(firebaseConfig);
+                    const db = getDatabase(app);
+                    const auth = getAuth(app);
             
                     // Reference to a location in the database
-                    const dataRef = firebase.ref(db, 'testData');
+                    const dataRef = ref(db, 'testData');
             
                     // Data to be written
                     const testData = {
