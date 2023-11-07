@@ -144,106 +144,106 @@ const firebaseConfig = {
   databaseURL: "https://sp-test-app-6cf54-default-rtdb.firebaseio.com/"
 };
 
-        // Initialize Firebase
-        const app = firebase.initializeApp(firebaseConfig);
-        const db = firebase.getDatabase();
-        const auth = firebase.getAuth();
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.getDatabase();
+const auth = firebase.getAuth();
 
-        // Reference to a location in the database
-        const dataRef = firebase.ref(db, 'testData');
+// Reference to a location in the database
+const dataRef = firebase.ref(db, 'testData');
 
-        // Data to be written
-        const testData = {
-            message: 'Hi Madison !!'
-        };
+// Data to be written
+const testData = {
+    message: 'We are working now, baby!'
+};
 
-        // Function to check if the app has been installed
-        function isAppInstalled() {
-            return auth.currentUser !== null;
-        }
+// Function to check if the app has been installed
+function isAppInstalled() {
+    return auth.currentUser !== null;
+}
 
-        // Check if the device is on iOS
-        const isIos = () => {
-            const userAgent = window.navigator.userAgent.toLowerCase();
-            return /iphone|ipad|ipod/.test(userAgent);
-        };
+// Check if the device is on iOS
+const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    return /iphone|ipad|ipod/.test(userAgent);
+};
 
-        document.addEventListener('DOMContentLoaded', () => {
-            let deferredPrompt;
-            const installButtonAndroid = document.getElementById('install-button-android');
-            const iosInstallInstructions = document.getElementById('ios-install-instructions');
-            const closeIosInstructions = document.getElementById('close-ios-instructions');
+document.addEventListener('DOMContentLoaded', () => {
+    let deferredPrompt;
+    const installButtonAndroid = document.getElementById('install-button-android');
+    const iosInstallInstructions = document.getElementById('ios-install-instructions');
+    const closeIosInstructions = document.getElementById('close-ios-instructions');
 
-            // Check if the user has closed the instructions
-            const iosInstructionsClosed = localStorage.getItem('iosInstructionsClosed');
-            installButtonAndroid.style.display = 'none'; // Hide non-iOS
+    // Check if the user has closed the instructions
+    const iosInstructionsClosed = localStorage.getItem('iosInstructionsClosed');
+    installButtonAndroid.style.display = 'none'; // Hide non-iOS
 
-            if (!iosInstructionsClosed) {
-                if (isIos() && !isAppInstalled()) {
-                    iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
+    if (!iosInstructionsClosed) {
+        if (isIos() && !isAppInstalled()) {
+            iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
 
-                    // Add an event listener to close the modal and set the flag
-                    closeIosInstructions.addEventListener('click', () => {
-                        iosInstallInstructions.style.display = 'none'; // Hide the modal
-                        localStorage.setItem('iosInstructionsClosed', 'true');
-                    });
+            // Add an event listener to close the modal and set the flag
+            closeIosInstructions.addEventListener('click', () => {
+                iosInstallInstructions.style.display = 'none'; // Hide the modal
+                localStorage.setItem('iosInstructionsClosed', 'true');
+            });
 
-                    // Check if the browser is Safari
-                    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-                        installButtonAndroid.style.display = 'none'; // Hide install banner for iOS
-                        // Add a class to the iOS modal container for Safari
-                        const iosModelContainer = document.getElementById('ios-model-container');
-                        iosModelContainer.classList.add('safari-style');
-                        iosModelContainer.style.alignSelf = 'end'; // Add the align-self style
-                    }
-
-                    // Check if the app is running in standalone mode
-                    if (window.matchMedia('(display-mode: standalone)').matches) {
-                        iosInstallInstructions.style.display = 'none'; // Hide iOS instructions
-                        installButtonAndroid.style.display = 'none'; // Hide Android button
-                    }
-                }
+            // Check if the browser is Safari
+            if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                installButtonAndroid.style.display = 'none'; // Hide install banner for iOS
+                // Add a class to the iOS modal container for Safari
+                const iosModelContainer = document.getElementById('ios-model-container');
+                iosModelContainer.classList.add('safari-style');
+                iosModelContainer.style.alignSelf = 'end'; // Add the align-self style
             }
 
-            window.addEventListener('beforeinstallprompt', (event) => {
-                // Check if the app is not installed
-                if (!isAppInstalled()) {
-                    event.preventDefault();
-                    deferredPrompt = event;
-                    installButtonAndroid.removeAttribute('hidden');
-                }
-            });
+            // Check if the app is running in standalone mode
+            if (window.matchMedia('(display-mode: standalone)').matches) {
+                iosInstallInstructions.style.display = 'none'; // Hide iOS instructions
+                installButtonAndroid.style.display = 'none'; // Hide Android button
+            }
+        }
+    }
 
-            installButtonAndroid.addEventListener('click', async () => {
-                if (!deferredPrompt) {
-                    return;
-                }
+    window.addEventListener('beforeinstallprompt', (event) => {
+        // Check if the app is not installed
+        if (!isAppInstalled()) {
+            event.preventDefault();
+            deferredPrompt = event;
+            installButtonAndroid.removeAttribute('hidden');
+        }
+    });
 
-                const result = await deferredPrompt.prompt();
-                console.log(`Install prompt result: ${result.outcome}`);
+    installButtonAndroid.addEventListener('click', async () => {
+        if (!deferredPrompt) {
+            return;
+        }
 
-                if (result.outcome === 'accepted') {
-                    console.log('User accepted the install prompt');
+        const result = await deferredPrompt.prompt();
+        console.log(`Install prompt result: ${result.outcome}`);
 
-                    // Sign in anonymously to indicate that the app has been installed
-                    firebase.auth().signInAnonymously()
-                        .then(() => {
-                            // Installation authentication successful
-                            const user = firebase.auth().currentUser;
-                            console.log("Anonymous user ID:", user.uid);
-                        })
-                        .catch((error) => {
-                            console.error("Error signing in anonymously:", error);
-                        });
-                } else {
-                    console.log('User dismissed the install prompt');
-                }
+        if (result.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
 
-                // Reset the install button's visibility
-                installButtonAndroid.setAttribute('hidden', '');
-                deferredPrompt = null;
-            });
-        });
+            // Sign in anonymously to indicate that the app has been installed
+            firebase.auth().signInAnonymously()
+                .then(() => {
+                    // Installation authentication successful
+                    const user = firebase.auth().currentUser;
+                    console.log("Anonymous user ID:", user.uid);
+                })
+                .catch((error) => {
+                    console.error("Error signing in anonymously:", error);
+                });
+        } else {
+            console.log('User dismissed the install prompt');
+        }
+
+        // Reset the install button's visibility
+        installButtonAndroid.setAttribute('hidden', '');
+        deferredPrompt = null;
+    });
+});
 </script>
 
 
