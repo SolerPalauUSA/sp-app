@@ -144,8 +144,8 @@
             
                     // Initialize Firebase
                     const app = initializeApp(firebaseConfig);
-                    const db = getDatabase(app);
-                    const auth = getAuth(app);
+                    const db = getDatabase();
+                    const auth = getAuth();
             
                     // Reference to a location in the database
                     const dataRef = ref(db, 'testData');
