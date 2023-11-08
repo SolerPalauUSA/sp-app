@@ -224,15 +224,15 @@
                                 console.log('User accepted the install prompt');
             
                                 // Sign in anonymously to indicate that the app has been installed
-                                signInAnonymously(auth)
-                                    .then(() => {
-                                        // Installation authentication successful
-                                        const user = firebase.auth().currentUser;
-                                        console.log("Anonymous user ID:", user.uid);
-                                    })
-                                    .catch((error) => {
-                                        console.error("Error signing in anonymously:", error);
-                                    });
+                                auth.signInAnonymously()
+    .then((userCredential) => {
+        // Installation authentication successful
+        const user = userCredential.user;
+        console.log("Anonymous user ID:", user.uid);
+    })
+    .catch((error) => {
+        console.error("Error signing in anonymously:", error);
+    });
                             } else {
                                 console.log('User dismissed the install prompt');
                             }
