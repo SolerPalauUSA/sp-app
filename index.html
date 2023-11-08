@@ -145,7 +145,7 @@
                     // Initialize Firebase
                     const app = initializeApp(firebaseConfig);
                     const db = getDatabase();
-                    const auth = getAuth();
+                    const auth = getAuth(app);
             
                     // Reference to a location in the database
                     const dataRef = ref(db, 'testData');
@@ -175,6 +175,7 @@
                         const userAgent = window.navigator.userAgent.toLowerCase();
                         return /iphone|ipad|ipod/.test(userAgent);
                     };
+
             
                     document.addEventListener('DOMContentLoaded', () => {
                         let deferredPrompt;
@@ -234,15 +235,15 @@
                                 console.log('User accepted the install prompt');
             
                                 // Sign in anonymously to indicate that the app has been installed
-                                auth.signInAnonymously()
-    .then((userCredential) => {
-        // Installation authentication successful
-        const user = userCredential.user;
-        console.log("Anonymous user ID:", user.uid);
-    })
-    .catch((error) => {
-        console.error("Error signing in anonymously:", error);
-    });
+                                // Sign in anonymously
+                            signInAnonymously(auth)
+                            .then((userCredential) => {
+                            const user = userCredential.user;
+                            console.log('Anonymous user ID:', user.uid);
+                            })
+                            .catch((error) => {
+                             console.error('Error signing in anonymously:', error);
+                             });
                             } else {
                                 console.log('User dismissed the install prompt');
                             }
