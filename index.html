@@ -152,7 +152,7 @@
             
                     // Data to be written
                     const testData = {
-                        message: 'We are working now, baby!'
+                        message: 'Hi MADISON!'
                     };
             
                     // Function to check if the app has been installed
@@ -224,7 +224,7 @@
                                 console.log('User accepted the install prompt');
             
                                 // Sign in anonymously to indicate that the app has been installed
-                                firebase.auth().signInAnonymously()
+                                signInAnonymously(auth)
                                     .then(() => {
                                         // Installation authentication successful
                                         const user = firebase.auth().currentUser;
