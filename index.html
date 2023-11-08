@@ -154,7 +154,17 @@
                     const testData = {
                         message: 'Hi MADISON!'
                     };
-            
+
+                    // Write data to the database
+                    set(dataRef, testData)
+                    .then(() => {
+                    console.log('Data was successfully written to the database.');
+                    })
+                    .catch((error) => {
+                    console.error('Error writing data to the database:', error);
+                    });
+
+  
                     // Function to check if the app has been installed
                     function isAppInstalled() {
                         return auth.currentUser !== null;
