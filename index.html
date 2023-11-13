@@ -127,89 +127,90 @@
 <script type="module" src="firebase.js"></script>
 
   <script>
-document.addEventListener('DOMContentLoaded', () => {
-  let deferredPrompt;
-  const installButtonAndroid = document.getElementById('install-button-android');
-  const iosInstallInstructions = document.getElementById('ios-install-instructions');
-  const closeIosInstructions = document.getElementById('close-ios-instructions');
+  document.addEventListener('DOMContentLoaded', () => {
+    let deferredPrompt;
+    const installButtonAndroid = document.getElementById('install-button-android');
+    const iosInstallInstructions = document.getElementById('ios-install-instructions');
+    const closeIosInstructions = document.getElementById('close-ios-instructions');
 
-  // Function to check if the app has been installed
-  function isAppInstalled() {
-    return localStorage.getItem('appInstalled') === 'true';
-  }
+    // Function to check if the app has been installed
+    function isAppInstalled() {
+      return localStorage.getItem('appInstalled') === 'true';
+    }
 
-  // Check if the device is on iOS
-  const isIos = () => {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    return /iphone|ipad|ipod/.test(userAgent);
-  };
+    // Check if the device is on iOS
+    const isIos = () => {
+      const userAgent = window.navigator.userAgent.toLowerCase();
+      return /iphone|ipad|ipod/.test(userAgent);
+    };
 
-  // Check if the user has closed the instructions
-  const iosInstructionsClosed = localStorage.getItem('iosInstructionsClosed');
+    // Check if the user has closed the instructions
+    const iosInstructionsClosed = localStorage.getItem('iosInstructionsClosed');
 
-  // Check if the user is anonymous (modify this condition based on your Firebase authentication logic)
-  const isUserAnonymous = true; // You need to implement the user check logic here
+    // Check if the user is anonymous (modify this condition based on your Firebase authentication logic)
+    const isUserAnonymous = true; // You need to implement the user check logic here
 
-  if (isIos() && (!isAppInstalled() || isUserAnonymous) && !iosInstructionsClosed) {
-    installButtonAndroid.style.display = 'none'; // hide non-iOS
-    iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
+    if (isIos() && (!isAppInstalled() || isUserAnonymous) && !iosInstructionsClosed) {
+      installButtonAndroid.style.display = 'none'; // hide non-iOS
+      iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
 
-    // Add an event listener to close the modal and set the flag
-    closeIosInstructions.addEventListener('click', () => {
-      iosInstallInstructions.style.display = 'none'; // Hide the modal
-      localStorage.setItem('iosInstructionsClosed', 'true');
+      // Add an event listener to close the modal and set the flag
+      closeIosInstructions.addEventListener('click', () => {
+        iosInstallInstructions.style.display = 'none'; // Hide the modal
+        localStorage.setItem('iosInstructionsClosed', 'true');
+      });
+
+      // Check if the browser is Safari
+      if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+        installButtonAndroid.style.display = 'none'; // Hide install banner for iOS
+        // Add a class to the iOS modal container for Safari
+        const iosModelContainer = document.getElementById('ios-model-container');
+        iosModelContainer.classList.add('safari-style');
+        iosModelContainer.style.alignSelf = 'end'; // Add the align-self style
+      }
+
+      // Check if the app is running in standalone mode
+      if (window.matchMedia('(display-mode: standalone)').matches) {
+        iosInstallInstructions.style.display = 'none'; // Hide iOS instructions
+        installButtonAndroid.style.display = 'none'; // Hide Android button
+      }
+    }
+
+    window.addEventListener('beforeinstallprompt', (event) => {
+      // Check if the app is not installed
+      if (!isAppInstalled()) {
+        event.preventDefault();
+        deferredPrompt = event;
+        installButtonAndroid.removeAttribute('hidden');
+      }
     });
 
-    // Check if the browser is Safari
-    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-      installButtonAndroid.style.display = 'none'; // Hide install banner for iOS
-      // Add a class to the iOS modal container for Safari
-      const iosModelContainer = document.getElementById('ios-model-container');
-      iosModelContainer.classList.add('safari-style');
-      iosModelContainer.style.alignSelf = 'end'; // Add the align-self style
-    }
+    installButtonAndroid.addEventListener('click', async () => {
+      if (!deferredPrompt) {
+        return;
+      }
 
-    // Check if the app is running in standalone mode
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      iosInstallInstructions.style.display = 'none'; // Hide iOS instructions
-      installButtonAndroid.style.display = 'none'; // Hide Android button
-    }
-  }
+      const result = await deferredPrompt.prompt();
+      console.log(`Install prompt result: ${result.outcome}`);
 
-  window.addEventListener('beforeinstallprompt', (event) => {
-    // Check if the app is not installed
-    if (!isAppInstalled()) {
-      event.preventDefault();
-      deferredPrompt = event;
-      installButtonAndroid.style.display = 'block'; // Display the install button
-    }
-  });
+      if (result.outcome === 'accepted') {
+        console.log('User accepted the install prompt');
 
-  installButtonAndroid.addEventListener('click', async () => {
-    if (!deferredPrompt) {
-      return;
-    }
-
-    const result = await deferredPrompt.prompt();
-    console.log(`Install prompt result: ${result.outcome}`);
-
-    if (result.outcome === 'accepted') {
-      console.log('User accepted the install prompt');
-
+       
       // Set the flag to indicate that the app has been installed
       localStorage.setItem('appInstalled', 'true');
 
-      // Hide the install button
-      installButtonAndroid.style.display = 'none';
-    } else {
-      console.log('User dismissed the install prompt');
-    }
+// Hide the install button
+installButtonAndroid.style.display = 'none';
+} else {
+console.log('User dismissed the install prompt');
+}
 
-    deferredPrompt = null;
-  });
+deferredPrompt = null;
 });
-
+});
  </script>
+
 
 
 </body>
