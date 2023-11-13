@@ -41,7 +41,10 @@ signInAnonymously(auth)
   .then((userCredential) => {
     const user = userCredential.user;
     console.log('Anonymous user ID:', user.uid);
+
+
+    localStorage.setItem('appInstalled', 'true');
   })
   .catch((error) => {
-    console.error('Error signing in anonymously:', error);
+    console.error("Error signing in anonymously:", error);
   });
