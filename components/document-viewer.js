@@ -118,6 +118,7 @@ class LibraryComponent extends HTMLElement {
              background-color: transparent!important;
           }
       </style>
+      <input type="text" id="search-input" placeholder="Search documents...">
       <div class="categories-outer">
       <div class="categories" id="categories-container"></div>
       </div>
