@@ -225,47 +225,35 @@ renderDocuments(query = '') {
   this.documentsContainer.innerHTML = '';
   let documents = [];
 
-  if (this.selectedCategory) {
-    documents = this.selectedCategory.items;
-    if (query) {
-      // Filter documents based on query
-      documents = documents.filter(doc => 
-        doc.name.toLowerCase().includes(query) || 
-        (doc.description && doc.description.toLowerCase().includes(query))
-      );
-    }
-  } else {
-    // Handle case when no category is selected
-    // You might want to display all documents or a message indicating no category is selected
-    // For example, displaying all documents from all categories:
+  if (query) {
+    // Filter documents from all categories based on query
     documents = this.categories.flatMap(category => category.items).filter(doc =>
-      doc.name.toLowerCase().includes(query) ||
+      doc.name.toLowerCase().includes(query) || 
       (doc.description && doc.description.toLowerCase().includes(query))
     );
+  } else if (this.selectedCategory && this.selectedCategory.items) {
+    // Display documents from the selected category
+    documents = this.selectedCategory.items;
   }
 
-    if (this.selectedCategory && this.selectedCategory.items && Array.isArray(this.selectedCategory.items)) {
-      const documents = this.selectedCategory.items;
-      let documentsHTML = '';
-
-      for (const document of documents) {
-        if (document.link && document.name) {
-          documentsHTML += `
-            <div class="document">
-              <a href="${document.link}" target="_blank">
-                <h3>${document.name}</h3>
-                <p>${document.description || ''}</p>
-              </a>
-            </div>
-          `;
-        } else {
-          console.error('Invalid document data:', document);
-        }
-      }
-
-      this.documentsContainer.innerHTML = documentsHTML;
+  // Display documents
+  let documentsHTML = '';
+  for (const document of documents) {
+    if (document.link && document.name) {
+      documentsHTML += `
+        <div class="document">
+          <a href="${document.link}" target="_blank">
+            <h3>${document.name}</h3>
+            <p>${document.description || ''}</p>
+          </a>
+        </div>
+      `;
+    } else {
+      console.error('Invalid document data:', document);
     }
   }
+  this.documentsContainer.innerHTML = documentsHTML;
+}
 }
 
 customElements.define('library-component', LibraryComponent);
