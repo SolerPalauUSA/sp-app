@@ -7,6 +7,7 @@ class LibraryComponent extends HTMLElement {
 
     this.render();
     this.loadJSONData(); // Load JSON data (replace with your data loading logic)
+    this.handleSearchInput(); 
   }
 
   render() {
@@ -152,6 +153,18 @@ class LibraryComponent extends HTMLElement {
       });
   }
 
+  handleSearchInput() {
+    const searchInput = this.shadowRoot.getElementById('search-input');
+    searchInput.addEventListener('input', (event) => {
+      const query = event.target.value.trim().toLowerCase();
+      if (query) {
+        this.renderDocuments(query);
+      } else {
+        this.renderDocuments(); // Render all documents if query is empty
+      }
+    });
+  }
+
   renderCategories() {
     this.categoryContainer.innerHTML = '';
   
@@ -202,8 +215,19 @@ toggleCategory(categoryButton, category) {
   this.renderDocuments();
 }
   
-  renderDocuments() {
+  renderDocuments(query = '') {
     this.documentsContainer.innerHTML = '';
+    let documents = [];
+
+    if (query) {
+      // Filter documents based on query
+      documents = this.selectedCategory.items.filter(doc => 
+        doc.name.toLowerCase().includes(query) || 
+        (doc.description && doc.description.toLowerCase().includes(query))
+      );
+    } else {
+      documents = this.selectedCategory ? this.selectedCategory.items : [];
+    }
 
     if (this.selectedCategory && this.selectedCategory.items && Array.isArray(this.selectedCategory.items)) {
       const documents = this.selectedCategory.items;
