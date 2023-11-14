@@ -118,6 +118,12 @@ class LibraryComponent extends HTMLElement {
         .documents::-webkit-scrollbar-corner {
              background-color: transparent!important;
           }
+
+
+          #search-input {
+            margin-top: 10rem;
+          }
+
       </style>
       <input type="text" id="search-input" placeholder="Search documents...">
       <div class="categories-outer">
