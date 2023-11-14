@@ -221,19 +221,28 @@ toggleCategory(categoryButton, category) {
   this.renderDocuments();
 }
   
-  renderDocuments(query = '') {
-    this.documentsContainer.innerHTML = '';
-    let documents = [];
+renderDocuments(query = '') {
+  this.documentsContainer.innerHTML = '';
+  let documents = [];
 
+  if (this.selectedCategory) {
+    documents = this.selectedCategory.items;
     if (query) {
       // Filter documents based on query
-      documents = this.selectedCategory.items.filter(doc => 
+      documents = documents.filter(doc => 
         doc.name.toLowerCase().includes(query) || 
         (doc.description && doc.description.toLowerCase().includes(query))
       );
-    } else {
-      documents = this.selectedCategory ? this.selectedCategory.items : [];
     }
+  } else {
+    // Handle case when no category is selected
+    // You might want to display all documents or a message indicating no category is selected
+    // For example, displaying all documents from all categories:
+    documents = this.categories.flatMap(category => category.items).filter(doc =>
+      doc.name.toLowerCase().includes(query) ||
+      (doc.description && doc.description.toLowerCase().includes(query))
+    );
+  }
 
     if (this.selectedCategory && this.selectedCategory.items && Array.isArray(this.selectedCategory.items)) {
       const documents = this.selectedCategory.items;
