@@ -1,6 +1,6 @@
 /* Container Styles */
 .my-container {
-    padding-top: 6rem; /* Adjust as per the header height */
+    padding-top: 8rem; /* Adjust as per the header height */
     min-height: 100%; /* Ensure it takes at least the viewport height */
 }
 
@@ -122,7 +122,7 @@ label {
 }
 
 .table-wrapper {
-    max-height: 400px; /* Limit table height for scrolling */
+    max-height: 450px; /* Limit table height for scrolling */
     overflow-y: auto; /* Add vertical scroll if needed */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
