@@ -1,13 +1,13 @@
 /* Container Styles */
 .my-container {
-    max-width: 100%; /* Make it responsive to various screen sizes */
-    margin: 0 auto; /* Center align horizontally */
-    padding: 1rem; /* Add padding for better spacing */
-    margin-top: 6rem;
+    padding-top: 6rem; /* Adjust as per the header height */
+    min-height: 100%; /* Ensure it takes at least the viewport height */
 }
 
-body {
+html, body {
+    height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -40,11 +40,9 @@ tbody {
 }
 
 .header {
-     position: sticky!important;
-     top: 0;
-     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.2);
-
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 
@@ -123,16 +121,9 @@ label {
     color: rgba(0, 0, 0, 0.8)!important;
 }
 
-/* Wrapper Styles */
 .table-wrapper {
-    max-height: 400px; /* Limit table height for scrolling */
-    overflow-y: auto; /* Add vertical scroll if needed */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: solid 1px rgba(0, 0, 0, 0.200);
-   
+    max-height: none;
+    overflow-y: auto;
 }
 
 /* Other Styles */
