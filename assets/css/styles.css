@@ -6,7 +6,14 @@ body {
 }
 
 
-
+main {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    
+}
 
 .grid-container {
     display: flex;
