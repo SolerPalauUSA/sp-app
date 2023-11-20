@@ -127,6 +127,7 @@ class LibraryComponent extends HTMLElement {
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example box-shadow, you can customize this */
             border: 1px solid #ccc!important;
             border-radius: 8px!important;
+            padding: .5rem!important;
           }
 
       </style>
