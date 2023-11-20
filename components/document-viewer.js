@@ -25,7 +25,7 @@ class LibraryComponent extends HTMLElement {
         .categories {
           display: flex;
           flex-wrap: wrap;
-          margin-top: 4rem;
+          margin-top: 2rem;
           justify-content: center;
         }
 
@@ -123,8 +123,10 @@ class LibraryComponent extends HTMLElement {
             display: block; /* Ensures the input behaves as a block-level element */
             width: 80%; /* Adjust the width as needed */
             margin: 0 auto; /* Centers the input box and adds equal margins on both sides */
-            margin-top: 2rem;
+            margin-top: 8rem;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example box-shadow, you can customize this */
+            border: 1px solid #ccc!important;
+            border-radius: 8px!important;
           }
 
       </style>
