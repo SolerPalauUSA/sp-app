@@ -157,7 +157,14 @@ class LibraryComponent extends HTMLElement {
         return response.json();
       })
       .then((jsonData) => {
-        this.categories = jsonData;
+        // Ensure that jsonData is an array
+        if (!Array.isArray(jsonData)) {
+          throw new Error('Expected an array of categories');
+        }
+        this.categories = jsonData.map(category => ({
+          name: category.type, // Assuming each object has a 'type' field
+          items: category.items  // And an 'items' array
+        }));
         this.renderCategories();
       })
       .catch((error) => {
