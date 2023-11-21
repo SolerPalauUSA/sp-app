@@ -146,9 +146,8 @@ class LibraryComponent extends HTMLElement {
   }
 
   loadJSONData() {
-    // Replace with your JSON URL
     const jsonURL = '../data/documents.json';
-
+  
     fetch(jsonURL)
       .then((response) => {
         if (!response.ok) {
@@ -157,21 +156,19 @@ class LibraryComponent extends HTMLElement {
         return response.json();
       })
       .then((jsonData) => {
-        // Ensure that jsonData is an array
-        if (!Array.isArray(jsonData)) {
-          throw new Error('Expected an array of categories');
+        // Extract categories from the jsonData
+        if (jsonData && jsonData.categories && Array.isArray(jsonData.categories)) {
+          this.categories = jsonData.categories;
+        } else {
+          throw new Error('JSON is not in the expected format');
         }
-        this.categories = jsonData.map(category => ({
-          name: category.type, // Assuming each object has a 'type' field
-          items: category.items  // And an 'items' array
-        }));
         this.renderCategories();
       })
       .catch((error) => {
         console.error('Error fetching or processing JSON data:', error);
       });
   }
-
+  
   handleSearchInput() {
     const searchInput = this.shadowRoot.getElementById('search-input');
     searchInput.addEventListener('input', (event) => {
