@@ -3,7 +3,7 @@
 "categories" :    [
 
 {
-  "name": "Brochure",
+  "type": "Brochure",
     "items" :  [
     {
       "name": "Assisted Living Application Guide",
@@ -89,7 +89,7 @@
 
 
 {
-  "name": "Flyer",
+  "type": "Flyer",
     "items" : [
 
   {
@@ -277,7 +277,7 @@
 
 
 {
-  "name": "Catalog", 
+  "type": "Catalog", 
   "items" : [
   
   {
@@ -490,7 +490,7 @@
 
 
 {
-  "name": "Resource",
+  "type": "Resource",
   "items" : [
   {
     "name": "Chemical Resistance Chart",
@@ -533,7 +533,7 @@
 },
 
 {
-  "name" : "IOM",
+  "type" : "IOM",
   "items" : [
   {
     "name": "6002, 6002-14B, 6002A and 6002-14A",
@@ -992,7 +992,7 @@
 
 
 {
-  "name": "Submittal",
+  "type": "Submittal",
   "items"  : [
 
   {
@@ -1483,7 +1483,7 @@
   
   
 {
-  "name": "Accessory Submittals",
+  "type": "Accessory Submittals",
   "items" : [
   {
     "name": "304SS",
@@ -1874,7 +1874,7 @@
 {
   
   
-  "name": "Specification Sheets",
+  "type": "Specification Sheets",
   "items" : [
   {
     "name": "ARE and ARS",
