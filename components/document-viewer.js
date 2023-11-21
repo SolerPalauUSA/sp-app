@@ -157,7 +157,7 @@ class LibraryComponent extends HTMLElement {
         return response.json();
       })
       .then((jsonData) => {
-        this.categories = jsonData.categories;
+        this.categories = jsonData;
         this.renderCategories();
       })
       .catch((error) => {
@@ -243,32 +243,31 @@ renderDocuments(query = '', isSearchMode = false) {
   if (isSearchMode) {
     // Search across all categories when in search mode
     documents = this.categories.flatMap(category => category.items).filter(doc =>
-      doc.name.toLowerCase().includes(query) ||
-      (doc.description && doc.description.toLowerCase().includes(query))
-    ).map(doc => ({ ...doc, category: this.findCategoryOfDocument(doc) }));
+      doc.name.toLowerCase().includes(query)
+    ).map(doc => ({ ...doc, category: category.type })); // Use 'type' from your JSON
   } else if (this.selectedCategory && this.selectedCategory.items) {
     // Display documents from the selected category
     documents = this.selectedCategory.items;
   }
 
-  // Display documents
-  let documentsHTML = '';
-  for (const document of documents) {
-    if (document.link && document.name) {
-      const displayName = isSearchMode ? `${document.category}: ${document.name}` : document.name;
-      documentsHTML += `
-        <div class="document">
-          <a href="${document.link}" target="_blank">
-            <h3>${displayName}</h3>
-            <p>${document.description || ''}</p>
-          </a>
-        </div>
-      `;
-    } else {
-      console.error('Invalid document data:', document);
-    }
-  }
-  this.documentsContainer.innerHTML = documentsHTML;
+ // Display documents
+ let documentsHTML = '';
+ for (const document of documents) {
+   if (document.link && document.name) {
+     const displayName = isSearchMode ? `${document.category}: ${document.name}` : document.name;
+     documentsHTML += `
+       <div class="document">
+         <a href="${document.link}" target="_blank">
+           <h3>${displayName}</h3>
+           <p>${document.description || ''}</p>
+         </a>
+       </div>
+     `;
+   } else {
+     console.error('Invalid document data:', document);
+   }
+ }
+ this.documentsContainer.innerHTML = documentsHTML;
 }
 
 findCategoryOfDocument(doc) {
