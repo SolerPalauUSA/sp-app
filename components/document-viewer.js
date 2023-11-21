@@ -191,18 +191,19 @@ class LibraryComponent extends HTMLElement {
 
 
   renderCategories() {
-  this.categoryContainer.innerHTML = '';
-
-  for (const category of this.categories) {
-    const categoryButton = document.createElement('button');
-    categoryButton.classList.add('category');
-    const categoryName = category.name || 'Unknown'; // Fallback if name is undefined
-    categoryButton.textContent = categoryName;
-    categoryButton.id = `category-${categoryName.replace(/\s/g, '-')}`; // Use the safe variable
-    categoryButton.addEventListener('click', () => this.toggleCategory(categoryButton, category));
-    this.categoryContainer.appendChild(categoryButton);
+    this.categoryContainer.innerHTML = '';
+  
+    for (const category of this.categories) {
+      const categoryButton = document.createElement('button');
+      categoryButton.classList.add('category');
+      const categoryType = category.type || 'Unknown'; // Use 'type' instead of 'name'
+      categoryButton.textContent = categoryType;
+      categoryButton.id = `category-${categoryType.replace(/\s/g, '-')}`; // Use 'type' for ID
+      categoryButton.addEventListener('click', () => this.toggleCategory(categoryButton, category));
+      this.categoryContainer.appendChild(categoryButton);
+    }
   }
-}
+
 
 toggleCategory(categoryButton, category) {
   const categoriesContainer = this.categoryContainer;
@@ -250,20 +251,20 @@ renderDocuments(query = '', isSearchMode = false) {
     this.categories.forEach(category => {
       category.items.forEach(item => {
         if (item.name.toLowerCase().includes(query)) {
-          documents.push({ ...item, category: category.name });
+          documents.push({ ...item, categoryType: category.type });
         }
       });
     });
   } else if (this.selectedCategory && this.selectedCategory.items) {
     // Display documents from the selected category
-    documents = this.selectedCategory.items;
+    documents = this.selectedCategory.items.map(item => ({ ...item, categoryType: this.selectedCategory.type }));
   }
 
   // Display documents
   let documentsHTML = '';
   for (const document of documents) {
     if (document.link && document.name) {
-      const displayName = isSearchMode ? `${document.category}: ${document.name}` : document.name;
+      const displayName = isSearchMode ? `${document.categoryType}: ${document.name}` : document.name;
       documentsHTML += `
         <div class="document">
           <a href="${document.link}" target="_blank">
