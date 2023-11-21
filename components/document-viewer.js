@@ -170,12 +170,21 @@ class LibraryComponent extends HTMLElement {
     searchInput.addEventListener('input', (event) => {
       const query = event.target.value.trim().toLowerCase();
       if (query) {
-        this.renderDocuments(query);
+        this.clearCategories(); // Clear categories when searching
+        this.renderDocuments(query, true); // Pass a flag indicating search mode
       } else {
-        this.renderDocuments(); // Render all documents if query is empty
+        this.renderCategories(); // Render categories if query is empty
+        this.renderDocuments(); // Also render documents of the selected category if any
       }
     });
   }
+
+
+  clearCategories() {
+    this.categoryContainer.innerHTML = ''; // Clear the categories
+  }
+
+
 
   renderCategories() {
     this.categoryContainer.innerHTML = '';
@@ -227,16 +236,16 @@ toggleCategory(categoryButton, category) {
   this.renderDocuments();
 }
   
-renderDocuments(query = '') {
+renderDocuments(query = '', isSearchMode = false) {
   this.documentsContainer.innerHTML = '';
   let documents = [];
 
-  if (query) {
-    // Filter documents from all categories based on query
+  if (isSearchMode) {
+    // Search across all categories when in search mode
     documents = this.categories.flatMap(category => category.items).filter(doc =>
-      doc.name.toLowerCase().includes(query) || 
+      doc.name.toLowerCase().includes(query) ||
       (doc.description && doc.description.toLowerCase().includes(query))
-    );
+    ).map(doc => ({ ...doc, category: this.findCategoryOfDocument(doc) }));
   } else if (this.selectedCategory && this.selectedCategory.items) {
     // Display documents from the selected category
     documents = this.selectedCategory.items;
@@ -246,10 +255,11 @@ renderDocuments(query = '') {
   let documentsHTML = '';
   for (const document of documents) {
     if (document.link && document.name) {
+      const displayName = isSearchMode ? `${document.category}: ${document.name}` : document.name;
       documentsHTML += `
         <div class="document">
           <a href="${document.link}" target="_blank">
-            <h3>${document.name}</h3>
+            <h3>${displayName}</h3>
             <p>${document.description || ''}</p>
           </a>
         </div>
@@ -259,6 +269,16 @@ renderDocuments(query = '') {
     }
   }
   this.documentsContainer.innerHTML = documentsHTML;
+}
+
+findCategoryOfDocument(doc) {
+  // Find the category of a given document
+  for (const category of this.categories) {
+    if (category.items.includes(doc)) {
+      return category.name;
+    }
+  }
+  return 'Unknown Category';
 }
 }
 
