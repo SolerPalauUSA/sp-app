@@ -168,7 +168,7 @@ class LibraryComponent extends HTMLElement {
         console.error('Error fetching or processing JSON data:', error);
       });
   }
-  
+
   handleSearchInput() {
     const searchInput = this.shadowRoot.getElementById('search-input');
     searchInput.addEventListener('input', (event) => {
@@ -191,17 +191,18 @@ class LibraryComponent extends HTMLElement {
 
 
   renderCategories() {
-    this.categoryContainer.innerHTML = '';
-  
-    for (const category of this.categories) {
-      const categoryButton = document.createElement('button');
-      categoryButton.classList.add('category');
-      categoryButton.textContent = category.name;
-      categoryButton.id = `category-${category.name.replace(/\s/g, '-')}`; // Replace spaces with hyphens
-      categoryButton.addEventListener('click', () => this.toggleCategory(categoryButton, category));
-      this.categoryContainer.appendChild(categoryButton);
-    }
+  this.categoryContainer.innerHTML = '';
+
+  for (const category of this.categories) {
+    const categoryButton = document.createElement('button');
+    categoryButton.classList.add('category');
+    const categoryName = category.name || 'Unknown'; // Fallback if name is undefined
+    categoryButton.textContent = categoryName;
+    categoryButton.id = `category-${categoryName.replace(/\s/g, '-')}`; // Use the safe variable
+    categoryButton.addEventListener('click', () => this.toggleCategory(categoryButton, category));
+    this.categoryContainer.appendChild(categoryButton);
   }
+}
 
 toggleCategory(categoryButton, category) {
   const categoriesContainer = this.categoryContainer;
