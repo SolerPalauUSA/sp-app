@@ -130,6 +130,7 @@ class LibraryComponent extends HTMLElement {
             border: 1px solid #ccc!important;
             border-radius: 8px!important;
             padding: .5rem!important;
+            font-size: 16px;
           }
 
       </style>
