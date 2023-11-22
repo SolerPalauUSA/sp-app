@@ -12,6 +12,8 @@ class LibraryComponent extends HTMLElement {
 
   render() {
     this.shadowRoot.innerHTML = `
+
+    
       <style>
         /* Add your CSS styles here */
 
@@ -131,6 +133,8 @@ class LibraryComponent extends HTMLElement {
           }
 
       </style>
+
+
       <input type="text" id="search-input" placeholder="Search documents...">
       <div class="categories-outer">
       <div class="categories" id="categories-container"></div>
@@ -192,16 +196,14 @@ class LibraryComponent extends HTMLElement {
 
   renderCategories() {
     this.categoryContainer.innerHTML = '';
-  
-    for (const category of this.categories) {
+    this.categories.forEach((category) => {
       const categoryButton = document.createElement('button');
       categoryButton.classList.add('category');
-      const categoryType = category.type || 'Unknown'; // Use 'type' instead of 'name'
-      categoryButton.textContent = categoryType;
-      categoryButton.id = `category-${categoryType.replace(/\s/g, '-')}`; // Use 'type' for ID
+      categoryButton.textContent = category.type; // Using 'type' from JSON
+      categoryButton.id = `category-${category.type.replace(/\s/g, '-')}`;
       categoryButton.addEventListener('click', () => this.toggleCategory(categoryButton, category));
       this.categoryContainer.appendChild(categoryButton);
-    }
+    });
   }
 
 
@@ -239,7 +241,7 @@ toggleCategory(categoryButton, category) {
     categoryElement.scrollIntoView({ behavior: 'smooth' });
   }
 
-  this.renderDocuments();
+  this.renderDocuments(null, category);
 }
   
 renderDocuments(query = '', isSearchMode = false) {
