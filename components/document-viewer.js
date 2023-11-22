@@ -234,7 +234,8 @@ toggleCategory(categoryButton, category) {
   }
 
   if (this.selectedCategory === category) {
-    const categoryId = `category-${category.name.replace(/\s/g, '-')}`;
+    const categoryId = `category-${category.type.replace(/\s/g, '-')}`;
+
     console.log('Scrolling to element with ID:', categoryId);
     const categoryElement = this.shadowRoot.querySelector(`#${categoryId}`);
     console.log('Category element:', categoryElement);
