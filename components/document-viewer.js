@@ -186,23 +186,24 @@ class LibraryComponent extends HTMLElement {
       const categoriesContainerHasSelected = this.categoryContainer.classList.contains('selected');
   
       if (query === '') {
-        // If the input is empty
         if (!categoriesContainerHasSelected) {
-          // If 'selected' class is not present, render categories
-          this.renderCategories();
+          // If input is empty and 'selected' class is not present
+          this.renderCategories(); // Render categories
+          this.documentsContainer.innerHTML = ''; // Clear the documents
+        } else {
+          // If input is empty but 'selected' class is present
+          this.renderDocuments(); // Show all documents of the selected category
         }
-        this.documentsContainer.innerHTML = ''; // Clear the documents
       } else {
-        // Clear categories if 'selected' class is not present
+        // If there's a query
         if (!categoriesContainerHasSelected) {
-          this.clearCategories();
+          this.clearCategories(); // Clear categories if 'selected' class is not present
         }
-        // Render documents based on the query
-        this.renderDocuments(query);
+        this.renderDocuments(query); // Render documents based on the query
       }
     });
   }
-
+  
 
 
   renderCategories() {
