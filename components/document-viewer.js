@@ -224,32 +224,24 @@ class LibraryComponent extends HTMLElement {
     const categoriesContainer = this.categoryContainer;
     const documentsContainer = this.documentsContainer;
   
-    // Remove 'active' class from all category buttons
-    const categoryButtons = this.shadowRoot.querySelectorAll('.category');
-    categoryButtons.forEach((button) => button.classList.remove('active'));
-  
-    // Find the corresponding category object from JSON data
     const selectedCategory = this.categories.find(cat => cat.type === category.type);
   
     if (categoriesContainer.classList.contains('selected') && this.selectedCategory === selectedCategory) {
-      // If the same category is selected again, remove the 'selected' class
+      // Deselecting the current category
       setTimeout(() => {
         categoriesContainer.classList.remove('selected');
         documentsContainer.classList.remove('active');
+        documentsContainer.innerHTML = ''; // Clear the documents
         this.selectedCategory = null;
       }, 300);
     } else {
-      // Add 'selected' class to the categories container
+      // Selecting a category
       categoriesContainer.classList.add('selected');
       documentsContainer.classList.add('active');
-      // Set the selected category
       this.selectedCategory = selectedCategory;
-  
-      // Add 'active' class to the category button
       categoryButton.classList.add('active');
+      this.renderDocuments();
     }
-  
-    this.renderDocuments();
   }
   
   renderDocuments(query = '') {
