@@ -207,43 +207,37 @@ class LibraryComponent extends HTMLElement {
   }
 
 
-toggleCategory(categoryButton, category) {
-  const categoriesContainer = this.categoryContainer;
-  const documentsContainer = this.documentsContainer;
-
-  // Remove 'active' class from all category buttons
-  const categoryButtons = this.shadowRoot.querySelectorAll('.category');
-  categoryButtons.forEach((button) => button.classList.remove('active'));
-
-  if (categoriesContainer.classList.contains('selected') && this.selectedCategory === category) {
-    // If the same category is selected again, remove the 'selected' class
-    // after a delay to allow for the transition
-    setTimeout(() => {
-      categoriesContainer.classList.remove('selected');
-      documentsContainer.classList.remove('active');
-      this.selectedCategory = null;
-    }, 300); // Adjust the delay (in milliseconds) to match your transition duration
-  } else {
-    // Otherwise, add 'selected' class to the categories container
-    categoriesContainer.classList.add('selected');
-    documentsContainer.classList.add('active');
-    this.selectedCategory = category;
-
-    // Add 'active' class to the category button
-    categoryButton.classList.add('active');
+  toggleCategory(categoryButton, category) {
+    const categoriesContainer = this.categoryContainer;
+    const documentsContainer = this.documentsContainer;
+  
+    // Remove 'active' class from all category buttons
+    const categoryButtons = this.shadowRoot.querySelectorAll('.category');
+    categoryButtons.forEach((button) => button.classList.remove('active'));
+  
+    // Find the corresponding category object from JSON data
+    const selectedCategory = this.categories.find(cat => cat.type === category.type);
+  
+    if (categoriesContainer.classList.contains('selected') && this.selectedCategory === selectedCategory) {
+      // If the same category is selected again, remove the 'selected' class
+      setTimeout(() => {
+        categoriesContainer.classList.remove('selected');
+        documentsContainer.classList.remove('active');
+        this.selectedCategory = null;
+      }, 300);
+    } else {
+      // Add 'selected' class to the categories container
+      categoriesContainer.classList.add('selected');
+      documentsContainer.classList.add('active');
+      // Set the selected category
+      this.selectedCategory = selectedCategory;
+  
+      // Add 'active' class to the category button
+      categoryButton.classList.add('active');
+    }
+  
+    this.renderDocuments();
   }
-
-  if (this.selectedCategory === category) {
-    const categoryId = `category-${category.type.replace(/\s/g, '-')}`;
-
-    console.log('Scrolling to element with ID:', categoryId);
-    const categoryElement = this.shadowRoot.querySelector(`#${categoryId}`);
-    console.log('Category element:', categoryElement);
-    categoryElement.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  this.renderDocuments(null, category);
-}
   
 renderDocuments(query = '', isSearchMode = false) {
   this.documentsContainer.innerHTML = '';
