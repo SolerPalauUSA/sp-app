@@ -252,9 +252,13 @@ class LibraryComponent extends HTMLElement {
       documents = this.selectedCategory.items.filter(item =>
         item.name.toLowerCase().includes(query)
       ).map(item => ({ ...item, categoryType: this.selectedCategory.type }));
-    } else if (!query) {
-      // Display all documents if no query and no category selected
-      documents = this.categories.flatMap(category => category.items);
+    } else {
+      // If no category is selected, search across all documents
+      documents = this.categories.flatMap(category => 
+        category.items.filter(item =>
+          item.name.toLowerCase().includes(query)
+        ).map(item => ({ ...item, categoryType: category.type }))
+      );
     }
   
     // Display documents
@@ -276,7 +280,7 @@ class LibraryComponent extends HTMLElement {
     }
     this.documentsContainer.innerHTML = documentsHTML;
   }
-  
+
 findCategoryOfDocument(doc) {
   // Find the category of a given document
   for (const category of this.categories) {
