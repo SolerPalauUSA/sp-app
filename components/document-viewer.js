@@ -233,6 +233,7 @@ class LibraryComponent extends HTMLElement {
         documentsContainer.classList.remove('active');
         documentsContainer.innerHTML = ''; // Clear the documents
         this.selectedCategory = null;
+        categoryButton.classList.remove('active'); // Remove 'active' class from the category button
       }, 300);
     } else {
       // Selecting a category
@@ -243,6 +244,7 @@ class LibraryComponent extends HTMLElement {
       this.renderDocuments();
     }
   }
+  
   
   renderDocuments(query = '') {
     this.documentsContainer.innerHTML = '';
