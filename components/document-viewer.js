@@ -177,13 +177,17 @@ class LibraryComponent extends HTMLElement {
     const searchInput = this.shadowRoot.getElementById('search-input');
     searchInput.addEventListener('input', (event) => {
       const query = event.target.value.trim().toLowerCase();
-      if (query) {
-        this.clearCategories(); // Clear categories when searching
-        this.renderDocuments(query, true); // Pass a flag indicating search mode
-      } else {
-        this.renderCategories(); // Render categories if query is empty
-        this.renderDocuments(); // Also render documents of the selected category if any
+  
+      // Check if the categories container has the 'selected' class
+      const categoriesContainerHasSelected = this.categoryContainer.classList.contains('selected');
+  
+      // Clear categories if 'selected' class is not present
+      if (!categoriesContainerHasSelected) {
+        this.clearCategories();
       }
+  
+      // Render documents based on the query
+      this.renderDocuments(query);
     });
   }
 
@@ -239,44 +243,40 @@ class LibraryComponent extends HTMLElement {
     this.renderDocuments();
   }
   
-renderDocuments(query = '', isSearchMode = false) {
-  this.documentsContainer.innerHTML = '';
-  let documents = [];
-
-  if (isSearchMode) {
-    // Search across all categories when in search mode
-    this.categories.forEach(category => {
-      category.items.forEach(item => {
-        if (item.name.toLowerCase().includes(query)) {
-          documents.push({ ...item, categoryType: category.type });
-        }
-      });
-    });
-  } else if (this.selectedCategory && this.selectedCategory.items) {
-    // Display documents from the selected category
-    documents = this.selectedCategory.items.map(item => ({ ...item, categoryType: this.selectedCategory.type }));
-  }
-
-  // Display documents
-  let documentsHTML = '';
-  for (const document of documents) {
-    if (document.link && document.name) {
-      const displayName = isSearchMode ? `${document.categoryType}: ${document.name}` : document.name;
-      documentsHTML += `
-        <div class="document">
-          <a href="${document.link}" target="_blank">
-            <h3>${displayName}</h3>
-            <p>${document.description || ''}</p>
-          </a>
-        </div>
-      `;
-    } else {
-      console.error('Invalid document data:', document);
+  renderDocuments(query = '') {
+    this.documentsContainer.innerHTML = '';
+    let documents = [];
+  
+    if (this.selectedCategory && this.selectedCategory.items) {
+      // If a category is selected, filter its documents
+      documents = this.selectedCategory.items.filter(item =>
+        item.name.toLowerCase().includes(query)
+      ).map(item => ({ ...item, categoryType: this.selectedCategory.type }));
+    } else if (!query) {
+      // Display all documents if no query and no category selected
+      documents = this.categories.flatMap(category => category.items);
     }
+  
+    // Display documents
+    let documentsHTML = '';
+    for (const document of documents) {
+      if (document.link && document.name) {
+        const displayName = this.selectedCategory ? document.name : `${document.categoryType}: ${document.name}`;
+        documentsHTML += `
+          <div class="document">
+            <a href="${document.link}" target="_blank">
+              <h3>${displayName}</h3>
+              <p>${document.description || ''}</p>
+            </a>
+          </div>
+        `;
+      } else {
+        console.error('Invalid document data:', document);
+      }
+    }
+    this.documentsContainer.innerHTML = documentsHTML;
   }
-  this.documentsContainer.innerHTML = documentsHTML;
-}
-
+  
 findCategoryOfDocument(doc) {
   // Find the category of a given document
   for (const category of this.categories) {
