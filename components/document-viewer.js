@@ -181,20 +181,24 @@ class LibraryComponent extends HTMLElement {
       // Check if the categories container has the 'selected' class
       const categoriesContainerHasSelected = this.categoryContainer.classList.contains('selected');
   
-      // Clear categories if 'selected' class is not present
-      if (!categoriesContainerHasSelected) {
-        this.clearCategories();
+      if (query === '') {
+        // If the input is empty
+        if (!categoriesContainerHasSelected) {
+          // If 'selected' class is not present, render categories
+          this.renderCategories();
+        }
+        this.documentsContainer.innerHTML = ''; // Clear the documents
+      } else {
+        // Clear categories if 'selected' class is not present
+        if (!categoriesContainerHasSelected) {
+          this.clearCategories();
+        }
+        // Render documents based on the query
+        this.renderDocuments(query);
       }
-  
-      // Render documents based on the query
-      this.renderDocuments(query);
     });
   }
-
-
-  clearCategories() {
-    this.categoryContainer.innerHTML = ''; // Clear the categories
-  }
+  
 
 
 
