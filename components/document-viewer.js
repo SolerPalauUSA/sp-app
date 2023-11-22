@@ -173,6 +173,10 @@ class LibraryComponent extends HTMLElement {
       });
   }
 
+  clearCategories() {
+    this.categoryContainer.innerHTML = ''; // Clear the categories
+  }
+
   handleSearchInput() {
     const searchInput = this.shadowRoot.getElementById('search-input');
     searchInput.addEventListener('input', (event) => {
