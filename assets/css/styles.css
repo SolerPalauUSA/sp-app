@@ -52,8 +52,8 @@ main {
 }
 
 .icon img {
-    max-width: 110px;
-    max-height: 110px;
+    width: 110px;
+    height: 110px;
    
 }
 
