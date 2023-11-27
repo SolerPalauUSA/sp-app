@@ -92,7 +92,7 @@ class LibraryComponent extends HTMLElement {
         }
         .documents.active {
           margin-top: 2rem;
-          height: 550px;
+          height: 475px;
           transition: max-height 0.3s ease;
           overflow-y: auto;
           margin-bottom: 0rem;
