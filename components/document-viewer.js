@@ -119,16 +119,16 @@ class LibraryComponent extends HTMLElement {
           background: #555!important; /* Adjust hover color as needed */
         }
 
-        .documents::-webkit-scrollbar {
+        .documents.active::-webkit-scrollbar {
           height: 10px!important; /* Adjust height as needed */
         }
         
-        .documents::-webkit-scrollbar-thumb {
+        .documents.active::-webkit-scrollbar-thumb {
           background: #888!important; /* Adjust color as needed */
           border-radius: 5px!important;
         }
         
-        .documents::-webkit-scrollbar-thumb:hover {
+        .documents.active::-webkit-scrollbar-thumb:hover {
           background: #555!important; /* Adjust hover color as needed */
         }
 
