@@ -49,6 +49,7 @@ class LibraryComponent extends HTMLElement {
           color: #053658!important;
           transition: width 0.3s ease; /* Smooth transition for category buttons */
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          overflow: hidden; 
         }
         
         /* Set height when .categories.selected is active */
@@ -105,21 +106,19 @@ class LibraryComponent extends HTMLElement {
           border: 1px solid #ddd;
         }
 
-        /* Style the scrollbar thumb (handle) */
-         .documents::-webkit-scrollbar-thumb {
-            background-color: #999!important; 
-            border-radius: 5px!important; 
+        /* Styling the scrollbar */
+        .categories::-webkit-scrollbar {
+          height: 10px; /* Adjust height as needed */
         }
-
-         /* Style the scrollbar track */
-         .documents::-webkit-scrollbar-track {
-             background-color: transparent!important;
-         }
-
-        /* Style the scrollbar corner (between vertical and horizontal scrollbar) */
-        .documents::-webkit-scrollbar-corner {
-             background-color: transparent!important;
-          }
+        
+        .categories::-webkit-scrollbar-thumb {
+          background: #888; /* Adjust color as needed */
+          border-radius: 5px;
+        }
+        
+        .categories::-webkit-scrollbar-thumb:hover {
+          background: #555; /* Adjust hover color as needed */
+        }
 
           #search-input {
             display: block; /* Ensures the input behaves as a block-level element */
