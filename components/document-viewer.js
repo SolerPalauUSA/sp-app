@@ -107,17 +107,32 @@ class LibraryComponent extends HTMLElement {
 
         /* Styling the scrollbar */
         .categories::-webkit-scrollbar {
-          height: 10px; /* Adjust height as needed */
+          height: 10px!important; /* Adjust height as needed */
         }
         
         .categories::-webkit-scrollbar-thumb {
-          background: #888; /* Adjust color as needed */
-          border-radius: 5px;
+          background: #888!important; /* Adjust color as needed */
+          border-radius: 5px!important;
         }
         
         .categories::-webkit-scrollbar-thumb:hover {
-          background: #555; /* Adjust hover color as needed */
+          background: #555!important; /* Adjust hover color as needed */
         }
+
+        .documents::-webkit-scrollbar {
+          height: 10px!important; /* Adjust height as needed */
+        }
+        
+        .documents::-webkit-scrollbar-thumb {
+          background: #888!important; /* Adjust color as needed */
+          border-radius: 5px!important;
+        }
+        
+        .documents::-webkit-scrollbar-thumb:hover {
+          background: #555!important; /* Adjust hover color as needed */
+        }
+
+
 
           #search-input {
             display: block; /* Ensures the input behaves as a block-level element */
