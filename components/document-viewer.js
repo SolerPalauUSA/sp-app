@@ -223,6 +223,7 @@ class LibraryComponent extends HTMLElement {
   toggleCategory(categoryButton, category) {
     const categoriesContainer = this.categoryContainer;
     const documentsContainer = this.documentsContainer;
+    const categoryButtons = this.shadowRoot.querySelectorAll('.category');
   
     const selectedCategory = this.categories.find(cat => cat.type === category.type);
   
@@ -236,11 +237,18 @@ class LibraryComponent extends HTMLElement {
         categoryButton.classList.remove('active'); // Remove 'active' class from the category button
       }, 300);
     } else {
-      // Selecting a category
+      // Remove 'active' class from all category buttons
+      categoryButtons.forEach(button => button.classList.remove('active'));
+  
+      // Selecting a new category
       categoriesContainer.classList.add('selected');
       documentsContainer.classList.add('active');
       this.selectedCategory = selectedCategory;
       categoryButton.classList.add('active');
+  
+      // Scroll the selected category button into view
+      categoryButton.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+  
       this.renderDocuments();
     }
   }
