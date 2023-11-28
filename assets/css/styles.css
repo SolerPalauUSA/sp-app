@@ -157,6 +157,7 @@ main {
 }
 
 select.series-dropdown {
+    appearance: none;
     padding: 1rem!important;
     border-radius: 8px!important;
     border: none!important;
@@ -169,6 +170,7 @@ select.series-dropdown {
 }
 
 .models-dropdown {
+    appearance: none;
     padding: 1rem!important;
     border-radius: 8px!important;
     border: none!important;
