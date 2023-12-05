@@ -11,7 +11,7 @@ class ImportantLinks extends HTMLElement {
 
     async fetchData() {
         try {
-            const response = await fetch('path/to/your/json/file.json');
+            const response = await fetch('../data/importantLinks.json');
             const data = await response.json();
             this.renderLinks(data);
         } catch (error) {
