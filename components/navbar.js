@@ -138,7 +138,7 @@ class BottomNavbar extends HTMLElement {
           <img src="../assets/images/right-left-white.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Cross-Ref
           </a>
-          <a class="nav-link" href="../pages/products.html">
+          <a class="nav-link" href="../pages/important-links.html">
           <img src="../assets/images/links-nav.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Links
           </a>
