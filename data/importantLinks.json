@@ -1,7 +1,7 @@
 [
     {
         "Title": "Blog",
-        "Icon": "path/to/blog-icon.png",
+        "Icon": "../assets/images/helpcenter.svg",
         "Link": "https://blog.solerpalau-usa.com/"
     },
     {
