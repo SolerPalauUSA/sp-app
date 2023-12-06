@@ -6,7 +6,7 @@
     },
     {
         "Title": "Help Center",
-        "Icon": "helpcenter.svg",
+        "Icon": "../assets/images/helpcenter.svg",
         "Link": "https://sp-usa-ventilation-systems-llc.helpscoutdocs.com/"
     },
     {
