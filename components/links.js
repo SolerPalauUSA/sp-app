@@ -39,6 +39,7 @@ class ImportantLinks extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <style>
                 .links-container {
+                    margin-top: 8rem;
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
                     gap: 10px;
