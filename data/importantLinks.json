@@ -11,7 +11,7 @@
     },
     {
         "Title": "Events",
-        "Icon": "path/to/events-icon.png",
+        "Icon": "../assets/images/events.svg",
         "Link": "https://www.solerpalau-usa.com/resources/events.html"
     },
     {
