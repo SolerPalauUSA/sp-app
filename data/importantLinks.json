@@ -31,7 +31,7 @@
     },
     {
         "Title": "Product Returns",
-        "Icon": "path/to/returns-icon.png",
+        "Icon": "../assets/images/product-returns.svg",
         "Link": "https://www.solerpalau-usa.com/resources/returns.html"
     },
     {
