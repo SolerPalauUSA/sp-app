@@ -26,7 +26,7 @@
     },
     {
         "Title": "Optisizer",
-        "Icon": "path/to/optisizer-icon.png",
+        "Icon": "../assets/images/optisizer.svg",
         "Link": "https://example.com/optisizer"
     },
     {
