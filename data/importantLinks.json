@@ -36,7 +36,7 @@
     },
     {
         "Title": "Print Shop",
-        "Icon": "path/to/printshop-icon.png",
+        "Icon": "../assets/images/print-shop.svg",
         "Link": "https://custompoint.rrd.com/xs2/prelogin?CMPID=8081&qwerty=23120503"
     }
 ]
