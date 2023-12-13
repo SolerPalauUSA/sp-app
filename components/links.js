@@ -31,19 +31,33 @@ class ImportantLinks extends HTMLElement {
     renderLinks(data) {
         const linksHTML = data.map(item => this.renderLinkItem(item)).join('');
         this.shadowRoot.innerHTML += `
+        <div class="links-wrapper">
             <div class="links-container">${linksHTML}</div>
+         </div>   
         `;
     }
 
     render() {
         this.shadowRoot.innerHTML = `
             <style>
+
+                .links-wrapper {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                  margin-left: 1rem;
+                  margin-right: 1rem;
+
+
+                }
+
                 .links-container {
-                    margin-top: 8rem;
+                    margin-top: 10rem;
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                     gap: 10px;
-                    padding: 10px;
+                    
                 }
                 .link-item {
                     display: flex;
@@ -51,6 +65,7 @@ class ImportantLinks extends HTMLElement {
                     align-items: center;
                     text-decoration: none;
                     color: inherit;
+                    height: 125px;
                 }
                 .link-icon {
                     width: 50px;
