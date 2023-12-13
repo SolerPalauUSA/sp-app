@@ -47,12 +47,13 @@ class ImportantLinks extends HTMLElement {
                   flex-direction: column;
                   margin-left: 1rem;
                   margin-right: 1rem;
+                  height: 100vh;
 
 
                 }
 
                 .links-container {
-                    margin-top: 10rem;
+                    padding: 1rem;
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                     gap: 10px;
