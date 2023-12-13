@@ -44,7 +44,6 @@ class ImportantLinks extends HTMLElement {
                 .links-wrapper {
                   display: flex;
                   justify-content: center;
-                  align-items: center;
                   flex-direction: column;
                   margin-left: 1rem;
                   margin-right: 1rem;
