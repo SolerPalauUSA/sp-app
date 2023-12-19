@@ -21,7 +21,7 @@ class ImportantLinks extends HTMLElement {
 
     renderLinkItem(item) {
         return `
-            <a href="${item.Link}" class="link-item">
+            <a href="${item.Link}" class="link-item" target="_blank" >
                 <img src="${item.Icon}" alt="${item.Title}" class="link-icon">
                 <span class="link-title">${item.Title}</span>
             </a>
