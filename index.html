@@ -138,6 +138,12 @@
       return localStorage.getItem('appInstalled') === 'true';
     }
 
+    // Function to check if the browser is Chrome on iOS
+    const isIosChrome = () => {
+        const userAgent = window.navigator.userAgent.toLowerCase();
+        return /crios/.test(userAgent) && isIos();
+    };
+
     // Check if the device is on iOS
     const isIos = () => {
       const userAgent = window.navigator.userAgent.toLowerCase();
@@ -151,23 +157,25 @@
     const isUserAnonymous = true; // You need to implement the user check logic here
 
     if (isIos() && (!isAppInstalled() || isUserAnonymous) && !iosInstructionsClosed) {
-      installButtonAndroid.style.display = 'none'; // hide non-iOS
-      iosInstallInstructions.style.display = 'flex'; // Show the modal for iOS users
+  installButtonAndroid.style.display = 'none';
+  iosInstallInstructions.style.display = 'flex';
 
-      // Add an event listener to close the modal and set the flag
-      closeIosInstructions.addEventListener('click', () => {
-        iosInstallInstructions.style.display = 'none'; // Hide the modal
-        localStorage.setItem('iosInstructionsClosed', 'true');
-      });
+  // Check if the browser is Chrome on iOS
+  if (isIosChrome()) {
+    const iosModelContainer = document.getElementById('ios-model-container');
+    iosModelContainer.classList.add('chrome-style');
+    iosModelContainer.style.alignSelf = 'start';
 
-      // Check if the browser is Safari
-      if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-        installButtonAndroid.style.display = 'none'; // Hide install banner for iOS
-        // Add a class to the iOS modal container for Safari
-        const iosModelContainer = document.getElementById('ios-model-container');
-        iosModelContainer.classList.add('safari-style');
-        iosModelContainer.style.alignSelf = 'end'; // Add the align-self style
-      }
+    // Update the text for Chrome on iOS
+    iosModelContainer.innerHTML = `
+      <button id="close-ios-instructions">X</button>
+      <p>Tap the icon above, and then tap on "Add to home screen".</p>
+    `;
+  } else if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+    const iosModelContainer = document.getElementById('ios-model-container');
+    iosModelContainer.classList.add('safari-style');
+    iosModelContainer.style.alignSelf = 'end';
+  }
 
       // Check if the app is running in standalone mode
       if (window.matchMedia('(display-mode: standalone)').matches) {

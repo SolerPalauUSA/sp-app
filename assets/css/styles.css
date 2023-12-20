@@ -257,6 +257,22 @@ button#close-ios-instructions {
     box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
 }
 
+.chrome-style::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: 11.5em;
+    top: 3rem;
+    left: 50%;
+    box-sizing: border-box;
+    border: 1em solid black;
+    border-color: transparent transparent whitesmoke whitesmoke;
+    transform-origin: 0 0;
+    transform: rotate(-134deg);
+    box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
 
 .literature-dropdown-container {
     padding-left: 1rem;
