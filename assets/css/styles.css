@@ -282,7 +282,7 @@ button#close-chrome-instructions{
     border: 1em solid black;
     border-color: transparent transparent whitesmoke whitesmoke;
     transform-origin: 0 0;
-    transform: rotate(-134deg);
+    transform: rotate(134deg);
     box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
 }
 
