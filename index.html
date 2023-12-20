@@ -156,6 +156,14 @@
     // Check if the user is anonymous (modify this condition based on your Firebase authentication logic)
     const isUserAnonymous = true; // You need to implement the user check logic here
 
+    function hideIosInstallInstructions() {
+  iosInstallInstructions.style.display = 'none';
+  localStorage.setItem('iosInstructionsClosed', 'true');
+}
+
+closeIosInstructions.addEventListener('click', hideIosInstallInstructions);
+
+
     if (isIos() && (!isAppInstalled() || isUserAnonymous) && !iosInstructionsClosed) {
   installButtonAndroid.style.display = 'none';
   iosInstallInstructions.style.display = 'flex';
@@ -168,8 +176,9 @@
 
     // Update the text for Chrome on iOS
     iosModelContainer.innerHTML = `
-      <button id="close-ios-instructions">X</button>
-      <p>Tap the icon above, and then tap on "Add to home screen".</p>
+    <button id="close-ios-instructions">X</button>
+                <p>To install this application on your mobile device.</p>
+                <p>Tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon" style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon above, and then tap on "Add to home screen".</p>
     `;
   } else if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
     const iosModelContainer = document.getElementById('ios-model-container');
