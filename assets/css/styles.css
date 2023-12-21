@@ -171,12 +171,12 @@ main {
 
 select.series-dropdown {
     appearance: none !important;
-    padding: 1rem !important;
+    padding: .5rem !important;
     border-radius: 8px !important;
     border: none !important;
     background-color: whitesmoke !important;
     color: #053658 !important;
-    font-size: 18px !important;
+    font-size: 15px !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
 
 
@@ -184,12 +184,12 @@ select.series-dropdown {
 
 .models-dropdown {
     appearance: none !important;
-    padding: 1rem !important;
+    padding: .5rem !important;
     border-radius: 8px !important;
     border: none !important;
     background-color: whitesmoke !important;
     color: #053658 !important;
-    font-size: 18px !important;
+    font-size: 15px !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
 }
 
@@ -212,8 +212,8 @@ select.series-dropdown {
 }
 
 button {
-    font-size: 18px !important;
-    padding: .75rem !important;
+    font-size: 15px !important;
+    padding: .5rem !important;
     border-radius: 8px !important;
     border: none !important;
     background-color: whitesmoke !important;
@@ -222,7 +222,7 @@ button {
 }
 
 button#install-button-android {
-    font-size: 18px !important;
+    font-size: 15px !important;
     padding: 0.75rem !important;
     border: none !important;
     border-radius: 0px !important;
@@ -233,7 +233,7 @@ button#install-button-android {
 }
 
 button#close-ios-instructions {
-    font-size: 18px !important;
+    font-size: 15px !important;
     padding: 0.75rem !important;
     border: none !important;
     background-color: transparent !important;
