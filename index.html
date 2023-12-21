@@ -175,15 +175,21 @@ closeIosInstructions.addEventListener('click', hideIosInstallInstructions);
     iosModelContainer.classList.add('chrome-style');
     iosModelContainer.style.alignSelf = 'start';
 
-    // Update the text for Chrome on iOS
+    // Apply additional styles for Chrome on iOS
+    iosModelContainer.style.borderRadius = '0px';
+    iosModelContainer.style.marginLeft = '.25rem';
+    iosModelContainer.style.marginRight = '.25rem';
+    iosModelContainer.style.marginTop = '2rem';
+
+    // Update the modal content for Chrome on iOS
     iosModelContainer.innerHTML = `
-    <button id="close-chrome-instructions">X</button>
-                <p>To install this application on your mobile device.</p>
-                <p>Tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon" style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon above, and then tap on "Add to home screen".</p>
+        <button id="close-chrome-instructions">X</button>
+        <p>To install this application on your mobile device.</p>
+        <p>Tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon" style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon above, and then tap on "Add to home screen".</p>
     `;
 
-      // Add event listener for Chrome-style close button
-      const closeChromeInstructions = document.getElementById('close-chrome-instructions');
+    // Add event listener for Chrome-style close button
+    const closeChromeInstructions = document.getElementById('close-chrome-instructions');
     closeChromeInstructions.addEventListener('click', hideIosInstallInstructions);
 
   } else if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
