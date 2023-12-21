@@ -246,7 +246,7 @@ button#close-ios-instructions {
 }
 
 button#close-chrome-instructions {
-    font-size: 18px !important;
+    font-size: 15px !important;
     padding: 0.75rem !important;
     border: none !important;
     background-color: transparent !important;
@@ -255,6 +255,7 @@ button#close-chrome-instructions {
     float: left !important;
     border-radius: 5px !important;
     font-weight: 700 !important;
+    margin-bottom: .5rem !important;
 
 }
 
