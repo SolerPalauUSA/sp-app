@@ -30,6 +30,7 @@ main {
     flex-direction: column;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: -2rem;
 }
 
 .icon-grid {
@@ -255,8 +256,8 @@ button#close-chrome-instructions {
     float: left !important;
     border-radius: 5px !important;
     font-weight: 700 !important;
-    margin-bottom: 1rem !important;
-    margin-left: .5rem !important;
+    margin-bottom: 2rem !important;
+    margin-right: .5rem !important;
 
 }
 
