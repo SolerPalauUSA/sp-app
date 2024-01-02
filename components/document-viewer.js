@@ -89,6 +89,7 @@ class LibraryComponent extends HTMLElement {
           margin-bottom: 0rem;
           transition: max-height 0.3s ease; /* Smooth transition for documents container */
           overflow-y: auto;
+          height: 500px;
         }
         .documents.active {
           margin-top: 2rem;
