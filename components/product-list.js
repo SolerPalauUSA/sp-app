@@ -247,6 +247,25 @@ window.addEventListener("popstate", (event) => {
       console.error("Selected series not found:", selectedSeries);
     }
   }
+
+    // Parse URL Parameters and Set Initial State
+    const urlParams = new URLSearchParams(window.location.search);
+    const productNameFromUrl = urlParams.get('product');
+    const seriesNameFromUrl = urlParams.get('series');
+  
+    if (productNameFromUrl) {
+      // Select the product in the product dropdown
+      // Add your logic here
+    }
+  
+    if (seriesNameFromUrl) {
+      // Select the series in the series dropdown
+      // Add your logic here
+      // Trigger the change event
+      const seriesDropdownEvent = new Event('change');
+      seriesDropdown.dispatchEvent(seriesDropdownEvent);
+    }
+
   // Fetch product data from a JSON source
   fetch("../data/products.json") // Update with your JSON data source
     .then((response) => response.json())
