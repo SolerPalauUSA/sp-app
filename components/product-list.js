@@ -253,17 +253,19 @@ window.addEventListener("popstate", (event) => {
     const productNameFromUrl = urlParams.get('product');
     const seriesNameFromUrl = urlParams.get('series');
   
-    if (productNameFromUrl) {
-      // Select the product in the product dropdown
-      // Add your logic here
+      // Check if product parameter is present
+      if (productParam) {
+        productDropdown.value = productParam;
+        productDropdown.dispatchEvent(new Event('change'));
     }
-  
-    if (seriesNameFromUrl) {
-      // Select the series in the series dropdown
-      // Add your logic here
-      // Trigger the change event
-      const seriesDropdownEvent = new Event('change');
-      seriesDropdown.dispatchEvent(seriesDropdownEvent);
+
+    // Wait for the series dropdown to be populated
+    await new Promise(resolve => setTimeout(resolve, 500)); // Adjust the timeout as needed
+
+    // Check if series parameter is present
+    if (seriesParam) {
+        seriesDropdown.value = seriesParam;
+        seriesDropdown.dispatchEvent(new Event('change'));
     }
 
   // Fetch product data from a JSON source
