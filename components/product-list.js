@@ -40,17 +40,12 @@ function displayDescription(product, selectedSeries) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Function to extract URL parameters
   function getUrlParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
   }
-
-
-  const selectedProduct = getUrlParameter("product");
-  const selectedSeries = getUrlParameter("series");
-
 
 
   // Add the popstate event listener to handle browser back button clicks
@@ -253,64 +248,92 @@ window.addEventListener("popstate", (event) => {
     }
   }
 
+    // Parse URL Parameters and Set Initial State
+    const urlParams = new URLSearchParams(window.location.search);
+    const productNameFromUrl = urlParams.get('product');
+    const seriesNameFromUrl = urlParams.get('series');
+  
+    if (productNameFromUrl) {
+      // Select the product in the product dropdown
+      // Add your logic here
+    }
+  
+    if (seriesNameFromUrl) {
+      // Select the series in the series dropdown
+      // Add your logic here
+      // Trigger the change event
+      const seriesDropdownEvent = new Event('change');
+      seriesDropdown.dispatchEvent(seriesDropdownEvent);
+    }
 
-
+  // Fetch product data from a JSON source
   fetch("../data/products.json") // Update with your JSON data source
-  .then(response => response.json())
-  .then(data => {
-    // Iterate through each product in the JSON data
-    data.forEach(product => {
-      // Create a container for the product listing
-      const productListing = createContainer("div", "product-listing");
+    .then((response) => response.json())
+    .then((data) => {
+      // Iterate through each product in the JSON data
+      data.forEach((product) => {
+        // Create a container for the product listing
+        const productListing = createContainer("div", "product-listing");
 
-      // Create an HTML template for the product listing
-      const productHTML = `
-        <div class="product-image" style="background-image: url('${product.series[0]?.image}')" data-product-name="${product.name}"></div>
-        <div class="product-title">${product.name}</div>
-      `;
-      productListing.innerHTML = productHTML;
+           // Check if a selected product exists in the URL
+           if (selectedProduct) {
+            // If selectedProduct exists, hide products that don't match the selected product
+            if (product.name !== selectedProduct) {
+              productListing.style.display = "none";
+            }
+          }
 
-      // Add a click event listener to the product image
-      const productImage = productListing.querySelector(".product-image");
-      productImage.addEventListener("click", () => {
-        // Hide all other product listings
-        document.querySelectorAll(".product-listing").forEach(listing => {
-          listing.style.display = "none";
+        literatureDropdownContainer.style.display = "none";
+
+        // Create an HTML template for the product listing
+        const productHTML = `
+          <div class="product-image" style="background-image: url('${product.series[0]?.image}')"></div>
+          <div class="product-title">${product.name}</div>
+        `;
+
+        productListing.innerHTML = productHTML;
+
+        // Add a click event listener to the product image
+        const productImage = productListing.querySelector(".product-image");
+        productImage.addEventListener("click", () => {
+          // Set the data-product-name attribute on the product-image-container
+          productImageContainer.setAttribute("data-product-name", product.name);
+
+          // Hide all other product listings
+          document.querySelectorAll(".product-listing").forEach((listing) => {
+            listing.style.display = "none";
+          });
+
+          // Set the clicked image as active
+          productImage.classList.add("active");
+
+          // Display the product information underneath in a separate container
+          displayProductInfo(product);
+          displayProductImages(product);
+
+          // Show the back arrow
+          backArrow.style.display = "flex";
+          isProductInfoVisible = true;
+          literatureDropdownContainer.style.display = "none";
+
+          // Update the URL with the selected product and series
+          const updatedUrl = `../pages/products.html?product=${encodeURIComponent(product.name)}`;
+          window.history.pushState({ path: updatedUrl }, "", updatedUrl);
         });
 
-        // Set the clicked image as active
-        productImage.classList.add("active");
+        // Append the product listing to the series container
+        seriesContainer.appendChild(productListing);
 
-        // Display the product information underneath in a separate container
-        displayProductInfo(product);
-        displayProductImages(product);
-
-        // Show the back arrow
-        backArrow.style.display = "flex";
-        isProductInfoVisible = true;
-
-        // Update the URL with the selected product
-        const updatedUrl = `../pages/products.html?product=${encodeURIComponent(product.name)}`;
-        window.history.pushState({ path: updatedUrl }, "", updatedUrl);
+        // Check if the current product matches the selected product from the URL
+        if (product.name === selectedProduct) {
+          // Simulate a click event on the matching product image
+          productImage.click();
+        }
       });
-
-      // Append the product listing to the series container
-      seriesContainer.appendChild(productListing);
+    })
+    .catch((error) => {
+      console.error("Error fetching product data:", error);
     });
-
-    // Check if a product is selected in the URL
-    if (selectedProduct) {
-      // Find and click on the selected product
-      const selectedProductElement = document.querySelector(`.product-image[data-product-name='${selectedProduct}']`);
-      if (selectedProductElement) {
-        selectedProductElement.click();
-      }
-    }
-  })
-  .catch(error => {
-    console.error("Error fetching product data:", error);
-  });
-
 
   function displayProductInfo(product) {
     // Clear existing content in the product info containers
