@@ -40,7 +40,7 @@ function displayDescription(product, selectedSeries) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   // Function to extract URL parameters
   function getUrlParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -248,25 +248,38 @@ window.addEventListener("popstate", (event) => {
     }
   }
 
-    // Parse URL Parameters and Set Initial State
-    const urlParams = new URLSearchParams(window.location.search);
-    const productNameFromUrl = urlParams.get('product');
-    const seriesNameFromUrl = urlParams.get('series');
-  
-      // Check if product parameter is present
-      if (productParam) {
-        productDropdown.value = productParam;
-        productDropdown.dispatchEvent(new Event('change'));
-    }
+    // Extract product and series parameters from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const productNameFromUrl = urlParams.get('product');
+const seriesNameFromUrl = urlParams.get('series');
 
-    // Wait for the series dropdown to be populated
-    await new Promise(resolve => setTimeout(resolve, 500)); // Adjust the timeout as needed
+// Function to select the appropriate product and series in the dropdowns
+async function selectProductAndSeries(productName, seriesName) {
+  // Select the product in the dropdown
+  if (productName) {
+    productDropdown.value = productName;
+    productDropdown.dispatchEvent(new Event('change'));
 
-    // Check if series parameter is present
-    if (seriesParam) {
-        seriesDropdown.value = seriesParam;
-        seriesDropdown.dispatchEvent(new Event('change'));
+    // Wait for series dropdown to be populated
+    await waitForSeriesPopulation();
+
+    // Select the series in the dropdown
+    if (seriesName) {
+      seriesDropdown.value = seriesName;
+      seriesDropdown.dispatchEvent(new Event('change'));
     }
+  }
+}
+
+// Function to wait for the series dropdown to be populated
+async function waitForSeriesPopulation() {
+  while (!seriesDropdown.options.length || seriesDropdown.options[0].value === '') {
+    await new Promise(resolve => setTimeout(resolve, 100)); // Check every 100ms
+  }
+}
+
+// Call the function to select the product and series based on URL parameters
+await selectProductAndSeries(productNameFromUrl, seriesNameFromUrl);
 
   // Fetch product data from a JSON source
   fetch("../data/products.json") // Update with your JSON data source
