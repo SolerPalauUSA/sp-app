@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return urlParams.get(name);
   }
 
-
+  const selectedProductFromUrl = getUrlParameter('product');
+  const selectedSeriesFromUrl = getUrlParameter('series');
 
 
   // Add the popstate event listener to handle browser back button clicks
@@ -246,73 +247,53 @@ window.addEventListener("popstate", (event) => {
 
    
   // Fetch product data from a JSON source
-  fetch("../data/products.json") // Update with your JSON data source
-    .then((response) => response.json())
-    .then((data) => {
-      // Iterate through each product in the JSON data
-      data.forEach((product) => {
-        // Create a container for the product listing
-        const productListing = createContainer("div", "product-listing");
+  fetch("../data/products.json")
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(product => {
+      const productListing = createContainer("div", "product-listing");
 
-           // Check if a selected product exists in the URL
-           if (selectedProduct) {
-            // If selectedProduct exists, hide products that don't match the selected product
-            if (product.name !== selectedProduct) {
-              productListing.style.display = "none";
-            }
-          }
+      const productHTML = `
+        <div class="product-image" style="background-image: url('${product.series[0]?.image}')" data-product-name="${product.name}"></div>
+        <div class="product-title">${product.name}</div>
+      `;
+      productListing.innerHTML = productHTML;
 
-        literatureDropdownContainer.style.display = "none";
-
-        // Create an HTML template for the product listing
-        const productHTML = `
-          <div class="product-image" style="background-image: url('${product.series[0]?.image}')"></div>
-          <div class="product-title">${product.name}</div>
-        `;
-
-        productListing.innerHTML = productHTML;
-
-        // Add a click event listener to the product image
-        const productImage = productListing.querySelector(".product-image");
-        productImage.addEventListener("click", () => {
-          // Set the data-product-name attribute on the product-image-container
-          productImageContainer.setAttribute("data-product-name", product.name);
-
-          // Hide all other product listings
-          document.querySelectorAll(".product-listing").forEach((listing) => {
-            listing.style.display = "none";
-          });
-
-          // Set the clicked image as active
-          productImage.classList.add("active");
-
-          // Display the product information underneath in a separate container
-          displayProductInfo(product);
-          displayProductImages(product);
-
-          // Show the back arrow
-          backArrow.style.display = "flex";
-          isProductInfoVisible = true;
-          literatureDropdownContainer.style.display = "none";
-
-          // Update the URL with the selected product and series
-          const updatedUrl = `../pages/products.html?product=${encodeURIComponent(product.name)}`;
-          window.history.pushState({ path: updatedUrl }, "", updatedUrl);
-        });
-
-        // Append the product listing to the series container
-        seriesContainer.appendChild(productListing);
-
-        // Check if the current product matches the selected product from the URL
-        if (product.name === selectedProduct) {
-          // Simulate a click event on the matching product image
-          productImage.click();
-        }
+      // Add a click event listener to the product image
+      const productImage = productListing.querySelector(".product-image");
+      productImage.addEventListener("click", () => {
+        productImageContainer.setAttribute("data-product-name", product.name);
+        document.querySelectorAll(".product-listing").forEach(listing => listing.style.display = "none");
+        productImage.classList.add("active");
+        displayProductInfo(product);
+        displayProductImages(product);
+        backArrow.style.display = "flex";
+        isProductInfoVisible = true;
+        const updatedUrl = `../pages/products.html?product=${encodeURIComponent(product.name)}`;
+        window.history.pushState({ path: updatedUrl }, "", updatedUrl);
       });
-    })
-    .catch((error) => {
-      console.error("Error fetching product data:", error);
+
+      seriesContainer.appendChild(productListing);
+
+      // Check if the current product matches the selected product from the URL
+      if (product.name === selectedProduct) {
+        productImage.click(); // Simulate a click event on the matching product image
+
+        // If there's a series specified in the URL, handle the series selection
+        if (selectedSeriesFromUrl) {
+          setTimeout(() => {
+            const seriesDropdown = document.querySelector('.series-dropdown');
+            if (seriesDropdown) {
+              seriesDropdown.value = selectedSeriesFromUrl;
+              seriesDropdown.dispatchEvent(new Event('change'));
+            }
+          }, 0); // setTimeout ensures DOM updates are complete
+        }
+      }
     });
+  })
+  .catch(error => console.error("Error fetching product data:", error));
+  
 
   function displayProductInfo(product) {
     // Clear existing content in the product info containers
