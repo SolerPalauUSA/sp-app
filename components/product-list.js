@@ -259,6 +259,11 @@ window.addEventListener("popstate", (event) => {
       `;
       productListing.innerHTML = productHTML;
 
+       // Hide listings not matching the selected product from the URL
+         if (selectedProduct && product.name !== selectedProduct) {
+          productListing.style.display = "none";
+        }
+
       // Add a click event listener to the product image
       const productImage = productListing.querySelector(".product-image");
       productImage.addEventListener("click", () => {
@@ -293,7 +298,7 @@ window.addEventListener("popstate", (event) => {
     });
   })
   .catch(error => console.error("Error fetching product data:", error));
-  
+
 
   function displayProductInfo(product) {
     // Clear existing content in the product info containers
