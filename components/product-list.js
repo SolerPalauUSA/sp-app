@@ -44,8 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to extract URL parameters
   function getUrlParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
+    
     return urlParams.get(name);
   }
+
+
+  const selectedProductFromUrl = urlParams.get('product');
+  const selectedSeriesFromUrl = urlParams.get('series');
 
 
   // Add the popstate event listener to handle browser back button clicks
@@ -64,6 +69,7 @@ window.addEventListener("popstate", (event) => {
 
   // Handle any other actions you need to perform when navigating back
 });
+
 
 
   // Extract product and series parameters from the URL
@@ -240,24 +246,7 @@ window.addEventListener("popstate", (event) => {
     }
   }
 
-    // Parse URL Parameters and Set Initial State
-    const urlParams = new URLSearchParams(window.location.search);
-    const productNameFromUrl = urlParams.get('product');
-    const seriesNameFromUrl = urlParams.get('series');
-  
-    if (productNameFromUrl) {
-      // Select the product in the product dropdown
-      // Add your logic here
-    }
-  
-    if (seriesNameFromUrl) {
-      // Select the series in the series dropdown
-      // Add your logic here
-      // Trigger the change event
-      const seriesDropdownEvent = new Event('change');
-      seriesDropdown.dispatchEvent(seriesDropdownEvent);
-    }
-
+   
   // Fetch product data from a JSON source
   fetch("../data/products.json") // Update with your JSON data source
     .then((response) => response.json())
