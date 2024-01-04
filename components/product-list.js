@@ -49,8 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  const selectedProductFromUrl = urlParams.get('product');
-  const selectedSeriesFromUrl = urlParams.get('series');
 
 
   // Add the popstate event listener to handle browser back button clicks
