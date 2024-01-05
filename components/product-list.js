@@ -208,7 +208,7 @@ window.addEventListener("popstate", (event) => {
 
 backArrow.addEventListener("click", () => {
   const referrer = document.referrer;
-
+  console.log('Referrer:', document.referrer);
   if (isProductInfoVisible) {
       // Reset the product view to show all listings and hide product-specific information
       resetViewToDefault();
