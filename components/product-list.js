@@ -176,64 +176,49 @@ window.addEventListener("popstate", (event) => {
   // Initially hide the imageProductContainer
   imageProductContainer.style.display = "none";
 
-  // Add an event listener to the back arrow
   backArrow.addEventListener("click", () => {
+    // Check if the user came from the products page or a related context
+    const referrer = document.referrer;
+    if (referrer.includes("products.html")) {
+        // Show all product listings if the user is navigating within the products context
+        document.querySelectorAll(".product-listing").forEach(listing => {
+            listing.style.display = "block";
+        });
 
+        // Clear the active product image
+        if (activeProductImage) {
+            activeProductImage.classList.remove("active");
+            activeProductImage = null;
+        }
 
-     // Check if the user came from a specific page and redirect back
-  const referrer = document.referrer;
-  if (referrer.includes("../pages/cross-ref.html")) {
-    window.location.href = referrer;
-    return;
-  }
+        // Clear existing content in the product info containers
+        clearProductInfo();
 
-    // Show all product listings
-    document.querySelectorAll(".product-listing").forEach((listing) => {
-      listing.style.display = "block";
-    });
+        // Hide the back arrow
+        backArrow.style.display = "none";
+        isProductInfoVisible = false;
 
-    // Clear the active product image
-    if (activeProductImage) {
-      activeProductImage.classList.remove("active");
-      activeProductImage = null;
+        // Hide other UI elements specific to a selected product
+        seriesImageContainer.style.display = "none";
+        productImageContainer.style.display = "none";
+        literatureDropdownContainer.style.display = "none";
+        imageProductContainer.style.display = "none";
+        descriptionContainer.innerHTML = "";
+        submittalsContainer.innerHTML = "";
+        otherDocsContainer.innerHTML = "";
+        modelsDropdownContainer.style.display = "";
+        if (literatureDropdownContainer.style.display = "none") {
+            literatureToggleButton.textContent = "Literature +";
+        }
+
+        // Reset URL (if necessary)
+        const updatedUrl = "../pages/products.html"; // Use your default products page URL
+        window.history.pushState({ path: updatedUrl }, "", updatedUrl);
+    } else {
+        // Use window.history.back() to navigate to the previous page if the user came from a different context
+        window.history.back();
     }
-
-    // Clear existing content in the product info containers
-    clearProductInfo();
-
-    // Hide the back arrow
-    backArrow.style.display = "none";
-    isProductInfoVisible = false;
-
-    // Hide the series image
-    seriesImageContainer.style.display = "none"; // Add this line to hide the series image
-
-    productImageContainer.style.display = "none";
-
-    descriptionContainer.innerHTML = "";
-
-    // Clear submittalsContainer
-    submittalsContainer.innerHTML = ""; // Add this line to clear submittals
-    otherDocsContainer.innerHTML = "";
-
-    modelsDropdownContainer.style.display = "";
-    submittalsContainer.style.display = "none";
-    otherDocsContainer.style.display = "none";
-
-    literatureDropdownContainer.style.display = "none";
-
-    imageProductContainer.style.display = "none";
-
-    if (literatureDropdownContainer.style.display = "none") {
-      literatureToggleButton.textContent = "Literature +";
-    }
-
-      // Update the URL to remove the product and series parameters
- //  const updatedUrl = "../pages/products.html"; Remove the parameters
-  //window.history.pushState({ path: updatedUrl }, "", updatedUrl);
-  window.history.back();
-
-  });
+});
 
   function displayDescription(product, selectedSeries) {
     // Clear existing content in the descriptionContainer
