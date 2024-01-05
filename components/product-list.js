@@ -178,6 +178,15 @@ window.addEventListener("popstate", (event) => {
 
   // Add an event listener to the back arrow
   backArrow.addEventListener("click", () => {
+
+
+     // Check if the user came from a specific page and redirect back
+  const referrer = document.referrer;
+  if (referrer.includes("cross-ref.html")) {
+    window.location.href = referrer;
+    return;
+  }
+
     // Show all product listings
     document.querySelectorAll(".product-listing").forEach((listing) => {
       listing.style.display = "block";
