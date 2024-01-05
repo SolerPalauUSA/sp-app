@@ -177,28 +177,20 @@ window.addEventListener("popstate", (event) => {
   imageProductContainer.style.display = "none";
 
   backArrow.addEventListener("click", () => {
-    // Check if the user came from the products page or a related context
-    const referrer = document.referrer;
-    if (referrer.includes("products.html")) {
-        // Show all product listings if the user is navigating within the products context
+    // Check if the user is currently viewing a specific product
+    if (isProductInfoVisible) {
+        // Reset the product view to show all listings and hide product-specific information
         document.querySelectorAll(".product-listing").forEach(listing => {
             listing.style.display = "block";
         });
 
-        // Clear the active product image
+        // Clear the active product image and other states
         if (activeProductImage) {
             activeProductImage.classList.remove("active");
             activeProductImage = null;
         }
 
-        // Clear existing content in the product info containers
-        clearProductInfo();
-
-        // Hide the back arrow
-        backArrow.style.display = "none";
-        isProductInfoVisible = false;
-
-        // Hide other UI elements specific to a selected product
+        // Hide elements specific to the selected product view
         seriesImageContainer.style.display = "none";
         productImageContainer.style.display = "none";
         literatureDropdownContainer.style.display = "none";
@@ -206,19 +198,25 @@ window.addEventListener("popstate", (event) => {
         descriptionContainer.innerHTML = "";
         submittalsContainer.innerHTML = "";
         otherDocsContainer.innerHTML = "";
-        modelsDropdownContainer.style.display = "";
-        if (literatureDropdownContainer.style.display = "none") {
+        modelsDropdownContainer.style.display = "none";
+        if (literatureDropdownContainer.style.display === "none") {
             literatureToggleButton.textContent = "Literature +";
         }
 
-        // Reset URL (if necessary)
-        const updatedUrl = "../pages/products.html"; // Use your default products page URL
+        // Clear product info and hide back arrow
+        clearProductInfo();
+        backArrow.style.display = "none";
+        isProductInfoVisible = false;
+
+        // Reset the URL to the main products page
+        const updatedUrl = "../pages/products.html";
         window.history.pushState({ path: updatedUrl }, "", updatedUrl);
     } else {
-        // Use window.history.back() to navigate to the previous page if the user came from a different context
+        // If not viewing a specific product, use browser's history to go back
         window.history.back();
     }
 });
+
 
   function displayDescription(product, selectedSeries) {
     // Clear existing content in the descriptionContainer
