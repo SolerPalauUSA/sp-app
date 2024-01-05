@@ -182,7 +182,7 @@ window.addEventListener("popstate", (event) => {
 
      // Check if the user came from a specific page and redirect back
   const referrer = document.referrer;
-  if (referrer.includes("cross-ref.html")) {
+  if (referrer.includes("../pages/cross-ref.html")) {
     window.location.href = referrer;
     return;
   }
