@@ -176,47 +176,52 @@ window.addEventListener("popstate", (event) => {
   // Initially hide the imageProductContainer
   imageProductContainer.style.display = "none";
 
-  backArrow.addEventListener("click", () => {
-    // Check if the user is currently viewing a specific product
-    if (isProductInfoVisible) {
-        // Reset the product view to show all listings and hide product-specific information
-        document.querySelectorAll(".product-listing").forEach(listing => {
-            listing.style.display = "block";
-        });
+  function resetViewToDefault() {
+    // Show all product listings
+    document.querySelectorAll(".product-listing").forEach(listing => {
+        listing.style.display = "block";
+    });
 
-        // Clear the active product image and other states
-        if (activeProductImage) {
-            activeProductImage.classList.remove("active");
-            activeProductImage = null;
-        }
-
-        // Hide elements specific to the selected product view
-        seriesImageContainer.style.display = "none";
-        productImageContainer.style.display = "none";
-        literatureDropdownContainer.style.display = "none";
-        imageProductContainer.style.display = "none";
-        descriptionContainer.innerHTML = "";
-        submittalsContainer.innerHTML = "";
-        otherDocsContainer.innerHTML = "";
-        modelsDropdownContainer.style.display = "none";
-        if (literatureDropdownContainer.style.display === "none") {
-            literatureToggleButton.textContent = "Literature +";
-        }
-
-        // Clear product info and hide back arrow
-        clearProductInfo();
-        backArrow.style.display = "none";
-        isProductInfoVisible = false;
-
-        // Reset the URL to the main products page
-        const updatedUrl = "../pages/products.html";
-        window.history.pushState({ path: updatedUrl }, "", updatedUrl);
-    } else {
-        // If not viewing a specific product, use browser's history to go back
-        window.history.back();
+    // Hide elements specific to the selected product view
+    seriesImageContainer.style.display = "none";
+    productImageContainer.style.display = "none";
+    literatureDropdownContainer.style.display = "none";
+    imageProductContainer.style.display = "none";
+    descriptionContainer.innerHTML = "";
+    submittalsContainer.innerHTML = "";
+    otherDocsContainer.innerHTML = "";
+    modelsDropdownContainer.style.display = "none";
+    if (literatureDropdownContainer.style.display === "none") {
+        literatureToggleButton.textContent = "Literature +";
     }
-});
 
+    // Clear product info and hide back arrow
+    clearProductInfo();
+    backArrow.style.display = "none";
+    isProductInfoVisible = false;
+
+    // Reset the URL to the main products page
+    const updatedUrl = "../pages/products.html";
+    window.history.pushState({ path: updatedUrl }, "", updatedUrl);
+}
+
+
+backArrow.addEventListener("click", () => {
+  const referrer = document.referrer;
+
+  if (isProductInfoVisible) {
+      // Reset the product view to show all listings and hide product-specific information
+      resetViewToDefault();
+
+      if (!referrer.includes("products.html")) {
+          // If the referrer is not products.html, navigate back
+          window.history.back();
+      }
+  } else {
+      // If not viewing a specific product, use browser's history to go back
+      window.history.back();
+  }
+});
 
   function displayDescription(product, selectedSeries) {
     // Clear existing content in the descriptionContainer
