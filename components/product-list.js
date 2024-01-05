@@ -229,8 +229,10 @@ window.addEventListener("popstate", (event) => {
     }
 
       // Update the URL to remove the product and series parameters
-  const updatedUrl = "../pages/products.html"; // Remove the parameters
-  window.history.pushState({ path: updatedUrl }, "", updatedUrl);
+ //  const updatedUrl = "../pages/products.html"; Remove the parameters
+  //window.history.pushState({ path: updatedUrl }, "", updatedUrl);
+  window.history.back();
+
   });
 
   function displayDescription(product, selectedSeries) {
