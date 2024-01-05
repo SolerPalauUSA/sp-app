@@ -181,7 +181,7 @@ window.addEventListener("popstate", (event) => {
     document.querySelectorAll(".product-listing").forEach(listing => {
         listing.style.display = "block";
     });
-
+  
     // Hide elements specific to the selected product view
     seriesImageContainer.style.display = "none";
     productImageContainer.style.display = "none";
@@ -194,32 +194,39 @@ window.addEventListener("popstate", (event) => {
     if (literatureDropdownContainer.style.display === "none") {
         literatureToggleButton.textContent = "Literature +";
     }
-
+  
     // Clear product info and hide back arrow
     clearProductInfo();
     backArrow.style.display = "none";
     isProductInfoVisible = false;
-
-    // Reset the URL to the main products page
-    const updatedUrl = "../pages/products.html";
-    window.history.pushState({ path: updatedUrl }, "", updatedUrl);
-}
+  }
+  
+  function clearProductInfo() {
+    // Add logic here to clear product info
+  }
 
 
 backArrow.addEventListener("click", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const productParam = urlParams.get('product');
+  const seriesParam = urlParams.get('series');
   const referrer = document.referrer;
-  console.log('Referrer:', document.referrer);
-  if (isProductInfoVisible) {
-      // Reset the product view to show all listings and hide product-specific information
-      resetViewToDefault();
 
-      if (!referrer.includes("products.html")) {
-          // If the referrer is not products.html, navigate back
-          window.history.back();
-      }
-  } else {
-      // If not viewing a specific product, use browser's history to go back
+  if (isProductInfoVisible) {
+    // Reset the product view to show all listings and hide product-specific information
+    resetViewToDefault();
+
+    if (seriesParam) {
+      // If viewing a specific series, modify the URL to go back to the general product view
+      const updatedUrl = `../pages/products.html?product=${encodeURIComponent(productParam)}`;
+      window.history.pushState({ path: updatedUrl }, "", updatedUrl);
+    } else if (!referrer.includes("products.html")) {
+      // If the referrer is not products.html, navigate back
       window.history.back();
+    }
+  } else {
+    // If not viewing a specific product or series, use browser's history to go back
+    window.history.back();
   }
 });
 
