@@ -25,7 +25,7 @@ class BackButton {
                 background-color: whitesmoke;
                 color: #053658;
                 border: none;
-                border-radius: 5px;
+                border-radius: 20px;
                 cursor: pointer;
                 font-size: 25px;
                 text-align: center;
