@@ -59,14 +59,11 @@ window.addEventListener("popstate", (event) => {
 
   // If the previous state exists and contains path information
   if (previousState && previousState.path) {
-    // Handle any actions you need when the back button is clicked
-    // This may include hiding the product info and showing the series container
-    // Update the URL to remove the product and series parameters
+
     const updatedUrl = "../pages/products.html"; // Remove the parameters
     window.history.pushState({ path: updatedUrl }, "", updatedUrl);
   }
 
-  // Handle any other actions you need to perform when navigating back
 });
 
 
@@ -210,24 +207,22 @@ backArrow.addEventListener("click", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const productParam = urlParams.get('product');
   const seriesParam = urlParams.get('series');
-  const referrer = document.referrer;
 
-  if (isProductInfoVisible) {
-    // Reset the product view to show all listings and hide product-specific information
-    resetViewToDefault();
+
 
     if (seriesParam) {
-      // If viewing a specific series, modify the URL to go back to the general product view
-      const updatedUrl = `../pages/products.html?product=${encodeURIComponent(productParam)}`;
-      window.history.pushState({ path: updatedUrl }, "", updatedUrl);
-    } else if (!referrer.includes("products.html")) {
-      // If the referrer is not products.html, navigate back
-      window.history.back();
-    }
-  } else {
-    // If not viewing a specific product or series, use browser's history to go back
-    window.history.back();
-  }
+     // Viewing a specific series, navigate back to the product view
+     const updatedUrl = `../pages/products.html?product=${encodeURIComponent(productParam)}`;
+     window.location.href = updatedUrl; // Navigate to the updated URL
+   } else if (productParam) {
+     // Viewing a specific product, navigate back to the full product listing
+     const updatedUrl = "../pages/products.html";
+     window.location.href = updatedUrl; // Navigate to the updated URL
+   } else {
+     // Viewing the product listing, use browser's history to go back
+     window.history.back();
+   }
+  
 });
 
   function displayDescription(product, selectedSeries) {
