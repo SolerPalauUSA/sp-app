@@ -8,7 +8,7 @@ class BackButton {
 
     render() {
         const backButton = document.createElement('button');
-        backButton.textContent = '<';
+        backButton.textContent = '\u2190';
         backButton.className = 'back-button'; // Apply the CSS class
         backButton.addEventListener('click', () => window.history.back());
         this.container.appendChild(backButton);
@@ -32,18 +32,18 @@ class BackButton {
                 text-decoration: none;
                 display: inline-block;
                 transition: background-color 0.3s ease;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for hovering effect */
             }
 
-          
             #back-button-container {
-                margin-top:8rem;
-                margin-bottom:-8rem;
+                position: absolute;
+                top: 10px; /* Adjust as needed */
+                right: 10px; /* Adjust as needed */
+                z-index: 1000; /* Ensure it's above other elements */
             }
         `;
         document.head.appendChild(style);
-
     }
 }
-
 // Automatically instantiate the back button for a specific container
 new BackButton('#back-button-container');

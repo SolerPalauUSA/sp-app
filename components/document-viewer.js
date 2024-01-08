@@ -151,7 +151,6 @@ class LibraryComponent extends HTMLElement {
 
 
       <input type="text" id="search-input" placeholder="Search documents...">
-      <div id="back-button-container"></div>
       <div class="categories-outer">
       <div class="categories" id="categories-container"></div>
       </div>
