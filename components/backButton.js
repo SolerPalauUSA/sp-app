@@ -9,8 +9,11 @@ class BackButton {
     render() {
         const backButton = document.createElement('button');
         backButton.textContent = 'Go Back';
+        backButton.className = 'back-button'; // Apply the CSS class
         backButton.addEventListener('click', () => window.history.back());
         this.container.appendChild(backButton);
+
+        // Call addStyles method to apply styles
         this.addStyles();
     }
 
@@ -34,10 +37,14 @@ class BackButton {
             .back-button:hover {
                 background-color: #0056b3;
             }
+
+            #back-button-container {
+                margin-top:8rem;
+                margin-bottom:-8rem;
+            }
         `;
         document.head.appendChild(style);
     }
-
 }
 
 // Automatically instantiate the back button for a specific container
