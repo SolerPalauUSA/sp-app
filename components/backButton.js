@@ -27,16 +27,15 @@ class BackButton {
                 border: none;
                 border-radius: 20px;
                 cursor: pointer;
-                font-size: 25px;
+                font-size: 18px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                transition: background-color 0.3s ease;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for hovering effect */
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             }
 
             #back-button-container {
-                position: absolute;
+                position: fixed;
                 top: 70px; /* Adjust as needed */
                 left: 10px; /* Adjust as needed */
                 z-index: 9999; /* Ensure it's above other elements */
