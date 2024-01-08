@@ -55,25 +55,11 @@ function updateBackButtonText() {
   }
 }
 
-// When the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", () => {
-  updateBackButtonText();
-
-  // Your existing code...
-  // ...
-});
-
-// Update the button text when back arrow is clicked
-backArrow.addEventListener("click", () => {
-  // Your existing back arrow logic...
-  // ...
-
-  // Update the button text after navigation
-  updateBackButtonText();
-});
 
 
 document.addEventListener("DOMContentLoaded", () => {
+  
+
   // Function to extract URL parameters
   function getUrlParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -235,8 +221,8 @@ window.addEventListener("popstate", (event) => {
     // Add logic here to clear product info
   }
 
-  updateBackButtonText();
 
+  updateBackButtonText();
 
 
 backArrow.addEventListener("click", () => {
