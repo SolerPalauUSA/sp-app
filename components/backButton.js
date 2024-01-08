@@ -21,7 +21,7 @@ class BackButton {
         const style = document.createElement('style');
         style.textContent = `
             .back-button {
-                padding: 5px 10px;
+                padding: 10px 10px;
                 background-color: whitesmoke;
                 color: #053658;
                 border: none;
@@ -37,8 +37,8 @@ class BackButton {
 
             #back-button-container {
                 position: absolute;
-                top: 10px; /* Adjust as needed */
-                right: 10px; /* Adjust as needed */
+                top: 15px; /* Adjust as needed */
+                left: 10px; /* Adjust as needed */
                 z-index: 1000; /* Ensure it's above other elements */
             }
         `;
