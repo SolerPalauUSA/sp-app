@@ -44,6 +44,7 @@ class BackButton {
             }
         `;
         document.head.appendChild(style);
+        
     }
 }
 
