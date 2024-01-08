@@ -40,6 +40,39 @@ function displayDescription(product, selectedSeries) {
   }
 }
 
+// Function to update back button text based on referrer
+function updateBackButtonText() {
+  const backArrowButton = document.querySelector('.back-arrow'); // Adjust the selector as needed
+  const referrer = document.referrer;
+
+  // Check the referrer and update the button text accordingly
+  if (referrer.includes('cross-ref.html')) {
+      backArrowButton.textContent = 'Back to Cross Reference';
+  } else if (referrer.includes('another-page.html')) {
+      backArrowButton.textContent = 'Back to Another Page';
+  } else {
+      backArrowButton.textContent = 'Back';
+  }
+}
+
+// When the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+  updateBackButtonText();
+
+  // Your existing code...
+  // ...
+});
+
+// Update the button text when back arrow is clicked
+backArrow.addEventListener("click", () => {
+  // Your existing back arrow logic...
+  // ...
+
+  // Update the button text after navigation
+  updateBackButtonText();
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
   // Function to extract URL parameters
   function getUrlParameter(name) {
@@ -202,6 +235,9 @@ window.addEventListener("popstate", (event) => {
     // Add logic here to clear product info
   }
 
+  updateBackButtonText();
+
+
 
 backArrow.addEventListener("click", () => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -222,6 +258,9 @@ backArrow.addEventListener("click", () => {
      // Viewing the product listing, use browser's history to go back
      window.history.back();
    }
+
+   updateBackButtonText();
+
   
 });
 
