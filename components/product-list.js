@@ -40,20 +40,6 @@ function displayDescription(product, selectedSeries) {
   }
 }
 
-// Function to update back button text based on referrer
-function updateBackButtonText() {
-  const backArrowButton = document.querySelector('.back-arrow'); // Adjust the selector as needed
-  const referrer = document.referrer;
-
-  // Check the referrer and update the button text accordingly
-  if (referrer.includes('cross-ref.html')) {
-      backArrowButton.textContent = 'Back to Cross Reference';
-  } else if (referrer.includes('another-page.html')) {
-      backArrowButton.textContent = 'Back to Another Page';
-  } else {
-      backArrowButton.textContent = 'Back';
-  }
-}
 
 
 
@@ -222,7 +208,6 @@ window.addEventListener("popstate", (event) => {
   }
 
 
-  updateBackButtonText();
 
 
 backArrow.addEventListener("click", () => {
@@ -245,7 +230,7 @@ backArrow.addEventListener("click", () => {
      window.history.back();
    }
 
-   updateBackButtonText();
+
 
   
 });
