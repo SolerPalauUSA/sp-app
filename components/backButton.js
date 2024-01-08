@@ -37,7 +37,7 @@ class BackButton {
 
             #back-button-container {
                 position: absolute;
-                top: 15px; /* Adjust as needed */
+                top: 70px; /* Adjust as needed */
                 left: 10px; /* Adjust as needed */
                 z-index: 9999; /* Ensure it's above other elements */
             }
