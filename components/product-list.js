@@ -287,13 +287,11 @@ backArrow.addEventListener("click", () => {
       seriesContainer.appendChild(productListing);
 
       // Check if the current product matches the selected product from the URL
-      if (product.name === selectedProductFromUrl) {
-        displayProductInfo(product);
-        // Hide all other product listings
-        document.querySelectorAll(".product-listing").forEach(listing => listing.style.display = "none");
+      if (product.name === selectedProduct) {
+        productImage.click(); // Simulate a click event on the matching product image
 
+        // If there's a series specified in the URL, handle the series selection
         if (selectedSeriesFromUrl) {
-          // Find and select the series in the dropdown
           setTimeout(() => {
             const seriesDropdown = document.querySelector('.series-dropdown');
             if (seriesDropdown) {
