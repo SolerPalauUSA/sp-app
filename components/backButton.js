@@ -8,7 +8,7 @@ class BackButton {
 
     render() {
         const backButton = document.createElement('button');
-        backButton.textContent = 'Go Back';
+        backButton.textContent = '<';
         backButton.className = 'back-button'; // Apply the CSS class
         backButton.addEventListener('click', () => window.history.back());
         this.container.appendChild(backButton);
@@ -21,30 +21,27 @@ class BackButton {
         const style = document.createElement('style');
         style.textContent = `
             .back-button {
-                padding: 10px 15px;
-                background-color: #007bff;
-                color: white;
+                padding: 5px 10px;
+                background-color: whitesmoke;
+                color: #053658;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
-                font-size: 16px;
+                font-size: 20px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
                 transition: background-color 0.3s ease;
             }
 
-            .back-button:hover {
-                background-color: #0056b3;
-            }
-
+          
             #back-button-container {
                 margin-top:8rem;
                 margin-bottom:-8rem;
             }
         `;
         document.head.appendChild(style);
-        
+
     }
 }
 
