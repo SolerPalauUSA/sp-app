@@ -21,13 +21,13 @@ class BackButton {
         const style = document.createElement('style');
         style.textContent = `
             .back-button {
-                padding: 10px 10px;
+                padding: 10px 12px 10px;
                 background-color: whitesmoke;
                 color: #053658;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
-                font-size: 20px;
+                font-size: 25px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
@@ -39,7 +39,7 @@ class BackButton {
                 position: absolute;
                 top: 15px; /* Adjust as needed */
                 left: 10px; /* Adjust as needed */
-                z-index: 1000; /* Ensure it's above other elements */
+                z-index: 9999; /* Ensure it's above other elements */
             }
         `;
         document.head.appendChild(style);
