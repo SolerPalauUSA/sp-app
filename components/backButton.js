@@ -38,7 +38,7 @@ class BackButton {
                 position: fixed;
                 top: 70px; /* Adjust as needed */
                 left: 10px; /* Adjust as needed */
-                z-index: 9998; /* Ensure it's above other elements */
+                z-index: 9997; /* Ensure it's above other elements */
             }
         `;
         document.head.appendChild(style);
