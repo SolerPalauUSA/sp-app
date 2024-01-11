@@ -27,7 +27,7 @@ class LibraryComponent extends HTMLElement {
         .categories {
           display: flex;
           flex-wrap: wrap;
-          margin-top: 2rem;
+          margin-top: 1rem;
           justify-content: center;
         }
 
