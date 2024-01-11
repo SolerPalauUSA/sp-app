@@ -31,7 +31,7 @@ class BackButton {
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             }
 
             #back-button-container {
