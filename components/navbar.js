@@ -110,10 +110,18 @@ class BottomNavbar extends HTMLElement {
   .search-results {
      margin-top: 20px;
      display: none;
-/* Add styles for displaying search results */
+     width: 390px;
+     padding: 0.5rem;
+
 }
-  
-        </style>
+
+.search-results-item {
+    width: 100%;
+    padding: .5rem;
+}
+
+
+ </style>
 
     
   
