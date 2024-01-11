@@ -245,17 +245,15 @@ class BottomNavbar extends HTMLElement {
     
     
     filterData(data, query) {
-      // Filter the data based on the query
-      return data.filter((item) => {
-        const seriesName = item.name || '';
-        const seriesDescription = (item.series.name && item.series.description) || '';
-    
-        // Check if series name or description contains the query
-        return (
-          seriesName.toLowerCase().includes(query) ||
-          seriesDescription.toLowerCase().includes(query)
-        );
+      let results = [];
+      data.forEach(product => {
+        product.series.forEach(series => {
+          if (series.name.toLowerCase().includes(query) || series.description.toLowerCase().includes(query)) {
+            results.push({ product: product.name, series: series });
+          }
+        });
       });
+      return results;
     }
     searchInJSON(data, query) {
       let results = [];
@@ -306,8 +304,8 @@ class BottomNavbar extends HTMLElement {
           resultItem.classList.add('search-result-item');
     
           // Store the product name and series in data attributes
-          resultItem.dataset.productName = results[i].name;
-          resultItem.dataset.seriesName = results[i].series; // Modify this to match your data structure
+          resultItem.dataset.productName = results[i].product;
+          resultItem.dataset.seriesName = results[i].series.name;
     
           resultItem.addEventListener('click', () => {
             // Retrieve the product name and series from data attributes
@@ -320,8 +318,8 @@ class BottomNavbar extends HTMLElement {
     
           // Customize the HTML structure to display the result data as needed
           resultItem.innerHTML = `
-            <h3>${results[i].name}</h3>
-            <p>${results[i].description}</p>
+            <h3>${results[i].product} - ${results[i].series.name}</h3>
+            <p>${results[i].series.description}</p>
           `;
     
           searchResultsContainer.appendChild(resultItem);
