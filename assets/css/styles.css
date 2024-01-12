@@ -93,9 +93,7 @@ main {
 }
 
 .product-image {
-    width: 100%;
-    /* Adjust the width as needed */
-    height: 100px;
+    height: 130px;
     /* Adjust the height as needed */
     background-size: inherit;
     background-position: center;
