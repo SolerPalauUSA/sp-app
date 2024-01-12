@@ -16,7 +16,7 @@ function updatePrices(products, percentageIncrease, excludedModels) {
 }
 
 // Read the JSON file
-fs.readFile('../data/products.json', 'utf8', (err, data) => {
+fs.readFile('/data/products.json', 'utf8', (err, data) => {
     if (err) {
         console.error("An error occurred while reading the JSON file.", err);
         return;
