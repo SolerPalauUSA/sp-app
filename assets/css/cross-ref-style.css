@@ -124,7 +124,7 @@ label {
 }
 
 .table-wrapper {
-    max-height: 500px; /* Limit table height for scrolling */
+    max-height: 400px; /* Limit table height for scrolling */
     overflow-y: auto; /* Add vertical scroll if needed */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
