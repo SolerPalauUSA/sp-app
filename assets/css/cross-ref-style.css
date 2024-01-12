@@ -1,6 +1,6 @@
 /* Container Styles */
 .my-container {
-    padding-top: 8rem; /* Adjust as per the header height */
+    padding-top: 4rem; /* Adjust as per the header height */
     min-height: 100%; /* Ensure it takes at least the viewport height */
     margin-left: 15px;
     margin-right: 15px;
