@@ -1,4 +1,8 @@
 const fs = require('fs');
+const path = require('path');
+
+// Construct the path to the products.json file
+const jsonFilePath = path.join(__dirname, '..', 'data', 'products.json');
 
 // Function to update prices, excluding specific models
 function updatePrices(products, percentageIncrease, excludedModels) {
@@ -7,7 +11,12 @@ function updatePrices(products, percentageIncrease, excludedModels) {
             series.models.forEach(model => {
                 // Check if the model name is not in the excluded list
                 if (!excludedModels.includes(model.name)) {
-                    model.price *= (1 + percentageIncrease / 100);
+                    // Remove the dollar sign and convert the price to a number
+                    let priceNumber = parseFloat(model.price.replace('$', ''));
+                    // Apply the percentage increase
+                    priceNumber *= (1 + percentageIncrease / 100);
+                    // Convert the price back to a string with a dollar sign
+                    model.price = `$${priceNumber.toFixed(2)}`;
                 }
             });
         });
@@ -16,7 +25,7 @@ function updatePrices(products, percentageIncrease, excludedModels) {
 }
 
 // Read the JSON file
-fs.readFile('../data/products.json', 'utf8', (err, data) => {
+fs.readFile(jsonFilePath, 'utf8', (err, data) => {
     if (err) {
         console.error("An error occurred while reading the JSON file.", err);
         return;
@@ -33,7 +42,7 @@ fs.readFile('../data/products.json', 'utf8', (err, data) => {
     const updatedJson = JSON.stringify(updatedProducts, null, 2);
 
     // Write the updated JSON back to the file
-    fs.writeFile('../data/products.jsonn', updatedJson, 'utf8', (err) => {
+    fs.writeFile(jsonFilePath, updatedJson, 'utf8', (err) => {
         if (err) {
             console.error("An error occurred while writing to the JSON file.", err);
             return;
