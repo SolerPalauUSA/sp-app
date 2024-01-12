@@ -8,7 +8,7 @@ class BackButton {
 
     render() {
         const backButton = document.createElement('button');
-        backButton.textContent = '←';
+        backButton.textContent = '← Go Back';
         backButton.className = 'back-button'; // Apply the CSS class
         backButton.addEventListener('click', () => window.history.back());
         this.container.appendChild(backButton);
