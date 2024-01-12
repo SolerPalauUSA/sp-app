@@ -16,7 +16,7 @@ function updatePrices(products, percentageIncrease, excludedModels) {
 }
 
 // Read the JSON file
-fs.readFile('/data/products.json', 'utf8', (err, data) => {
+fs.readFile('../data/products.json', 'utf8', (err, data) => {
     if (err) {
         console.error("An error occurred while reading the JSON file.", err);
         return;
@@ -33,7 +33,7 @@ fs.readFile('/data/products.json', 'utf8', (err, data) => {
     const updatedJson = JSON.stringify(updatedProducts, null, 2);
 
     // Write the updated JSON back to the file
-    fs.writeFile('path/to/products.json', updatedJson, 'utf8', (err) => {
+    fs.writeFile('../data/products.jsonn', updatedJson, 'utf8', (err) => {
         if (err) {
             console.error("An error occurred while writing to the JSON file.", err);
             return;
