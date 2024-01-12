@@ -2339,64 +2339,61 @@
         },
         {
           "id": 4,
-          "name": "TRCe",
-          "image": "https://www.solerpalau-usa.com/images/products/erv/TRC-recat.png",
+          "name": "TRCeN",
+          "image": "https://www.solerpalau-usa.com/images/products/erv/trcen-cat.png",
           "description": "S&P's TRCe Series with EC Motor revitalizes indoor air by exchanging stale air for fresh in all climates, using an advanced \"air-to-air\" core to prevent contamination and efficiently transfer heat and humidity, ideal for commercial applications.",
           "models": [
             {
               "id": 1,
               "name": "TRCe1200-115",
-              "price": "$13,308"
+              "price": "$13,817"
             },
             {
               "id": 2,
               "name": "TRCe1200-230",
-              "price": "$13,308"
+              "price": "$13,817"
             },
+
             {
               "id": 3,
-              "name": "TRCe500-115",
-              "price": "$5,620"
+              "name": "TRCeN500-230",
+              "price": "$5,195"
             },
+           
             {
               "id": 4,
-              "name": "TRCe500-230",
-              "price": "$5,620"
+              "name": "TRCeN500V-230",
+              "price": "$5,195"
             },
             {
               "id": 5,
-              "name": "TRCe800-115",
-              "price": "$8,729"
+              "name": "TRCeN800-230",
+              "price": "$7,584"
             },
             {
               "id": 6,
-              "name": "TRCe800-230",
-              "price": "$8,729"
-            },
-            {
-              "id": 7,
-              "name": "TRCe800V-115",
-              "price": "$8,729"
-            },
-            {
-              "id": 8,
-              "name": "TRCe800V-230",
-              "price": "$8,729"
+              "name": "TRCeN800V-230",
+              "price": "$7,584"
             }
+          
             
           ],
           "submittals": [
             {
-              "type": "TRCe500",
-              "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-trce1200.pdf"
+              "type": "TRCeN500",
+              "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-trcen500.pdf"
             },
             {
-              "type": "TRCe800",
-              "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-trce800.pdf"
+              "type": "TRCeN500v",
+              "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-trcen500v.pdf"
             },
             {
-              "type": "TRCe800V",
-              "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-trce800v.pdf"
+              "type": "TRCeN800",
+              "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-trcen800.pdf"
+            },
+            {
+              "type": "TRCeN800V",
+              "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-trcen800v.pdf"
             },
             {
               "type": "TRCe1200",
@@ -2407,7 +2404,7 @@
           "otherDocs": [ 
             {
               "type": "IOM",
-              "url": "https://www.solerpalau-usa.com/documents/IOM/iom-trceUpdated.pdf"
+              "url": "https://www.solerpalau-usa.com/documents/IOM/iom-trcen.pdf"
             },
             {
               "type": "Brochure",
