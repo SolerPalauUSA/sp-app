@@ -7,22 +7,27 @@ const jsonFilePath = path.join(__dirname, '..', 'data', 'products.json');
 // Function to update prices, excluding specific models
 function updatePrices(products, percentageIncrease, excludedModels) {
     products.forEach(product => {
-        product.series.forEach(series => {
-            series.models.forEach(model => {
-                // Check if the model name is not in the excluded list
-                if (!excludedModels.includes(model.name)) {
-                    // Remove the dollar sign and convert the price to a number
-                    let priceNumber = parseFloat(model.price.replace('$', ''));
-                    // Apply the percentage increase
-                    priceNumber *= (1 + percentageIncrease / 100);
-                    // Convert the price back to a string with a dollar sign
-                    model.price = `$${priceNumber.toFixed(2)}`;
+        if (product.series && Array.isArray(product.series)) {
+            product.series.forEach(series => {
+                if (series.models && Array.isArray(series.models)) {
+                    series.models.forEach(model => {
+                        // Check if the model name is not in the excluded list
+                        if (!excludedModels.includes(model.name)) {
+                            // Remove the dollar sign and convert the price to a number
+                            let priceNumber = parseFloat(model.price.replace('$', ''));
+                            // Apply the percentage increase
+                            priceNumber *= (1 + percentageIncrease / 100);
+                            // Convert the price back to a string with a dollar sign
+                            model.price = `$${priceNumber.toFixed(2)}`;
+                        }
+                    });
                 }
             });
-        });
+        }
     });
     return products;
 }
+
 
 // Read the JSON file
 fs.readFile(jsonFilePath, 'utf8', (err, data) => {
