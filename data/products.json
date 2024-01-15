@@ -6404,5 +6404,135 @@
         ]
       }
     ]
+  },
+  {
+    "id": 15,
+    "name": "Roof Propeller Fans",
+    "description": "The Roof-Mounted Propeller fans are installed on the roofs of buildings to remove or supply air from commercial and industrial facilities economically.",
+    "series": [
+      {
+        "id": 1,
+        "name": "ARE and ARS",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/AR.png",
+        "description": "The AR series, available in four model sizes, offers robust axial exhaust (ARE) or supply (intake) (ARS) performance in a compact, roof-mounted design, suitable for a range of applications including factories, shops, and offices. With a CFM range of 167 to 2,827 and up to 3/4\" static pressure, its direct drive design requires minimal maintenance. The series features a sleek, low-profile design with durable all-aluminum housing, catering to light to moderate static pressure environments.",
+        "models": [
+          {
+            "id": 1,
+            "name": "ARE12MH1AS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 2,
+            "name": "ARE12MH1CS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 3,
+            "name": "ARE12MM1AS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 4,
+            "name": "ARE12MM1CS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 5,
+            "name": "ARE16MM1AS",
+           
+        "price": "$1,460.00"
+        },
+        {
+        "id": 6,
+        "name": "ARE16MM1CS",
+        "price": "$1,460.00"
+        },
+        {
+        "id": 7,
+        "name": "ARE16PH1AS",
+        "price": "$1,512.00"
+        },
+        {
+        "id": 8,
+        "name": "ARE16PH1CS",
+        "price": "$1,512.00"
+        },
+        {
+        "id": 9,
+        "name": "ARE20MM1AS",
+        "price": "$1,911.00"
+        },
+        {
+        "id": 10,
+        "name": "ARE20MM1CS",
+        "price": "$1,911.00"
+        },
+        {
+        "id": 11,
+        "name": "ARS12MH1AS",
+        "price": "$1,280.00"
+        },
+        {
+        "id": 12,
+        "name": "ARS12MH1CS",
+        "price": "$1,280.00"
+        },
+        {
+        "id": 13,
+        "name": "ARS12MM1AS",
+        "price": "$1,255.00"
+        },
+        {
+        "id": 14,
+        "name": "ARS12MM1CS",
+        "price": "$1,255.00"
+        },
+        {
+        
+        "id": 15,
+        "name": "ARS16MM1AS",
+        "price": "$1,460.00"
+        },
+        {
+        "id": 16,
+        "name": "ARS16MM1CS",
+        "price": "$1,460.00"
+        },
+        {
+        "id": 17,
+        "name": "ARS16PH1AS",
+        "price": "$1,512.00"
+        },
+        {
+        "id": 18,
+        "name": "ARS16PH1CS",
+        "price": "$1,512.00"
+        },
+        {
+        "id": 19,
+        "name": "ARS20MM1AS",
+        "price": "$1,911.00"
+        },
+        {
+        "id": 20,
+        "name": "ARS20MM1CS",
+        "price": "$1,911.00"
+        }
+        ],
+        "submittals": [
+          {
+            "type": "ARE and ARS",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ar.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ar.pdf"
+          }
+        ]
+      }
+    ]
   }
+
 ]
