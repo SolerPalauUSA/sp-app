@@ -3482,7 +3482,7 @@
       {
         "id": 2,
         "name": "PCV",
-        "image": "https://www.solerpalau-usa.com/images/products/pc/PCV.png",
+        "image": "../assets/images/PCV.png",
         "description": "The Premium CHOICE value series (PCV) provides the modular design of PC AC models in more affordable, fully assembled fans or contractor packs, available in sizes PCV50 & PCV80.",
         "models": [
           {
@@ -3516,7 +3516,7 @@
       {
         "id": 3,
         "name": "PCD",
-        "image": "https://www.solerpalau-usa.com/images/products/pc/PCD.png",
+        "image": "../assets/images/PCD.png",
         "description": "The Premium CHOICE DC (PCD) model, with its efficient motor and built-in control boards, enhances indoor air quality by swiftly removing contaminants and moisture, allowing customizable airflow to prevent structural damage and health issues.",
         "models": [
           {
@@ -3571,7 +3571,7 @@
       {
         "id": 4,
         "name": "PCLP",
-        "image": "https://www.solerpalau-usa.com/images/products/pc/PCLP.png",
+        "image": "../assets/images/PCLP.png",
         "description": "The Premium CHOICE Low Profile Ventilation fans feature ultra-low profile housings suitable for installation in tight ceiling cavities and interstitial spaces where space comes as a premium.",
         "models": [
           {
