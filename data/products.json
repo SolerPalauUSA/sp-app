@@ -4781,7 +4781,38 @@
         "id": 12,
         "name": "GED20QH1AS",
         "price": "$912.00"
-        }
+        },
+        {
+          "id": 13,
+          "name": "WHPGED1012",
+          "price": "$483"
+        },
+        {
+          "id": 14,
+          "name": "WHPGED1416",
+          "price": "$536"
+        },
+        {
+          "id": 15,
+          "name": "WHPGED1820",
+          "price": "$602"
+        },
+        {
+          "id": 16,
+          "name": "WHPGED1012M",
+           "price": "$866"
+      },
+      {
+      "id": 17,
+      "name": "WHPGED1416M",
+      "price": "$918"
+      },
+      {
+      "id": 18,
+      "name": "WHPGED1820M",
+      "price": "$982"
+      }
+
         ],
         "submittals": [
           {
