@@ -4715,6 +4715,94 @@
             "url": "https://www.solerpalau-usa.com/documents/Catalog/cat-lc-l2-l3.pdf"
           }
         ]
+      },
+      {
+        "id": 3,
+        "name": "GED/eGED and GSD/eGSD",
+        "image": "../assets/images/GD.png",
+        "description": "The GED/eGED and GSD/eGSD Direct Drive Sidewall Propeller Fans, suitable for a variety of environments like factories and churches, offer efficient, low-maintenance operation with quiet performance. Featuring S&P's Electronically Commutated (EC) Motor, these fans combine energy efficiency with ease of maintenance, capable of moving air volumes up to 4,183 CFM. Available in multiple power configurations, they are ideal for cost-effective, controlled ventilation solutions.",
+        "models": [
+          {
+            "id": 1,
+            "name": "GED10JH1AS",
+            "price": "$576.00"
+          },
+          {
+            "id": 2,
+            "name": "GED12JH1AS",
+            "price": "$577.00"
+          },
+          {
+            "id": 3,
+            "name": "GED12MH1AS",
+            "price": "$635.00"
+          },
+          {
+            "id": 4,
+            "name": "GED14MH1AS",
+            "price": "$669.00"
+          },
+          {
+            "id": 5,
+            "name": "GED14QH1AS",
+            "price": "$766.00"
+          },
+          {
+            "id": 6,
+            "name": "GED16MM1AS",
+            "price": "$725.00"
+         },
+        {
+        "id": 7,
+        "name": "GED16PH1AS",
+        "price": "$856.00"
+        },
+        {
+        "id": 8,
+        "name": "GED18MH1AS",
+        "price": "$799.00"
+        },
+        {
+        "id": 9,
+        "name": "GED18MM1AS",
+        "price": "$769.00"
+        },
+        {
+        "id": 10,
+        "name": "GED18QH1AS",
+        "price": "$900.00"
+        },
+        {
+        "id": 11,
+        "name": "GED20MM1AS",
+        "price": "$864.00"
+        },
+        {
+        "id": 12,
+        "name": "GED20QH1AS",
+        "price": "$912.00"
+        }
+        ],
+        "submittals": [
+          {
+            "type": "GED/GSD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-gd.pdf"
+          },
+          {
+            "type": "eGED/eGSD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-gd.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM(GED/GSD)",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-lc-l2-l3.pdf"
+          },
+          {
+            "type": "IOM(eGED/eGSD)",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-lc-l2-l3.pdf"
+          }
+        ]
       }
     ]
   },

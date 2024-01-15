@@ -3,118 +3,131 @@
         "CompetitorID": "Loren Cook",
         "CompetitorModel": "AQD",
         "Series": "ARE",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
         "Image": "https://www.optisizer.com/graphics/ARE.jpg",
-        "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
      },
     {
         "CompetitorID": "PennBarry",
         "CompetitorModel": "DAE",
         "Series": "ARE",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
          "Image": "https://www.optisizer.com/graphics/ARE.jpg",
-         "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Captive Aire",
         "CompetitorModel": "DDAR-FA",
         "Series": "ARE",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
          "Image": "https://www.optisizer.com/graphics/ARE.jpg",
-         "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Carnes",
         "CompetitorModel": "LEDA",
         "Series": "ARE",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
          "Image": "https://www.optisizer.com/graphics/ARE.jpg",
-         "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Acme",
         "CompetitorModel": "LQ",
         "Series": "ARE",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
          "Image": "https://www.optisizer.com/graphics/ARE.jpg",
-         "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Coolair",
         "CompetitorModel": "SAED",
         "Series": "ARE",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
          "Image": "https://www.optisizer.com/graphics/ARE.jpg",
-         "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Greenheck",
         "CompetitorModel": "AIS",
         "Series": "ARS",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
         "Image" : "https://www.optisizer.com/graphics/ARE.jpg",
-        "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "PennBarry",
         "CompetitorModel": "DAS",
         "Series": "ARS",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
         "Image" : "https://www.optisizer.com/graphics/ARE.jpg",
-        "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Captive Aire",
         "CompetitorModel": "DDAR-FA",
         "Series": "ARS",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
         "Image" : "https://www.optisizer.com/graphics/ARE.jpg",
-        "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Acme",
         "CompetitorModel": "LQ-S",
         "Series": "ARS",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
         "Image" : "https://www.optisizer.com/graphics/ARE.jpg",
-        "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Carnes",
         "CompetitorModel": "LSDA",
         "Series": "ARS",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
         "Image" : "https://www.optisizer.com/graphics/ARE.jpg",
-        "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Coolair",
         "CompetitorModel": "SASD",
         "Series": "ARS",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
         "Image" : "https://www.optisizer.com/graphics/ARE.jpg",
-        "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "Loren Cook",
         "CompetitorModel": "SEP/AQD",
         "Series": "ARS",
+        "Product": "Roof Propeller Fans",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Downblast Exhaust",
         "Image" : "https://www.optisizer.com/graphics/ARE.jpg",
-        "Link": "https://solerpalau-usa.com/products/rpf/ar.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=ARE%20and%20ARS"
     },
     {
         "CompetitorID": "PennBarry",
@@ -285,7 +298,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -294,7 +307,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Acme",
@@ -303,7 +316,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link" : "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Greenheck",
@@ -312,7 +325,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Twin City",
@@ -321,7 +334,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -330,7 +343,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Acme",
@@ -339,7 +352,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Greenheck",
@@ -348,7 +361,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Twin City",
@@ -357,7 +370,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -366,7 +379,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Acme",
@@ -375,7 +388,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Greenheck",
@@ -384,7 +397,7 @@
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
         "Image": "https://www.optisizer.com/graphics/CM.jpg",
-        "Link": "https://solerpalau-usa.com/products/uvs/cm.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
         "CompetitorID": "Acme",
@@ -393,7 +406,7 @@
         "Active": true,
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
         "Image": "https://www.optisizer.com/graphics/CSF.jpg",
-        "Link": "https://solerpalau-usa.com/products/cfsf/csf.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -402,7 +415,7 @@
         "Active": true,
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
         "Image": "https://www.optisizer.com/graphics/CSF.jpg",
-        "Link": "https://solerpalau-usa.com/products/cfsf/csf.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
         "CompetitorID": "PennBarry",
@@ -412,7 +425,7 @@
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
 
         "Image": "https://www.optisizer.com/graphics/CSF.jpg",
-        "Link": "https://solerpalau-usa.com/products/cfsf/csf.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
         "CompetitorID": "Greenheck",
@@ -421,7 +434,7 @@
         "Active": true,
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
        "Image": "https://www.optisizer.com/graphics/CSF.jpg",
-       "Link": "https://solerpalau-usa.com/products/cfsf/csf.html"
+       "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
         "CompetitorID": "Carnes",
@@ -430,7 +443,7 @@
         "Active": true,
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
         "Image": "https://www.optisizer.com/graphics/CSF.jpg",
-        "Link": "https://solerpalau-usa.com/products/cfsf/csf.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
         "CompetitorID": "PennBarry",
@@ -529,7 +542,7 @@
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
         "Image": "https://www.optisizer.com/graphics/CWD.jpg",
-        "Link": "https://solerpalau-usa.com/products/crwf/cwd.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
         "CompetitorID": "Coolair",
@@ -538,7 +551,7 @@
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
         "Image": "https://www.optisizer.com/graphics/CWD.jpg",
-        "Link": "https://solerpalau-usa.com/products/crwf/cwd.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -547,7 +560,7 @@
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
         "Image": "https://www.optisizer.com/graphics/CWD.jpg",
-        "Link": "https://solerpalau-usa.com/products/crwf/cwd.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
         "CompetitorID": "Twin City",
@@ -556,7 +569,7 @@
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
         "Image": "https://www.optisizer.com/graphics/CWD.jpg",
-        "Link": "https://solerpalau-usa.com/products/crwf/cwd.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
         "CompetitorID": "Carnes",
@@ -565,7 +578,7 @@
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
         "Image": "https://www.optisizer.com/graphics/CWD.jpg",
-        "Link": "https://solerpalau-usa.com/products/crwf/cwd.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -574,7 +587,7 @@
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
         "Image": "https://www.optisizer.com/graphics/CWD.jpg",
-        "Link": "https://solerpalau-usa.com/products/crwf/cwd.html"
+        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
         "CompetitorID": "Loren Cook",
