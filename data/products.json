@@ -3426,7 +3426,7 @@
       {
         "id": 1,
         "name": "PC",
-        "image": "https://www.solerpalau-usa.com/images/products/pc/PC.png",
+        "image": "../assets/images/PC.png",
         "description": "The Premium CHOICE XP (PCXP) series addresses indoor air quality (IAQ) in today's tight, compact homes with its seamless, energy-efficient, and quiet performance.",
         "models": [
           {
@@ -6413,7 +6413,7 @@
       {
         "id": 1,
         "name": "ARE and ARS",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/AR.png",
+        "image": "../assets/images/AR.png",
         "description": "The AR series, available in four model sizes, offers robust axial exhaust (ARE) or supply (intake) (ARS) performance in a compact, roof-mounted design, suitable for a range of applications including factories, shops, and offices. With a CFM range of 167 to 2,827 and up to 3/4\" static pressure, its direct drive design requires minimal maintenance. The series features a sleek, low-profile design with durable all-aluminum housing, catering to light to moderate static pressure environments.",
         "models": [
           {
