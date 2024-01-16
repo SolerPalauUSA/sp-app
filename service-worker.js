@@ -9,6 +9,8 @@ const cacheResources = [
   '/sp-app/assets/icons/icon-v3.png',
   '/sp-app/assets/icons/icon-v4.png',
   '/sp-app/assets/icons/icon-v6.png',
+  '/sp-app/assets/images/AR.png',
+  '/sp-app/assets/images/blog.svg',
   '/sp-app/assets/images/fan-solid.svg',
   '/sp-app/assets/images/fan-white.svg',
   '/sp-app/assets/images/file-pdf-solid.svg',
@@ -28,13 +30,17 @@ const cacheResources = [
   '/sp-app/pages/cross-ref.html',
   '/sp-app/pages/library.html',
   '/sp-app/pages/products.html',
+  '/sp-app/pages/important-links.html',
   '/sp-app/data/competitors.json',
   '/sp-app/data/cross-references.json',
   '/sp-app/data/documents.json',
   '/sp-app/data/products.json',
+  '/sp-app/data/importantLinks.json',
   '/sp-app/components/cross-reference-table.js',
   '/sp-app/components/document-viewer.js',
   '/sp-app/components/navbar.js',
+  '/sp-app/components/backButton.js',
+  '/sp-app/components/links.js',
   '/sp-app/components/product-list.js'
 
 
