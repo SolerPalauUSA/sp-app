@@ -3586,6 +3586,113 @@
     ]
   },
   {
+    "id": 8,
+    "name": "Jet Fans Series",
+    "description": "Jet Fans are a pollution control solution that help induce air to a common exhaust point through directed airflow.",
+    "series": [
+      {
+        "id": 1,
+        "name": "IFFT and IFFTe",
+        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/ifft-recat.png",
+        "description": "The IFFT and IFFTe centrifugal Jet Fans were designed with relative compactness and efficiency in mind. They are perfect for moving a great deal of air to keep a parking garage safe. The fans induce air flow to move dangerous gases out of enclosed garages and to dedicated ventilation points. The IFFT uses AC motors and the IFFTe uses EC motors. The IFFTe improves the efficiency of the units by using the latest in EC motor technology.",
+      
+        "submittals": [
+          {
+            "type": "IFFT and IFFTe",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ifft-iffte.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-jet-fans.pdf"
+          },
+          {
+            "type": "Brochure",
+            "url": "https://www.solerpalau-usa.com/documents/Brochure/Jet-Fans-Brochure.pdf"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "TJFU",
+        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/tjfu-recat.png",
+        "description": "The TJFU axial jet fans were designed with relative compactness and efficiency in mind. They are perfect for moving a great deal of air to keep a parking garage safe. The fans induce air flow to move dangerous gasses out of enclosed garages and to dedicated ventilation points. Jet fans eliminate the need for ductwork throughout parking areas which reduces installation costs.",
+      
+        "submittals": [
+          {
+            "type": "TJFU",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tjfu.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-jet-fans.pdf"
+          },
+          {
+            "type": "Brochure",
+            "url": "https://www.solerpalau-usa.com/documents/Brochure/Jet-Fans-Brochure.pdf"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "IFAB and IFEB",
+        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/ifft-recat.png",
+        "description": "The IFAB and IFEB low profile jet fans, designed for compactness and efficiency, are ideal for ventilating parking garages with low ceilings. Their efficient impellers minimize ventilation costs, and their lightweight design ensures easy installation. The IFAB features AC impellers, while the IFEB, equipped with EC impellers, enhances efficiency through advanced EC motor technology.",
+      
+        "submittals": [
+          {
+            "type": "IFAB and IFEB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ifab-ifeb.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "hhttps://www.solerpalau-usa.com/documents/IOM/iom-jet-fans.pdf"
+          },
+          {
+            "type": "Brochure",
+            "url": "https://www.solerpalau-usa.com/documents/Brochure/Jet-Fans-Brochure.pdf"
+          },
+          {
+            "type": "Typical Specification Sheets IFAB",
+            "url": "https://www.solerpalau-usa.com/documents/Specsheet/IFAB.pdf"
+          },
+          {
+            "type": "Typical Specification Sheets IFEB",
+            "url": "https://www.solerpalau-usa.com/documents/Specsheet/IFEB.pdf"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "IFFT and IFFTe",
+        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/ifft-recat.png",
+        "description": "The IFFT and IFFTe centrifugal Jet Fans were designed with relative compactness and efficiency in mind. They are perfect for moving a great deal of air to keep a parking garage safe. The fans induce air flow to move dangerous gases out of enclosed garages and to dedicated ventilation points. The IFFT uses AC motors and the IFFTe uses EC motors. The IFFTe improves the efficiency of the units by using the latest in EC motor technology.",
+      
+        "submittals": [
+          {
+            "type": "IFFT and IFFTe",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ifft-iffte.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-jet-fans.pdf"
+          },
+          {
+            "type": "Brochure",
+            "url": "https://www.solerpalau-usa.com/documents/Brochure/Jet-Fans-Brochure.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 10,
     "name": "Outside Air Motorized Damper Kits",
     "description": "The MDX-ES24VK from S&P allows air to enter dwellings to meet building code and ventilation standards requirements through a motorized damper controlled by a 24V temperature/humidity monitoring control.",
