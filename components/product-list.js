@@ -369,7 +369,7 @@ backArrow.addEventListener("click", () => {
             // Display the description for the selected series
             displayDescription(product, selectedSeriesName);
 
-            // ... [code for populating otherDocsContainer and submittalsContainer]
+            populateAndDisplayDocuments(selectedSeries);
 
             // Update URL parameters
             const productName = productImageContainer.getAttribute("data-product-name");
@@ -480,6 +480,38 @@ backArrow.addEventListener("click", () => {
     // Show the imageProductContainer
     imageProductContainer.style.display = "flex";
   }
+
+  function populateAndDisplayDocuments(selectedSeries) {
+    // Populate otherDocsContainer with other documents for the selected series
+    if (selectedSeries.otherDocs && selectedSeries.otherDocs.length > 0) {
+        otherDocsContainer.innerHTML = `
+            <div class="lit-item-title">${product.name}</div>
+            <ul>
+                ${selectedSeries.otherDocs.map((doc) => `<li><a href="${doc.url}" target="_blank">${doc.type}</a></li>`).join("")}
+            </ul>
+        `;
+        otherDocsContainer.style.display = "block"; // Show otherDocsContainer
+    } else {
+        // Clear otherDocsContainer if no otherDocs are available
+        otherDocsContainer.innerHTML = "";
+        otherDocsContainer.style.display = "none"; // Hide otherDocsContainer
+    }
+
+    // Populate submittalsContainer with submittals for the selected series
+    if (selectedSeries.submittals) {
+        submittalsContainer.innerHTML = `
+            <div class="lit-item-title">Submittals</div>
+            <ul>
+                ${selectedSeries.submittals.map((submittal) => `<li><a href="${submittal.url}" target="_blank">${submittal.type}</a></li>`).join("")}
+            </ul>
+        `;
+        submittalsContainer.style.display = "block"; // Show submittalsContainer
+    } else {
+        // Clear submittalsContainer if no submittals are available
+        submittalsContainer.innerHTML = "";
+        submittalsContainer.style.display = "none"; // Hide submittalsContainer
+    }
+}
 
     
   // Add the popstate event listener
