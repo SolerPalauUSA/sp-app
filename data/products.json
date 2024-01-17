@@ -2614,6 +2614,51 @@
     ]
   },
   {
+    "id": 6,
+    "name": "High Volume Low Speed Fans",
+    "description": "Tornado and Tempest High Volume Low Speed (THVLS) Series are specially designed to move greater quantities of air at lower operating speeds. These fans are equipped with wingtips to redirect outward airflow downward.",
+    "series": [
+      {
+        "id": 1,
+        "name": "Tornado",
+        "image": "https://www.solerpalau-usa.com/images/products/hvls/tornado.png",
+        "description": "Tornado HVLS is a 5-Blade High Volume Low-Speed fan model featuring a direct drive ECM, IP65 motor. This fan is equipped with wingtips to redirect outward airflow downward. Through the destratification process, the THVLS fan series will lower energy bills providing evaporative cooling effect in summer and allow for uniform temperature in winter",
+    
+        "submittals": [
+          {
+            "type": "Tornado",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tornado.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tornado.pdf"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Tempest",
+        "image": "https://www.solerpalau-usa.com/images/products/hvls/tempest.png",
+        "description": "Tempest HVLS is a 6-Blade High Volume Low-Speed fan model featuring a direct drive ECM, IP65 motor. This fan is equipped with wingtips to redirect outward airflow downward. Through the destratification process, the THVLS fan series will lower energy bills providing evaporative cooling effect in summer and allow for uniform temperature in winter.",
+    
+        "submittals": [
+          {
+            "type": "Tempest",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tempest.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tempest.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 7,
     "name": "In-line/Sidewall Duct Fans",
     "description": "Duct Mounted Mixed Flow In-line fans are used to exhaust, supply, or boost air through ductwork from one area to another in residential and commercial settings.",
@@ -2896,6 +2941,86 @@
           {
             "type": "Brochure",
             "url": "https://www.solerpalau-usa.com/documents/Brochure/inline-fan-options.pdf"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "SMXD",
+        "image": "https://www.solerpalau-usa.com/images/products/isdf/SMXD-recat.png",
+        "description": "SMXD series is an direct drive mixed flow fan specially designed to maximize the airflow performance by acting as a hybrid between an axial and centrifugal fan. They produce a great amount of air while being able to handle higher pressures. It is more efficient and quieter than comparable tubular centrifugal fans. These fans can be used in exhaust, supply or return air applications.",
+       
+        "submittals": [
+          {
+            "type": "SMXD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-smxd.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-smxd.pdf"
+          },
+          {
+            "type": "Flyer",
+            "url": "https://www.solerpalau-usa.com/documents/Flyer/SMXD.pdf"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "SMXD-HT",
+        "image": "https://www.solerpalau-usa.com/images/products/isdf/SMXD-recat.png",
+        "description": "SMXD series is an direct drive mixed flow fan specially designed to maximize the airflow performance by acting as a hybrid between an axial and centrifugal fan. They produce a great amount of air while being able to handle higher pressures. It is more efficient and quieter than comparable tubular centrifugal fans. These fans can be used in exhaust, supply or return air applications.",
+       
+        "submittals": [
+          {
+            "type": "SMXD-HT",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-smxd-ht.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-smxd-ht.pdf"
+          },
+          {
+            "type": "Flyer",
+            "url": "https://www.solerpalau-usa.com/documents/Flyer/SMXDHT-flyer-USA.pdf"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "SMXDK",
+        "image": "https://www.solerpalau-usa.com/images/products/isdf/SMXD-recat.png",
+        "description": "Model SMXDK mixed flow fans are inline ducted fans that can be used in exhaust, supply, or return air applications. Mixed flow fans act as a hybrid between axial and centrifugal fans. Meaning, they produce a lot of air such as axial fans, but they can handle higher pressures like centrifugal fans. When these technologies come together, the fan ends up being more efficient and quieter than similar tubular centrifugal fans.",
+       
+        "otherDocs": [
+          {
+            "type": "Flyer",
+            "url": "https://www.solerpalau-usa.com/documents/Flyer/SMXDK-SMXDKHT.pdf"
+          },
+          {
+            "type": "Catalog",
+            "url": "https://www.solerpalau-usa.com/documents/Catalog/cat-smxdk-smxdkht-smxdke.pdf"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "SMXDK-HT",
+        "image": "https://www.solerpalau-usa.com/images/products/isdf/SMXD-recat.png",
+        "description": "SMXDK-HT series is a direct drive mixed flow fan specially designed to maximize the airflow performance by acting as a hybrid between an axial and centrifugal fan. This HT (high temperature) model can provide emergency heat and smoke ventilation in the event of a fire, which can provide valuable time to people exiting or emergency personnel.",
+       
+        "otherDocs": [
+          {
+            "type": "Flyer",
+            "url": "https://www.solerpalau-usa.com/documents/Flyer/SMXDK-SMXDKHT.pdf"
+          },
+          {
+            "type": "Catalog",
+            "url": "https://www.solerpalau-usa.com/documents/Catalog/cat-smxdk-smxdkht-smxdke.pdf"
           }
         ]
       },
@@ -3410,7 +3535,54 @@
             "url": "https://www.solerpalau-usa.com/documents/Catalog/cat-sqb.pdf"
           }
         ]
+      },
+      {
+        "id": 13,
+        "name": "CTB and CTBRHUL",
+        "image": "https://www.solerpalau-usa.com/images/products/isdf/CTB-recat.png",
+        "description": "The Inline Tubular Centrifugal (CTB) series provides a broad selection of sizes and capabilities, with models rated from 300 to 20,000 CFM and up to 2-1/2\" static pressure. Designed for commercial and industrial in-line use, these fans are known for quiet, efficient, and reliable air movement. Ideal for various applications like building ventilation, paint spray booths, and kitchen exhausts, the CTB series excels in settings requiring air movement through ducts against moderate static pressure.",
+       
+        "submittals": [
+          {
+            "type": "CTB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ctb.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ctb.pdf"
+          },
+          {
+            "type": "Mounting Diagram",
+            "url": "https://www.solerpalau-usa.com/documents/Resource/mounting-arrangement(ctb).pdf"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "CFD",
+        "image": "https://www.solerpalau-usa.com/images/products/isdf/CFD-recat.png",
+        "description": "The Forward Curved Belt Driven Inline Duct Blowers (CFD) is designed for supply, exhaust or duct return applications. The CFD is an economical fan model designed to run quietly and efficiently in cooling, heating, and ventilating applications.",
+       
+        "submittals": [
+          {
+            "type": "SQD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-sqd.pdf"
+          },
+          {
+            "type": "eSQD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-esqd.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-cfd.pdf"
+          }
+        ]
       }
+      
     ]
   },
   {
