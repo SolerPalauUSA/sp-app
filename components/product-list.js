@@ -336,6 +336,13 @@ backArrow.addEventListener("click", () => {
   // Filter models based on the selected series
   const selectedSeries = product.series.find((series) => series.name === selectedSeriesName);
   if (selectedSeries) {
+
+
+    // Check if there are models and if at least one model has a price
+    const hasPricedModels = selectedSeries.models && selectedSeries.models.some(model => model.price);
+
+    if (hasPricedModels) {
+
     // Populate the models dropdown with models from the selected series
     modelsDropdown.innerHTML = `
       <option value="">List Price by Model</option>
@@ -407,10 +414,13 @@ backArrow.addEventListener("click", () => {
     modelsDropdownContainer.style.display = "none";
     literatureDropdownContainer.style.display = "none";
   }
+}
 
   // Clear the price container when series selection changes
   priceContainer.textContent = "";
     });
+
+  
 
 
     modelsDropdown.addEventListener("change", () => {
