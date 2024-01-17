@@ -2564,6 +2564,52 @@
             "url": "https://www.solerpalau-usa.com/documents/Resource/sizing-chart(gravity-vent).pdf"
           }
         ]
+      },
+      {
+        "id": 1,
+        "name": "RLX",
+        "image": "https://www.solerpalau-usa.com/images/products/gv/RLX-recat.png",
+        "description": "The RLX Aluminum Louvered Penthouse offers a sleek, modern solution for fresh air intake, pressure relief, and gravity applications. Customizable in size, it's ideal for hiding rooftop equipment and ensuring weather integrity with its storm-resistant design. Capacities range from 395 to 69,500 CFM, with larger custom options available. The companion louvered fan, Model LSF, ensures design consistency in rooftop installations.",
+        
+        "submittals": [
+          {
+            "type": "RLX",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-rlx.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-rlx.pdf"
+          },
+          {
+            "type": "Sizing Guide",
+            "url": "https://www.solerpalau-usa.com/documents/Resource/sizing-chart(gravity-vent).pdf"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "BGH",
+        "image": "https://www.solerpalau-usa.com/images/products/gv/BGH-recat.png",
+        "description": "BGH Gravity Ventilators offer a modern low silhouette design that blend with roof lines and other equipment. Designed for maximum airflow passage and weathertight integrity, BGH comes in either intake or relief models with aluminum or galvanized finishes. An extensive range of sizes is offered with many standard and optional features. Exhaust models have a 1:1 ratio of hood perimeter opening to throat area and supply models incorporate a 2:1 ratio.",
+        
+        "submittals": [
+          {
+            "type": "BGH",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-bgh.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-bgh.pdf"
+          },
+          {
+            "type": "Sizing Guide",
+            "url": "https://www.solerpalau-usa.com/documents/Resource/sizing-chart(gravity-vent).pdf"
+          }
+        ]
       }
     ]
   },
@@ -4751,68 +4797,67 @@
             "id": 6,
             "name": "GED16MM1AS",
             "price": "$725.00"
-         },
-        {
-        "id": 7,
-        "name": "GED16PH1AS",
-        "price": "$856.00"
-        },
-        {
-        "id": 8,
-        "name": "GED18MH1AS",
-        "price": "$799.00"
-        },
-        {
-        "id": 9,
-        "name": "GED18MM1AS",
-        "price": "$769.00"
-        },
-        {
-        "id": 10,
-        "name": "GED18QH1AS",
-        "price": "$900.00"
-        },
-        {
-        "id": 11,
-        "name": "GED20MM1AS",
-        "price": "$864.00"
-        },
-        {
-        "id": 12,
-        "name": "GED20QH1AS",
-        "price": "$912.00"
-        },
-        {
-          "id": 13,
-          "name": "WHPGED1012",
-          "price": "$483"
-        },
-        {
-          "id": 14,
-          "name": "WHPGED1416",
-          "price": "$536"
-        },
-        {
-          "id": 15,
-          "name": "WHPGED1820",
-          "price": "$602"
-        },
-        {
-          "id": 16,
-          "name": "WHPGED1012M",
-           "price": "$866"
-      },
-      {
-      "id": 17,
-      "name": "WHPGED1416M",
-      "price": "$918"
-      },
-      {
-      "id": 18,
-      "name": "WHPGED1820M",
-      "price": "$982"
-      }
-
+          },
+          {
+            "id": 7,
+            "name": "GED16PH1AS",
+            "price": "$856.00"
+          },
+          {
+            "id": 8,
+            "name": "GED18MH1AS",
+            "price": "$799.00"
+          },
+          {
+            "id": 9,
+            "name": "GED18MM1AS",
+            "price": "$769.00"
+          },
+          {
+            "id": 10,
+            "name": "GED18QH1AS",
+            "price": "$900.00"
+          },
+          {
+            "id": 11,
+            "name": "GED20MM1AS",
+            "price": "$864.00"
+          },
+          {
+            "id": 12,
+            "name": "GED20QH1AS",
+            "price": "$912.00"
+          },
+          {
+            "id": 13,
+            "name": "WHPGED1012",
+            "price": "$483"
+          },
+          {
+            "id": 14,
+            "name": "WHPGED1416",
+            "price": "$536"
+          },
+          {
+            "id": 15,
+            "name": "WHPGED1820",
+            "price": "$602"
+          },
+          {
+            "id": 16,
+            "name": "WHPGED1012M",
+            "price": "$866"
+          },
+          {
+            "id": 17,
+            "name": "WHPGED1416M",
+            "price": "$918"
+          },
+          {
+            "id": 18,
+            "name": "WHPGED1820M",
+            "price": "$982"
+          }
         ],
         "submittals": [
           {
@@ -6558,85 +6603,83 @@
           {
             "id": 5,
             "name": "ARE16MM1AS",
-           
-        "price": "$1,460.00"
-        },
-        {
-        "id": 6,
-        "name": "ARE16MM1CS",
-        "price": "$1,460.00"
-        },
-        {
-        "id": 7,
-        "name": "ARE16PH1AS",
-        "price": "$1,512.00"
-        },
-        {
-        "id": 8,
-        "name": "ARE16PH1CS",
-        "price": "$1,512.00"
-        },
-        {
-        "id": 9,
-        "name": "ARE20MM1AS",
-        "price": "$1,911.00"
-        },
-        {
-        "id": 10,
-        "name": "ARE20MM1CS",
-        "price": "$1,911.00"
-        },
-        {
-        "id": 11,
-        "name": "ARS12MH1AS",
-        "price": "$1,280.00"
-        },
-        {
-        "id": 12,
-        "name": "ARS12MH1CS",
-        "price": "$1,280.00"
-        },
-        {
-        "id": 13,
-        "name": "ARS12MM1AS",
-        "price": "$1,255.00"
-        },
-        {
-        "id": 14,
-        "name": "ARS12MM1CS",
-        "price": "$1,255.00"
-        },
-        {
-        
-        "id": 15,
-        "name": "ARS16MM1AS",
-        "price": "$1,460.00"
-        },
-        {
-        "id": 16,
-        "name": "ARS16MM1CS",
-        "price": "$1,460.00"
-        },
-        {
-        "id": 17,
-        "name": "ARS16PH1AS",
-        "price": "$1,512.00"
-        },
-        {
-        "id": 18,
-        "name": "ARS16PH1CS",
-        "price": "$1,512.00"
-        },
-        {
-        "id": 19,
-        "name": "ARS20MM1AS",
-        "price": "$1,911.00"
-        },
-        {
-        "id": 20,
-        "name": "ARS20MM1CS",
-        "price": "$1,911.00"
-        }
+            "price": "$1,460.00"
+          },
+          {
+            "id": 6,
+            "name": "ARE16MM1CS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 7,
+            "name": "ARE16PH1AS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 8,
+            "name": "ARE16PH1CS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 9,
+            "name": "ARE20MM1AS",
+            "price": "$1,911.00"
+          },
+          {
+            "id": 10,
+            "name": "ARE20MM1CS",
+            "price": "$1,911.00"
+          },
+          {
+            "id": 11,
+            "name": "ARS12MH1AS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 12,
+            "name": "ARS12MH1CS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 13,
+            "name": "ARS12MM1AS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 14,
+            "name": "ARS12MM1CS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 15,
+            "name": "ARS16MM1AS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 16,
+            "name": "ARS16MM1CS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 17,
+            "name": "ARS16PH1AS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 18,
+            "name": "ARS16PH1CS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 19,
+            "name": "ARS20MM1AS",
+            "price": "$1,911.00"
+          },
+          {
+            "id": 20,
+            "name": "ARS20MM1CS",
+            "price": "$1,911.00"
+          }
         ],
         "submittals": [
           {
@@ -6653,5 +6696,4 @@
       }
     ]
   }
-
 ]
