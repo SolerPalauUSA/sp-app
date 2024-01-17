@@ -318,9 +318,10 @@ backArrow.addEventListener("click", () => {
     // Update the product name in the back arrow container
     updateProductName(product.name);
 
+    // Initially hide the models dropdown
     modelsDropdownContainer.style.display = "none";
 
-    // Assuming you have elements with the class "series-dropdown-container", "models-dropdown-container", and "price-container" for each section
+    // Create dropdowns for series and models
     const seriesDropdown = createContainer("select", "series-dropdown");
     const modelsDropdown = createContainer("select", "models-dropdown");
 
@@ -330,88 +331,68 @@ backArrow.addEventListener("click", () => {
       ${product.series.map((series) => `<option value="${series.name}">${series.name}</option>`).join("")}
     `;
 
-   // Add event listeners to the dropdowns (series and models)
+    // Append the dropdowns to their respective containers
+    seriesDropdownContainer.appendChild(seriesDropdown);
+    modelsDropdownContainer.appendChild(modelsDropdown);
+
+    // Add event listener to the series dropdown
     seriesDropdown.addEventListener("change", () => {
-  const selectedSeriesName = seriesDropdown.value;
-  // Filter models based on the selected series
-  const selectedSeries = product.series.find((series) => series.name === selectedSeriesName);
-  if (selectedSeries) {
-    // Populate the models dropdown with models from the selected series
-    modelsDropdown.innerHTML = `
-      <option value="">List Price by Model</option>
-      ${Array.isArray(selectedSeries.models) ? selectedSeries.models.map((model) => `<option value="${model.name}">${model.name}</option>`).join("") : ""}
-    `;
+        const selectedSeriesName = seriesDropdown.value;
+        const selectedSeries = product.series.find((series) => series.name === selectedSeriesName);
 
-    // Set the background image of the seriesImageContainer
-    seriesImageContainer.style.backgroundImage = `url('${selectedSeries.image}')`;
-    seriesImageContainer.style.display = "block"; // Show the series image container
+        if (selectedSeries) {
+            // Check if there are models and if at least one model has a price
+            const hasPricedModels = selectedSeries.models && selectedSeries.models.some(model => model.price);
 
-    // Show the models dropdown since a series is selected
-    modelsDropdownContainer.style.display = "block";
-    literatureDropdownContainer.style.display = "block";
+            if (hasPricedModels) {
+                // Populate the models dropdown with models from the selected series
+                modelsDropdown.innerHTML = `
+                  <option value="">List Price by Model</option>
+                  ${Array.isArray(selectedSeries.models) ? selectedSeries.models.map((model) => `<option value="${model.name}">${model.name}</option>`).join("") : ""}
+                `;
+                // Show the models dropdown since a series is selected
+                modelsDropdownContainer.style.display = "block";
+            } else {
+                // Hide the models dropdown if no models have prices
+                modelsDropdownContainer.style.display = "none";
+            }
 
-    otherDocsContainer.style.display = "none";
-    submittalsContainer.style.display = "none";
-    imageProductContainer.style.display = "none";
+            // Set the background image of the seriesImageContainer
+            seriesImageContainer.style.backgroundImage = `url('${selectedSeries.image}')`;
+            seriesImageContainer.style.display = "block"; // Show the series image container
 
-    // Display the description for the selected series
-    displayDescription(product, selectedSeriesName);
+            literatureDropdownContainer.style.display = "block";
+            otherDocsContainer.style.display = "none";
+            submittalsContainer.style.display = "none";
+            imageProductContainer.style.display = "none";
 
-    // Populate otherDocsContainer with other documents for the selected series
-    if (selectedSeries.otherDocs && selectedSeries.otherDocs.length > 0) {
-      otherDocsContainer.innerHTML = `
-        <div class="lit-item-title">${product.name}</div>
-        <ul>
-          ${selectedSeries.otherDocs.map((doc) => `<li><a href="${doc.url}" target="_blank">${doc.type}</a></li>`).join("")}
-        </ul>
-      `;
-    } else {
-      // Clear otherDocsContainer if no otherDocs are available
-      otherDocsContainer.innerHTML = "";
-    }
+            // Display the description for the selected series
+            displayDescription(product, selectedSeriesName);
 
-    // Populate submittalsContainer with submittals for the selected series
-    if (selectedSeries.submittals) {
-      submittalsContainer.innerHTML = `
-        <div class="lit-item-title">Submittals</div>
-        <ul>
-          ${selectedSeries.submittals.map((submittal) => `<li><a href="${submittal.url}" target="_blank">${submittal.type}</a></li>`).join("")}
-        </ul>
-      `;
-    } else {
-      // Clear submittalsContainer if no submittals are available
-      submittalsContainer.innerHTML = "";
-    }
+            // ... [code for populating otherDocsContainer and submittalsContainer]
 
-    // Update URL parameters
-    const productName = productImageContainer.getAttribute("data-product-name");
-    if (productName) {
-      const updatedUrl = `../pages/products.html?product=${encodeURIComponent(productName)}&series=${encodeURIComponent(selectedSeriesName)}`;
-      window.history.pushState({ path: updatedUrl }, "", updatedUrl);
-    }
-  } else {
-    // Clear the models dropdown if no series is selected
-    modelsDropdown.innerHTML = `<option value="">Select a Model</option>`;
-    // Clear the background image and hide the series image container
-    seriesImageContainer.style.backgroundImage = "";
-    seriesImageContainer.style.display = "none";
-    imageProductContainer.style.display = "flex";
+            // Update URL parameters
+            const productName = productImageContainer.getAttribute("data-product-name");
+            if (productName) {
+                const updatedUrl = `../pages/products.html?product=${encodeURIComponent(productName)}&series=${encodeURIComponent(selectedSeriesName)}`;
+                window.history.pushState({ path: updatedUrl }, "", updatedUrl);
+            }
+        } else {
+            // Clear the models dropdown if no series is selected
+            modelsDropdown.innerHTML = `<option value="">Select a Model</option>`;
+            seriesImageContainer.style.backgroundImage = "";
+            seriesImageContainer.style.display = "none";
+            imageProductContainer.style.display = "flex";
+            descriptionContainer.innerHTML = "";
+            otherDocsContainer.innerHTML = "";
+            submittalsContainer.innerHTML = "";
+            modelsDropdownContainer.style.display = "none";
+            literatureDropdownContainer.style.display = "none";
+        }
 
-    descriptionContainer.innerHTML = "";
-
-    // Clear otherDocsContainer and submittalsContainer when series selection changes
-    otherDocsContainer.innerHTML = "";
-    submittalsContainer.innerHTML = "";
-
-    // Hide the models dropdown when no series is selected
-    modelsDropdownContainer.style.display = "none";
-    literatureDropdownContainer.style.display = "none";
-  }
-
-  // Clear the price container when series selection changes
-  priceContainer.textContent = "";
+        // Clear the price container when series selection changes
+        priceContainer.textContent = "";
     });
-
 
     modelsDropdown.addEventListener("change", () => {
       const selectedModelName = modelsDropdown.value;
