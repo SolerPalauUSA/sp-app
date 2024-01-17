@@ -2993,7 +2993,7 @@
       {
         "id": 9,
         "name": "SMXDK",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/SMXD-recat.png",
+        "image": "https://www.solerpalau-usa.com/images/products/isdf/smxdk.webp",
         "description": "Model SMXDK mixed flow fans are inline ducted fans that can be used in exhaust, supply, or return air applications. Mixed flow fans act as a hybrid between axial and centrifugal fans. Meaning, they produce a lot of air such as axial fans, but they can handle higher pressures like centrifugal fans. When these technologies come together, the fan ends up being more efficient and quieter than similar tubular centrifugal fans.",
        
         "otherDocs": [
@@ -3010,7 +3010,7 @@
       {
         "id": 10,
         "name": "SMXDK-HT",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/SMXD-recat.png",
+        "image": "https://www.solerpalau-usa.com/images/products/isdf/smxdk.webp",
         "description": "SMXDK-HT series is a direct drive mixed flow fan specially designed to maximize the airflow performance by acting as a hybrid between an axial and centrifugal fan. This HT (high temperature) model can provide emergency heat and smoke ventilation in the event of a fire, which can provide valuable time to people exiting or emergency personnel.",
        
         "otherDocs": [
@@ -3639,7 +3639,7 @@
       {
         "id": 3,
         "name": "IFAB and IFEB",
-        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/ifft-recat.png",
+        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/ifab-recat.png",
         "description": "The IFAB and IFEB low profile jet fans, designed for compactness and efficiency, are ideal for ventilating parking garages with low ceilings. Their efficient impellers minimize ventilation costs, and their lightweight design ensures easy installation. The IFAB features AC impellers, while the IFEB, equipped with EC impellers, enhances efficiency through advanced EC motor technology.",
       
         "submittals": [
@@ -3669,20 +3669,20 @@
       },
       {
         "id": 4,
-        "name": "IFFT and IFFTe",
-        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/ifft-recat.png",
-        "description": "The IFFT and IFFTe centrifugal Jet Fans were designed with relative compactness and efficiency in mind. They are perfect for moving a great deal of air to keep a parking garage safe. The fans induce air flow to move dangerous gases out of enclosed garages and to dedicated ventilation points. The IFFT uses AC motors and the IFFTe uses EC motors. The IFFTe improves the efficiency of the units by using the latest in EC motor technology.",
+        "name": "6002, 6002-14B, 6002A and 6002-14A",
+        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/vgd-recat.png",
+        "description": "Models 6002, 6002-14B, 6002A and 6002-14A offer precision to assure the health and safety to occupants with the tightest possible controls on energy consumption. They are versatile, self-contained dual gas sensors that are network ready for either peer-to-peer (master slave) operation or central control for a smooth integration into new or existing energy management systems.",
       
         "submittals": [
           {
-            "type": "IFFT and IFFTe",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ifft-iffte.pdf"
+            "type": "6002, 6002-14B, 6002A and 6002-14A",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-6002.pdf"
           }
         ],
         "otherDocs": [
           {
             "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-jet-fans.pdf"
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-6002-6002A-6002-14A-6002-14B.pdf"
           },
           {
             "type": "Brochure",
@@ -4198,7 +4198,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "LCE and LCS",
         "image": "https://www.solerpalau-usa.com/images/products/spf/LCE.png",
         "description": "LCE (exhaust) and LCS (supply) are belt-driven propeller fans rated for 3,000 to 40,000 CFM and up to 5/8\" w.g. Designed for large volume air movement at low pressures, they're ideal for commercial spaces like warehouses, gyms, poultry houses, and greenhouses.",
@@ -5156,6 +5156,388 @@
           {
             "type": "IOM(eGED/eGSD)",
             "url": "https://www.solerpalau-usa.com/documents/IOM/iom-egd.pdf"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "L2E and L2S",
+        "image": "https://www.solerpalau-usa.com/images/products/spf/L2-recat.png",
+        "description": "L2E (exhaust) and L2S (supply) are high capacity wall mounted belt driven propeller fans rated from 5,000 to 47,000 CFM, with static pressure capability up to 3/4\" w.g. Their primary application is the exhaust of large volumes of ventilation air from commercial and light industrial buildings such as manufacturing and assembly plants, warehouses, parking garages, gymnasiums, equipment rooms, distribution centers and OEM applications.",
+        
+        "submittals": [
+          {
+            "type": "L2E and L2S",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-l2.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-lc-l2-l3.pdf"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "L3E and L3S",
+        "image": "https://www.solerpalau-usa.com/images/products/spf/L3-recat.png",
+        "description": "L3E (exhaust) and L3S (supply) are high capacity wall mounted belt driven propeller fans rated from 35,000 to 85,000, with static pressure capability up to 1\" w.g. Their primary application is the exhaust of large volumes of air at a relatively moderate static pressure from commercial, industrial and agricultural buildings such as manufacturing and assembly plants, warehouses, foundries, mills, boiler rooms and equipment rooms.",
+        
+        "submittals": [
+          {
+            "type": "L3E and L3S",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-l3.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-lc-l2-l3.pdf"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "DFE and DFS",
+        "image": "https://www.solerpalau-usa.com/images/products/spf/DF-recat.png",
+        "description": "The DFE and DFS Direct Drive Sidewall Propeller Exhaust/Supply Fan feature the maximum efficiency, low maintenance and durable, economical operation resulting from the direct drive design. It is available in exhaust configurations to provide general ventilation for a wide variety of buildings and enclosed areas within buildings. Examples include factories, assembly plants, churches, gymnasiums, garages, jails, machine rooms and many others.",
+        
+        "submittals": [
+          {
+            "type": "DFE and DFS",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-df.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-df.pdf"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "DDE and DDS",
+        "image": "https://www.solerpalau-usa.com/images/products/spf/DD-recat.png",
+        "description": "The DDE and DDS Direct Drive Sidewall Propeller Exhaust/Supply Fan feature the maximum efficiency, low maintenance and durable, economical operation resulting from the direct drive design. It is available in exhaust configurations to provide general ventilation for a wide variety of buildings and enclosed areas within buildings. Examples include factories, assembly plants, churches, gymnasiums, garages, jails, machine rooms and many others.",
+        
+        "submittals": [
+          {
+            "type": "DDE/DDS",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-dd.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-dd.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Roof Propeller Fans",
+    "description": "The Roof-Mounted Propeller fans are installed on the roofs of buildings to remove or supply air from commercial and industrial facilities economically.",
+    "series": [
+      {
+        "id": 1,
+        "name": "UBS and UBS-P",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBS-recat.png",
+        "description": "UBS and UBS-P are high capacity roof mounted exhausters rated from 7,000 to 51,000 CFM. They are general ventilation units designed to economically remove large volumes of air, fumes, and vapors from commercial and industrial buildings such as warehouses, manufacturing and assembly plants, chemical plants, foundries and paper mills.",
+      
+        "submittals": [
+          {
+            "type": "UBS and UBS-P",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubs.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubs.pdf"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "ARE and ARS",
+        "image": "../assets/images/AR.png",
+        "description": "The AR series, available in four model sizes, offers robust axial exhaust (ARE) or supply (intake) (ARS) performance in a compact, roof-mounted design, suitable for a range of applications including factories, shops, and offices. With a CFM range of 167 to 2,827 and up to 3/4\" static pressure, its direct drive design requires minimal maintenance. The series features a sleek, low-profile design with durable all-aluminum housing, catering to light to moderate static pressure environments.",
+        "models": [
+          {
+            "id": 1,
+            "name": "ARE12MH1AS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 2,
+            "name": "ARE12MH1CS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 3,
+            "name": "ARE12MM1AS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 4,
+            "name": "ARE12MM1CS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 5,
+            "name": "ARE16MM1AS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 6,
+            "name": "ARE16MM1CS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 7,
+            "name": "ARE16PH1AS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 8,
+            "name": "ARE16PH1CS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 9,
+            "name": "ARE20MM1AS",
+            "price": "$1,911.00"
+          },
+          {
+            "id": 10,
+            "name": "ARE20MM1CS",
+            "price": "$1,911.00"
+          },
+          {
+            "id": 11,
+            "name": "ARS12MH1AS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 12,
+            "name": "ARS12MH1CS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 13,
+            "name": "ARS12MM1AS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 14,
+            "name": "ARS12MM1CS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 15,
+            "name": "ARS16MM1AS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 16,
+            "name": "ARS16MM1CS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 17,
+            "name": "ARS16PH1AS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 18,
+            "name": "ARS16PH1CS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 19,
+            "name": "ARS20MM1AS",
+            "price": "$1,911.00"
+          },
+          {
+            "id": 20,
+            "name": "ARS20MM1CS",
+            "price": "$1,911.00"
+          }
+        ],
+        "submittals": [
+          {
+            "type": "ARE and ARS",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ar.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ar.pdf"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "HRSB and HRSD",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/HRS-recat.png",
+        "description": "HRSB and HRSD are roof mounted supply fans rated from 4,000 to over 56,000 CFM, with static pressure capability up to 3/4\". They are used in a variety of commercial and industrial operations such as warehouses manufacturing plants, equipment and machinery rooms, assembly plants and similar facilities to provide fresh outside air for personal comfort and to reduce negative pressure caused by exhaust systems.",
+      
+        "submittals": [
+          {
+            "type": "HRSB and HRSD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-hrs.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-hrs.pdf"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "HREB-C, HREB-P, and HRED-C",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/HRE-recat.png",
+        "description": "Models HREB-C, HREB-P, and HRED-C are roof-mounted, low-profile exhaust fans rated from 4,000 to over 90,000 CFM with 1” static pressure. Eight sizes from 24-72 inches are available. Available in galvanized or aluminum construction, they are used to exhaust air from a variety of commercial and industrial operations such as manufacturing and assembly plants, warehouses, garages, laundries, and similar buildings.",
+      
+        "submittals": [
+          {
+            "type": "HREB-C, HREB-P, and HRED-C",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-hre.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-hre.pdf"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "UBSRD and UBSRD-P",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBSRD-recat.png",
+        "description": "Model UBSRD units are high capacity, belt driven roof mounted exhausters rated from 3,700 to 67,000 CFM. The motor and drives are located outside of the exhaust airstream, making these units especially suited for the removal of heated or contaminated air from commercial and industrial buildings or processes where these conditions exist. All models are capable of continuous operation exhausting air to 200°F.",
+      
+        "submittals": [
+          {
+            "type": "UBSRD and UBSRD-P",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubsrd-ubsrd-p.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubsrd.pdf"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "UBSRD-HT and UBSRD-HT1",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBSRD-recat.png",
+        "description": "UBSRD-HT and UBSRD-HT1 are available in 24, 30, 36, 42, 48, 54 and 60 inch sizes. Horsepower and CFM range to 52,000 CFM and 10HP. These units have been designed and tested for emergency heat and smoke removal. This design also lends itself to everyday non-emergency high capacity industrial and commercial roof exhaust applications. These fans successfully passed heat tests of 1000°F for fifteen (15) minutes, and 500°F for over four (4) hours by an independent testing agency.",
+      
+        "submittals": [
+          {
+            "type": "UBSRD-HT",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubsrd-ht.pdf"
+          },
+          {
+            "type": "UBSRD-HT1",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubsrd-ht1.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubsrd-ht.pdf"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "TUB",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBSRD-recat.png",
+        "description": "Tubeaxial Upblast Propeller Roof Exhauster Fans (TUB) are designed for high capacity industrial and commercial roof exhaust applications with capacities ranging from 6,210 to 60,116 CFM, with static pressure capability up to 1\". The remote drive configuration of the TUB is especially suited for the removal of fumes, vapors, steam, dust, smoke and contaminated or heated air for continuous operation in air temperatures to 200°F. For temperature ratings to 1000°F and/or IRI requirements refer to TUB-HT.",
+      
+        "submittals": [
+          {
+            "type": "TUB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tub.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tub.pdf"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "TUB-HT",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/TUB-HT-recat.png",
+        "description": "Tubeaxial Upblast Propeller Roof Exhauster for Heat and Smoke Removal Fans (TUB-HT) has been designed and tested for emergency heat, and smoke removal with horsepower's up to 15 HP and CFM up to 57,000. This design also lends itself to normal non-emergency high capacity industrial and commercial roof exhaust applications. TUB-HT's successfully passed heat tests of 1000°F for fifteen (15) minutes, and 500°F for over four (4) hours by an independent testing agency. TUB-HT exceeds I.R.I (Industrial Risk Insurers) guidelines and is UL-793 Listed as \"Power Ventilator for Smoke Control Systems.\"",
+      
+        "submittals": [
+          {
+            "type": "TUB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tub-ht.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tub-ht.pdf"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "UBB and UBX",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/TUB-HT-recat.png",
+        "description": "UBB and UBX are high capacity roof mounted exhausters rated from 5,900 to 78,000 CFM. They are general ventilation units designed to economically remove large volumes of air, fumes, and vapors from commercial and industrial buildings such as warehouses, manufacturing and assembly plants, distribution centers, chemical plants, foundries and paper mills.",
+      
+        "submittals": [
+          {
+            "type": "UBB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubb.pdf"
+          },
+          {
+            "type": "UBX",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubx.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubb-ubx.pdf"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "UBRD",
+        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBRD-recat.png",
+        "description": "UBRD units are high capacity belt driven roof mounted exhausters rated from 4,500 to 72,000 CFM. The motor and drives are located outside of the exhaust airstream, making these units especially suited for the removal of heated or contaminated air from commercial and industrial buildings or processes where these conditions exist. All models are capable of continuous operation exhausting air to 200°F.",
+      
+        "submittals": [
+          {
+            "type": "UBRD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubrd.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubrd.pdf"
           }
         ]
       }
@@ -6849,130 +7231,57 @@
     ]
   },
   {
-    "id": 15,
-    "name": "Roof Propeller Fans",
-    "description": "The Roof-Mounted Propeller fans are installed on the roofs of buildings to remove or supply air from commercial and industrial facilities economically.",
+    "id": 17,
+    "name": "Tubeaxial Fans",
+    "description": "The Duct-Mounted Tubeaxial fans are designed to supply, exhaust, and boost air in applications with moderate static pressure.",
     "series": [
       {
         "id": 1,
-        "name": "ARE and ARS",
-        "image": "../assets/images/AR.png",
-        "description": "The AR series, available in four model sizes, offers robust axial exhaust (ARE) or supply (intake) (ARS) performance in a compact, roof-mounted design, suitable for a range of applications including factories, shops, and offices. With a CFM range of 167 to 2,827 and up to 3/4\" static pressure, its direct drive design requires minimal maintenance. The series features a sleek, low-profile design with durable all-aluminum housing, catering to light to moderate static pressure environments.",
-        "models": [
-          {
-            "id": 1,
-            "name": "ARE12MH1AS",
-            "price": "$1,280.00"
-          },
-          {
-            "id": 2,
-            "name": "ARE12MH1CS",
-            "price": "$1,280.00"
-          },
-          {
-            "id": 3,
-            "name": "ARE12MM1AS",
-            "price": "$1,255.00"
-          },
-          {
-            "id": 4,
-            "name": "ARE12MM1CS",
-            "price": "$1,255.00"
-          },
-          {
-            "id": 5,
-            "name": "ARE16MM1AS",
-            "price": "$1,460.00"
-          },
-          {
-            "id": 6,
-            "name": "ARE16MM1CS",
-            "price": "$1,460.00"
-          },
-          {
-            "id": 7,
-            "name": "ARE16PH1AS",
-            "price": "$1,512.00"
-          },
-          {
-            "id": 8,
-            "name": "ARE16PH1CS",
-            "price": "$1,512.00"
-          },
-          {
-            "id": 9,
-            "name": "ARE20MM1AS",
-            "price": "$1,911.00"
-          },
-          {
-            "id": 10,
-            "name": "ARE20MM1CS",
-            "price": "$1,911.00"
-          },
-          {
-            "id": 11,
-            "name": "ARS12MH1AS",
-            "price": "$1,280.00"
-          },
-          {
-            "id": 12,
-            "name": "ARS12MH1CS",
-            "price": "$1,280.00"
-          },
-          {
-            "id": 13,
-            "name": "ARS12MM1AS",
-            "price": "$1,255.00"
-          },
-          {
-            "id": 14,
-            "name": "ARS12MM1CS",
-            "price": "$1,255.00"
-          },
-          {
-            "id": 15,
-            "name": "ARS16MM1AS",
-            "price": "$1,460.00"
-          },
-          {
-            "id": 16,
-            "name": "ARS16MM1CS",
-            "price": "$1,460.00"
-          },
-          {
-            "id": 17,
-            "name": "ARS16PH1AS",
-            "price": "$1,512.00"
-          },
-          {
-            "id": 18,
-            "name": "ARS16PH1CS",
-            "price": "$1,512.00"
-          },
-          {
-            "id": 19,
-            "name": "ARS20MM1AS",
-            "price": "$1,911.00"
-          },
-          {
-            "id": 20,
-            "name": "ARS20MM1CS",
-            "price": "$1,911.00"
-          }
-        ],
+        "name": "TDB",
+        "image": "https://www.solerpalau-usa.com/images/products/tf/TDB-recat.png",
+        "description": "The Tubeaxial line offers the widest range of sizes, horsepower, and performance in the industry. TDB's are high capacity belt drive tubeaxial fans rated from 900 to 75,490 CFM, with static pressure capability up to 1-1/2\". They are used to exhaust air from or supply air to commercial and industrial applications, such as general building ventilation, enclosed garages, paint spray booths, heat and smoke ventilation systems and other applications where the air is moved through a duct system against moderate static pressure.",
+    
         "submittals": [
           {
-            "type": "ARE and ARS",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ar.pdf"
+            "type": "TDB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tdb.pdf"
           }
         ],
         "otherDocs": [
           {
             "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ar.pdf"
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tdb.pdf"
+          },
+          {
+            "type": "Mounting Diagram",
+            "url": "https://www.solerpalau-usa.com/documents/Resource/mounting-arrangement(tdb).pdf"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "TDD",
+        "image": "https://www.solerpalau-usa.com/images/products/tf/TDD-recat.png",
+        "description": "The Tubeaxial line offers the widest range of sizes, horsepower, and performance in the industry. TDD's are high capacity tubeaxial fans rated from 643 to 39,194 CFM, with static pressure capability up to 1-1/4\". They are used to exhaust air from or supply air to commercial and industrial applications, such as general building ventilation, enclosed garages, and other applications where the air is moved through a duct system against moderate static pressure.",
+    
+        "submittals": [
+          {
+            "type": "TDD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tdd.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tdd.pdf"
+          },
+          {
+            "type": "Mounting Diagram",
+            "url": "https://www.solerpalau-usa.com/documents/Resource/mounting-arrangement(tdd).pdf"
           }
         ]
       }
     ]
   }
+ 
 ]
