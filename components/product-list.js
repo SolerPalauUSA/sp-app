@@ -369,7 +369,7 @@ backArrow.addEventListener("click", () => {
             // Display the description for the selected series
             displayDescription(product, selectedSeriesName);
 
-            populateAndDisplayDocuments(selectedSeries);
+            populateAndDisplayDocuments(product, selectedSeries);
 
             // Update URL parameters
             const productName = productImageContainer.getAttribute("data-product-name");
@@ -481,7 +481,7 @@ backArrow.addEventListener("click", () => {
     imageProductContainer.style.display = "flex";
   }
 
-  function populateAndDisplayDocuments(selectedSeries) {
+  function populateAndDisplayDocuments(product, selectedSeries) {
     // Populate otherDocsContainer with other documents for the selected series
     if (selectedSeries.otherDocs && selectedSeries.otherDocs.length > 0) {
         otherDocsContainer.innerHTML = `
