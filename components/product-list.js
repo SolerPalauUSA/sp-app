@@ -490,11 +490,8 @@ backArrow.addEventListener("click", () => {
                 ${selectedSeries.otherDocs.map((doc) => `<li><a href="${doc.url}" target="_blank">${doc.type}</a></li>`).join("")}
             </ul>
         `;
-        otherDocsContainer.style.display = "block"; // Show otherDocsContainer
     } else {
-        // Clear otherDocsContainer if no otherDocs are available
         otherDocsContainer.innerHTML = "";
-        otherDocsContainer.style.display = "none"; // Hide otherDocsContainer
     }
 
     // Populate submittalsContainer with submittals for the selected series
@@ -505,13 +502,36 @@ backArrow.addEventListener("click", () => {
                 ${selectedSeries.submittals.map((submittal) => `<li><a href="${submittal.url}" target="_blank">${submittal.type}</a></li>`).join("")}
             </ul>
         `;
-        submittalsContainer.style.display = "block"; // Show submittalsContainer
     } else {
-        // Clear submittalsContainer if no submittals are available
         submittalsContainer.innerHTML = "";
-        submittalsContainer.style.display = "none"; // Hide submittalsContainer
     }
+
+    // Initially hide the containers
+    otherDocsContainer.style.display = "none";
+    submittalsContainer.style.display = "none";
 }
+
+literatureToggleButton.addEventListener("click", () => {
+  const isHidden = otherDocsContainer.style.display === "none";
+  otherDocsContainer.classList.toggle("fade-in", isHidden);
+  submittalsContainer.classList.toggle("fade-in", isHidden);
+
+  if (isHidden) {
+      otherDocsContainer.style.display = "block";
+      submittalsContainer.style.display = "block";
+  } else {
+      otherDocsContainer.classList.toggle("fade-out");
+      submittalsContainer.classList.toggle("fade-out");
+
+      // Use setTimeout to delay hiding the elements until after the fade-out animation completes
+      setTimeout(() => {
+          otherDocsContainer.style.display = "none";
+          submittalsContainer.style.display = "none";
+      }, 500); // Match this with the animation duration
+  }
+});
+
+
 
     
   // Add the popstate event listener

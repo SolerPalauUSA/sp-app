@@ -83,6 +83,25 @@ main {
 
 }
 
+.fade-in {
+    animation: fadeInAnimation 0.5s forwards; /* 0.5s for a smooth fade-in */
+}
+
+.fade-out {
+    animation: fadeOutAnimation 0.5s forwards; /* 0.5s for a smooth fade-out */
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOutAnimation {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
 
 
 .product-listing {
