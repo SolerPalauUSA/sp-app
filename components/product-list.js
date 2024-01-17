@@ -513,20 +513,31 @@ backArrow.addEventListener("click", () => {
 
 literatureToggleButton.addEventListener("click", () => {
   const isHidden = otherDocsContainer.style.display === "none";
-  otherDocsContainer.classList.toggle("fade-in", isHidden);
-  submittalsContainer.classList.toggle("fade-in", isHidden);
 
   if (isHidden) {
+      // Fade in
+      otherDocsContainer.classList.remove("fade-out");
+      submittalsContainer.classList.remove("fade-out");
+
+      otherDocsContainer.classList.add("fade-in");
+      submittalsContainer.classList.add("fade-in");
+
       otherDocsContainer.style.display = "block";
       submittalsContainer.style.display = "block";
   } else {
-      otherDocsContainer.classList.toggle("fade-out");
-      submittalsContainer.classList.toggle("fade-out");
+      // Fade out
+      otherDocsContainer.classList.remove("fade-in");
+      submittalsContainer.classList.remove("fade-in");
+
+      otherDocsContainer.classList.add("fade-out");
+      submittalsContainer.classList.add("fade-out");
 
       // Use setTimeout to delay hiding the elements until after the fade-out animation completes
       setTimeout(() => {
           otherDocsContainer.style.display = "none";
           submittalsContainer.style.display = "none";
+          otherDocsContainer.classList.remove("fade-out");
+          submittalsContainer.classList.remove("fade-out");
       }, 500); // Match this with the animation duration
   }
 });
