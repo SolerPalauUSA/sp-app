@@ -83,24 +83,31 @@ main {
 
 }
 
-.fade-in {
-    animation: fadeInAnimation 0.5s forwards; /* 0.5s for a smooth fade-in */
+/* Initially hidden state */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
 }
 
+/* Fade-in animation */
+.fade-in {
+    animation: fadeInAnimation 0.5s forwards;
+}
+
+/* Fade-out animation */
 .fade-out {
-    animation: fadeOutAnimation 0.5s forwards; /* 0.5s for a smooth fade-out */
+    animation: fadeOutAnimation 0.5s forwards;
 }
 
 @keyframes fadeInAnimation {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    0% { opacity: 0; visibility: visible; }
+    100% { opacity: 1; visibility: visible; }
 }
 
 @keyframes fadeOutAnimation {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    0% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; } /* Hide at end of fade out */
 }
-
 
 
 

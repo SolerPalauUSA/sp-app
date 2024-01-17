@@ -506,24 +506,21 @@ backArrow.addEventListener("click", () => {
         submittalsContainer.innerHTML = "";
     }
 
-    // Initially hide the containers
-    otherDocsContainer.style.display = "none";
-    submittalsContainer.style.display = "none";
+// Set initial state to hidden using the 'hidden' class
+otherDocsContainer.classList.add("hidden");
+submittalsContainer.classList.add("hidden");
 }
 
 literatureToggleButton.addEventListener("click", () => {
-  const isHidden = otherDocsContainer.style.display === "none";
+  const isHidden = otherDocsContainer.classList.contains("hidden");
 
   if (isHidden) {
       // Fade in
-      otherDocsContainer.classList.remove("fade-out");
-      submittalsContainer.classList.remove("fade-out");
+      otherDocsContainer.classList.remove("hidden", "fade-out");
+      submittalsContainer.classList.remove("hidden", "fade-out");
 
       otherDocsContainer.classList.add("fade-in");
       submittalsContainer.classList.add("fade-in");
-
-      otherDocsContainer.style.display = "block";
-      submittalsContainer.style.display = "block";
   } else {
       // Fade out
       otherDocsContainer.classList.remove("fade-in");
@@ -532,17 +529,13 @@ literatureToggleButton.addEventListener("click", () => {
       otherDocsContainer.classList.add("fade-out");
       submittalsContainer.classList.add("fade-out");
 
-      // Use setTimeout to delay hiding the elements until after the fade-out animation completes
+      // Set to hidden after animation completes
       setTimeout(() => {
-          otherDocsContainer.style.display = "none";
-          submittalsContainer.style.display = "none";
-          otherDocsContainer.classList.remove("fade-out");
-          submittalsContainer.classList.remove("fade-out");
+          otherDocsContainer.classList.add("hidden");
+          submittalsContainer.classList.add("hidden");
       }, 500); // Match this with the animation duration
   }
 });
-
-
 
     
   // Add the popstate event listener
