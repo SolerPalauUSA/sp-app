@@ -92,7 +92,7 @@ class LibraryComponent extends HTMLElement {
           height: 500px;
         }
         .documents.active {
-          margin-top: 2rem;
+          margin-top: 0rem;
           height: 475px;
           transition: max-height 0.3s ease;
           overflow-y: auto;
@@ -139,7 +139,7 @@ class LibraryComponent extends HTMLElement {
             display: block; /* Ensures the input behaves as a block-level element */
             width: 80%; /* Adjust the width as needed */
             margin: 0 auto; /* Centers the input box and adds equal margins on both sides */
-            margin-top: 10rem;
+            margin-top: 7rem;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example box-shadow, you can customize this */
             border: 1px solid #ccc!important;
             border-radius: 8px!important;
