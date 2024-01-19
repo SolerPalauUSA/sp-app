@@ -18,18 +18,36 @@
       
 <script>
     if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sp-app/service-worker.js', {
-                    scope: '/sp-app/'
-                })
-                .then((registration) => {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                })
-                .catch((error) => {
-                    console.error('Service Worker registration failed:', error);
-                });
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sp-app/service-worker.js', {
+            scope: '/sp-app/'
+        })
+        .then((registration) => {
+            console.log('Service Worker registered with scope:', registration.scope);
+
+            // Check for updates to the Service Worker.
+            registration.addEventListener('updatefound', () => {
+                const installingWorker = registration.installing;
+                installingWorker.onstatechange = () => {
+                    if (installingWorker.state === 'installed') {
+                        if (navigator.serviceWorker.controller) {
+                            // New or updated content is available, show an alert or a notification to the user.
+                            console.log('New content is available; please refresh.');
+                            // Optionally, you could force refresh the page or display a prompt to the user.
+                        } else {
+                            // Content is cached for offline use, show a relevant message if needed.
+                            console.log('Content is now available offline!');
+                        }
+                    }
+                };
             });
-        }
+        })
+        .catch((error) => {
+            console.error('Service Worker registration failed:', error);
+        });
+    });
+}
+
   </script>
 
 
