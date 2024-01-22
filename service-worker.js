@@ -1,5 +1,5 @@
 // Define the cache name and resources to cache
-const cacheName = 'Soler-Palau-App-Data-V14';
+const cacheName = 'Soler-Palau-App-Data-V15';
 const cacheResources = [
   '/sp-app/',
   '/sp-app/index.html',
