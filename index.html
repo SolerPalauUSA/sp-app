@@ -17,7 +17,7 @@
 
       
 <script>
-    if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sp-app/service-worker.js', {
             scope: '/sp-app/'
@@ -31,9 +31,8 @@
                 installingWorker.onstatechange = () => {
                     if (installingWorker.state === 'installed') {
                         if (navigator.serviceWorker.controller) {
-                            // New or updated content is available, show an alert or a notification to the user.
-                            console.log('New content is available; please refresh.');
-                            // Optionally, you could force refresh the page or display a prompt to the user.
+                            // New or updated content is available, show custom modal to the user.
+                            document.getElementById('update-notification').style.display = 'block';
                         } else {
                             // Content is cached for offline use, show a relevant message if needed.
                             console.log('Content is now available offline!');
@@ -47,6 +46,7 @@
         });
     });
 }
+
 
   </script>
 
@@ -141,6 +141,14 @@
 
       <!-- Android Install Button -->
         <button id="install-button-android">Install App</button>
+
+        <!-- Update Notification Modal -->
+<div id="update-notification" style="display: none; position: fixed; bottom: 10px; right: 10px; background: white; padding: 20px; box-shadow: 0 0 5px rgba(0,0,0,0.2); z-index: 1000;">
+    New content is available. 
+    <button onclick="document.location.reload(true)">Refresh</button>
+    <button onclick="document.getElementById('update-notification').style.display='none'">Close</button>
+</div>
+
 
 <script type="module" src="firebase.js"></script>
 
