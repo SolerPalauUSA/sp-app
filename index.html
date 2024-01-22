@@ -23,26 +23,50 @@ if ('serviceWorker' in navigator) {
             scope: '/sp-app/'
         })
         .then((registration) => {
-            console.log('Service Worker registered with scope:', registration.scope);
+            // When the user navigates to your site,
+            // the browser tries to redownload the script file that defined the service worker
+            // in the background.
+            // If there is even a byte's difference in the service worker file compared to what it currently has,
+            // it considers it 'new'.
+            let serviceWorker;
+            if (registration.installing) {
+                serviceWorker = registration.installing;
+                console.log('Service worker installing');
+            } else if (registration.waiting) {
+                serviceWorker = registration.waiting;
+                console.log('Service worker installed & waiting');
+            } else if (registration.active) {
+                serviceWorker = registration.active;
+                console.log('Service worker active');
+            }
 
-            // Check for updates to the Service Worker.
-            registration.addEventListener('updatefound', () => {
-                const installingWorker = registration.installing;
-                installingWorker.onstatechange = () => {
-                    if (installingWorker.state === 'installed') {
-                        if (navigator.serviceWorker.controller) {
-                            // New or updated content is available, show custom modal to the user.
-                            document.getElementById('update-notification').style.display = 'block';
+            if (serviceWorker) {
+                serviceWorker.addEventListener('statechange', (e) => {
+                    console.log('Service worker state change:', e.target.state);
+                    if (e.target.state === 'activated') {
+                        // Check if this is the first service worker to control the page or not
+                        if (!navigator.serviceWorker.controller) {
+                            console.log('Service worker activated for the first time!');
                         } else {
-                            // Content is cached for offline use, show a relevant message if needed.
-                            console.log('Content is now available offline!');
+                            // New service worker has taken over, show notification
+                            console.log('New content is available; please refresh.');
+                            document.getElementById('update-notification').style.display = 'block';
                         }
                     }
-                };
-            });
+                });
+            }
         })
         .catch((error) => {
             console.error('Service Worker registration failed:', error);
+        });
+
+        let refreshing;
+        // The event listener that is fired when the service worker updates
+        // Here we reload the page
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (refreshing) return;
+            window.location.reload();
+            refreshing = true;
         });
     });
 }
