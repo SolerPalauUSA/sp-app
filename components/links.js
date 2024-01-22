@@ -90,15 +90,9 @@ class ImportantLinks extends HTMLElement {
             }
 
             .links-wrapper {
-                /* Adjust styles for smaller height */
-                max-height: 667px; /* Example: You might want to adjust the max-height */
+            margin-top: 6rem
             }
 
-            .links-container {
-                /* Adjust grid or other styles for smaller height */
-                grid-template-columns: 1fr; /* Example: Use single column layout */
-                gap: 5px; /* Example: Reduce gap size */
-            }
 
             .link-item {
                 /* Adjust link item styles for smaller height */
