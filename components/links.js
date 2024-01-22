@@ -80,6 +80,40 @@ class ImportantLinks extends HTMLElement {
             margin-top: 5px;
             text-align: center;
         }
+
+
+        
+        /* Media Query for devices with viewport size 375x667 */
+        @media only screen and (max-width: 375px) and (max-height: 667px) {
+            :host {
+                /* Adjust host styles for smaller height if needed */
+            }
+
+            .links-wrapper {
+                /* Adjust styles for smaller height */
+                max-height: 667px; /* Example: You might want to adjust the max-height */
+            }
+
+            .links-container {
+                /* Adjust grid or other styles for smaller height */
+                grid-template-columns: 1fr; /* Example: Use single column layout */
+                gap: 5px; /* Example: Reduce gap size */
+            }
+
+            .link-item {
+                /* Adjust link item styles for smaller height */
+                height: 100px; /* Example: Adjust height of link items */
+            }
+
+            .link-icon {
+                /* Adjust icon size for smaller height */
+                width: 40px;
+                height: 40px;
+            }
+
+         
+        }
+
     </style>
         `;
     }
