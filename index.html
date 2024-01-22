@@ -23,11 +23,6 @@ if ('serviceWorker' in navigator) {
             scope: '/sp-app/'
         })
         .then((registration) => {
-            // When the user navigates to your site,
-            // the browser tries to redownload the script file that defined the service worker
-            // in the background.
-            // If there is even a byte's difference in the service worker file compared to what it currently has,
-            // it considers it 'new'.
             let serviceWorker;
             if (registration.installing) {
                 serviceWorker = registration.installing;
@@ -61,8 +56,6 @@ if ('serviceWorker' in navigator) {
         });
 
         let refreshing;
-        // The event listener that is fired when the service worker updates
-        // Here we reload the page
         navigator.serviceWorker.addEventListener('controllerchange', () => {
             if (refreshing) return;
             window.location.reload();
@@ -70,6 +63,7 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
+
 
 
   </script>

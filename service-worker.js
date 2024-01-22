@@ -1,5 +1,5 @@
 // Define the cache name and resources to cache
-const cacheName = 'Soler-Palau-App-Data-01__22__2024_V1';
+const cacheName = 'Soler-Palau-App-Data-V__Test';
 const cacheResources = [
   '/sp-app/',
   '/sp-app/index.html',
@@ -78,5 +78,24 @@ self.addEventListener('fetch', (event) => {
       .then((cachedResponse) => {
         return cachedResponse || fetch(event.request);
       })
+  );
+});
+
+
+// Activate event: Clear old caches
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames.filter((oldCacheName) => {
+          return oldCacheName !== cacheName; // Only delete caches that aren't the current cache
+        }).map((oldCacheName) => {
+          return caches.delete(oldCacheName); // Delete the old caches
+        })
+      );
+    }).then(() => {
+      // Take immediate control of the page
+      return self.clients.claim();
+    })
   );
 });
