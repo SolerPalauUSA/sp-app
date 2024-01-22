@@ -39,45 +39,48 @@ class ImportantLinks extends HTMLElement {
 
     render() {
         this.shadowRoot.innerHTML = `
-            <style>
+        <style>
+        :host {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Reset any default margin */
+        }
+        
+        .links-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            max-height: 100vh;
+            overflow: hidden;
+        }
 
-                .links-wrapper {
-                  display: flex;
-                  justify-content: center;
-                  flex-direction: column;
-                  margin-left: 1rem;
-                  margin-right: 1rem;
-                  max-height: 100vh;
-                  overflow: hidden;
-
-
-
-                }
-
-                .links-container {
-                    padding: 1rem;
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                    gap: 10px;
-                    
-                }
-                .link-item {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    text-decoration: none;
-                    color: inherit;
-                    height: 125px;
-                }
-                .link-icon {
-                    width: 50px;
-                    height: 50px;
-                }
-                .link-title {
-                    margin-top: 5px;
-                    text-align: center;
-                }
-            </style>
+        .links-container {
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .link-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            height: 125px;
+        }
+        .link-icon {
+            width: 50px;
+            height: 50px;
+        }
+        .link-title {
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
         `;
     }
 }
