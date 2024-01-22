@@ -40,26 +40,29 @@ class ImportantLinks extends HTMLElement {
     render() {
         this.shadowRoot.innerHTML = `
         <style>
-
+        :host {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Reset any default margin */
+        }
+        
         .links-wrapper {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          margin-left: 1rem;
-          margin-right: 1rem;
-          max-height: 100vh;
-          overflow: hidden;
-
-
-
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            max-height: 100vh;
+            overflow: hidden;
         }
 
         .links-container {
             padding: 1rem;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(2, 1fr); /* Creates two columns */
             gap: 10px;
-            
         }
         .link-item {
             display: flex;
