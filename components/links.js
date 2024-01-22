@@ -47,7 +47,9 @@ class ImportantLinks extends HTMLElement {
                   flex-direction: column;
                   margin-left: 1rem;
                   margin-right: 1rem;
-                  height: 100vh;
+                  max-height: 100vh;
+                  overflow: hidden;
+
 
 
                 }
