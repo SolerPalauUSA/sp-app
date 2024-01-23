@@ -75,7 +75,7 @@
       {
         "id": 2,
         "name": "Cabinet Ventilator",
-        "image": "https://www.solerpalau-usa.com/images/products/ccf/Losone-Select-Inline.webp",
+        "image": "../assets/images/Losone-Select-Inline.webp",
         "description": "Incredibly reliable. Unbelievably quiet. Offering the CFM choices you need at the lowest sound levels in the industry.",
         "models": [
           {
@@ -146,7 +146,7 @@
       {
         "id": 1,
         "name": "KSFV",
-        "image": "https://www.solerpalau-usa.com/images/products/cfsf/KSFV-recat.png",
+        "image": "../assets/images/KSFV-recat.png",
         "description": "The KSFV fans are roof curb or curb cap mounted filtered supply fans rated from 475 to over 12,600 CFM, with static pressure capabilities to 2-1/2\". They are specifically designed for non-tempered, filtered make-up air in kitchen hood applications. ",
         "models": [
           {
@@ -645,7 +645,7 @@
       {
         "id": 2,
         "name": "CSF",
-        "image": "https://www.solerpalau-usa.com/images/products/cfsf/CSF-recat.png",
+        "image": "../assets/images/CSF-recat.png",
         "description": "Centrifugal Filtered Supply Fans units are roof mounted filtered supply fans rated from 475 to over 12,500 CFM, with static pressure capability up to 2\". CSF's rugged, heavy-gauge galvanized hood and stack provide maximum weather protection and long life. ",
         "submittals": [
           {
@@ -667,7 +667,7 @@
       {
         "id": 3,
         "name": "LSF",
-        "image": "https://www.solerpalau-usa.com/images/products/cfsf/LSF-recat.png",
+        "image": "../assets/images/LSF-recat.png",
         "description": "Louver Filtered Supply Fans units are roof mounted filtered supply fans rated from 475 to over 12,500 CFM, with static pressure capabilities to 2\". LSF's architecturally pleasing; heavy-gauge aluminum louver design provides long life and the utmost in performance efficiency. ",
         "submittals": [
           {
@@ -696,7 +696,7 @@
       {
         "id": 1,
         "name": "SDBD and SDBDe",
-        "image": "https://www.solerpalau-usa.com/images/products/crwf/SDBD-recat.png",
+        "image": "../assets/images/SDBD-recat.png",
         "description": "SDBD and SDBDe direct drive fans are designed to exhaust air up to 4,984 CFM, with high static pressure capability up to 2-1/4\". The non-overloading backward inclined wheel with its higher static pressure capability makes these units suitable for either ducted or non-ducted applications.",
         "models": [
           {
@@ -789,7 +789,7 @@
       {
         "id": 2,
         "name": "SDB",
-        "image": "https://www.solerpalau-usa.com/images/products/crwf/SDB-recat.png",
+        "image": "../assets/images/SDB-recat.png",
         "description": "The SDB, with its sleek spun aluminum exterior and efficient design, ensures optimal performance at high static pressures. Easy adjustments via belt drives and reliability are guaranteed with AMCA Air and Sound and cULus 705 certifications.",
         "models": [
           {
@@ -1343,7 +1343,7 @@
       {
         "id": 3,
         "name": "STXD",
-        "image": "https://www.solerpalau-usa.com/images/products/crwf/STXB-recat.png",
+        "image": "../assets/images/STXB-recat.png",
         "description": "The Model STXD direct drive fans, featuring attractive aluminum exteriors, efficiently exhaust air in high-pressure environments up to 4,780 CFM. These fans are versatile, suitable for both ducted and nonducted applications, and promise quiet, low-maintenance operation with no belts or fan bearings to maintain.",
         "models": [
           {
@@ -1431,7 +1431,7 @@
       {
         "id": 4,
         "name": "STXB",
-        "image": "https://www.solerpalau-usa.com/images/products/crwf/STXB-recat.png",
+        "image": "../assets/images/STXB-recat.png",
         "description": "STXB and STXB-RHUL Upblast Belt Drive Centrifugal Roof/Sidewall Exhaust Fans are designed to exhaust air up to 37,290 CFM in high static pressure applications to 3\". The aluminum exterior provides an attractive appearance. Belt drive results in lower operating RPM and sound levels, making the Series STXB well suited to applications where quiet operation is important.",
         "models": [
           {
@@ -1925,7 +1925,7 @@
       {
         "id": 6,
         "name": "LPD and LPD-SF",
-        "image": "https://www.solerpalau-usa.com/images/products/crwf/LPD-recat.png",
+        "image": "../assets/images/LPD-recat.png",
         "description": "The LPD and LPD-SF are sleek, versatile direct drive fans, designed to exhaust air efficiently in areas requiring low CFM up to 420 with high static pressure. These are ideal for various ventilations like bathrooms or offices and offer flexible mounting options; LPD is optimal for curb mounting and LPD-SF has a self-flashing base for roof or sidewall mounting.",
         "models": [
           {
@@ -1959,7 +1959,7 @@
       {
         "id": 7,
         "name": "CWD",
-        "image": "https://www.solerpalau-usa.com/images/products/crwf/CWD-recat.png",
+        "image": "../assets/images/CWD-recat.png",
         "description": "The Centrifugal Wall Mounted Exhauster Direct Drive Fans (CWD) offer a sleek, low-profile design, efficiently exhausting up to 3,360 CFM. These corrosion-resistant units are perfect for sidewall mounting in spaces like offices or restaurants, ensuring quiet and minimal maintenance operation.",
         "models": [
           {
@@ -2045,7 +2045,7 @@
       {
         "id": 1,
         "name": "TR",
-        "image": "https://www.solerpalau-usa.com/images/products/erv/TR-recat.png",
+        "image": "../assets/images/TR-recat.png",
         "description": "S&P's TR Series ensures optimal indoor air quality by efficiently exchanging stale air with fresh, using an advanced energy exchange core to maintain comfort and prevent contamination in all climates.",
         "models": [
           {
@@ -2118,7 +2118,7 @@
       {
         "id": 2,
         "name": "TRe",
-        "image": "https://www.solerpalau-usa.com/images/products/erv/TRe2-recat.png",
+        "image": "../assets/images/TRe2-recat.png",
         "description": "Total Recovery Premium, TRe, is the latest edition to S&P USA's line of Energy Recovery Ventilators. TRe can be used in any orientation and features an EC motor for great energy efficiency. Utilize TRe for any residential or light commercial project by individually balancing each airstream to account for variations of duct run lengths.",
         "models": [
           {
@@ -2178,7 +2178,7 @@
       {
         "id": 3,
         "name": "TRC",
-        "image": "https://www.solerpalau-usa.com/images/products/erv/TRC-recat.png",
+        "image": "../assets/images/TRC-recat.png",
         "description": "S&P's TRC Series efficiently refreshes indoor air in all climates, using an advanced energy exchange core to separate and prevent contamination between incoming and outgoing air streams, while transferring heat and humidity.",
         "models": [
           {
@@ -2300,7 +2300,7 @@
       {
         "id": 4,
         "name": "TRCeN",
-        "image": "https://www.solerpalau-usa.com/images/products/erv/trcen-cat.png",
+        "image": "../assets/images/trcen-cat.png",
         "description": "S&P's TRCe Series with EC Motor revitalizes indoor air by exchanging stale air for fresh in all climates, using an advanced \"air-to-air\" core to prevent contamination and efficiently transfer heat and humidity, ideal for commercial applications.",
         "models": [
           {
@@ -2374,7 +2374,7 @@
       {
         "id": 5,
         "name": "TRLPe",
-        "image": "https://www.solerpalau-usa.com/images/products/erv/TRLPe110_RGB.webp",
+        "image": "../assets/images/TRLPe110_RGB.webp",
         "description": "The Total Recovery series with EC Motor offers balanced energy ventilation through a multi-speed control and compact design, ideal for space-constrained residential and light commercial applications, ensuring efficient air-to-air energy exchange.",
         "models": [
           {
@@ -2431,7 +2431,7 @@
       {
         "id": 1,
         "name": "RCXII",
-        "image": "https://www.solerpalau-usa.com/images/products/gv/RCXII-recat.png",
+        "image": "../assets/images/RCXII-recat.png",
         "description": "The sleek RCXII and RCXII-SF ventilators modulate air in enclosed spaces without a fan, available in sizes 6 to 36\". RCXII mounts on a roof curb, and RCXII-SF installs under shingles without one, each including a standard galvanized birdscreen.",
         "models": [
           {
@@ -2568,7 +2568,7 @@
       {
         "id": 2,
         "name": "RLX",
-        "image": "https://www.solerpalau-usa.com/images/products/gv/RLX-recat.png",
+        "image": "../assets/images/RLX-recat.png",
         "description": "The RLX Aluminum Louvered Penthouse offers a sleek, modern solution for fresh air intake, pressure relief, and gravity applications. Customizable in size, it's ideal for hiding rooftop equipment and ensuring weather integrity with its storm-resistant design. Capacities range from 395 to 69,500 CFM, with larger custom options available. The companion louvered fan, Model LSF, ensures design consistency in rooftop installations.",
         
         "submittals": [
@@ -2591,7 +2591,7 @@
       {
         "id": 3,
         "name": "BGH",
-        "image": "https://www.solerpalau-usa.com/images/products/gv/BGH-recat.png",
+        "image": "../assets/images/BGH-recat.png",
         "description": "BGH Gravity Ventilators offer a modern low silhouette design that blend with roof lines and other equipment. Designed for maximum airflow passage and weathertight integrity, BGH comes in either intake or relief models with aluminum or galvanized finishes. An extensive range of sizes is offered with many standard and optional features. Exhaust models have a 1:1 ratio of hood perimeter opening to throat area and supply models incorporate a 2:1 ratio.",
         
         "submittals": [
@@ -2621,7 +2621,7 @@
       {
         "id": 1,
         "name": "Tornado",
-        "image": "https://www.solerpalau-usa.com/images/products/hvls/tornado.png",
+        "image": "../assets/images/tornado.png",
         "description": "Tornado HVLS is a 5-Blade High Volume Low-Speed fan model featuring a direct drive ECM, IP65 motor. This fan is equipped with wingtips to redirect outward airflow downward. Through the destratification process, the THVLS fan series will lower energy bills providing evaporative cooling effect in summer and allow for uniform temperature in winter",
     
         "submittals": [
@@ -2640,7 +2640,7 @@
       {
         "id": 2,
         "name": "Tempest",
-        "image": "https://www.solerpalau-usa.com/images/products/hvls/tempest.png",
+        "image": "../assets/images/tempest.png",
         "description": "Tempest HVLS is a 6-Blade High Volume Low-Speed fan model featuring a direct drive ECM, IP65 motor. This fan is equipped with wingtips to redirect outward airflow downward. Through the destratification process, the THVLS fan series will lower energy bills providing evaporative cooling effect in summer and allow for uniform temperature in winter.",
     
         "submittals": [
@@ -2666,7 +2666,7 @@
       {
         "id": 1,
         "name": "TD-MIXVENT",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/TD-MIXVENT-recat.png",
+        "image": "../assets/images/TD-MIXVENT-recat.png",
         "description": "The TD-MIXVENT series is a compact in-line duct fan designed for maximum airflow and minimal noise, ideal for small to medium-sized ventilation installations requiring high airflow to pressure ratio in limited space environments like false ceiling voids and cabinets.",
         "models": [
           {
@@ -2743,7 +2743,7 @@
       {
         "id": 2,
         "name": "TD-SILENT",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/TD-SILENT-recat.png",
+        "image": "../assets/images/TD-SILENT-recat.png",
         "description": "The TD-SILENT fans are ultra-quiet, low-profile units, constructed from durable reinforced plastic, featuring sound-absorbent insulation to dampen noise. Equipped with rubber gaskets on the inlet and outlet, they ensure easy installation, minimal vibrations, and an almost air-tight seal.",
         "models": [
           {
@@ -2782,7 +2782,7 @@
       {
         "id": 3,
         "name": "PV-DEDPV",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/DEDPV-recat.png",
+        "image": "../assets/images/DEDPV-recat.png",
         "description": "The PV-DEDPV is a UL 705 listed Dryer Exhaust Duct Power Ventilator. It effectively helps residential clothes dryers overcome the high static pressure caused by long duct runs between the dryer and wall or roof cap.",
         "models": [
           {
@@ -2807,7 +2807,7 @@
       {
         "id": 4,
         "name": "PV-POWERVENT",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/PV-recat.png",
+        "image": "../assets/images/PV-recat.png",
         "description": "The PV-POWERVENT series of direct drive centrifugal in-line duct ventilation fans consists of six model sizes 4\", 5\", 6\", 8\", 10 and 12.4\" respectively. All models are designed for direct connection in-line with standard diameter round ducting. Airflow performance values range from 153 CFM (PV-100X) up to 943 CFM (PV-315X).",
         "models": [
           {
@@ -2861,7 +2861,7 @@
       {
         "id": 5,
         "name": "PRF",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/PRF-recat.png",
+        "image": "../assets/images/PRF-recat.png",
         "description": "PRF fans, designed specifically for radon mitigation, have fully-sealed plastic housing and are capable of managing up to 1\" of static pressure with backward inclined centrifugal blowers/motors. They fit easily with standard PVC couplings and feature large, accessible, watertight electrical boxes for hassle-free wiring.",
         "models": [
           {
@@ -2898,7 +2898,7 @@
       {
         "id": 6,
         "name": "SWF-SIDEWALL",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/SWF-recat.png",
+        "image": "../assets/images/SWF-recat.png",
         "description": "The Sidewall Fan Series features powerful motors encased in an accessible outdoor-rated housing, ideal for spaces with limited indoor access. Available in sizes 4-8\", they connect directly to standard ducting, with airflow ranging from 119 to 416 CFM.",
         "models": [
           {
@@ -2947,7 +2947,7 @@
       {
         "id": 7,
         "name": "SMXD",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/SMXD-recat.png",
+        "image": "../assets/images/SMXD-recat.png",
         "description": "SMXD series is an direct drive mixed flow fan specially designed to maximize the airflow performance by acting as a hybrid between an axial and centrifugal fan. They produce a great amount of air while being able to handle higher pressures. It is more efficient and quieter than comparable tubular centrifugal fans. These fans can be used in exhaust, supply or return air applications.",
        
         "submittals": [
@@ -2970,7 +2970,7 @@
       {
         "id": 8,
         "name": "SMXD-HT",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/SMXD-recat.png",
+        "image": "../assets/images/SMXD-recat.png",
         "description": "SMXD series is an direct drive mixed flow fan specially designed to maximize the airflow performance by acting as a hybrid between an axial and centrifugal fan. They produce a great amount of air while being able to handle higher pressures. It is more efficient and quieter than comparable tubular centrifugal fans. These fans can be used in exhaust, supply or return air applications.",
        
         "submittals": [
@@ -2993,7 +2993,7 @@
       {
         "id": 9,
         "name": "SMXDK",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/smxdk.webp",
+        "image": "../assets/images/smxdk.webp",
         "description": "Model SMXDK mixed flow fans are inline ducted fans that can be used in exhaust, supply, or return air applications. Mixed flow fans act as a hybrid between axial and centrifugal fans. Meaning, they produce a lot of air such as axial fans, but they can handle higher pressures like centrifugal fans. When these technologies come together, the fan ends up being more efficient and quieter than similar tubular centrifugal fans.",
        
         "otherDocs": [
@@ -3010,7 +3010,7 @@
       {
         "id": 10,
         "name": "SMXDK-HT",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/smxdk.webp",
+        "image": "../assets/images/smxdk.webp",
         "description": "SMXDK-HT series is a direct drive mixed flow fan specially designed to maximize the airflow performance by acting as a hybrid between an axial and centrifugal fan. This HT (high temperature) model can provide emergency heat and smoke ventilation in the event of a fire, which can provide valuable time to people exiting or emergency personnel.",
        
         "otherDocs": [
@@ -3027,7 +3027,7 @@
       {
         "id": 11,
         "name": "SQB",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/SQB-recat.png",
+        "image": "../assets/images/SQB-recat.png",
         "description": "SQB square in-line fans, ranging from sizes 7 to 42, deliver efficient airflow up to 24,000 CFM with high static pressure, ideal for space-limited clean air applications. These compact, versatile units are AMCA-certified and UL listed, assuring reliable performance.",
         "models": [
           {
@@ -3446,7 +3446,7 @@
       {
         "id": 12,
         "name": "SQD and eSQD",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/SQD-recat.png",
+        "image": "../assets/images/SQD-recat.png",
         "description": "The SQD square inline duct fan, suitable for tight spaces, comes in sizes 6-15, moving up to 2,800 CFM. eSQD models with EC motors are available in sizes 8, 10, and 12. Their compact design allows for versatile mounting and easy access via removable doors.",
         "models": [
           {
@@ -3539,7 +3539,7 @@
       {
         "id": 13,
         "name": "CTB and CTBRHUL",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/CTB-recat.png",
+        "image": "../assets/images/CTB-recat.png",
         "description": "The Inline Tubular Centrifugal (CTB) series provides a broad selection of sizes and capabilities, with models rated from 300 to 20,000 CFM and up to 2-1/2\" static pressure. Designed for commercial and industrial in-line use, these fans are known for quiet, efficient, and reliable air movement. Ideal for various applications like building ventilation, paint spray booths, and kitchen exhausts, the CTB series excels in settings requiring air movement through ducts against moderate static pressure.",
        
         "submittals": [
@@ -3562,7 +3562,7 @@
       {
         "id": 14,
         "name": "CFD",
-        "image": "https://www.solerpalau-usa.com/images/products/isdf/CFD-recat.png",
+        "image": "../assets/images/CFD-recat.png",
         "description": "The Forward Curved Belt Driven Inline Duct Blowers (CFD) is designed for supply, exhaust or duct return applications. The CFD is an economical fan model designed to run quietly and efficiently in cooling, heating, and ventilating applications.",
        
         "submittals": [
@@ -3593,7 +3593,7 @@
       {
         "id": 1,
         "name": "IFFT and IFFTe",
-        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/ifft-recat.png",
+        "image": "../assets/images/ifft-recat.png",
         "description": "The IFFT and IFFTe centrifugal Jet Fans were designed with relative compactness and efficiency in mind. They are perfect for moving a great deal of air to keep a parking garage safe. The fans induce air flow to move dangerous gases out of enclosed garages and to dedicated ventilation points. The IFFT uses AC motors and the IFFTe uses EC motors. The IFFTe improves the efficiency of the units by using the latest in EC motor technology.",
       
         "submittals": [
@@ -3616,7 +3616,7 @@
       {
         "id": 2,
         "name": "TJFU",
-        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/tjfu-recat.png",
+        "image": "../assets/images/tjfu-recat.png",
         "description": "The TJFU axial jet fans were designed with relative compactness and efficiency in mind. They are perfect for moving a great deal of air to keep a parking garage safe. The fans induce air flow to move dangerous gasses out of enclosed garages and to dedicated ventilation points. Jet fans eliminate the need for ductwork throughout parking areas which reduces installation costs.",
       
         "submittals": [
@@ -3639,7 +3639,7 @@
       {
         "id": 3,
         "name": "IFAB and IFEB",
-        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/ifab-recat.png",
+        "image": "../assets/images/ifab-recat.png",
         "description": "The IFAB and IFEB low profile jet fans, designed for compactness and efficiency, are ideal for ventilating parking garages with low ceilings. Their efficient impellers minimize ventilation costs, and their lightweight design ensures easy installation. The IFAB features AC impellers, while the IFEB, equipped with EC impellers, enhances efficiency through advanced EC motor technology.",
       
         "submittals": [
@@ -3670,7 +3670,7 @@
       {
         "id": 4,
         "name": "6002, 6002-14B, 6002A and 6002-14A",
-        "image": "https://www.solerpalau-usa.com/images/products/jetfans/products/vgd-recat.png",
+        "image": "../assets/images/vgd-recat.png",
         "description": "Models 6002, 6002-14B, 6002A and 6002-14A offer precision to assure the health and safety to occupants with the tightest possible controls on energy consumption. They are versatile, self-contained dual gas sensors that are network ready for either peer-to-peer (master slave) operation or central control for a smooth integration into new or existing energy management systems.",
       
         "submittals": [
@@ -3700,7 +3700,7 @@
       {
         "id": 1,
         "name": "MDX-ES24VK",
-        "image": "https://www.solerpalau-usa.com/images/products/refresh/products/MD-recat.png",
+        "image": "../assets/images/MD-recat.png",
         "description": "The MDX-ES24VK from S&P allows air to enter dwellings to meet building code and ventilation standards requirements through a motorized damper controlled by a 24V temperature/humidity monitoring control. The control can command the central HVAC blower to help distribute fresh air through the existing duct work if necessary.",
         "models": [
           {
@@ -3954,7 +3954,7 @@
       {
         "id": 1,
         "name": "reFresh Full Size Units",
-        "image": "https://www.solerpalau-usa.com/images/products/refresh/RF10-160EC-Full-Size.webp",
+        "image": "../assets/images/RF10-160EC-Full-Size.webp",
         "description": "All-in-one units to introduce fresh air from the outside into the residence. The reFresh series is specifically engineered to meet building and energy codes that call for ASHRAE 62.2 CFM requirements. The reFresh Full Size Units have set speeds at 40, 100, and 170 CFM (Low, Medium, and High).",
         "models": [
           {
@@ -4054,7 +4054,7 @@
       {
         "id": 2,
         "name": "reFresh Low Profile",
-        "image": "https://www.solerpalau-usa.com/images/products/refresh/RF8-120EC-Low-Profile.webp",
+        "image": "../assets/images/RF8-120EC-Low-Profile.webp",
         "description": "Low profile, all-in-one units to introduce fresh air from the outside into the residence. The reFresh series is specifically engineered to meet building and energy codes that call for ASHRAE 62.2 CFM requirements. The reFresh Low Profile Units have set speeds at 40, 100, and 140 CFM (Low, Medium, and High).",
         "models": [
           {
@@ -4118,7 +4118,7 @@
       {
         "id": 3,
         "name": "reFresh Value",
-        "image": "https://www.solerpalau-usa.com/images/products/refresh/products/RFV-recat.png",
+        "image": "../assets/images/RFV-recat.png",
         "description": "The reFresh Value Series introduces fresh air from the outside into the residence. The value model is specifically engineered to meet building and energy codes that call for ASHRAE 62.2 (2010), IRC (2012/2015), and IMC (2012/2015) requirements.",
         "models": [
           {
@@ -4162,7 +4162,7 @@
       {
         "id": 1,
         "name": "ACF",
-        "image": "https://www.solerpalau-usa.com/images/products/spf/ACF-recat.png",
+        "image": "../assets/images/ACF-recat.png",
         "description": "Made of corrosion-resistant galvanized steel, the ACF48 is a durable, value-priced fan with an IP55 motor and sealed ball bearings for diverse applications. It's easily installed via frame holes, with an optional wall box kit available.",
         "models": [
           {
@@ -4200,7 +4200,7 @@
       {
         "id": 2,
         "name": "LCE and LCS",
-        "image": "https://www.solerpalau-usa.com/images/products/spf/LCE.png",
+        "image": "../assets/images/LCE.png",
         "description": "LCE (exhaust) and LCS (supply) are belt-driven propeller fans rated for 3,000 to 40,000 CFM and up to 5/8\" w.g. Designed for large volume air movement at low pressures, they're ideal for commercial spaces like warehouses, gyms, poultry houses, and greenhouses.",
         "models": [
           {
@@ -5162,7 +5162,7 @@
       {
         "id": 4,
         "name": "L2E and L2S",
-        "image": "https://www.solerpalau-usa.com/images/products/spf/L2-recat.png",
+        "image": "../assets/images/L2-recat.png",
         "description": "L2E (exhaust) and L2S (supply) are high capacity wall mounted belt driven propeller fans rated from 5,000 to 47,000 CFM, with static pressure capability up to 3/4\" w.g. Their primary application is the exhaust of large volumes of ventilation air from commercial and light industrial buildings such as manufacturing and assembly plants, warehouses, parking garages, gymnasiums, equipment rooms, distribution centers and OEM applications.",
         
         "submittals": [
@@ -5181,7 +5181,7 @@
       {
         "id": 5,
         "name": "L3E and L3S",
-        "image": "https://www.solerpalau-usa.com/images/products/spf/L3-recat.png",
+        "image": "../assets/images/L3-recat.png",
         "description": "L3E (exhaust) and L3S (supply) are high capacity wall mounted belt driven propeller fans rated from 35,000 to 85,000, with static pressure capability up to 1\" w.g. Their primary application is the exhaust of large volumes of air at a relatively moderate static pressure from commercial, industrial and agricultural buildings such as manufacturing and assembly plants, warehouses, foundries, mills, boiler rooms and equipment rooms.",
         
         "submittals": [
@@ -5200,7 +5200,7 @@
       {
         "id": 6,
         "name": "DFE and DFS",
-        "image": "https://www.solerpalau-usa.com/images/products/spf/DF-recat.png",
+        "image": "../assets/images/DF-recat.png",
         "description": "The DFE and DFS Direct Drive Sidewall Propeller Exhaust/Supply Fan feature the maximum efficiency, low maintenance and durable, economical operation resulting from the direct drive design. It is available in exhaust configurations to provide general ventilation for a wide variety of buildings and enclosed areas within buildings. Examples include factories, assembly plants, churches, gymnasiums, garages, jails, machine rooms and many others.",
         
         "submittals": [
@@ -5219,7 +5219,7 @@
       {
         "id": 7,
         "name": "DDE and DDS",
-        "image": "https://www.solerpalau-usa.com/images/products/spf/DD-recat.png",
+        "image": "../assets/images/DD-recat.png",
         "description": "The DDE and DDS Direct Drive Sidewall Propeller Exhaust/Supply Fan feature the maximum efficiency, low maintenance and durable, economical operation resulting from the direct drive design. It is available in exhaust configurations to provide general ventilation for a wide variety of buildings and enclosed areas within buildings. Examples include factories, assembly plants, churches, gymnasiums, garages, jails, machine rooms and many others.",
         
         "submittals": [
@@ -5245,7 +5245,7 @@
       {
         "id": 1,
         "name": "UBS and UBS-P",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBS-recat.png",
+        "image": "../assets/images/UBS-recat.png",
         "description": "UBS and UBS-P are high capacity roof mounted exhausters rated from 7,000 to 51,000 CFM. They are general ventilation units designed to economically remove large volumes of air, fumes, and vapors from commercial and industrial buildings such as warehouses, manufacturing and assembly plants, chemical plants, foundries and paper mills.",
       
         "submittals": [
@@ -5384,7 +5384,7 @@
       {
         "id": 3,
         "name": "HRSB and HRSD",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/HRS-recat.png",
+        "image": "../assets/images/HRS-recat.png",
         "description": "HRSB and HRSD are roof mounted supply fans rated from 4,000 to over 56,000 CFM, with static pressure capability up to 3/4\". They are used in a variety of commercial and industrial operations such as warehouses manufacturing plants, equipment and machinery rooms, assembly plants and similar facilities to provide fresh outside air for personal comfort and to reduce negative pressure caused by exhaust systems.",
       
         "submittals": [
@@ -5403,7 +5403,7 @@
       {
         "id": 4,
         "name": "HREB-C, HREB-P, and HRED-C",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/HRE-recat.png",
+        "image": "../assets/images/HRE-recat.png",
         "description": "Models HREB-C, HREB-P, and HRED-C are roof-mounted, low-profile exhaust fans rated from 4,000 to over 90,000 CFM with 1” static pressure. Eight sizes from 24-72 inches are available. Available in galvanized or aluminum construction, they are used to exhaust air from a variety of commercial and industrial operations such as manufacturing and assembly plants, warehouses, garages, laundries, and similar buildings.",
       
         "submittals": [
@@ -5422,7 +5422,7 @@
       {
         "id": 5,
         "name": "UBSRD and UBSRD-P",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBSRD-recat.png",
+        "image": "../assets/images/UBSRD-recat.png",
         "description": "Model UBSRD units are high capacity, belt driven roof mounted exhausters rated from 3,700 to 67,000 CFM. The motor and drives are located outside of the exhaust airstream, making these units especially suited for the removal of heated or contaminated air from commercial and industrial buildings or processes where these conditions exist. All models are capable of continuous operation exhausting air to 200°F.",
       
         "submittals": [
@@ -5441,7 +5441,7 @@
       {
         "id": 6,
         "name": "UBSRD-HT and UBSRD-HT1",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBSRD-recat.png",
+        "image": "../assets/images/UBSRD-recat.png",
         "description": "UBSRD-HT and UBSRD-HT1 are available in 24, 30, 36, 42, 48, 54 and 60 inch sizes. Horsepower and CFM range to 52,000 CFM and 10HP. These units have been designed and tested for emergency heat and smoke removal. This design also lends itself to everyday non-emergency high capacity industrial and commercial roof exhaust applications. These fans successfully passed heat tests of 1000°F for fifteen (15) minutes, and 500°F for over four (4) hours by an independent testing agency.",
       
         "submittals": [
@@ -5464,7 +5464,7 @@
       {
         "id": 7,
         "name": "TUB",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBSRD-recat.png",
+        "image": "../assets/images/UBSRD-recat.png",
         "description": "Tubeaxial Upblast Propeller Roof Exhauster Fans (TUB) are designed for high capacity industrial and commercial roof exhaust applications with capacities ranging from 6,210 to 60,116 CFM, with static pressure capability up to 1\". The remote drive configuration of the TUB is especially suited for the removal of fumes, vapors, steam, dust, smoke and contaminated or heated air for continuous operation in air temperatures to 200°F. For temperature ratings to 1000°F and/or IRI requirements refer to TUB-HT.",
       
         "submittals": [
@@ -5483,7 +5483,7 @@
       {
         "id": 7,
         "name": "TUB-HT",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/TUB-HT-recat.png",
+        "image": "../assets/images/TUB-HT-recat.png",
         "description": "Tubeaxial Upblast Propeller Roof Exhauster for Heat and Smoke Removal Fans (TUB-HT) has been designed and tested for emergency heat, and smoke removal with horsepower's up to 15 HP and CFM up to 57,000. This design also lends itself to normal non-emergency high capacity industrial and commercial roof exhaust applications. TUB-HT's successfully passed heat tests of 1000°F for fifteen (15) minutes, and 500°F for over four (4) hours by an independent testing agency. TUB-HT exceeds I.R.I (Industrial Risk Insurers) guidelines and is UL-793 Listed as \"Power Ventilator for Smoke Control Systems.\"",
       
         "submittals": [
@@ -5502,7 +5502,7 @@
       {
         "id": 8,
         "name": "UBB and UBX",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/TUB-HT-recat.png",
+        "image": "../assets/images/TUB-HT-recat.png",
         "description": "UBB and UBX are high capacity roof mounted exhausters rated from 5,900 to 78,000 CFM. They are general ventilation units designed to economically remove large volumes of air, fumes, and vapors from commercial and industrial buildings such as warehouses, manufacturing and assembly plants, distribution centers, chemical plants, foundries and paper mills.",
       
         "submittals": [
@@ -5525,7 +5525,7 @@
       {
         "id": 9,
         "name": "UBRD",
-        "image": "https://www.solerpalau-usa.com/images/products/rpf/UBRD-recat.png",
+        "image": "../assets/images/UBRD-recat.png",
         "description": "UBRD units are high capacity belt driven roof mounted exhausters rated from 4,500 to 72,000 CFM. The motor and drives are located outside of the exhaust airstream, making these units especially suited for the removal of heated or contaminated air from commercial and industrial buildings or processes where these conditions exist. All models are capable of continuous operation exhausting air to 200°F.",
       
         "submittals": [
@@ -5551,7 +5551,7 @@
       {
         "id": 1,
         "name": "CM",
-        "image": "https://www.solerpalau-usa.com/images/products/uvs/CM-recat.png",
+        "image": "../assets/images/CM-recat.png",
         "description": "The CM Series utility fans are belt-driven for medium to high-pressure commercial and industrial uses. They come with a motor on an adjustable base, v-belt drives, and durable ball bearings. Their easy installation design is cost-effective, and each fan undergoes testing for reliable, low-maintenance operation.",
         "models": [
           {
@@ -7238,7 +7238,7 @@
       {
         "id": 1,
         "name": "TDB",
-        "image": "https://www.solerpalau-usa.com/images/products/tf/TDB-recat.png",
+        "image": "../assets/images/TDB-recat.png",
         "description": "The Tubeaxial line offers the widest range of sizes, horsepower, and performance in the industry. TDB's are high capacity belt drive tubeaxial fans rated from 900 to 75,490 CFM, with static pressure capability up to 1-1/2\". They are used to exhaust air from or supply air to commercial and industrial applications, such as general building ventilation, enclosed garages, paint spray booths, heat and smoke ventilation systems and other applications where the air is moved through a duct system against moderate static pressure.",
     
         "submittals": [
@@ -7261,7 +7261,7 @@
       {
         "id": 2,
         "name": "TDD",
-        "image": "https://www.solerpalau-usa.com/images/products/tf/TDD-recat.png",
+        "image": "../assets/images/TDD-recat.png",
         "description": "The Tubeaxial line offers the widest range of sizes, horsepower, and performance in the industry. TDD's are high capacity tubeaxial fans rated from 643 to 39,194 CFM, with static pressure capability up to 1-1/4\". They are used to exhaust air from or supply air to commercial and industrial applications, such as general building ventilation, enclosed garages, and other applications where the air is moved through a duct system against moderate static pressure.",
     
         "submittals": [
