@@ -1,5 +1,5 @@
 // Define the cache name and resources to cache
-const cacheName = 'Soler-Palau-App-Data-updated-img';
+const cacheName = 'Soler-Palau-App-Data-updated-imgV1';
 const cacheResources = [
   '/sp-app/',
   '/sp-app/index.html',
@@ -58,7 +58,7 @@ const cacheResources = [
   '/sp-app/assets/images/L2-recat.png',
   '/sp-app/assets/images/L3-recat.png',
   '/sp-app/assets/images/LCE.png',
-  '/sp-app/assets/images/Losone-Select-inline.webp',
+  '/sp-app/assets/images/Losone-Select-Inline.webp',
   '/sp-app/assets/images/LPD-recat.png',
   '/sp-app/assets/images/LSF-recat.png',
   '/sp-app/assets/images/MD-recat.png',
