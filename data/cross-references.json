@@ -811,7 +811,7 @@
         "Series": "DRYER KIT",
         "Active": true,
         "Description": "Clothes Dryer Exhaust/Booster Kits featuring PV-100X Fans",
-        "Image": "https://solerpalau-usa.com/images/products/kits/DBF-100XC.jpg",
+        "Image": "../assets/images/DBF-100XC.jpg",
         "Link" : "https://solerpalau-usa.com/applications/clothes-dryer.html#kits"
     },
     {
@@ -820,7 +820,7 @@
         "Series": "DRYER KIT",
         "Active": true,
         "Description": "Clothes Dryer Exhaust/Booster Kits featuring PV-100X Fans",
-         "Image": "https://solerpalau-usa.com/images/products/kits/DBF-100XC.jpg",
+         "Image": "../assets/images/DBF-100XC.jpg",
          "Link" : "https://solerpalau-usa.com/applications/clothes-dryer.html#kits"
     },
     {
@@ -829,7 +829,7 @@
         "Series": "DRYER KIT",
         "Active": true,
         "Description": "Clothes Dryer Exhaust/Booster Kits featuring PV-100X Fans",
-         "Image": "https://solerpalau-usa.com/images/products/kits/DBF-100XC.jpg",
+         "Image": "../assets/images/DBF-100XC.jpg",
          "Link" : "https://solerpalau-usa.com/applications/clothes-dryer.html#kits"
     },
     {
