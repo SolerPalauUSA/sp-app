@@ -894,7 +894,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TR"
     },
     {
         "CompetitorID": "Venmar",
@@ -903,7 +903,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TR"
     },
     {
         "CompetitorID": "Venmar",
@@ -912,7 +912,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TR"
     },
     {
         "CompetitorID": "Fantech",
@@ -921,7 +921,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TR"
     },
     {
         "CompetitorID": "Lifebreath",
@@ -930,7 +930,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TR"
     },
     {
         "CompetitorID": "Summeraire",
@@ -939,7 +939,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TR"
     },
     {
         "CompetitorID": "Summeraire",
@@ -948,7 +948,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TR"
     },
     {
         "CompetitorID": "Fantech",
@@ -957,7 +957,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TR"
     },
     {
         "CompetitorID": "Broan",
@@ -966,7 +966,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "American Aldes",
@@ -975,7 +975,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "Greenheck",
@@ -984,7 +984,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "Greenheck",
@@ -993,7 +993,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "Lifebreath",
@@ -1002,7 +1002,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "Semco",
@@ -1011,7 +1011,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image": "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "Greentek",
@@ -1020,7 +1020,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image": "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1029,7 +1029,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1038,7 +1038,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "American Aldes",
@@ -1046,7 +1046,7 @@
         "Series": "ERV - TRC",
         "Active": "Energy Recovery Ventilator - Commercial",
         "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "Fantech",
@@ -1055,43 +1055,43 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRC"
     },
     {
         "CompetitorID": "American Aldes",
         "CompetitorModel": "E",
-        "Series": "ERV - TRCe",
+        "Series": "ERV - TRCeN",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
+        "Image" : "../assets/images/trcen-cat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRCeN"
     },
     {
         "CompetitorID": "Greenheck",
         "CompetitorModel": "ECV-VG",
-        "Series": "ERV - TRCe",
+        "Series": "ERV - TRCeN",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
+        "Image" : "../assets/images/trcen-cat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRCeN"
     },
     {
         "CompetitorID": "Systemair",
         "CompetitorModel": "FR",
-        "Series": "ERV - TRCe",
+        "Series": "ERV - TRCeN",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
+        "Image" : "../assets/images/trcen-cat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRCeN"
     },
     {
         "CompetitorID": "Greenheck",
         "CompetitorModel": "Minicore-VG",
-        "Series": "ERV - TRCe",
+        "Series": "ERV - TRCeN",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "../assets/images/TRC-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
+        "Image" : "../assets/images/trcen-cat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRCeN"
     },
     {
         "CompetitorID": "Broan",
@@ -1100,7 +1100,7 @@
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRCeN"
     },
     {
         "CompetitorID": "Panasonic",
@@ -1109,7 +1109,7 @@
         "Active": true,
         "Description": "Total Recovery for All Climates",
         "Image": "../assets/images/TR-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Energy%20Recovery%20Ventilators&series=TRCeN"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -1118,7 +1118,7 @@
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fans with EC Motors (Ecowatt®)",
         "Image": "../assets/images/SQD-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/isdf/sqd.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQD%20and%20eSQD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1127,7 +1127,7 @@
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fans with EC Motors (Ecowatt®)",
         "Image": "../assets/images/SQD-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/isdf/sqd.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQD%20and%20eSQD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -1136,7 +1136,7 @@
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fans with EC Motors (Ecowatt®)",
         "Image": "../assets/images/SQD-recat.png",
-        "Link" : "https://solerpalau-usa.com/products/isdf/sqd.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQD%20and%20eSQD"
     },
    
     {
@@ -1399,7 +1399,8 @@
         "Series": "GSD",
         "Active": true,
         "Description":  "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "../assets/images/GD.png"
+        "Image": "../assets/images/GD.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -2802,7 +2803,7 @@
         "Series": "PCLP",
         "Active": true,
         "Description": "Low Profile Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PCLP.jpg",
+        "Image": "../assets/images/PCLP.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2811,43 +2812,18 @@
         "Series": "PCLP",
         "Active": true,
         "Description": "Low Profile Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PCLP.jpg",
+        "Image": "../assets/images/PCLP.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
-    {
-        "CompetitorID": "Broan",
-        "CompetitorModel": "744",
-        "Series": "PCRL",
-        "Active": true,
-        "Description": "Recessed Vent Light Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PCRL.jpg",
-         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
-    },
-    {
-        "CompetitorID": "Panasonic",
-        "CompetitorModel": "FV-RE1",
-        "Series": "PCRL",
-        "Active": true,
-        "Description": "Recessed Vent Light Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PCRL.jpg",
-         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
-    },
-    {
-        "CompetitorID": "Panasonic",
-        "CompetitorModel": "FV-RL1",
-        "Series": "PCRL",
-        "Active": true,
-        "Description": "Recessed Vent Light Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PCRL.jpg",
-         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
-    },
+    
+    
     {
         "CompetitorID": "Panasonic",
         "CompetitorModel": "FV-BA1",
         "Series": "PCV",
         "Active": true,
         "Description": "Value Series Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PCV.jpg",
+        "Image": "../assets/images/PCV.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2856,7 +2832,7 @@
         "Series": "PCV",
         "Active": true,
         "Description": "Value Series Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PCV.jpg",
+        "Image": "../assets/images/PCV.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2865,7 +2841,7 @@
         "Series": "PRF",
         "Active": true,
         "Description": "Radon Mitigation Fans",
-        "Image": "https://www.optisizer.com/graphics/PRF.jpg",
+        "Image": "../assets/images/PRF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=PRF"
     },
     {
@@ -2874,7 +2850,7 @@
         "Series": "PRF",
         "Active": true,
         "Description": "Radon Mitigation Fans",
-        "Image": "https://www.optisizer.com/graphics/PRF.jpg",
+        "Image": "../assets/images/PRF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=PRF"
     },
     {
@@ -2883,7 +2859,7 @@
         "Series": "PRF",
         "Active": true,
         "Description": "Radon Mitigation Fans",
-        "Image": "https://www.optisizer.com/graphics/PRF.jpg",
+        "Image": "../assets/images/PRF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=PRF"
     },
     {
@@ -2892,7 +2868,7 @@
         "Series": "PV",
         "Active": true,
         "Description": "Inline Centrifugal Duct Fans, PV-POWERVENT",
-        "Image": "https://www.optisizer.com/graphics/PV.jpg",
+        "Image": "../assets/images/DEDPV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=PV-POWERVENT"
     },
     {
@@ -2901,7 +2877,7 @@
         "Series": "PV",
         "Active": true,
         "Description": "Inline Centrifugal Duct Fans, PV-POWERVENT",
-        "Image": "https://www.optisizer.com/graphics/PV.jpg" ,
+        "Image": "../assets/images/DEDPV-recat.png" ,
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=PV-POWERVENT"                       
     },
     {
@@ -2910,7 +2886,7 @@
         "Series": "PV",
         "Active": true,
         "Description": "Inline Centrifugal Duct Fans, PV-POWERVENT",
-        "Image": "https://www.optisizer.com/graphics/PV.jpg" ,
+        "Image": "../assets/images/DEDPV-recat.png" ,
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=PV-POWERVENT"     
     },
     {
@@ -2919,7 +2895,7 @@
         "Series": "PV",
         "Active": true,
         "Description": "Inline Centrifugal Duct Fans, PV-POWERVENT",
-        "Image": "https://www.optisizer.com/graphics/PV.jpg" ,
+        "Image": "../assets/images/DEDPV-recat.png" ,
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=PV-POWERVENT"     
     },
     {
@@ -3000,7 +2976,7 @@
         "Series": "RCXII-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3009,7 +2985,7 @@
         "Series": "RCXII-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3018,7 +2994,7 @@
         "Series": "RCXII-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3027,7 +3003,7 @@
         "Series": "RCXII-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3036,7 +3012,7 @@
         "Series": "RCXII-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3045,7 +3021,7 @@
         "Series": "RCXII-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3054,7 +3030,7 @@
         "Series": "RCXII-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3063,7 +3039,7 @@
         "Series": "RCXII-R",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-R.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3072,7 +3048,7 @@
         "Series": "RCXII-R",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-R.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3081,7 +3057,7 @@
         "Series": "RCXII-R",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-R.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3090,7 +3066,7 @@
         "Series": "RCXII-R",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-R.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3099,7 +3075,7 @@
         "Series": "RCXII-R",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-R.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3108,7 +3084,7 @@
         "Series": "RCXII-R",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-R.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3117,7 +3093,7 @@
         "Series": "RCXII-R",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Domed Hood",
-        "Image": "https://www.optisizer.com/graphics/RCXII-R.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3126,7 +3102,7 @@
         "Series": "RCXIISF-I",
         "Active": true,
         "Description": "Gravity Intake Ventilator Self Flashing",
-        "Image": "https://www.optisizer.com/graphics/RCXIISF-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3135,7 +3111,7 @@
         "Series": "RCXIISF-I",
         "Active": true,
         "Description": "Gravity Intake Ventilator Self Flashing",
-        "Image": "https://www.optisizer.com/graphics/RCXIISF-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3144,7 +3120,7 @@
         "Series": "RCXIISF-I",
         "Active": true,
         "Description": "Gravity Intake Ventilator Self Flashing",
-        "Image": "https://www.optisizer.com/graphics/RCXIISF-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3153,7 +3129,7 @@
         "Series": "RCXIISF-R",
         "Active": true,
         "Description": "Gravity Intake Ventilator Self Flashing",
-        "Image": "https://www.optisizer.com/graphics/RCXIISF-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3162,7 +3138,7 @@
         "Series": "RCXIISF-R",
         "Active": true,
         "Description": "Gravity Intake Ventilator Self Flashing",
-        "Image": "https://www.optisizer.com/graphics/RCXIISF-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3171,7 +3147,7 @@
         "Series": "RCXIISF-R",
         "Active": true,
         "Description": "Gravity Intake Ventilator Self Flashing",
-        "Image": "https://www.optisizer.com/graphics/RCXIISF-I.jpg",
+        "Image": "../assets/images/RCXII-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RCXII"
     },
     {
@@ -3180,7 +3156,7 @@
         "Series": "reFresh",
         "Active": true,
         "Description": "RF - ReFresh and Outside Air Solutions",
-        "Image": "https://www.optisizer.com/graphics/reFresh.jpg",
+        "Image": "../assets/images/RF10-160EC-Full-Size.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=reFresh%20Series"
         
     },
@@ -3190,7 +3166,7 @@
         "Series": "reFresh-EC",
         "Active": true,
         "Description": "RF - ReFresh Outside Air Products with EC Motor (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/reFresh.jpg",
+        "Image": "../assets/images/RF10-160EC-Full-Size.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=reFresh%20Series"
     },
     
@@ -3200,7 +3176,7 @@
         "Series": "reFresh",
         "Active": true,
         "Description": "RF - ReFresh and Outside Air Solutions",
-        "Image": "https://www.optisizer.com/graphics/reFresh.jpg",
+        "Image": "../assets/images/RF10-160EC-Full-Size.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=reFresh%20Series"
     },
     {
@@ -3209,7 +3185,7 @@
         "Series": "reFresh-EC",
         "Active": true,
         "Description": "RF - ReFresh Outside Air Products with EC Motor (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/reFresh.jpg",
+        "Image": "../assets/images/RF10-160EC-Full-Size.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=reFresh%20Series"
     },
     {
@@ -3218,7 +3194,7 @@
         "Series": "reFresh",
         "Active": true,
         "Description": "RF - ReFresh and Outside Air Solutions",
-        "Image": "https://www.optisizer.com/graphics/reFresh.jpg",
+        "Image": "../assets/images/RF10-160EC-Full-Size.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=reFresh%20Series"
     },
     {
@@ -3227,7 +3203,7 @@
         "Series": "reFresh-EC",
         "Active": true,
         "Description": "RF - ReFresh Outside Air Products with EC Motor (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/reFresh.jpg",
+        "Image": "../assets/images/RF10-160EC-Full-Size.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=reFresh%20Series"
     },
    
@@ -3237,7 +3213,7 @@
         "Series": "reFresh",
         "Active": true,
         "Description": "RF - ReFresh Outside Air Products with EC Motor",
-        "Image": "https://www.optisizer.com/graphics/reFresh.jpg",
+        "Image": "../assets/images/RF10-160EC-Full-Size.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=reFresh%20Series"
     },
  
@@ -3248,7 +3224,8 @@
         "Series": "RLX-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Acme",
@@ -3256,8 +3233,8 @@
         "Series": "RLX-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "PennBarry",
@@ -3265,8 +3242,8 @@
         "Series": "RLX-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -3274,8 +3251,8 @@
         "Series": "RLX-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Greenheck",
@@ -3283,8 +3260,8 @@
         "Series": "RLX-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Louvered Hood ",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Twin City",
@@ -3292,8 +3269,8 @@
         "Series": "RLX-I",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Louvered Hood ",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "PennBarry",
@@ -3301,8 +3278,8 @@
         "Series": "RLX-R",
         "Active": true,
         "Description": "Non-Powered Gravity Intake Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Greenheck",
@@ -3310,8 +3287,8 @@
         "Series": "RLX-R",
         "Active": true,
         "Description": "Non-Powered Gravity Relief Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Carnes",
@@ -3319,8 +3296,8 @@
         "Series": "RLX-R",
         "Active": true,
         "Description": "Non-Powered Gravity Relief Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Acme",
@@ -3328,8 +3305,8 @@
         "Series": "RLX-R",
         "Active": true,
         "Description": "Non-Powered Gravity Relief Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -3337,8 +3314,8 @@
         "Series": "RLX-R",
         "Active": true,
         "Description": "Non-Powered Gravity Relief Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Twin City",
@@ -3346,8 +3323,8 @@
         "Series": "RLX-R",
         "Active": true,
         "Description": "Non-Powered Gravity Relief Ventilator-Louvered Hood",
-        "Image": "https://www.optisizer.com/graphics/RLX-I.jpg",
-        "Link" : "https://solerpalau-usa.com/products/gv/rlx.html"
+        "Image": "../assets/images/RLX-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=RLX"
     },
     {
         "CompetitorID": "Fantech",
@@ -3355,7 +3332,7 @@
         "Series": "SDB",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhauster-Belt Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDB.jpg",
+        "Image": "../assets/images/SDB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDB"
     },
     {
@@ -3364,7 +3341,7 @@
         "Series": "SDB",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhauster-Belt Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDB.jpg",
+        "Image": "../assets/images/SDB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDB"
     },
     {
@@ -3373,7 +3350,7 @@
         "Series": "SDB",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhauster-Belt Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDB.jpg",
+        "Image": "../assets/images/SDB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDB"
     },
     {
@@ -3382,7 +3359,7 @@
         "Series": "SDB",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhauster-Belt Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDB.jpg",
+        "Image": "../assets/images/SDB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDB"
     },
     {
@@ -3391,7 +3368,7 @@
         "Series": "SDB",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhauster-Belt Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDB.jpg",
+        "Image": "../assets/images/SDB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDB"
     },
     {
@@ -3400,7 +3377,7 @@
         "Series": "SDB",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhauster-Belt Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDB.jpg",
+        "Image": "../assets/images/SDB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDB"
     },
     {
@@ -3409,7 +3386,7 @@
         "Series": "SDB",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhauster-Belt Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDB.jpg",
+        "Image": "../assets/images/SDB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDB"
     },
     {
@@ -3418,7 +3395,7 @@
         "Series": "SDB",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhauster-Belt Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDB.jpg",
+        "Image": "../assets/images/SDB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDB"
     },
     {
@@ -3427,7 +3404,7 @@
         "Series": "SDB",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhauster-Belt Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDB.jpg",
+        "Image": "../assets/images/SDB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDB"
     },
     {
@@ -3436,7 +3413,7 @@
         "Series": "SDBD",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters -Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDBD.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3445,7 +3422,7 @@
         "Series": "SDBD",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters -Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDBD.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3454,7 +3431,7 @@
         "Series": "SDBD",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters -Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDBD.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3463,7 +3440,7 @@
         "Series": "SDBD",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters -Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDBD.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3472,7 +3449,7 @@
         "Series": "SDBD",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters -Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDBD.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3481,7 +3458,7 @@
         "Series": "SDBD",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters -Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDBD.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3490,7 +3467,7 @@
         "Series": "SDBD",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters -Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDBD.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3499,7 +3476,7 @@
         "Series": "SDBD",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters -Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDBD.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3508,7 +3485,7 @@
         "Series": "SDBD",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters -Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/SDBD.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3517,7 +3494,7 @@
         "Series": "SDBDe",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/SDBDe.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3526,7 +3503,7 @@
         "Series": "SDBDe",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/SDBDe.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
     {
@@ -3535,7 +3512,7 @@
         "Series": "SDBDe",
         "Active": true,
         "Description": "Centrifugal Downblast Roof Exhausters with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/SDBDe.jpg",
+        "Image": "../assets/images/SDBD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=SDBD%20and%20SDBDe"
     },
   
