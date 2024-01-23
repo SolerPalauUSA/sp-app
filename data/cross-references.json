@@ -135,7 +135,7 @@
         "Series": "BGH-I",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -144,7 +144,7 @@
         "Series": "BGH-I",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -153,7 +153,7 @@
         "Series": "BGH-I",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -162,7 +162,7 @@
         "Series": "BGH-I",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -171,7 +171,7 @@
         "Series": "BGH-I",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -180,7 +180,7 @@
         "Series": "BGH-I",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -189,7 +189,7 @@
         "Series": "BGH-R",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -198,7 +198,7 @@
         "Series": "BGH-R",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -207,7 +207,7 @@
         "Series": "BGH-R",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -216,7 +216,7 @@
         "Series": "BGH-R",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -225,7 +225,7 @@
         "Series": "BGH-R",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -234,7 +234,7 @@
         "Series": "BGH-R",
         "Active": true,
         "Description": "Non-Powered Gravity Ventilator-Fabricated Hood-Intake",
-        "Image": "https://www.optisizer.com/graphics/BGH-I.jpg",
+        "Image": "../assets/images/BGH-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Gravity%20Vents&series=BGH"
     },
     {
@@ -243,7 +243,7 @@
         "Series": "CFD",
         "Active": true,
         "Description": "Centrifugal F.C. Inline Duct Blower-Belt",
-        "Image": "https://www.optisizer.com/graphics/CFD.jpg",
+        "Image": "../assets/images/CFD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CFD"
     },
     {
@@ -252,7 +252,7 @@
         "Series": "CFD",
         "Active": "Centrifugal F.C. Inline Duct Blower-Belt",
         "Description": "Centrifugal F.C. Inline Duct Blower-Belt",
-        "Image": "https://www.optisizer.com/graphics/CFD.jpg",
+        "Image": "../assets/images/CFD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CFD"
     },
     {
@@ -261,7 +261,7 @@
         "Series": "CFD",
         "Active": true,
         "Description": "Centrifugal F.C. Inline Duct Blower-Belt",
-        "Image": "https://www.optisizer.com/graphics/CFD.jpg",
+        "Image": "../assets/images/CFD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CFD"
     },
     {
@@ -270,7 +270,7 @@
         "Series": "CFD",
         "Active": true,
         "Description": "Centrifugal F.C. Inline Duct Blower-Belt",
-        "Image": "https://www.optisizer.com/graphics/CFD.jpg",
+        "Image": "../assets/images/CFD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CFD"
     },
     {
@@ -279,7 +279,7 @@
         "Series": "CFD",
         "Active": true,
         "Description": "Centrifugal F.C. Inline Duct Blower-Belt",
-        "Image": "https://www.optisizer.com/graphics/CFD.jpg",
+        "Image": "../assets/images/CFD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CFD"
     },
     {
@@ -288,7 +288,7 @@
         "Series": "CFD",
         "Active": true,
         "Description": "Centrifugal F.C. Inline Duct Blower-Belt",
-        "Image": "https://www.optisizer.com/graphics/CFD.jpg",
+        "Image": "../assets/images/CFD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CFD"
     },
     {
@@ -297,7 +297,7 @@
         "Series": "CM",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -306,7 +306,7 @@
         "Series": "CM",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -315,7 +315,7 @@
         "Series": "CM",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -324,7 +324,7 @@
         "Series": "CM",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -333,7 +333,7 @@
         "Series": "CMHT",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -342,7 +342,7 @@
         "Series": "CMHT",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -351,7 +351,7 @@
         "Series": "CMHT",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -360,7 +360,7 @@
         "Series": "CMHT",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -369,7 +369,7 @@
         "Series": "CMRHUL",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -378,7 +378,7 @@
         "Series": "CMRHUL",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -387,7 +387,7 @@
         "Series": "CMRHUL",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -396,7 +396,7 @@
         "Series": "CMRHUL",
         "Active": true,
         "Description": "Centrifugal SWSI B.I. Arrangement 10 Vent Set-Belt",
-        "Image": "https://www.optisizer.com/graphics/CM.jpg",
+        "Image": "../assets/images/CM-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Utility%20Vent%20Sets&series=CM"
     },
     {
@@ -405,7 +405,7 @@
         "Series": "CSF",
         "Active": true,
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
-        "Image": "https://www.optisizer.com/graphics/CSF.jpg",
+        "Image": "../assets/images/CSF-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
@@ -414,7 +414,7 @@
         "Series": "CSF",
         "Active": true,
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
-        "Image": "https://www.optisizer.com/graphics/CSF.jpg",
+        "Image": "../assets/images/CSF-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
@@ -424,7 +424,7 @@
         "Active": true,
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
 
-        "Image": "https://www.optisizer.com/graphics/CSF.jpg",
+        "Image": "../assets/images/CSF-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
@@ -433,7 +433,7 @@
         "Series": "CSF",
         "Active": true,
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
-       "Image": "https://www.optisizer.com/graphics/CSF.jpg",
+       "Image": "../assets/images/CSF-recat.png",
        "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
@@ -442,7 +442,7 @@
         "Series": "CSF",
         "Active": true,
         "Description": "Centrifugal F.C. Filtered Supply Roof Ventilator-Belt",
-        "Image": "https://www.optisizer.com/graphics/CSF.jpg",
+        "Image": "../assets/images/CSF-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=CSF"
     },
     {
@@ -451,7 +451,7 @@
         "Series": "CTB",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/CTB.jpg",
+        "Image": "../assets/images/CTB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -460,7 +460,7 @@
         "Series": "CTB",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/CTB.jpg",
+        "Image": "../assets/images/CTB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -469,7 +469,7 @@
         "Series": "CTB",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/CTB.jpg",
+        "Image": "../assets/images/CTB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -478,7 +478,7 @@
         "Series": "CTB",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/CTB.jpg",
+        "Image": "../assets/images/CTB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -487,7 +487,7 @@
         "Series": "CTB",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/CTB.jpg",
+        "Image": "../assets/images/CTB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -496,7 +496,7 @@
         "Series": "CTBRHUL",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/CTBRHUL.jpg",
+        "Image": "../assets/images/CTB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -505,7 +505,7 @@
         "Series": "CTBRHUL",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-         "Image": "https://www.optisizer.com/graphics/CTBRHUL.jpg",
+         "Image": "../assets/images/CTB-recat.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -514,7 +514,7 @@
         "Series": "CTBRHUL",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-         "Image": "https://www.optisizer.com/graphics/CTBRHUL.jpg",
+         "Image": "../assets/images/CTB-recat.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -523,7 +523,7 @@
         "Series": "CTBRHUL",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-         "Image": "https://www.optisizer.com/graphics/CTBRHUL.jpg",
+         "Image": "../assets/images/CTB-recat.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -532,7 +532,7 @@
         "Series": "CTBRHUL",
         "Active": true,
         "Description": "Tubular Centrifugal Duct Fan-Belt Drive",
-         "Image": "https://www.optisizer.com/graphics/CTBRHUL.jpg",
+         "Image": "../assets/images/CTB-recat.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=CTB%20and%20CTBRHUL"
     },
     {
@@ -541,7 +541,7 @@
         "Series": "CWD",
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/CWD.jpg",
+        "Image": "../assets/images/CWD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
@@ -550,7 +550,7 @@
         "Series": "CWD",
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/CWD.jpg",
+        "Image": "../assets/images/CWD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
@@ -559,7 +559,7 @@
         "Series": "CWD",
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/CWD.jpg",
+        "Image": "../assets/images/CWD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
@@ -568,7 +568,7 @@
         "Series": "CWD",
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/CWD.jpg",
+        "Image": "../assets/images/CWD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
@@ -577,7 +577,7 @@
         "Series": "CWD",
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/CWD.jpg",
+        "Image": "../assets/images/CWD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
@@ -586,7 +586,7 @@
         "Series": "CWD",
         "Active": true,
         "Description": "Centrifugal Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/CWD.jpg",
+        "Image": "../assets/images/CWD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=CWD"
     },
     {
@@ -595,7 +595,7 @@
         "Series": "DDE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DDE.jpg",
+        "Image": "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -604,7 +604,7 @@
         "Series": "DDE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DDE.jpg",
+        "Image": "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -613,7 +613,7 @@
         "Series": "DDE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DDE.jpg",
+        "Image": "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -622,7 +622,7 @@
         "Series": "DDE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DDE.jpg",
+        "Image": "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -631,7 +631,7 @@
         "Series": "DDE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DDE.jpg",
+        "Image": "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -640,7 +640,7 @@
         "Series": "DDE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DDE.jpg",
+        "Image": "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -649,7 +649,7 @@
         "Series": "DDS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/DDE.jpg",
+        "Image": "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -658,7 +658,7 @@
         "Series": "DDS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Supply",
-        "Image" : "https://www.optisizer.com/graphics/DDS.jpg",
+        "Image" : "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -667,7 +667,7 @@
         "Series": "DDS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Supply",
-        "Image" : "https://www.optisizer.com/graphics/DDS.jpg",
+        "Image" : "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -676,7 +676,7 @@
         "Series": "DDS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Supply",
-        "Image" : "https://www.optisizer.com/graphics/DDS.jpg",
+        "Image" : "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -685,7 +685,7 @@
         "Series": "DDS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Supply",
-        "Image" : "https://www.optisizer.com/graphics/DDS.jpg",
+        "Image" : "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -694,7 +694,7 @@
         "Series": "DDS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Supply",
-        "Image" : "https://www.optisizer.com/graphics/DDS.jpg",
+        "Image" : "../assets/images/DD-recat.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DDE%20and%20DDS"
     },
     {
@@ -703,7 +703,7 @@
         "Series": "DFE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -712,7 +712,7 @@
         "Series": "DFE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -721,7 +721,7 @@
         "Series": "DFE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -730,7 +730,7 @@
         "Series": "DFE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -739,7 +739,7 @@
         "Series": "DFE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -748,7 +748,7 @@
         "Series": "DFE",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -757,7 +757,7 @@
         "Series": "DFS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -766,7 +766,7 @@
         "Series": "DFS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -775,7 +775,7 @@
         "Series": "DFS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -784,7 +784,7 @@
         "Series": "DFS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -793,7 +793,7 @@
         "Series": "DFS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -802,7 +802,7 @@
         "Series": "DFS",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/DFE.jpg",
+        "Image": "../assets/images/DF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=DFE%20and%20DFS"
     },
     {
@@ -838,7 +838,7 @@
         "Series": "eGED",
         "Active": true,
         "Description": "Direct Drive Sidewall Propeller Exhaust/Supply Fans",
-        "Image": "https://www.optisizer.com/graphics/eGED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -847,7 +847,7 @@
         "Series": "eGED",
         "Active": true,
         "Description": "Direct Drive Sidewall Propeller Exhaust/Supply Fans",
-        "Image": "https://www.optisizer.com/graphics/eGED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -856,7 +856,7 @@
         "Series": "eGED",
         "Active": true,
         "Description": "Direct Drive Sidewall Propeller Exhaust/Supply Fans",
-        "Image": "https://www.optisizer.com/graphics/eGED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -865,7 +865,7 @@
         "Series": "eGSD",
         "Active": true,
         "Description": "Direct Drive Sidewall Propeller Exhaust/Supply Fans - EC Motor",
-        "Image": "https://www.optisizer.com/graphics/eGED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -874,7 +874,7 @@
         "Series": "eGSD",
         "Active": true,
         "Description": "Direct Drive Sidewall Propeller Exhaust/Supply Fans - EC Motor",
-        "Image": "https://www.optisizer.com/graphics/eGED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -883,7 +883,7 @@
         "Series": "eGSD",
         "Active": true,
         "Description": "Direct Drive Sidewall Propeller Exhaust/Supply Fans - EC Motor",
-        "Image": "https://www.optisizer.com/graphics/eGED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link": "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
 
@@ -893,7 +893,7 @@
         "Series": "ERV - TR",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
     },
     {
@@ -902,7 +902,7 @@
         "Series": "ERV - TR",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
     },
     {
@@ -911,7 +911,7 @@
         "Series": "ERV - TR",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
     },
     {
@@ -920,7 +920,7 @@
         "Series": "ERV - TR",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
     },
     {
@@ -929,7 +929,7 @@
         "Series": "ERV - TR",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
     },
     {
@@ -938,7 +938,7 @@
         "Series": "ERV - TR",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
     },
     {
@@ -947,7 +947,7 @@
         "Series": "ERV - TR",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
     },
     {
@@ -956,7 +956,7 @@
         "Series": "ERV - TR",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Residential / Light Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/tr.html"
     },
     {
@@ -965,7 +965,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -974,7 +974,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -983,7 +983,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -992,7 +992,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -1001,7 +1001,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -1010,7 +1010,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image": "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -1019,7 +1019,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image": "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -1028,7 +1028,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -1037,7 +1037,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -1045,7 +1045,7 @@
         "CompetitorModel": "PE",
         "Series": "ERV - TRC",
         "Active": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -1054,7 +1054,7 @@
         "Series": "ERV - TRC",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trc.html"
     },
     {
@@ -1063,7 +1063,7 @@
         "Series": "ERV - TRCe",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
     },
     {
@@ -1072,7 +1072,7 @@
         "Series": "ERV - TRCe",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
     },
     {
@@ -1081,7 +1081,7 @@
         "Series": "ERV - TRCe",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
     },
     {
@@ -1090,7 +1090,7 @@
         "Series": "ERV - TRCe",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image" : "https://www.optisizer.com/graphics/ERV%20-%20TRC.jpg",
+        "Image" : "../assets/images/TRC-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
     },
     {
@@ -1099,7 +1099,7 @@
         "Series": "ERV - TRv",
         "Active": true,
         "Description": "Energy Recovery Ventilator - Commercial",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
     },
     {
@@ -1108,7 +1108,7 @@
         "Series": "ERV - TRv",
         "Active": true,
         "Description": "Total Recovery for All Climates",
-        "Image": "https://www.optisizer.com/graphics/ERV%20-%20TR.jpg",
+        "Image": "../assets/images/TR-recat.png",
         "Link" : "https://solerpalau-usa.com/products/erv/trce.html"
     },
     {
@@ -1117,7 +1117,7 @@
         "Series": "eSQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fans with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/eSQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalau-usa.com/products/isdf/sqd.html"
     },
     {
@@ -1126,7 +1126,7 @@
         "Series": "eSQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fans with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/eSQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalau-usa.com/products/isdf/sqd.html"
     },
     {
@@ -1135,7 +1135,7 @@
         "Series": "eSQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fans with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/eSQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalau-usa.com/products/isdf/sqd.html"
     },
    
@@ -1145,7 +1145,7 @@
         "Series": "FF",
         "Active": true,
         "Description": "Centrifugal Ceiling Cabinet Fan-Direct Drive (V.S.C.)",
-        "Image": "https://www.optisizer.com/graphics/L.jpg",
+        "Image": "../assets/images/Losone-Select-Ceiling.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1154,7 +1154,7 @@
         "Series": "FF",
         "Active": true,
         "Description": "Centrifugal Ceiling Cabinet Fan-Direct Drive (V.S.C.)",
-         "Image": "https://www.optisizer.com/graphics/L.jpg",
+         "Image": "../assets/images/Losone-Select-Ceiling.webp",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1163,7 +1163,7 @@
         "Series": "FF",
         "Active": true,
         "Description": "Centrifugal Ceiling Cabinet Fan-Direct Drive (V.S.C.)",
-         "Image": "https://www.optisizer.com/graphics/L.jpg",
+         "Image": "../assets/images/Losone-Select-Ceiling.webp",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1172,7 +1172,7 @@
         "Series": "FF",
         "Active": true,
         "Description": "Centrifugal Ceiling Cabinet Fan-Direct Drive (V.S.C.)",
-         "Image": "https://www.optisizer.com/graphics/L.jpg",
+         "Image": "../assets/images/Losone-Select-Ceiling.webp",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1181,7 +1181,7 @@
         "Series": "FF",
         "Active": true,
         "Description": "Centrifugal Ceiling Cabinet Fan-Direct Drive (V.S.C.)",
-         "Image": "https://www.optisizer.com/graphics/L.jpg",
+         "Image": "../assets/images/Losone-Select-Ceiling.webp",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1190,7 +1190,7 @@
         "Series": "FF",
         "Active": true,
         "Description": "Centrifugal Ceiling Cabinet Fan-Direct Drive (V.S.C.)",
-         "Image": "https://www.optisizer.com/graphics/L.jpg",
+         "Image": "../assets/images/Losone-Select-Ceiling.webp",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1199,7 +1199,7 @@
         "Series": "FF",
         "Active": true,
         "Description": "Centrifugal Ceiling Cabinet Fan-Direct Drive (V.S.C.)",
-         "Image": "https://www.optisizer.com/graphics/L.jpg",
+         "Image": "../assets/images/Losone-Select-Ceiling.webp",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1208,7 +1208,7 @@
         "Series": "FF",
         "Active": true,
         "Description": "Centrifugal Ceiling Cabinet Fan-Direct Drive (V.S.C.)",
-         "Image": "https://www.optisizer.com/graphics/L.jpg",
+         "Image": "../assets/images/Losone-Select-Ceiling.webp",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1218,7 +1218,7 @@
         "Active": true,
         "Description": "Centrifugal Inline Cabinet Fan-Direct Drive (V.S.C.)",
 
-        "Image": "https://www.optisizer.com/graphics/FFC.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1227,7 +1227,7 @@
         "Series": "FFC",
         "Active": true,
         "Description": "Centrifugal Inline Cabinet Fan-Direct Drive (V.S.C.)",
-        "Image": "https://www.optisizer.com/graphics/FFC.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1236,7 +1236,7 @@
         "Series": "FFC",
         "Active": true,
         "Description": "Centrifugal Inline Cabinet Fan-Direct Drive (V.S.C.)",
-        "Image": "https://www.optisizer.com/graphics/FFC.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1245,7 +1245,7 @@
         "Series": "FFC",
         "Active": true,
         "Description": "Centrifugal Inline Cabinet Fan-Direct Drive (V.S.C.)",
-        "Image": "https://www.optisizer.com/graphics/FFC.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1254,7 +1254,7 @@
         "Series": "FFC",
         "Active": true,
         "Description": "Centrifugal Inline Cabinet Fan-Direct Drive (V.S.C.)",
-        "Image": "https://www.optisizer.com/graphics/FFC.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1263,7 +1263,7 @@
         "Series": "FFC",
         "Active": true,
         "Description": "Centrifugal Inline Cabinet Fan-Direct Drive (V.S.C.)",
-        "Image": "https://www.optisizer.com/graphics/FFC.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1272,7 +1272,7 @@
         "Series": "FFC",
         "Active": true,
         "Description": "Centrifugal Inline Cabinet Fan-Direct Drive (V.S.C.)",
-        "Image": "https://www.optisizer.com/graphics/FFC.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1281,7 +1281,7 @@
         "Series": "FFC",
         "Active": true,
         "Description": "Centrifugal Inline Cabinet Fan-Direct Drive (V.S.C.)",
-        "Image": "https://www.optisizer.com/graphics/FFC.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1290,7 +1290,7 @@
         "Series": "GED",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1300,7 +1300,7 @@
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
 
-        "Image": "https://www.optisizer.com/graphics/GED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1309,7 +1309,7 @@
         "Series": "GED",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1318,7 +1318,7 @@
         "Series": "GED",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1327,7 +1327,7 @@
         "Series": "GED",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1336,7 +1336,7 @@
         "Series": "GED",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1345,7 +1345,7 @@
         "Series": "GED",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1354,7 +1354,7 @@
         "Series": "GED",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GED.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1363,7 +1363,7 @@
         "Series": "GSD",
         "Active": true,
         "Description":  "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GSD.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1372,7 +1372,7 @@
         "Series": "GSD",
         "Active": true,
         "Description":  "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GSD.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1381,7 +1381,7 @@
         "Series": "GSD",
         "Active": true,
         "Description":  "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GSD.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1390,7 +1390,7 @@
         "Series": "GSD",
         "Active": true,
         "Description":  "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GSD.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1399,7 +1399,7 @@
         "Series": "GSD",
         "Active": true,
         "Description":  "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GSD.jpg"
+        "Image": "../assets/images/GD.png"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1407,7 +1407,7 @@
         "Series": "GSD",
         "Active": true,
         "Description":  "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GSD.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1416,7 +1416,7 @@
         "Series": "GSD",
         "Active": true,
         "Description":  "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GSD.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1425,7 +1425,7 @@
         "Series": "GSD",
         "Active": true,
         "Description": "Sidewall Propeller Fan-Direct Drive (V.S.C.) Exhaust",
-        "Image": "https://www.optisizer.com/graphics/GSD.jpg",
+        "Image": "../assets/images/GD.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=GED%2FeGED%20and%20GSD%2FeGSD"
     },
     {
@@ -1434,8 +1434,8 @@
         "Series": "HREBC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HREBC.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Acme",
@@ -1443,8 +1443,8 @@
         "Series": "HREBC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-         "Image": "https://www.optisizer.com/graphics/HREBC.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+         "Image": "../assets/images/HRE-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -1452,8 +1452,8 @@
         "Series": "HREBC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-         "Image": "https://www.optisizer.com/graphics/HREBC.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+         "Image": "../assets/images/HRE-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Twin City",
@@ -1461,8 +1461,8 @@
         "Series": "HREBC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-         "Image": "https://www.optisizer.com/graphics/HREBC.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+         "Image": "../assets/images/HRE-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Twin City",
@@ -1470,8 +1470,8 @@
         "Series": "HREBC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-         "Image": "https://www.optisizer.com/graphics/HREBC.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+         "Image": "../assets/images/HRE-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Carnes",
@@ -1479,8 +1479,8 @@
         "Series": "HREBC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-         "Image": "https://www.optisizer.com/graphics/HREBC.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+         "Image": "../assets/images/HRE-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Coolair",
@@ -1488,8 +1488,8 @@
         "Series": "HREBC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-         "Image": "https://www.optisizer.com/graphics/HREBC.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+         "Image": "../assets/images/HRE-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1497,8 +1497,8 @@
         "Series": "HREBC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-         "Image": "https://www.optisizer.com/graphics/HREBC.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+         "Image": "../assets/images/HRE-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "PennBarry",
@@ -1506,8 +1506,8 @@
         "Series": "HREB-P",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HREB-P.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Acme",
@@ -1515,8 +1515,8 @@
         "Series": "HREB-P",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HREB-P.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -1524,8 +1524,8 @@
         "Series": "HREB-P",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HREB-P.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
    
     {
@@ -1534,8 +1534,8 @@
         "Series": "HREB-P",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HREB-P.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Coolair",
@@ -1543,8 +1543,8 @@
         "Series": "HREB-P",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HREB-P.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1552,8 +1552,8 @@
         "Series": "HREB-P",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HREB-P.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -1561,8 +1561,8 @@
         "Series": "HREDC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Hooded Exhaust",
-        "Image": "https://www.optisizer.com/graphics/HREDC.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Carnes",
@@ -1570,8 +1570,8 @@
         "Series": "HREDC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Hooded Exhaust",
-        "Image": "https://www.optisizer.com/graphics/HREDC.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1579,8 +1579,8 @@
         "Series": "HREDC",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Hooded Exhaust",
-        "Image": "https://www.optisizer.com/graphics/HREDC.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hre.html"
+        "Image": "../assets/images/HRE-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HREB-C%2C%20HREB-P%2C%20and%20HRED-C"
     },
    
     {
@@ -1589,8 +1589,8 @@
         "Series": "HRSB",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Acme",
@@ -1598,8 +1598,8 @@
         "Series": "HRSB",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Twin City",
@@ -1607,8 +1607,8 @@
         "Series": "HRSB",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -1616,8 +1616,8 @@
         "Series": "HRSB",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Carnes",
@@ -1625,8 +1625,8 @@
         "Series": "HRSB",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Coolair",
@@ -1634,8 +1634,8 @@
         "Series": "HRSB",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1643,8 +1643,8 @@
         "Series": "HRSB",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -1652,8 +1652,8 @@
         "Series": "HRSBF",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -1661,8 +1661,8 @@
         "Series": "HRSBF",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Carnes",
@@ -1670,8 +1670,8 @@
         "Series": "HRSBF",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1679,8 +1679,8 @@
         "Series": "HRSBF",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Belt Drive Hooded Exhaust-Poly Prop",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -1688,8 +1688,8 @@
         "Series": "HRSD",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Hooded Supply",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Carnes",
@@ -1697,8 +1697,8 @@
         "Series": "HRSD",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Hooded Supply",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1706,8 +1706,8 @@
         "Series": "HRSD",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Hooded Supply",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -1715,8 +1715,8 @@
         "Series": "HRSDF",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Hooded Supply",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Carnes",
@@ -1724,8 +1724,8 @@
         "Series": "HRSDF",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Hooded Supply",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1733,8 +1733,8 @@
         "Series": "HRSDF",
         "Active": true,
         "Description": "Propeller Roof Ventilator-Direct Drive Hooded Supply",
-        "Image": "https://www.optisizer.com/graphics/HRSB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/hrs.html"
+        "Image": "../assets/images/HRS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=HRSB%20and%20HRSD"
     },
     {
         "CompetitorID": "Systemair",
@@ -1742,8 +1742,8 @@
         "Series": "IFAB",
         "Active": true,
         "Description": "Low Profile Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFAB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifab.html"
+        "Image": "../assets/images/ifab-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFAB%20and%20IFEB"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1751,8 +1751,8 @@
         "Series": "IFEB",
         "Active": true,
         "Description": "EC Low Profile Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFEB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifab.html"
+        "Image": "../assets/images/ifab-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFAB%20and%20IFEB"
     },
     {
         "CompetitorID": "Systemair",
@@ -1760,8 +1760,8 @@
         "Series": "IFEB",
         "Active": true,
         "Description": "EC Low Profile Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFEB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifab.html"
+        "Image": "../assets/images/ifab-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFAB%20and%20IFEB"
     },
     {
         "CompetitorID": "Zoo Fans",
@@ -1769,8 +1769,8 @@
         "Series": "IFEB",
         "Active": true,
         "Description": "EC Low Profile Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFEB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifab.html"
+        "Image": "../assets/images/ifab-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFAB%20and%20IFEB"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1778,8 +1778,8 @@
         "Series": "IFFT",
         "Active": true,
         "Description": "Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFFT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifft.html"
+        "Image": "../assets/images/ifft-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFFT%20and%20IFFTe"
     },
     {
         "CompetitorID": "Canarm",
@@ -1787,8 +1787,8 @@
         "Series": "IFFT",
         "Active": true,
         "Description": "Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFFT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifft.html"
+        "Image": "../assets/images/ifft-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFFT%20and%20IFFTe"
     },
     {
         "CompetitorID": "Systemair",
@@ -1796,8 +1796,8 @@
         "Series": "IFFT",
         "Active": true,
         "Description": "Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFFT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifft.html"
+        "Image": "../assets/images/ifft-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFFT%20and%20IFFTe"
     },
     {
         "CompetitorID": "Zoo Fans",
@@ -1805,8 +1805,8 @@
         "Series": "IFFT",
         "Active": true,
         "Description": "Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFFT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifft.html"
+        "Image": "../assets/images/ifft-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFFT%20and%20IFFTe"
     },
     {
         "CompetitorID": "Greenheck",
@@ -1814,8 +1814,8 @@
         "Series": "IFFTe",
         "Active": true,
         "Description": "EC Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFFT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifft.html"
+        "Image": "../assets/images/ifft-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFFT%20and%20IFFTe"
     },
     {
         "CompetitorID": "Systemair",
@@ -1823,8 +1823,8 @@
         "Series": "IFFTe",
         "Active": true,
         "Description": "EC Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFFT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifft.html"
+        "Image": "../assets/images/ifft-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFFT%20and%20IFFTe"
     },
     {
         "CompetitorID": "Zoo Fans",
@@ -1832,8 +1832,8 @@
         "Series": "IFFTe",
         "Active": true,
         "Description": "EC Centrifugal Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/IFFT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/ifft.html"
+        "Image": "../assets/images/ifft-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=IFFT%20and%20IFFTe"
     },
     {
         "CompetitorID": "Acme",
@@ -1841,7 +1841,7 @@
         "Series": "KSF",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1850,7 +1850,7 @@
         "Series": "KSF",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1859,7 +1859,7 @@
         "Series": "KSF",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1868,7 +1868,7 @@
         "Series": "KSF",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1877,7 +1877,7 @@
         "Series": "KSF",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1886,7 +1886,7 @@
         "Series": "KSF",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1895,7 +1895,7 @@
         "Series": "KSF",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1904,7 +1904,7 @@
         "Series": "KSF",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1913,7 +1913,7 @@
         "Series": "KSFV",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1922,7 +1922,7 @@
         "Series": "KSFV",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1931,7 +1931,7 @@
         "Series": "KSFV",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1940,7 +1940,7 @@
         "Series": "KSFV",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1949,7 +1949,7 @@
         "Series": "KSFV",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1958,7 +1958,7 @@
         "Series": "KSFV",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1967,7 +1967,7 @@
         "Series": "KSFV",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1976,7 +1976,7 @@
         "Series": "KSFV",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -1985,7 +1985,7 @@
         "Series": "L",
         "Active": true,
         "Description": "Losone Select Centrifugal Ceiling Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/L.jpg",
+        "Image": "../assets/images/Losone-Select-Ceiling.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -1994,7 +1994,7 @@
         "Series": "L",
         "Active": true,
         "Description": "Losone Select Centrifugal Ceiling Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/L.jpg",
+        "Image": "../assets/images/Losone-Select-Ceiling.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2003,7 +2003,7 @@
         "Series": "L",
         "Active": true,
         "Description": "Losone Select Centrifugal Ceiling Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/L.jpg",
+        "Image": "../assets/images/Losone-Select-Ceiling.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2012,7 +2012,7 @@
         "Series": "L",
         "Active": true,
         "Description": "Losone Select Centrifugal Ceiling Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/L.jpg",
+        "Image": "../assets/images/Losone-Select-Ceiling.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2021,7 +2021,7 @@
         "Series": "L",
         "Active": true,
         "Description": "Losone Select Centrifugal Ceiling Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/L.jpg",
+        "Image": "../assets/images/Losone-Select-Ceiling.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2030,7 +2030,7 @@
         "Series": "L",
         "Active": true,
         "Description": "Losone Select Centrifugal Ceiling Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/L.jpg",
+        "Image": "../assets/images/Losone-Select-Ceiling.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2039,7 +2039,7 @@
         "Series": "L",
         "Active": true,
         "Description": "Losone Select Centrifugal Ceiling Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/L.jpg",
+        "Image": "../assets/images/Losone-Select-Ceiling.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2048,7 +2048,7 @@
         "Series": "L",
         "Active": true,
         "Description": "Losone Select Centrifugal Ceiling Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/L.jpg",
+        "Image": "../assets/images/Losone-Select-Ceiling.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2057,8 +2057,8 @@
         "Series": "L2E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/L2E.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Coolair",
@@ -2066,8 +2066,8 @@
         "Series": "L2E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Exhaust",
-         "Image": "https://www.optisizer.com/graphics/L2E.jpg",
-         "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+         "Image": "../assets/images/L2-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Acme",
@@ -2075,8 +2075,8 @@
         "Series": "L2E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Exhaust",
-         "Image": "https://www.optisizer.com/graphics/L2E.jpg",
-         "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+         "Image": "../assets/images/L2-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Carnes",
@@ -2084,8 +2084,8 @@
         "Series": "L2E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/L2E.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Greenheck",
@@ -2093,8 +2093,8 @@
         "Series": "L2E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Exhaust",
-         "Image": "https://www.optisizer.com/graphics/L2E.jpg",
-         "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+         "Image": "../assets/images/L2-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Twin City",
@@ -2102,8 +2102,8 @@
         "Series": "L2E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/L2E.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -2111,8 +2111,8 @@
         "Series": "L2E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Exhaust",
-         "Image": "https://www.optisizer.com/graphics/L2E.jpg",
-         "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+         "Image": "../assets/images/L2-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "PennBarry",
@@ -2120,8 +2120,8 @@
         "Series": "L2S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L2S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Coolair",
@@ -2129,8 +2129,8 @@
         "Series": "L2S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L2S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Acme",
@@ -2138,8 +2138,8 @@
         "Series": "L2S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L2S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Carnes",
@@ -2147,8 +2147,8 @@
         "Series": "L2S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L2S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Greenheck",
@@ -2156,8 +2156,8 @@
         "Series": "L2S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L2S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Twin City",
@@ -2165,8 +2165,8 @@
         "Series": "L2S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L2S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -2174,8 +2174,8 @@
         "Series": "L2S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 2 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L2S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l2.html"
+        "Image": "../assets/images/L2-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L2E%20and%20L2S"
     },
     {
         "CompetitorID": "PennBarry",
@@ -2183,8 +2183,8 @@
         "Series": "L3E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/L3E.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "Acme",
@@ -2192,8 +2192,8 @@
         "Series": "L3E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/L3E.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "Carnes",
@@ -2201,8 +2201,8 @@
         "Series": "L3E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/L3E.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "Greenheck",
@@ -2210,8 +2210,8 @@
         "Series": "L3E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/L3E.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -2219,8 +2219,8 @@
         "Series": "L3E",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/L3E.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "PennBarry",
@@ -2228,8 +2228,8 @@
         "Series": "L3S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L3S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "Acme",
@@ -2237,8 +2237,8 @@
         "Series": "L3S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L3S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "Carnes",
@@ -2246,8 +2246,8 @@
         "Series": "L3S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L3S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "Greenheck",
@@ -2255,8 +2255,8 @@
         "Series": "L3S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L3S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -2264,8 +2264,8 @@
         "Series": "L3S",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 3 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/L3S.jpg",
-        "Link" : "https://solerpalau-usa.com/products/spf/l3.html"
+        "Image": "../assets/images/L3-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=L3E%20and%20L3S"
     },
     {
         "CompetitorID": "PennBarry",
@@ -2273,7 +2273,7 @@
         "Series": "LCE",
         "Active": true,
         "Description": true,
-        "Image": "https://www.optisizer.com/graphics/LCE.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2282,7 +2282,7 @@
         "Series": "LCE",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/LCE.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2291,7 +2291,7 @@
         "Series": "LCE",
         "Active": true,
          "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/LCE.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2300,7 +2300,7 @@
         "Series": "LCE",
         "Active": true,
          "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/LCE.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2309,7 +2309,7 @@
         "Series": "LCE",
         "Active": true,
          "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/LCE.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2318,7 +2318,7 @@
         "Series": "LCE",
         "Active": true,
          "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/LCE.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2327,7 +2327,7 @@
         "Series": "LCE",
         "Active": true,
          "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Exhaust",
-        "Image": "https://www.optisizer.com/graphics/LCE.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2336,7 +2336,7 @@
         "Series": "LCS",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/LCS.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2345,7 +2345,7 @@
         "Series": "LCS",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/LCS.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2354,7 +2354,7 @@
         "Series": "LCS",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/LCS.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2363,7 +2363,7 @@
         "Series": "LCS",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/LCS.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2372,7 +2372,7 @@
         "Series": "LCS",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/LCS.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2381,7 +2381,7 @@
         "Series": "LCS",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/LCS.jpg",
+        "Image": "../assets/images/LCE.png",
         "Linl" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2390,7 +2390,7 @@
         "Series": "LCS",
         "Active": true,
         "Description": "Sidewall Propeller Fan Level 1 - Belt Drive Supply",
-        "Image": "https://www.optisizer.com/graphics/LCS.jpg",
+        "Image": "../assets/images/LCE.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Sidewall%20Propeller%20Fans&series=LCE%20and%20LCS"
     },
     {
@@ -2399,7 +2399,7 @@
         "Series": "LL",
         "Active": true,
         "Description": "Losone Select Centrifugal Inline Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LL.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2409,7 +2409,7 @@
         "Active": true,
         
         "Description": "Losone Select Centrifugal Inline Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LL.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2419,7 +2419,7 @@
         "Active": true,
         
         "Description": "Losone Select Centrifugal Inline Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LL.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2429,7 +2429,7 @@
         "Active": true,
         
         "Description": "Losone Select Centrifugal Inline Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LL.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2439,7 +2439,7 @@
         "Active": true,
         
         "Description": "Losone Select Centrifugal Inline Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LL.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2449,7 +2449,7 @@
         "Active": true,
         
         "Description": "Losone Select Centrifugal Inline Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LL.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2459,7 +2459,7 @@
         "Active": true,
         
         "Description": "Losone Select Centrifugal Inline Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LL.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2469,7 +2469,7 @@
         "Active": true,
         
         "Description": "Losone Select Centrifugal Inline Cabinet Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LL.jpg",
+        "Image": "../assets/images/Losone-Select-Inline.webp",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Ceiling%20%26%20Cabinet%20Fans"
     },
     {
@@ -2478,7 +2478,7 @@
         "Series": "LPD",
         "Active": true,
         "Description": "Centrifugal Roof & Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LPD.jpg",
+        "Image": "../assets/images/LPD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=LPD%20and%20LPD-SF"
     },
     {
@@ -2487,7 +2487,7 @@
         "Series": "LPD",
         "Active": true,
         "Description": "Centrifugal Roof & Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LPD.jpg",
+        "Image": "../assets/images/LPD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=LPD%20and%20LPD-SF"
     },
     {
@@ -2496,7 +2496,7 @@
         "Series": "LPD",
         "Active": true,
         "Description": "Centrifugal Roof & Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LPD.jpg",
+        "Image": "../assets/images/LPD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=LPD%20and%20LPD-SF"
     },
     {
@@ -2505,7 +2505,7 @@
         "Series": "LPD",
         "Active": true,
         "Description": "Centrifugal Roof & Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LPD.jpg",
+        "Image": "../assets/images/LPD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=LPD%20and%20LPD-SF"
     },
     {
@@ -2514,7 +2514,7 @@
         "Series": "LPD",
         "Active": true,
         "Description": "Centrifugal Roof & Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LPD.jpg",
+        "Image": "../assets/images/LPD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=LPD%20and%20LPD-SF"
     },
     {
@@ -2523,7 +2523,7 @@
         "Series": "LPD",
         "Active": true,
         "Description": "Centrifugal Roof & Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LPD.jpg",
+        "Image": "../assets/images/LPD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=LPD%20and%20LPD-SF"
     },
     {
@@ -2532,7 +2532,7 @@
         "Series": "LPD",
         "Active": true,
         "Description": "Centrifugal Roof & Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LPD.jpg",
+        "Image": "../assets/images/LPD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=LPD%20and%20LPD-SF"
     },
     {
@@ -2541,7 +2541,7 @@
         "Series": "LPD",
         "Active": true,
         "Description": "Centrifugal Roof & Sidewall Exhauster-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/LPD.jpg",
+        "Image": "../assets/images/LPD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=LPD%20and%20LPD-SF"
     },
     {
@@ -2550,7 +2550,7 @@
         "Series": "LRS",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -2559,7 +2559,7 @@
         "Series": "LRS",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -2568,7 +2568,7 @@
         "Series": "LRS",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -2577,7 +2577,7 @@
         "Series": "LRS",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -2586,7 +2586,7 @@
         "Series": "LRS",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -2595,7 +2595,7 @@
         "Series": "LRS",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -2604,7 +2604,7 @@
         "Series": "LRS",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -2613,7 +2613,7 @@
         "Series": "LRS",
         "Active": true,
         "Description": "Kitchen Supply Fan with Variations",
-        "Image": "https://www.optisizer.com/graphics/KSFV.jpg",
+        "Image": "../assets/images/KSFV-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=KSFV"
     },
     {
@@ -2622,7 +2622,7 @@
         "Series": "LSF",
         "Active": true,
         "Description": "Centrifugal F.C. Louvered Filtered Supply Roof Ventilator",
-        "Image": "https://www.optisizer.com/graphics/LSF.jpg",
+        "Image": "../assets/images/LSF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=LSF"
     },
     {
@@ -2631,7 +2631,7 @@
         "Series": "LSF",
         "Active": true,
         "Description": "Centrifugal F.C. Louvered Filtered Supply Roof Ventilator",
-        "Image": "https://www.optisizer.com/graphics/LSF.jpg",
+        "Image": "../assets/images/LSF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=LSF"
     },
     {
@@ -2640,7 +2640,7 @@
         "Series": "LSF",
         "Active": true,
         "Description": "Centrifugal F.C. Louvered Filtered Supply Roof Ventilator",
-        "Image": "https://www.optisizer.com/graphics/LSF.jpg",
+        "Image": "../assets/images/LSF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=LSF"
     },
     {
@@ -2649,7 +2649,7 @@
         "Series": "LSF",
         "Active": true,
         "Description": "Centrifugal F.C. Louvered Filtered Supply Roof Ventilator",
-        "Image": "https://www.optisizer.com/graphics/LSF.jpg",
+        "Image": "../assets/images/LSF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=LSF"
     },
     {
@@ -2658,7 +2658,7 @@
         "Series": "LSF",
         "Active": true,
         "Description": "Centrifugal F.C. Louvered Filtered Supply Roof Ventilator",
-        "Image": "https://www.optisizer.com/graphics/LSF.jpg",
+        "Image": "../assets/images/LSF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=LSF"
     },
     {
@@ -2667,7 +2667,7 @@
         "Series": "LSF",
         "Active": true,
         "Description": "Centrifugal F.C. Louvered Filtered Supply Roof Ventilator",
-        "Image": "https://www.optisizer.com/graphics/LSF.jpg",
+        "Image": "../assets/images/LSF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Filtered%20Supply%20Fans&series=LSF"
     },
     {
@@ -2676,7 +2676,7 @@
         "Series": "PC",
         "Active": true,
         "Description": "AC Motor Standard Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PC.jpg",
+        "Image": "../assets/images/PC.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2685,7 +2685,7 @@
         "Series": "PC",
         "Active": true,
         "Description": "AC Motor Standard Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PC.jpg",
+        "Image": "../assets/images/PC.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2694,7 +2694,7 @@
         "Series": "PC",
         "Active": true,
         "Description": "AC Motor Standard Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PC.jpg",
+        "Image": "../assets/images/PC.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2703,7 +2703,7 @@
         "Series": "PC",
         "Active": true,
         "Description": "AC Motor Standard Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PC.jpg",
+        "Image": "../assets/images/PC.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2712,7 +2712,7 @@
         "Series": "PC",
         "Active": true,
         "Description": "AC Motor Standard Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PC.jpg",
+        "Image": "../assets/images/PC.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2721,7 +2721,7 @@
         "Series": "PC",
         "Active": true,
         "Description": "AC Motor Standard Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PC.jpg",
+        "Image": "../assets/images/PC.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2730,7 +2730,7 @@
         "Series": "PC",
         "Active": true,
         "Description": "AC Motor Standard Models: Premium CHOICE Series",
-        "Image": "https://www.optisizer.com/graphics/PC.jpg",
+        "Image": "../assets/images/PC.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2739,7 +2739,7 @@
         "Series": "PC-230V",
         "Active": true,
         "Description": "Centrifugal Ceiling Fan - Direct Drive - 230V, 50 or 60Hz",
-        "Image": "https://www.optisizer.com/graphics/PC-230V.jpg",
+        "Image": "../assets/images/PC.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2748,7 +2748,7 @@
         "Series": "PC-230V",
         "Active": true,
         "Description": "Centrifugal Ceiling Fan - Direct Drive - 230V, 50 or 60Hz",
-        "Image": "https://www.optisizer.com/graphics/PC-230V.jpg",
+        "Image": "../assets/images/PC.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2757,7 +2757,7 @@
         "Series": "PC-230V",
         "Active": true,
         "Description": "Centrifugal Ceiling Fan - Direct Drive - 230V, 50 or 60Hz",
-        "Image": "https://www.optisizer.com/graphics/PC-230V.jpg",
+        "Image": "../assets/images/PC.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2766,7 +2766,7 @@
         "Series": "PC-230V",
         "Active": true,
         "Description": "Centrifugal Ceiling Fan - Direct Drive - 230V, 50 or 60Hz",
-        "Image": "https://www.optisizer.com/graphics/PC-230V.jpg",
+        "Image": "../assets/images/PC.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2775,7 +2775,7 @@
         "Series": "PC-230V",
         "Active": true,
         "Description": "Centrifugal Ceiling Fan - Direct Drive - 230V, 50 or 60Hz",
-        "Image": "https://www.optisizer.com/graphics/PC-230V.jpg",
+        "Image": "../assets/images/PC.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2784,7 +2784,7 @@
         "Series": "PC-230V",
         "Active": true,
         "Description": "Centrifugal Ceiling Fan - Direct Drive - 230V, 50 or 60Hz",
-        "Image": "https://www.optisizer.com/graphics/PC-230V.jpg",
+        "Image": "../assets/images/PC.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
@@ -2793,7 +2793,7 @@
         "Series": "PCD",
         "Active": true,
         "Description": "DC Motor Models: Premium CHOICE Series (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/PCD.jpg",
+        "Image": "../assets/images/PCD.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Premium%20CHOICE%20Series"
     },
     {
