@@ -3522,8 +3522,8 @@
         "Series": "SMXD",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Acme",
@@ -3531,8 +3531,8 @@
         "Series": "SMXD",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Twin City",
@@ -3540,7 +3540,8 @@
         "Series": "SMXD",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -3548,8 +3549,8 @@
         "Series": "SMXD",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -3557,8 +3558,8 @@
         "Series": "SMXD",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -3566,8 +3567,8 @@
         "Series": "SMXDHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Acme",
@@ -3575,8 +3576,8 @@
         "Series": "SMXDHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke ",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Twin City",
@@ -3584,8 +3585,8 @@
         "Series": "SMXDHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -3593,8 +3594,8 @@
         "Series": "SMXDHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -3602,8 +3603,8 @@
         "Series": "SMXDHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke",
-        "Image": "https://www.optisizer.com/graphics/SMXD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Image": "../assets/images/SMXD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -3612,7 +3613,7 @@
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan ",
         "Image": "https://www.optisizer.com/graphics/SMXDK.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Acme",
@@ -3621,7 +3622,7 @@
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan",
         "Image": "https://www.optisizer.com/graphics/SMXDK.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Twin City",
@@ -3630,7 +3631,7 @@
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan",
         "Image": "https://www.optisizer.com/graphics/SMXDK.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -3639,7 +3640,7 @@
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan",
         "Image": "https://www.optisizer.com/graphics/SMXDK.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -3648,7 +3649,7 @@
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan",
         "Image": "https://www.optisizer.com/graphics/SMXDK.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk.html"
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -3656,8 +3657,8 @@
         "Series": "SMXDKHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke",
-        "Image": "https://www.optisizer.com/graphics/SMXDHT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk-ht.html"
+        "Image": "../assets/images/smxdk.webp",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXDK-HT"
     },
     {
         "CompetitorID": "Acme",
@@ -3665,8 +3666,8 @@
         "Series": "SMXDKHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke ",
-        "Image": "https://www.optisizer.com/graphics/SMXDHT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk-ht.html"
+        "Image": "../assets/images/smxdk.webp",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXDK-HT"
     },
     {
         "CompetitorID": "Twin City",
@@ -3674,8 +3675,8 @@
         "Series": "SMXDKHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke",
-        "Image": "https://www.optisizer.com/graphics/SMXDHT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk-ht.html"
+        "Image": "../assets/images/smxdk.webp",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXDK-HT"
     },
     {
         "CompetitorID": "Greenheck",
@@ -3683,8 +3684,8 @@
         "Series": "SMXDKHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke",
-        "Image": "https://www.optisizer.com/graphics/SMXDHT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk-ht.html"
+        "Image": "../assets/images/smxdk.webp",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXDK-HT"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -3692,8 +3693,8 @@
         "Series": "SMXDKHT",
         "Active": true,
         "Description": "Direct Drive Mixed Flow Fan Heat & Smoke",
-        "Image": "https://www.optisizer.com/graphics/SMXDHT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/isdf/smxdk-ht.html"
+        "Image": "../assets/images/smxdk.webp",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SMXDK-HT"
     },
     {
         "CompetitorID": "Greenheck",
@@ -3701,7 +3702,7 @@
         "Series": "SQB",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/SQB.jpg",
+        "Image": "../assets/images/SQB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3710,7 +3711,7 @@
         "Series": "SQB",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/SQB.jpg",
+        "Image": "../assets/images/SQB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3719,7 +3720,7 @@
         "Series": "SQB",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/SQB.jpg",
+        "Image": "../assets/images/SQB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3728,7 +3729,7 @@
         "Series": "SQB",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/SQB.jpg",
+        "Image": "../assets/images/SQB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3737,7 +3738,7 @@
         "Series": "SQB",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/SQB.jpg",
+        "Image": "../assets/images/SQB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3746,7 +3747,7 @@
         "Series": "SQB",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/SQB.jpg",
+        "Image": "../assets/images/SQB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3755,7 +3756,7 @@
         "Series": "SQB",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/SQB.jpg",
+        "Image": "../assets/images/SQB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3764,7 +3765,7 @@
         "Series": "SQB",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/SQB.jpg",
+        "Image": "../assets/images/SQB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3773,7 +3774,7 @@
         "Series": "SQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Direct Drive (V.S.C)",
-        "Image": "https://www.optisizer.com/graphics/SQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3782,7 +3783,7 @@
         "Series": "SQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Direct Drive (V.S.C)",
-        "Image": "https://www.optisizer.com/graphics/SQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3791,7 +3792,7 @@
         "Series": "SQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Direct Drive (V.S.C)",
-        "Image": "https://www.optisizer.com/graphics/SQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3800,7 +3801,7 @@
         "Series": "SQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Direct Drive (V.S.C)",
-        "Image": "https://www.optisizer.com/graphics/SQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3809,7 +3810,7 @@
         "Series": "SQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Direct Drive (V.S.C)",
-        "Image": "https://www.optisizer.com/graphics/SQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3818,7 +3819,7 @@
         "Series": "SQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Direct Drive (V.S.C)",
-        "Image": "https://www.optisizer.com/graphics/SQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3827,7 +3828,7 @@
         "Series": "SQD",
         "Active": true,
         "Description": "Centrifugal Square Inline Duct Fan-Direct Drive (V.S.C)",
-        "Image": "https://www.optisizer.com/graphics/SQD.jpg",
+        "Image": "../assets/images/SQD-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SQB"
     },
     {
@@ -3836,7 +3837,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3845,7 +3846,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3854,7 +3855,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3863,7 +3864,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3872,7 +3873,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3881,7 +3882,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3890,7 +3891,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3899,7 +3900,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3908,7 +3909,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3917,7 +3918,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3926,7 +3927,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3935,7 +3936,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3944,7 +3945,7 @@
         "Series": "STXB",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/STXB.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3953,7 +3954,7 @@
         "Series": "STXBHT",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Heat & Smoke-Belt Drive 500°F",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3962,7 +3963,7 @@
         "Series": "STXBHT",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive ",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3971,7 +3972,7 @@
         "Series": "STXBHT",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Heat & Smoke-Belt Drive 500°F",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3980,7 +3981,7 @@
         "Series": "STXBHT",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Heat & Smoke-Belt Drive 1000°F",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -3989,7 +3990,7 @@
         "Series": "STXBHT",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Heat & Smoke-Belt Drive 1000°F",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
 
@@ -4001,7 +4002,7 @@
         "Series": "STXBHT2",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Heat & Smoke-Belt Drive 1000°F",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4010,7 +4011,7 @@
         "Series": "STXBHT2",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Heat & Smoke-Belt Drive 500°F",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4019,7 +4020,7 @@
         "Series": "STXBHT2",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Heat & Smoke-Belt Drive 500°F",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4028,7 +4029,7 @@
         "Series": "STXBHT2",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Heat & Smoke-Belt Drive 1000°F",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4037,7 +4038,7 @@
         "Series": "STXBHT2",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-Heat & Smoke-Belt Drive 1000°F",
-        "Image": "https://www.optisizer.com/graphics/STXBHT.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
 
@@ -4047,7 +4048,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4056,7 +4057,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4065,7 +4066,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4074,7 +4075,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4083,7 +4084,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4092,7 +4093,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4101,7 +4102,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4110,7 +4111,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4119,7 +4120,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive ",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4128,7 +4129,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive ",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4137,7 +4138,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4146,7 +4147,7 @@
         "Series": "STXBRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4155,7 +4156,7 @@
         "Series": "STXBW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4164,7 +4165,7 @@
         "Series": "STXBW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
 
@@ -4179,7 +4180,7 @@
         "Series": "STXBW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4188,7 +4189,7 @@
         "Series": "STXBW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4197,7 +4198,7 @@
         "Series": "STXBW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4206,7 +4207,7 @@
         "Series": "STXBW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4215,7 +4216,7 @@
         "Series": "STXBW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4224,7 +4225,7 @@
         "Series": "STXBW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4233,7 +4234,7 @@
         "Series": "STXBWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4242,7 +4243,7 @@
         "Series": "STXBWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4251,7 +4252,7 @@
         "Series": "STXBWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4260,7 +4261,7 @@
         "Series": "STXBWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4269,7 +4270,7 @@
         "Series": "STXBWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4278,7 +4279,7 @@
         "Series": "STXBWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4287,7 +4288,7 @@
         "Series": "STXBWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4296,7 +4297,7 @@
         "Series": "STXBWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-UL762 Restaurant-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/STXBW.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4305,8 +4306,8 @@
         "Series": "STXD",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4314,8 +4315,8 @@
         "Series": "STXD",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Twin City",
@@ -4323,8 +4324,8 @@
         "Series": "STXD",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Captive Aire",
@@ -4332,8 +4333,8 @@
         "Series": "STXD",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -4341,8 +4342,8 @@
         "Series": "STXD",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Acme",
@@ -4350,8 +4351,8 @@
         "Series": "STXD",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Carnes",
@@ -4359,8 +4360,8 @@
         "Series": "STXD",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -4368,8 +4369,8 @@
         "Series": "STXDe",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhausters with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4377,8 +4378,8 @@
         "Series": "STXDe",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhausters with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Twin City",
@@ -4386,8 +4387,8 @@
         "Series": "STXDe",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhausters with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -4395,8 +4396,8 @@
         "Series": "STXDe",
         "Active": true,
         "Description": "Centrifugal Upblast Roof Exhausters with EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/STXD.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -4404,8 +4405,8 @@
         "Series": "STXDeRHUL",
         "Active": true,
         "Description": "Centrifugal Upblast Restaurant Roof Exhauster w/ EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/STXDeRHUL.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4413,8 +4414,8 @@
         "Series": "STXDeRHUL",
         "Active": true,
         "Description": "Centrifugal Upblast Restaurant Roof Exhauster w/ EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/STXDeRHUL.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Twin City",
@@ -4422,8 +4423,8 @@
         "Series": "STXDeRHUL",
         "Active": true,
         "Description": "Centrifugal Upblast Restaurant Roof Exhauster w/ EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/STXDeRHUL.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -4431,8 +4432,8 @@
         "Series": "STXDeRHUL",
         "Active": true,
         "Description": "Centrifugal Upblast Restaurant Roof Exhauster w/ EC Motors (Ecowatt®)",
-        "Image": "https://www.optisizer.com/graphics/STXDeRHUL.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -4440,8 +4441,8 @@
         "Series": "STXDRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDeRHUL.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4449,8 +4450,8 @@
         "Series": "STXDRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDeRHUL.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -4458,8 +4459,8 @@
         "Series": "STXDRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDeRHUL.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Acme",
@@ -4467,8 +4468,8 @@
         "Series": "STXDRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDeRHUL.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Carnes",
@@ -4476,7 +4477,7 @@
         "Series": "STXDRHUL",
         "Active": true,
         "Description": "Centrifugal Roof Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDeRHUL.jpg",
+        "Image": "../assets/images/STXB-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
     },
     {
@@ -4485,8 +4486,8 @@
         "Series": "STXDW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4494,8 +4495,8 @@
         "Series": "STXDW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Acme",
@@ -4503,8 +4504,8 @@
         "Series": "STXDW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Carnes",
@@ -4512,8 +4513,8 @@
         "Series": "STXDW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -4521,8 +4522,8 @@
         "Series": "STXDW",
         "Active": true,
         "Description": "Centrifugal Wall Exhauster-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -4530,8 +4531,8 @@
         "Series": "STXDWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4539,8 +4540,8 @@
         "Series": "STXDWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Acme",
@@ -4548,8 +4549,8 @@
         "Series": "STXDWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Carnes",
@@ -4557,8 +4558,8 @@
         "Series": "STXDWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -4566,8 +4567,8 @@
         "Series": "STXDWRHUL",
         "Active": true,
         "Description": "Centrifugal Wall Restaurant Exhausters-Direct Drive Motors",
-        "Image": "https://www.optisizer.com/graphics/STXDW.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXB"
+        "Image": "../assets/images/STXB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Centrifugal%20Roof%20%26%20Wall%20Fans&series=STXD"
     },
     {
         "CompetitorID": "Continental Fan",
@@ -4575,7 +4576,7 @@
         "Series": "SWF",
         "Active": true,
         "Description": "Sidewall Centrifugal Duct Fans - SWF-SIDEWALL",
-        "Image": "https://www.optisizer.com/graphics/SWF.jpg",
+        "Image": "../assets/images/SWF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SWF-SIDEWALL"
     },
     {
@@ -4584,7 +4585,7 @@
         "Series": "SWF",
         "Active": true,
         "Description": "Sidewall Centrifugal Duct Fans - SWF-SIDEWALL",
-        "Image": "https://www.optisizer.com/graphics/SWF.jpg",
+        "Image": "../assets/images/SWF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SWF-SIDEWALL"
     },
     {
@@ -4593,7 +4594,7 @@
         "Series": "SWF",
         "Active": true,
         "Description": "Sidewall Centrifugal Duct Fans - SWF-SIDEWALL",
-        "Image": "https://www.optisizer.com/graphics/SWF.jpg",
+        "Image": "../assets/images/SWF-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=SWF-SIDEWALL"
     },
     {
@@ -4602,7 +4603,7 @@
         "Series": "TD",
         "Active": true,
         "Description": "Inline Mixed Flow Duct Fans - TD-MIXVENT",
-        "Image": "https://www.optisizer.com/graphics/TD.jpg",
+        "Image": "../assets/images/TD-MIXVENT-recat.png",
         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=TD-MIXVENT"
     },
     {
@@ -4611,7 +4612,7 @@
         "Series": "TD",
         "Active": true,
          "Description": "Inline Mixed Flow Duct Fans - TD-MIXVENT",
-         "Image": "https://www.optisizer.com/graphics/TD.jpg",
+         "Image": "../assets/images/TD-MIXVENT-recat.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=TD-MIXVENT"            
     },
     {
@@ -4620,7 +4621,7 @@
         "Series": "TD",
         "Active": true,
          "Description": "Inline Mixed Flow Duct Fans - TD-MIXVENT",
-         "Image": "https://www.optisizer.com/graphics/TD.jpg",
+         "Image": "../assets/images/TD-MIXVENT-recat.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=TD-MIXVENT"
     },
     {
@@ -4629,7 +4630,7 @@
         "Series": "TD",
         "Active": true,
          "Description": "Inline Mixed Flow Duct Fans - TD-MIXVENT",
-         "Image": "https://www.optisizer.com/graphics/TD.jpg",
+         "Image": "../assets/images/TD-MIXVENT-recat.png",
          "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=TD-MIXVENT"
     },
   
@@ -4711,8 +4712,8 @@
         "Series": "TD SILENT",
         "Active": true,
         "Description": "Inline Mixed Flow Duct Fans for extreme noise concerns - TD-SILENT",
-        "Image": "https://www.optisizer.com/graphics/TD%20SILENT.jpg",
-        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=TD-MIXVENT"
+        "Image": "../assets/images/TD-SILENT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=In-line%2FSidewall%20Duct%20Fans&series=TD-SILENT"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -4720,8 +4721,8 @@
         "Series": "TDB",
         "Active": true,
         "Description": "Tube Axial Duct Fan-Belt Drive",
-        "Image": "https://www.optisizer.com/graphics/TDB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/tf/tdb.html"
+        "Image": "../assets/images/TDB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDB"
     },
     {
         "CompetitorID": "Acme",
@@ -4729,8 +4730,8 @@
         "Series": "TDB",
         "Active": true,
          "Description": "Tube Axial Duct Fan-Belt Drive",
-         "Image": "https://www.optisizer.com/graphics/TDB.jpg",
-         "Link" : "https://solerpalau-usa.com/products/tf/tdb.html"
+         "Image": "../assets/images/TDB-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDB"
     },
     {
         "CompetitorID": "Carnes",
@@ -4738,8 +4739,8 @@
         "Series": "TDB",
         "Active": true,
          "Description": "Tube Axial Duct Fan-Belt Drive",
-         "Image": "https://www.optisizer.com/graphics/TDB.jpg",
-         "Link" : "https://solerpalau-usa.com/products/tf/tdb.html"
+         "Image": "../assets/images/TDB-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDB"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4747,8 +4748,8 @@
         "Series": "TDB",
         "Active": true,
          "Description": "Tube Axial Duct Fan-Belt Drive",
-         "Image": "https://www.optisizer.com/graphics/TDB.jpg",
-         "Link" : "https://solerpalau-usa.com/products/tf/tdb.html"
+         "Image": "../assets/images/TDB-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDB"
     },
     {
         "CompetitorID": "PennBarry",
@@ -4756,8 +4757,8 @@
         "Series": "TDB",
         "Active": true,
          "Description": "Tube Axial Duct Fan-Belt Drive",
-         "Image": "https://www.optisizer.com/graphics/TDB.jpg",
-         "Link" : "https://solerpalau-usa.com/products/tf/tdb.html"
+         "Image": "../assets/images/TDB-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDB"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -4765,8 +4766,8 @@
         "Series": "TDD",
         "Active": true,
         "Description": "Tube Axial Duct Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/TDD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/tf/tdd.html"
+        "Image": "../assets/images/TDD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDD"
     },
     {
         "CompetitorID": "Acme",
@@ -4774,8 +4775,8 @@
         "Series": "TDD",
         "Active": true,
         "Description": "Tube Axial Duct Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/TDD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/tf/tdd.html"
+        "Image": "../assets/images/TDD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDD"
     },
     {
         "CompetitorID": "Carnes",
@@ -4783,8 +4784,8 @@
         "Series": "TDD",
         "Active": true,
         "Description": "Tube Axial Duct Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/TDD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/tf/tdd.html"
+        "Image": "../assets/images/TDD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -4792,8 +4793,8 @@
         "Series": "TDD",
         "Active": true,
         "Description": "Tube Axial Duct Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/TDD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/tf/tdd.html"
+        "Image": "../assets/images/TDD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4801,8 +4802,8 @@
         "Series": "TDD",
         "Active": true,
         "Description": "Tube Axial Duct Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/TDD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/tf/tdd.html"
+        "Image": "../assets/images/TDD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDD"
     },
     {
         "CompetitorID": "Twin",
@@ -4810,8 +4811,8 @@
         "Series": "TDD",
         "Active": true,
         "Description": "Tube Axial Duct Fan-Direct Drive",
-        "Image": "https://www.optisizer.com/graphics/TDD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/tf/tdd.html"
+        "Image": "../assets/images/TDD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Tubeaxial%20Fans&series=TDD"
     },
     {
         "CompetitorID": "Big Ass Fan",
@@ -4819,8 +4820,8 @@
         "Series": "THVLS5",
         "Active": true,
         "Description": "Tornado Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS5.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tornado.html"
+        "Image": "../assets/images/Tornado-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tornado"
     },
     
     {
@@ -4829,8 +4830,8 @@
         "Series": "THVLS5",
         "Active": true,
          "Description": "Tornado Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS5.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tornado.html"
+        "Image": "../assets/images/Tornado-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tornado"
     },
     {
         "CompetitorID": "Big Ass Fan",
@@ -4838,8 +4839,8 @@
         "Series": "THVLS5",
         "Active": true,
          "Description": "Tornado Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS5.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tornado.html"
+        "Image": "../assets/images/Tornado-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tornado"
     },
     {
         "CompetitorID": "Hunter Industrial",
@@ -4847,8 +4848,8 @@
         "Series": "THVLS5",
         "Active": true,
          "Description": "Tornado Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS5.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tornado.html"
+        "Image": "../assets/images/Tornado-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tornado"
     },
     {
         "CompetitorID": "MacroAir",
@@ -4856,8 +4857,8 @@
         "Series": "THVLS5",
         "Active": true,
          "Description": "Tornado Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS5.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tornado.html"
+        "Image": "../assets/images/Tornado-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tornado"
     },
     {
         "CompetitorID": "MacroAir",
@@ -4865,8 +4866,8 @@
         "Series": "THVLS6",
         "Active": true,
         "Description": "Tempest Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS6.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tempest.html"
+        "Image": "../assets/images/Tempest-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tempest"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4874,8 +4875,8 @@
         "Series": "THVLS6",
         "Active": true,
             "Description": "Tempest Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS6.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tempest.html"
+        "Image": "../assets/images/Tempest-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tempest"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4883,8 +4884,8 @@
         "Series": "THVLS6",
         "Active": true,
             "Description": "Tempest Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS6.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tempest.html"
+        "Image": "../assets/images/Tempest-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tempest"
     },
     {
         "CompetitorID": "Hunter Industrial",
@@ -4892,8 +4893,8 @@
         "Series": "THVLS6",
         "Active": true,
             "Description": "Tempest Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS6.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tempest.html"
+        "Image": "../assets/images/Tempest-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tempest"
     },
     {
         "CompetitorID": "Big Ass Fan",
@@ -4901,8 +4902,8 @@
         "Series": "THVLS6",
         "Active": true,
             "Description": "Tempest Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS6.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tempest.html"
+        "Image": "../assets/images/Tempest-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tempest"
     },
     {
         "CompetitorID": "Hunter Industrial",
@@ -4910,8 +4911,8 @@
         "Series": "THVLS6",
         "Active": true,
             "Description": "Tempest Ceiling Fan",
-        "Image": "https://www.optisizer.com/graphics/THVLS6.jpg",
-        "Link" : "https://solerpalau-usa.com/products/hvls/tempest.html"
+        "Image": "../assets/images/Tempest-THVLS.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=High%20Volume%20Low%20Speed%20Fans&series=Tempest"
     },
     {
         "CompetitorID": "Systemair",
@@ -4919,8 +4920,8 @@
         "Series": "TJFU",
         "Active": true,
         "Description": "Axial Jet Fan",
-        "Image": "https://www.optisizer.com/graphics/TJFU.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/tjfu.html"
+        "Image": "../assets/images/tjfu-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=TJFU"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4928,8 +4929,8 @@
         "Series": "TJFU",
         "Active": true,
         "Description": "Axial Jet Fan ",
-        "Image": "https://www.optisizer.com/graphics/TJFU.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/tjfu.html"
+        "Image": "../assets/images/tjfu-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=TJFU"
     },
     {
         "CompetitorID": "Greenheck",
@@ -4937,8 +4938,8 @@
         "Series": "TJFU",
         "Active": true,
         "Description": "Axial Jet Fan ",
-        "Image": "https://www.optisizer.com/graphics/TJFU.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/tjfu.html"
+        "Image": "../assets/images/tjfu-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=TJFU"
     },
     {
         "CompetitorID": "Systemair",
@@ -4946,8 +4947,8 @@
         "Series": "TJFU",
         "Active": true,
         "Description": "Axial Jet Fan ",
-        "Image": "https://www.optisizer.com/graphics/TJFU.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/tjfu.html"
+        "Image": "../assets/images/tjfu-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=TJFU"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -4955,8 +4956,8 @@
         "Series": "TJFU",
         "Active": true,
         "Description": "Axial Jet Fan ",
-        "Image": "https://www.optisizer.com/graphics/TJFU.jpg",
-        "Link" : "https://solerpalau-usa.com/products/jetfans/tjfu.html"
+        "Image": "../assets/images/tjfu-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Jet%20Fans%20Series&series=TJFU"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -4964,8 +4965,8 @@
         "Series": "TUB-A",
         "Active": true,
         "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/TUB-A.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tub.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB-HT"
     },
     {
         "CompetitorID": "PennBarry",
@@ -4973,8 +4974,8 @@
         "Series": "TUB-A",
         "Active": true,
          "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/TUB-A.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tub.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB"
     },
     {
         "CompetitorID": "Carnes",
@@ -4982,8 +4983,8 @@
         "Series": "TUB-A",
         "Active": true,
          "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/TUB-A.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tub.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB"
     },
     {
         "CompetitorID": "Carnes",
@@ -4991,8 +4992,8 @@
         "Series": "TUB-A",
         "Active": true,
          "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/TUB-A.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tub.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB"
     },
     {
         "CompetitorID": "Greenheck",
@@ -5000,8 +5001,8 @@
         "Series": "TUB-A",
         "Active": true,
          "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/TUB-A.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tub.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB"
     },
     {
         "CompetitorID": "Acme",
@@ -5009,8 +5010,8 @@
         "Series": "TUB-A",
         "Active": true,
          "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/TUB-A.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tub.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB"
     },
     {
         "CompetitorID": "PennBarry",
@@ -5018,8 +5019,8 @@
         "Series": "TUB-A",
         "Active": true,
          "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/TUB-A.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tub.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB"
     },
     {
         "CompetitorID": "Twin City",
@@ -5027,8 +5028,8 @@
         "Series": "TUB-A",
         "Active": true,
          "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/TUB-A.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tub.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB"
     },
     {
         "CompetitorID": "PennBarry",
@@ -5036,8 +5037,8 @@
         "Series": "TUB-HT",
         "Active": true,
         "Description": "Propeller/Tube Axial Roof Exhauster High Temp.-Belt",
-        "Image": "https://www.optisizer.com/graphics/TUB-HT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tubht.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB-HT"
     },
     {
         "CompetitorID": "Carnes",
@@ -5045,8 +5046,8 @@
         "Series": "TUB-HT",
         "Active": true,
         "Description": "Propeller/Tube Axial Roof Exhauster High Temp.-Belt",
-        "Image": "https://www.optisizer.com/graphics/TUB-HT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tubht.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB-HT"
     },
     {
         "CompetitorID": "Greenheck",
@@ -5054,8 +5055,8 @@
         "Series": "TUB-HT",
         "Active": true,
         "Description": "Propeller/Tube Axial Roof Exhauster High Temp.-Belt",
-        "Image": "https://www.optisizer.com/graphics/TUB-HT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tubht.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB-HT"
     },
     {
         "CompetitorID": "Acme",
@@ -5063,8 +5064,8 @@
         "Series": "TUB-HT",
         "Active": true,
         "Description": "Propeller/Tube Axial Roof Exhauster High Temp.-Belt",
-        "Image": "https://www.optisizer.com/graphics/TUB-HT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tubht.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB-HT"
     },
     {
         "CompetitorID": "Twin City",
@@ -5072,8 +5073,8 @@
         "Series": "TUB-HT",
         "Active": true,
         "Description": "Propeller/Tube Axial Roof Exhauster High Temp.-Belt",
-        "Image": "https://www.optisizer.com/graphics/TUB-HT.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tubht.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB-HT"
     },
     {
         "CompetitorID": "Carnes",
@@ -5081,8 +5082,8 @@
         "Series": "TUB-P",
         "Active": true,
         "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast ",
-        "Image": "https://www.optisizer.com/graphics/TUB-P.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tubht.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB-HT"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -5090,8 +5091,8 @@
         "Series": "TUB-P",
         "Active": true,
         "Description": "Propeller/Tube Axial Roof Exhauster-Belt Drive Upblast ",
-        "Image": "https://www.optisizer.com/graphics/TUB-P.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/tubht.html"
+        "Image": "../assets/images/TUB-HT-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=TUB-HT"
     },
     {
         "CompetitorID": "PennBarry",
@@ -5099,8 +5100,8 @@
         "Series": "UBB",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Aluminum ",
-        "Image": "https://www.optisizer.com/graphics/UBB.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+        "Image": "../assets/images/UB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     },
     {
         "CompetitorID": "Carnes",
@@ -5108,8 +5109,8 @@
         "Series": "UBB",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Aluminum ",
-         "Image" : "https://www.optisizer.com/graphics/UBB.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+         "Image" : "../assets/images/UB-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -5117,8 +5118,8 @@
         "Series": "UBB",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Aluminum ",
-         "Image" : "https://www.optisizer.com/graphics/UBB.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+         "Image" : "../assets/images/UB-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     },
     {
         "CompetitorID": "Greenheck",
@@ -5126,8 +5127,8 @@
         "Series": "UBB",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Aluminum ",
-         "Image" : "https://www.optisizer.com/graphics/UBB.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+         "Image" : "../assets/images/UB-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     },
     {
         "CompetitorID": "Acme",
@@ -5135,8 +5136,8 @@
         "Series": "UBB",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Aluminum ",
-         "Image" : "https://www.optisizer.com/graphics/UBB.jpg",
-         "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+         "Image" : "../assets/images/UB-recat.png",
+         "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     },
     {
         "CompetitorID": "PennBarry",
@@ -5144,8 +5145,8 @@
         "Series": "UBRD",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote",
-        "Image": "https://www.optisizer.com/graphics/UBRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubrd.html"
+        "Image": "../assets/images/UBRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBRD"
     },
     {
         "CompetitorID": "Carnes",
@@ -5153,8 +5154,8 @@
         "Series": "UBRD",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote",
-        "Image": "https://www.optisizer.com/graphics/UBRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubrd.html"
+        "Image": "../assets/images/UBRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBRD"
     },
     {
         "CompetitorID": "Greenheck",
@@ -5162,8 +5163,8 @@
         "Series": "UBRD",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote",
-        "Image": "https://www.optisizer.com/graphics/UBRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubrd.html"
+        "Image": "../assets/images/UBRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBRD"
     },
     {
         "CompetitorID": "PennBarry",
@@ -5171,8 +5172,8 @@
         "Series": "UBS",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Steel Prop",
-        "Image": "https://www.optisizer.com/graphics/UBS.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubs.html"
+        "Image": "../assets/images/UBS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBS%20and%20UBS-P"
     },
     {
         "CompetitorID": "Coolair",
@@ -5180,8 +5181,8 @@
         "Series": "UBS",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Steel Prop",
-        "Image": "https://www.optisizer.com/graphics/UBS.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubs.html"
+        "Image": "../assets/images/UBS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBS%20and%20UBS-P"
     },
     {
         "CompetitorID": "Coolair",
@@ -5189,8 +5190,8 @@
         "Series": "UBS",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Steel Prop",
-        "Image": "https://www.optisizer.com/graphics/UBS.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubs.html"
+        "Image": "../assets/images/UBS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBS%20and%20UBS-P"
     },
     {
         "CompetitorID": "Twin City",
@@ -5198,8 +5199,8 @@
         "Series": "UBS",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Steel Prop",
-        "Image": "https://www.optisizer.com/graphics/UBS.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubs.html"
+        "Image": "../assets/images/UBS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBS%20and%20UBS-P"
     },
     {
         "CompetitorID": "Carnes",
@@ -5207,8 +5208,8 @@
         "Series": "UBS",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Steel Prop",
-        "Image": "https://www.optisizer.com/graphics/UBS.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubs.html"
+        "Image": "../assets/images/UBS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBS%20and%20UBS-P"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -5216,8 +5217,8 @@
         "Series": "UBS",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Steel Prop",
-        "Image": "https://www.optisizer.com/graphics/UBS.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubs.html"
+        "Image": "../assets/images/UBS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBS%20and%20UBS-P"
     },
     {
         "CompetitorID": "Greenheck",
@@ -5225,8 +5226,8 @@
         "Series": "UBS",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Steel Prop",
-        "Image": "https://www.optisizer.com/graphics/UBS.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubs.html"
+        "Image": "../assets/images/UBS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBS%20and%20UBS-P"
     },
     {
         "CompetitorID": "Acme",
@@ -5234,8 +5235,8 @@
         "Series": "UBS",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast-Steel Prop",
-        "Image": "https://www.optisizer.com/graphics/UBS.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubs.html"
+        "Image": "../assets/images/UBS-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBS%20and%20UBS-P"
     },
     {
         "CompetitorID": "Greenheck",
@@ -5243,8 +5244,8 @@
         "Series": "UBSRD",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote",
-        "Image": "https://www.optisizer.com/graphics/UBSRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubsrd.html"
+        "Image": "../assets/images/UBSRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBSRD%20and%20UBSRD-P"
     },
     {
         "CompetitorID": "Twin City",
@@ -5252,8 +5253,8 @@
         "Series": "UBSRD",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote",
-        "Image": "https://www.optisizer.com/graphics/UBSRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubsrd.html"
+        "Image": "../assets/images/UBSRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBSRD%20and%20UBSRD-P"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -5261,8 +5262,8 @@
         "Series": "UBSRD",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote",
-        "Image": "https://www.optisizer.com/graphics/UBSRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubsrd.html"
+        "Image": "../assets/images/UBSRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBSRD%20and%20UBSRD-P"
     },
     {
         "CompetitorID": "PennBarry",
@@ -5270,8 +5271,8 @@
         "Series": "UBSRD",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote",
-        "Image": "https://www.optisizer.com/graphics/UBSRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubsrd.html"
+        "Image": "../assets/images/UBSRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBSRD%20and%20UBSRD-P"
     },
     {
         "CompetitorID": "Twin City",
@@ -5279,8 +5280,8 @@
         "Series": "UBSRDHT",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote For Heat & Smoke Removal",
-        "Image": "https://www.optisizer.com/graphics/UBSRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubsrd.html"
+        "Image": "../assets/images/UBSRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBSRD%20and%20UBSRD-P"
     },
     
     {
@@ -5289,8 +5290,8 @@
         "Series": "UBSRDHT",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote For Heat & Smoke Removal",
-        "Image": "https://www.optisizer.com/graphics/UBSRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubsrd.html"
+        "Image": "../assets/images/UBSRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBSRD%20and%20UBSRD-P"
     },
     {
         "CompetitorID": "Greenheck",
@@ -5298,8 +5299,8 @@
         "Series": "UBSRDHT1",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote For Heat & Smoke Removal",
-        "Image": "https://www.optisizer.com/graphics/UBSRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubsrd.html"
+        "Image": "../assets/images/UBSRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBSRD%20and%20UBSRD-P"
     },
     {
         "CompetitorID": "Greenheck",
@@ -5307,8 +5308,8 @@
         "Series": "UBSRD-P",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Belt Drive Upblast Remote-Poly Prop ",
-        "Image": "https://www.optisizer.com/graphics/UBSRD.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubsrd.html"
+        "Image": "../assets/images/UBSRD-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBSRD%20and%20UBSRD-P"
     },
     {
         "CompetitorID": "Loren Cook",
@@ -5316,8 +5317,8 @@
         "Series": "UBX",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Direct Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/UBX.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+        "Image": "../assets/images/UB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     },
     {
         "CompetitorID": "PennBarry",
@@ -5325,8 +5326,8 @@
         "Series": "UBX",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Direct Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/UBX.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+        "Image": "../assets/images/UB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     },
     {
         "CompetitorID": "Carnes",
@@ -5334,8 +5335,8 @@
         "Series": "UBX",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Direct Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/UBX.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+        "Image": "../assets/images/UB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     },
     {
         "CompetitorID": "Greenheck",
@@ -5343,8 +5344,8 @@
         "Series": "UBX",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Direct Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/UBX.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+        "Image": "../assets/images/UB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     },
     {
         "CompetitorID": "Acme",
@@ -5352,8 +5353,8 @@
         "Series": "UBX",
         "Active": true,
         "Description": "Propeller Roof Exhauster-Direct Drive Upblast",
-        "Image": "https://www.optisizer.com/graphics/UBX.jpg",
-        "Link" : "https://solerpalau-usa.com/products/rpf/ubb-ubx.html"
+        "Image": "../assets/images/UB-recat.png",
+        "Link" : "https://solerpalauusa.github.io/sp-app/pages/products.html?product=Roof%20Propeller%20Fans&series=UBB%20and%20UBX"
     }
 
 ]

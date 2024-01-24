@@ -2621,7 +2621,7 @@
       {
         "id": 1,
         "name": "Tornado",
-        "image": "../assets/images/tornado.png",
+        "image": "../assets/images/Tornado-THVLS.png",
         "description": "Tornado HVLS is a 5-Blade High Volume Low-Speed fan model featuring a direct drive ECM, IP65 motor. This fan is equipped with wingtips to redirect outward airflow downward. Through the destratification process, the THVLS fan series will lower energy bills providing evaporative cooling effect in summer and allow for uniform temperature in winter",
     
         "submittals": [
@@ -2640,7 +2640,7 @@
       {
         "id": 2,
         "name": "Tempest",
-        "image": "../assets/images/tempest.png",
+        "image": "../assets/images/Tempest-THVLS.png",
         "description": "Tempest HVLS is a 6-Blade High Volume Low-Speed fan model featuring a direct drive ECM, IP65 motor. This fan is equipped with wingtips to redirect outward airflow downward. Through the destratification process, the THVLS fan series will lower energy bills providing evaporative cooling effect in summer and allow for uniform temperature in winter.",
     
         "submittals": [
@@ -5464,7 +5464,7 @@
       {
         "id": 7,
         "name": "TUB",
-        "image": "../assets/images/UBSRD-recat.png",
+        "image": "../assets/images/TUB-HT-recat.png",
         "description": "Tubeaxial Upblast Propeller Roof Exhauster Fans (TUB) are designed for high capacity industrial and commercial roof exhaust applications with capacities ranging from 6,210 to 60,116 CFM, with static pressure capability up to 1\". The remote drive configuration of the TUB is especially suited for the removal of fumes, vapors, steam, dust, smoke and contaminated or heated air for continuous operation in air temperatures to 200°F. For temperature ratings to 1000°F and/or IRI requirements refer to TUB-HT.",
       
         "submittals": [
@@ -5502,7 +5502,7 @@
       {
         "id": 8,
         "name": "UBB and UBX",
-        "image": "../assets/images/TUB-HT-recat.png",
+        "image": "../assets/images/UB-recat.png",
         "description": "UBB and UBX are high capacity roof mounted exhausters rated from 5,900 to 78,000 CFM. They are general ventilation units designed to economically remove large volumes of air, fumes, and vapors from commercial and industrial buildings such as warehouses, manufacturing and assembly plants, distribution centers, chemical plants, foundries and paper mills.",
       
         "submittals": [
