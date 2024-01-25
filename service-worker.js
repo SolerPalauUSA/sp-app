@@ -1,5 +1,5 @@
 // Define the cache name and resources to cache
-const cacheName = 'Soler-Palau-App-Data-updated-imgV6';
+const cacheName = 'Soler-Palau-App-Data-updated-imgV7';
 const cacheResources = [
   '/sp-app/',
   '/sp-app/index.html',
@@ -129,6 +129,13 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  const url = new URL(event.request.url);
+
+  // Bypass service worker for Firebase SDKs or other specific URLs
+  if (url.origin === 'https://www.gstatic.com' && url.pathname.startsWith('/firebasejs')) {
+      return fetch(event.request); // Just perform a regular fetch
+  }
+
   event.respondWith(
       caches.match(event.request)
           .then((response) => {
@@ -142,8 +149,8 @@ self.addEventListener('fetch', (event) => {
 
               // Fetch the resource from the network
               return fetch(event.request, fetchOptions).then((networkResponse) => {
-                  // Don't cache opaque responses
-                  if (!networkResponse.ok && networkResponse.type === 'opaque') {
+                  // Don't cache opaque responses or responses that are not ok
+                  if (!networkResponse.ok || networkResponse.type === 'opaque') {
                       return networkResponse;
                   }
 
@@ -159,6 +166,7 @@ self.addEventListener('fetch', (event) => {
           })
   );
 });
+
 
 
 // Activate event: Clear old caches
