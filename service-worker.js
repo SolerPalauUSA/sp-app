@@ -128,13 +128,35 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// Fetch event: Serve cached resources if available, otherwise fetch from the network
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request)
-      .then((cachedResponse) => {
-        return cachedResponse || fetch(event.request);
-      })
+      caches.match(event.request)
+          .then((response) => {
+              // Return the cached response if found
+              if (response) {
+                  return response;
+              }
+
+              // For external resources, use no-cors mode
+              const fetchOptions = event.request.mode === 'navigate' ? {} : { mode: 'no-cors' };
+
+              // Fetch the resource from the network
+              return fetch(event.request, fetchOptions).then((networkResponse) => {
+                  // Don't cache opaque responses
+                  if (!networkResponse.ok && networkResponse.type === 'opaque') {
+                      return networkResponse;
+                  }
+
+                  // Clone and cache the response if it's ok
+                  const responseToCache = networkResponse.clone();
+                  caches.open(cacheName)
+                      .then((cache) => {
+                          cache.put(event.request, responseToCache);
+                      });
+
+                  return networkResponse;
+              });
+          })
   );
 });
 
