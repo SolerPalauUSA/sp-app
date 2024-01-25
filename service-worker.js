@@ -1,5 +1,5 @@
 // Define the cache name and resources to cache
-const cacheName = 'Soler-Palau-App-Data-updated-imgV7';
+const cacheName = 'Soler-Palau-App-Data-updated-imgV';
 const cacheResources = [
   '/sp-app/',
   '/sp-app/index.html',
@@ -131,9 +131,14 @@ self.addEventListener('install', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
-  // Bypass service worker for Firebase SDKs or other specific URLs
+  // Bypass service worker for Firebase SDKs or specific API requests
   if (url.origin === 'https://www.gstatic.com' && url.pathname.startsWith('/firebasejs')) {
-      return fetch(event.request); // Just perform a regular fetch
+      return fetch(event.request); // Perform a regular fetch
+  }
+
+  // Bypass service worker for Firebase Identity Toolkit API
+  if (url.origin === 'https://identitytoolkit.googleapis.com' && url.pathname.startsWith('/v1/accounts:lookup')) {
+      return fetch(event.request); // Perform a regular fetch
   }
 
   event.respondWith(
@@ -166,6 +171,7 @@ self.addEventListener('fetch', (event) => {
           })
   );
 });
+
 
 
 
