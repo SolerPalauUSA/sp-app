@@ -114,11 +114,11 @@ const cacheResources = [
   '/sp-app/assets/images/UB-recat.png',
   '/sp-app/assets/images/UBS-recat.png',
   'https://www.solerpalau-usa.com/documents/Brochure/assisted-living-application-guide.pdf',
-'https://www.solerpalau-usa.com/documents/Brochure/Ecowatt-Brochure.pdf',
-'https://www.solerpalau-usa.com/documents/Brochure/Food_Retail_Application_Guide.pdf',
-'https://www.solerpalau-usa.com/documents/Brochure/THVLS-Brochure.pdf',
-'https://www.solerpalau-usa.com/documents/Brochure/hotel-resort-application-guide.pdf',
-'https://www.solerpalau-usa.com/documents/Brochure/inline-fan-options.pdf',
+  'https://www.solerpalau-usa.com/documents/Brochure/Ecowatt-Brochure.pdf',
+  'https://www.solerpalau-usa.com/documents/Brochure/Food_Retail_Application_Guide.pdf',
+  'https://www.solerpalau-usa.com/documents/Brochure/THVLS-Brochure.pdf',
+  'https://www.solerpalau-usa.com/documents/Brochure/hotel-resort-application-guide.pdf',
+  'https://www.solerpalau-usa.com/documents/Brochure/inline-fan-options.pdf',
 'https://www.solerpalau-usa.com/documents/Brochure/Jet-Fans-Brochure.pdf',
 'https://www.solerpalau-usa.com/documents/Brochure/Mixed-Use_Building_Application_Guide.pdf',
 'https://www.solerpalau-usa.com/documents/Brochure/Mixed-Use_Building_Application_Guide.pdf',
@@ -296,7 +296,6 @@ const cacheResources = [
 'https://www.solerpalau-usa.com/documents/IOM/iom-trc800.pdf',
 'https://www.solerpalau-usa.com/documents/IOM/iom-trc1200.pdf',
 'https://www.solerpalau-usa.com/documents/IOM/iom-trc1600.pdf',
-'https://www.solerpalau-usa.com/documents/IOM/iom-trceUpdated.pdf',
 'https://www.solerpalau-usa.com/documents/IOM/IOM-TRE.pdf',
 'https://www.solerpalau-usa.com/documents/IOM/iom-tre90.pdf',
 'https://www.solerpalau-usa.com/documents/IOM/iom-TRLPe110.pdf',
@@ -380,10 +379,6 @@ const cacheResources = [
 'https://www.solerpalau-usa.com/documents/Submittal/sub-trc800v.pdf',
 'https://www.solerpalau-usa.com/documents/Submittal/sub-trc1200.pdf',
 'https://www.solerpalau-usa.com/documents/Submittal/sub-trc1600updated.pdf',
-'https://www.solerpalau-usa.com/documents/Submittal/sub-trce1200.pdf',
-'https://www.solerpalau-usa.com/documents/Submittal/sub-trce500.pdf',
-'https://www.solerpalau-usa.com/documents/Submittal/sub-trce800.pdf',
-'https://www.solerpalau-usa.com/documents/Submittal/sub-trce800v.pdf',
 'https://www.solerpalau-usa.com/documents/Submittal/sub-tre90.pdf',
 'https://www.solerpalau-usa.com/documents/Submittal/sub-tre200.pdf',
 'https://www.solerpalau-usa.com/documents/Submittal/sub-tre300.pdf',
@@ -512,8 +507,6 @@ const cacheResources = [
 'https://www.solerpalau-usa.com/documents/Specsheet/TDB.pdf',
 'https://www.solerpalau-usa.com/documents/Specsheet/TDD.pdf',
 'https://www.solerpalau-usa.com/documents/Specsheet/TR-Residential.pdf',
-'https://www.solerpalau-usa.com/documents/Specsheet/TRC500-TRCe500.pdf',
-'https://www.solerpalau-usa.com/documents/Specsheet/TRC800-TRC800V-TRCe800-TRCe800V.pdf',
 'https://www.solerpalau-usa.com/documents/Specsheet/TRC1200-TRCe1200.pdf',
 'https://www.solerpalau-usa.com/documents/Specsheet/TRC1600.pdf',
 'https://www.solerpalau-usa.com/documents/Specsheet/TUB.pdf',
@@ -534,7 +527,18 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(cacheName)
       .then((cache) => {
-        return cache.addAll(cacheResources);
+        const cachePromises = cacheResources.map(url => {
+          return fetch(url).then(response => {
+            if (response.ok) {
+              return cache.put(url, response);
+            } else {
+              console.warn(`URL ${url} returned status ${response.status}`);
+            }
+          }).catch(error => {
+            console.warn(`No response received for ${url}:`, error.message);
+          });
+        });
+        return Promise.all(cachePromises);
       })
   );
 });
