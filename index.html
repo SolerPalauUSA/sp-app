@@ -254,9 +254,16 @@ closeIosInstructions.addEventListener('click', hideIosInstallInstructions);
       if (!isAppInstalled()) {
         event.preventDefault();
         deferredPrompt = event;
-        installButtonAndroid.removeAttribute('hidden');
+       
+    // Delay the display of the install button
+    setTimeout(() => {
+      // Check again if the app isn't installed after the delay
+      if (!isAppInstalled()) {
+        installButtonAndroid.style.display = 'block';
       }
-    });
+    }, 1000); // Delay in milliseconds (e.g., 1000ms = 1 second)
+  }
+});
 
     installButtonAndroid.addEventListener('click', async () => {
       if (!deferredPrompt) {
