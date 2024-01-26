@@ -284,27 +284,52 @@ class LibraryComponent extends HTMLElement {
         ).map(item => ({ ...item, categoryType: category.type }))
       );
     }
-  
-    // Display documents
-    let documentsHTML = '';
-    for (const document of documents) {
-      if (document.link && document.name) {
-        const displayName = this.selectedCategory ? document.name : `${document.categoryType}: ${document.name}`;
-        documentsHTML += `
-          <div class="document">
-            <a href="${document.link}" target="_blank">
-              <h3>${displayName}</h3>
-              <p>${document.description || ''}</p>
-            </a>
-          </div>
-        `;
-      } else {
-        console.error('Invalid document data:', document);
-      }
-    }
-    this.documentsContainer.innerHTML = documentsHTML;
-  }
 
+
+      // Display documents
+  let documentsHTML = '';
+  for (const document of documents) {
+    if (document.link && document.name) {
+      const displayName = this.selectedCategory ? document.name : `${document.categoryType}: ${document.name}`;
+      documentsHTML += `
+        <div class="document">
+          <a href="${document.link}" class="document-link" data-url="${document.link}">
+            <h3>${displayName}</h3>
+            <p>${document.description || ''}</p>
+          </a>
+        </div>
+      `;
+    } else {
+      console.error('Invalid document data:', document);
+    }
+  }
+  this.documentsContainer.innerHTML = documentsHTML;
+
+  // Add click event listener to document links
+  this.documentsContainer.querySelectorAll('.document-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default anchor behavior
+      const url = e.target.closest('.document-link').getAttribute('data-url');
+      
+      // Fetch the URL to ensure it goes through the Service Worker
+      fetch(url)
+        .then(response => {
+          if (response.ok) {
+            window.open(url, '_blank');
+          } else {
+            console.error(`Request failed with status: ${response.status}`);
+            // Handle failure (show message, etc.)
+          }
+        })
+        .catch(error => {
+          console.error('Fetch error:', error);
+          // Handle fetch error (show message, etc.)
+        });
+    });
+  });
+}
+  
+ 
 findCategoryOfDocument(doc) {
   // Find the category of a given document
   for (const category of this.categories) {
