@@ -157,28 +157,36 @@ self.addEventListener('fetch', (event) => {
       return fetch(event.request); // Perform a regular fetch
   }
 
-   // Respond with cached resources or fetch and cache new resources
-   event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        if (response) {
-          return response;
-        }
-        const fetchRequest = event.request.clone();
-        return fetch(fetchRequest).then((networkResponse) => {
-          if (!networkResponse || !networkResponse.ok) {
-            return networkResponse;
-          }
-          const responseToCache = networkResponse.clone();
-          caches.open(cacheName)
-            .then((cache) => {
-              cache.put(event.request, responseToCache);
-            });
-          return networkResponse;
-        });
-      })
+  // Respond with cached resource or fetch and cache
+  event.respondWith(
+      caches.match(event.request)
+          .then((cachedResponse) => {
+              if (cachedResponse) {
+                  // Return the cached resource if found
+                  return cachedResponse;
+              }
+
+              // Fetch the resource from the network
+              return fetch(event.request).then((networkResponse) => {
+                  // Don't cache opaque responses or responses that are not ok
+                  if (!networkResponse.ok || networkResponse.type === 'opaque') {
+                      return networkResponse;
+                  }
+
+                  // Clone and cache the response if it's ok
+                  const responseToCache = networkResponse.clone();
+                  caches.open(cacheName).then((cache) => {
+                      cache.put(event.request, responseToCache);
+                  });
+
+                  return networkResponse;
+              }).catch((error) => {
+                  console.error(`Fetching and caching new data failed: ${error.message}`);
+              });
+          })
   );
 });
+
 
 // Activate event: Clear old caches
 self.addEventListener('activate', (event) => {
