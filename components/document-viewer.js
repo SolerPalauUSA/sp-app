@@ -40,12 +40,16 @@ class LibraryComponent extends HTMLElement {
       }
 
       iframe {
-        width: 100%;
-        height: 80vh; /* Responsive height based on viewport height */
-        min-height: 500px; /* Minimum height */
-        border: none;
-        overflow-y: auto; /* Ensure vertical scroll is enabled */
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+        overflow: auto !important; /* Enable scrollbars if content overflows */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  width: 100%; /* Responsive width */
+  height: 80vh; /* Responsive height based on viewport height */
+  min-height: 500px; /* Minimum height */
+  border: none; /* Optional: remove border if you prefer */
       }
       .close {
         color: #053658; /* Dark blue color */
