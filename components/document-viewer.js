@@ -26,33 +26,25 @@ class LibraryComponent extends HTMLElement {
         width: 100%; /* Full width */
         height: 100%; /* Full height */
         background-color: rgba(0,0,0,0.4); /* Black with opacity */
-        overflow: auto; /* Enable scroll if needed */
+        overflow-x: hidden; /* Disable horizontal scroll */
       }
 
       .modal-content {
         position: relative;
         background-color: #fefefe;
-        margin: auto;
-        padding: 0;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
         border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
+        width: 90%; /* Could be more or less, depending on screen size */
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        animation-name: animatetop;
-        animation-duration: 0.4s;
       }
 
       .close {
-        color: black;
+        color: #053658; /* Dark blue color */
         float: right;
         font-size: 28px;
         font-weight: bold;
         margin-right: 15px;
-      }
-
-      .close:hover,
-      .close:focus {
-        color: #000;
-        text-decoration: none;
         cursor: pointer;
       }
 
@@ -60,14 +52,9 @@ class LibraryComponent extends HTMLElement {
         width: 100%;
         height: 80vh; /* Adjust height as needed, vh units will make it responsive */
         border: none;
+        overflow-y: auto; /* Ensure vertical scroll is enabled */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
       }
-
-      /* Add animation for the modal to slide down */
-      @keyframes animatetop {
-        from {top: -300px; opacity: 0}
-        to {top: 0; opacity: 1}
-      }
-
 
         .categories-outer {
           position: sticky;
