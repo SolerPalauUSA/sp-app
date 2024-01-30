@@ -198,7 +198,7 @@ class LibraryComponent extends HTMLElement {
       <div id="contentModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <iframe id="contentFrame" src="" frameborder="0"></iframe>
+        <iframe id="contentFrame" frameborder="0"></iframe>
       </div>
     </div>
 
