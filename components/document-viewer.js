@@ -18,27 +18,35 @@ class LibraryComponent extends HTMLElement {
         
 
       .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 9999; /* Sit on top */
+        display: none;
+        position: fixed;
+        z-index: 9999;
         left: 0;
         top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        background-color: rgba(0,0,0,0.4); /* Black with opacity */
-        overflow-x: hidden; /* Disable horizontal scroll */
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Enable scroll for the whole modal */
+        background-color: rgba(0,0,0,0.4);
       }
 
       .modal-content {
-        position: relative;
         background-color: #fefefe;
-        margin: 15% auto; /* 15% from the top and centered */
+        margin: 5% auto; /* Reduced margin */
         padding: 20px;
         border: 1px solid #888;
-        width: 90%; /* Could be more or less, depending on screen size */
+        width: 80%; /* Adjust width */
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        overflow: hidden; /* Hide scrollbars if modal body is not longer than screen */
       }
 
+      iframe {
+        width: 100%;
+        height: 80vh; /* Responsive height based on viewport height */
+        min-height: 500px; /* Minimum height */
+        border: none;
+        overflow-y: auto; /* Ensure vertical scroll is enabled */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+      }
       .close {
         color: #053658; /* Dark blue color */
         float: right;
@@ -48,13 +56,6 @@ class LibraryComponent extends HTMLElement {
         cursor: pointer;
       }
 
-      iframe {
-        width: 100%;
-        height: 80vh; /* Adjust height as needed, vh units will make it responsive */
-        border: none;
-        overflow-y: auto; /* Ensure vertical scroll is enabled */
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
-      }
 
         .categories-outer {
           position: sticky;
