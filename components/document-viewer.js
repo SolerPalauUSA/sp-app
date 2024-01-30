@@ -31,12 +31,22 @@ class LibraryComponent extends HTMLElement {
       }
 
       .modal-content {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
         background-color: #fefefe;
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
         border: 1px solid #888;
+        overflow-y: auto !important ;
       }
+
+      iframe {
+        width: 100%; /* Full width */
+        height: 80vh; /* Adjust height as needed */
+        border: none; /* Remove border */
+    }
 
       .close {
         color: #aaa;
