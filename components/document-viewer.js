@@ -190,15 +190,12 @@ class LibraryComponent extends HTMLElement {
       </div>
       <div class="documents"></div>
 
-
-      <!-- PDF Viewer Modal -->
-      <div id="pdfModal" class="pdf-modal">
-          <div class="pdf-modal-content">
-              <span id="closeModal" class="close">&times;</span>
-              <a id="downloadPdf" href="" download="" class="download">Download</a>
-              <iframe id="contentFrame" src="" frameborder="0" style="width:100%;height:90vh;"></iframe>
-          </div>
+      <div id="contentModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="contentFrame" src="" frameborder="0" style=" width:100%; height:90vh; "></iframe>
       </div>
+    </div>
 
     `;
 
