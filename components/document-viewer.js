@@ -18,48 +18,60 @@ class LibraryComponent extends HTMLElement {
         
 
       .modal {
-        display: none;
-        position: fixed;
-        z-index: 9999;
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 9999; /* Sit on top and above other elements */
+        padding-top: 100px; /* Location of the box */
         left: 0;
         top: 0;
-        width: 100%;
-        height: 100vh;
-        overflow: scroll !important;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0,0.4);
-      }
-
-      .modal-content {
-        display: flex; /* Use flexbox for centering */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        background-color: #fefefe;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding: 10px;
-        border: 1px solid #888;
-        overflow-y: auto !important ;
-      }
-
-      iframe {
         width: 100%; /* Full width */
-        height: 80vh; /* Adjust height as needed */
-        border: none; /* Remove border */
-    }
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s
+      }
+
+      /* Add Animation */
+      @keyframes animatetop {
+        from {top: -300px; opacity: 0}
+        to {top: 0; opacity: 1}
+      }
 
       .close {
-        color: #aaa;
+        color: white;
         float: right;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: bold;
       }
 
       .close:hover,
       .close:focus {
-        color: black;
+        color: #000;
         text-decoration: none;
         cursor: pointer;
+      }
+
+      iframe {
+        display: block; /* Remove default margin of iframe */
+        width: 100%; /* Responsive width */
+        height: 80vh; /* Adjust height as needed */
+        border: none; /* No border */
+        overflow-y: auto; /* Enable vertical scroll */
+        background: white; /* Background color */
+        padding: 10px; /* Padding inside the iframe */
+        box-sizing: border-box; /* Include padding in width and height */
       }
 
         .categories-outer {
@@ -203,7 +215,7 @@ class LibraryComponent extends HTMLElement {
       <div id="contentModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <iframe id="contentFrame" src="" frameborder="0" style=" width:100%; height:90vh; "></iframe>
+        <iframe id="contentFrame" src="" frameborder="0"></iframe>
       </div>
     </div>
 
