@@ -25,7 +25,7 @@ class LibraryComponent extends HTMLElement {
         top: 0;
         width: 100%;
         height: 100vh;
-        overflow: scroll;
+        overflow: scroll !important;
         background-color: rgb(0,0,0);
         background-color: rgba(0,0,0,0.4);
       }
@@ -190,12 +190,15 @@ class LibraryComponent extends HTMLElement {
       </div>
       <div class="documents"></div>
 
-      <div id="contentModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <iframe id="contentFrame" src="" frameborder="0" style="width:100%;height:80vh;"></iframe>
+
+      <!-- PDF Viewer Modal -->
+      <div id="pdfModal" class="pdf-modal">
+          <div class="pdf-modal-content">
+              <span id="closeModal" class="close">&times;</span>
+              <a id="downloadPdf" href="" download="" class="download">Download</a>
+              <iframe id="contentFrame" src="" frameborder="0" style="width:100%;height:90vh;"></iframe>
+          </div>
       </div>
-    </div>
 
     `;
 
