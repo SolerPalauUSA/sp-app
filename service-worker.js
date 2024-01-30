@@ -1,5 +1,5 @@
 // Define the cache name and resources to cache
-const cacheName = 'Soler-Palau-App-Data-updatedVersionOne';
+const cacheName = 'Soler-Palau-App-Data-updatedVersionOneUpdated';
 const essentialCacheResources = [
   '/sp-app/',
   '/sp-app/index.html',
@@ -84,6 +84,7 @@ const essentialCacheResources = [
   '/sp-app/assets/images/tjfu-recat.png',
   '/sp-app/assets/images/TR-recat.png',
   '/sp-app/assets/images/TRC-recat.png',
+  '/sp-app/assets/images/TRe2-recat.png',
   '/sp-app/assets/images/trcen-cat.png',
   '/sp-app/assets/images/TRLPe110_RGB.webp',
   '/sp-app/assets/images/TUB-HT-recat.png',
