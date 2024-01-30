@@ -15,7 +15,42 @@ class LibraryComponent extends HTMLElement {
 
     
       <style>
-        /* Add your CSS styles here */
+        
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
 
         .categories-outer {
           position: sticky;
@@ -154,6 +189,14 @@ class LibraryComponent extends HTMLElement {
       <div class="categories" id="categories-container"></div>
       </div>
       <div class="documents"></div>
+
+      <div id="contentModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="contentFrame" src="" frameborder="0" style="width:100%;height:80vh;"></iframe>
+      </div>
+    </div>
+
     `;
 
 
@@ -287,47 +330,68 @@ class LibraryComponent extends HTMLElement {
 
 
       // Display documents
-  let documentsHTML = '';
-  for (const document of documents) {
-    if (document.link && document.name) {
-      const displayName = this.selectedCategory ? document.name : `${document.categoryType}: ${document.name}`;
-      documentsHTML += `
-        <div class="document">
-          <a href="${document.link}" class="document-link" data-url="${document.link}">
-            <h3>${displayName}</h3>
-            <p>${document.description || ''}</p>
-          </a>
-        </div>
-      `;
-    } else {
-      console.error('Invalid document data:', document);
-    }
-  }
-  this.documentsContainer.innerHTML = documentsHTML;
-
-  // Add click event listener to document links
-  this.documentsContainer.querySelectorAll('.document-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault(); // Prevent default anchor behavior
-      const url = e.target.closest('.document-link').getAttribute('data-url');
-      
-      // Fetch the URL to ensure it goes through the Service Worker
-      fetch(url)
-        .then(response => {
-          if (response.ok) {
-            window.open(url, '_blank');
-          } else {
-            console.error(`Request failed with status: ${response.status}`);
-            // Handle failure (show message, etc.)
+  
+      let documentsHTML = '';
+      for (const document of documents) {
+        if (document.link && document.name) {
+          const displayName = this.selectedCategory ? document.name : `${document.categoryType}: ${document.name}`;
+          documentsHTML += `
+            <div class="document">
+              <a href="${document.link}" class="document-link" data-url="${document.link}">
+                <h3>${displayName}</h3>
+                <p>${document.description || ''}</p>
+              </a>
+            </div>
+          `;
+        } else {
+          console.error('Invalid document data:', document);
+        }
+      }
+      this.documentsContainer.innerHTML = documentsHTML;
+  
+      this.documentsContainer.querySelectorAll('.document-link').forEach(link => {
+        link.addEventListener('click', async (e) => {
+          e.preventDefault(); // Prevent default anchor behavior
+          const url = e.target.closest('.document-link').getAttribute('data-url');
+          
+          try {
+            const response = await fetch(url);
+            if (response.ok) {
+              this.displayContent(response, url); // Call the displayContent function
+            } else {
+              console.error(`Request failed with status: ${response.status}`);
+              // Handle failure (show message, etc.)
+            }
+          } catch (error) {
+            console.error('Fetch error:', error);
+            // Handle fetch error (show message, etc.)
           }
-        })
-        .catch(error => {
-          console.error('Fetch error:', error);
-          // Handle fetch error (show message, etc.)
         });
-    });
-  });
-}
+      });
+    }
+
+    displayContent(response, url) {
+      const modal = this.shadowRoot.getElementById('contentModal');
+      const frame = this.shadowRoot.getElementById('contentFrame');
+      const span = this.shadowRoot.querySelector('.close');
+  
+      frame.src = url; // Set the iframe source to the URL
+  
+      modal.style.display = "block"; // Display the modal
+  
+      // Close the modal when the user clicks on <span> (x)
+      span.onclick = () => {
+        modal.style.display = "none";
+      }
+  
+      // Close the modal when the user clicks anywhere outside of the modal
+      window.onclick = (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      }
+    }
+  
   
  
 findCategoryOfDocument(doc) {
