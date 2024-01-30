@@ -20,40 +20,33 @@ class LibraryComponent extends HTMLElement {
       .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
-        z-index: 9999; /* Sit on top and above other elements */
-        padding-top: 100px; /* Location of the box */
+        z-index: 9999; /* Sit on top */
         left: 0;
         top: 0;
         width: 100%; /* Full width */
         height: 100%; /* Full height */
+        background-color: rgba(0,0,0,0.4); /* Black with opacity */
         overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
       }
 
-      /* Modal Content */
       .modal-content {
+        position: relative;
         background-color: #fefefe;
         margin: auto;
-        padding: 20px;
+        padding: 0;
         border: 1px solid #888;
         width: 80%; /* Could be more or less, depending on screen size */
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         animation-name: animatetop;
-        animation-duration: 0.4s
-      }
-
-      /* Add Animation */
-      @keyframes animatetop {
-        from {top: -300px; opacity: 0}
-        to {top: 0; opacity: 1}
+        animation-duration: 0.4s;
       }
 
       .close {
-        color: white;
+        color: black;
         float: right;
         font-size: 28px;
         font-weight: bold;
+        margin-right: 15px;
       }
 
       .close:hover,
@@ -64,15 +57,17 @@ class LibraryComponent extends HTMLElement {
       }
 
       iframe {
-        display: block; /* Remove default margin of iframe */
-        width: 100%; /* Responsive width */
-        height: 80vh; /* Adjust height as needed */
-        border: none; /* No border */
-        overflow-y: auto; /* Enable vertical scroll */
-        background: white; /* Background color */
-        padding: 10px; /* Padding inside the iframe */
-        box-sizing: border-box; /* Include padding in width and height */
+        width: 100%;
+        height: 80vh; /* Adjust height as needed, vh units will make it responsive */
+        border: none;
       }
+
+      /* Add animation for the modal to slide down */
+      @keyframes animatetop {
+        from {top: -300px; opacity: 0}
+        to {top: 0; opacity: 1}
+      }
+
 
         .categories-outer {
           position: sticky;
