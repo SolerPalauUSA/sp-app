@@ -276,6 +276,9 @@ async loadAndRenderPage(pdf, pageNumber) {
     const page = await pdf.getPage(pageNumber);
     const viewport = page.getViewport({ scale: 1.5 });
     const canvas = this.shadowRoot.getElementById('pdfCanvas');
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+
     const context = canvas.getContext('2d');
     canvas.height = viewport.height;
     canvas.width = viewport.width;
@@ -284,6 +287,17 @@ async loadAndRenderPage(pdf, pageNumber) {
         canvasContext: context,
         viewport: viewport,
     };
+
+      // Cancel the ongoing render task if it exists and is still running
+      if (this.renderTask && !this.renderTask._internalRenderTask.capability.settled) {
+        this.renderTask.cancel();
+    }
+
+    // Render the new page
+    this.renderTask = page.render(renderContext);
+    await this.renderTask.promise;
+
+
     await page.render(renderContext).promise;
 }
 
