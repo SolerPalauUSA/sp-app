@@ -18,10 +18,6 @@ class LibraryComponent extends HTMLElement {
 
 
 
-      #pdfCanvas {
-        transition: opacity 0.5s ease-in-out;
-        opacity: 0; /* Start with the canvas transparent */
-    }
     .visible {
         opacity: 1; /* Full visibility */
     }
@@ -51,6 +47,8 @@ class LibraryComponent extends HTMLElement {
       }
       
       #pdfCanvas {
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0; /* Start with the canvas transparent */
         width: 100%; /* Responsive width */
         height: auto; /* Height will be set by the rendered PDF page */
         border: none; /* Optional: remove border if you prefer */
