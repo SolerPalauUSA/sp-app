@@ -18,8 +18,8 @@ class LibraryComponent extends HTMLElement {
 
 
 
-    .visible {
-        opacity: 1; /* Full visibility */
+      #pdfCanvas.visible {
+        opacity: 1; /* Fully visible when the class 'visible' is added */
     }
         
 
