@@ -26,31 +26,28 @@ class LibraryComponent extends HTMLElement {
         width: 100%;
         height: 100%;
         overflow: auto; /* Enable scroll for the whole modal */
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0, 0, 0, 0.4); /* Dim the background */
       }
-
+      
       .modal-content {
+        position: relative;
         background-color: #fefefe;
-        margin: 5% auto; /* Reduced margin */
+        margin: 5% auto; /* Center the modal */
         padding: 20px;
         border: 1px solid #888;
         width: 80%; /* Adjust width */
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
         overflow: hidden; /* Hide scrollbars if modal body is not longer than screen */
       }
-
-      iframe {
-        overflow: auto !important; /* Enable scrollbars if content overflows */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
-  border-width: 2px;
-  border-style: inset;
-  border-color: initial;
-  border-image: initial;
-  width: 100%; /* Responsive width */
-  height: 80vh; /* Responsive height based on viewport height */
-  min-height: 500px; /* Minimum height */
-  border: none; /* Optional: remove border if you prefer */
+      
+      #pdfCanvas {
+        width: 100%; /* Responsive width */
+        height: auto; /* Height will be set by the rendered PDF page */
+        border: none; /* Optional: remove border if you prefer */
+        overflow: auto; /* Enable scrollbars if content overflows */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
       }
+      
       .close {
         color: #053658; /* Dark blue color */
         float: right;
@@ -59,6 +56,28 @@ class LibraryComponent extends HTMLElement {
         margin-right: 15px;
         cursor: pointer;
       }
+      
+      #pdf-navigation-controls {
+        text-align: center; /* Center the navigation controls */
+        margin-top: 10px; /* Space between canvas and controls */
+      }
+      
+      #pdf-navigation-controls button {
+        padding: 5px 10px;
+        margin-right: 5px;
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        cursor: pointer;
+      }
+      
+      #pdf-navigation-controls button:hover {
+        background-color: #e7e7e7;
+      }
+      
+      #page-num {
+        font-size: 16px;
+      }
+      
 
 
         .categories-outer {
@@ -200,11 +219,17 @@ class LibraryComponent extends HTMLElement {
       <div class="documents"></div>
 
       <div id="contentModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <iframe  id="contentFrame" frameborder="0"></iframe>
-      </div>
-    </div>
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <canvas id="pdfCanvas"></canvas> <!-- Canvas for PDF.js -->
+                <!-- Navigation Controls -->
+                <div id="pdf-navigation-controls">
+                    <button id="prev-page">Previous Page</button>
+                    <span id="page-num"></span>
+                    <button id="next-page">Next Page</button>
+                </div>
+            </div>
+        </div>
 
     `;
 
@@ -214,6 +239,59 @@ class LibraryComponent extends HTMLElement {
     this.documentsContainer = this.shadowRoot.querySelector('.documents');
     this.categoryContainer = this.shadowRoot.querySelector('#categories-container');
   }
+
+
+  async displayPDF(url) {
+    // Initialize PDF.js
+    const pdfjsLib = window['pdfjs-dist/build/pdf'];
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
+
+    const loadingTask = pdfjsLib.getDocument(url);
+    this.pdf = await loadingTask.promise; // Store the loaded PDF
+    this.pageNumber = 1; // Initialize the page number
+
+    // Load and render the first page
+    await this.loadAndRenderPage(this.pdf, this.pageNumber);
+    this.updatePageNumberDisplay(); // Update the page number display
+
+    // Event listeners for navigation
+    this.shadowRoot.getElementById('prev-page').addEventListener('click', async () => {
+        if (this.pageNumber > 1) {
+            this.pageNumber--;
+            await this.loadAndRenderPage(this.pdf, this.pageNumber);
+            this.updatePageNumberDisplay();
+        }
+    });
+
+    this.shadowRoot.getElementById('next-page').addEventListener('click', async () => {
+        if (this.pageNumber < this.pdf.numPages) {
+            this.pageNumber++;
+            await this.loadAndRenderPage(this.pdf, this.pageNumber);
+            this.updatePageNumberDisplay();
+        }
+    });
+}
+
+async loadAndRenderPage(pdf, pageNumber) {
+    const page = await pdf.getPage(pageNumber);
+    const viewport = page.getViewport({ scale: 1.5 });
+    const canvas = this.shadowRoot.getElementById('pdfCanvas');
+    const context = canvas.getContext('2d');
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    const renderContext = {
+        canvasContext: context,
+        viewport: viewport,
+    };
+    await page.render(renderContext).promise;
+}
+
+updatePageNumberDisplay() {
+    this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNumber} of ${this.pdf.numPages}`;
+}
+
+
 
   loadJSONData() {
     const jsonURL = '../data/documents.json';
@@ -381,26 +459,26 @@ class LibraryComponent extends HTMLElement {
 
     displayContent(response, url) {
       const modal = this.shadowRoot.getElementById('contentModal');
-      const frame = this.shadowRoot.getElementById('contentFrame');
       const span = this.shadowRoot.querySelector('.close');
   
-      frame.src = url; // Set the iframe source to the URL
+      // Call the displayPDF function to render the PDF into the canvas
+      this.displayPDF(url);
   
-      modal.style.display = "block"; // Display the modal
+      // Show the modal
+      modal.style.display = "block";
   
       // Close the modal when the user clicks on <span> (x)
       span.onclick = () => {
-        modal.style.display = "none";
-      }
+          modal.style.display = "none";
+      };
   
       // Close the modal when the user clicks anywhere outside of the modal
       window.onclick = (event) => {
-        if (event.target === modal) {
-          modal.style.display = "none";
-        }
-      }
-    }
-  
+          if (event.target === modal) {
+              modal.style.display = "none";
+          }
+      };
+  }
   
  
 findCategoryOfDocument(doc) {
