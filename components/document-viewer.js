@@ -227,17 +227,18 @@ class LibraryComponent extends HTMLElement {
       <div class="documents"></div>
 
       <div id="contentModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <canvas id="pdfCanvas"></canvas> <!-- Canvas for PDF.js -->
-                <!-- Navigation Controls -->
-                <div id="pdf-navigation-controls">
-                    <button id="prev-page">Previous Page</button>
-                    <span id="page-num"></span>
-                    <button id="next-page">Next Page</button>
-                </div>
-            </div>
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="canvas-container"></div> <!-- Container for the canvas -->
+        <!-- Navigation Controls -->
+        <div id="pdf-navigation-controls">
+            <button id="prev-page">Previous Page</button>
+            <span id="page-num"></span>
+            <button id="next-page">Next Page</button>
         </div>
+    </div>
+</div>
+
 
     `;
 
@@ -281,28 +282,28 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
-  if (this.renderTask) {
-    // Cancel the ongoing render task if it exists
-    this.renderTask.cancel();
-    try {
-      // Wait for the cancellation to complete
-      await this.renderTask.promise;
-    } catch (ex) {
-      // Catch and handle or ignore the expected cancellation exception
-      console.log('Rendering cancelled: ', ex.message);
-    }
-  }
-
   const page = await pdf.getPage(pageNumber);
   const viewport = page.getViewport({ scale: 1.5 });
-  const canvas = this.shadowRoot.getElementById('pdfCanvas');
+
+  // Reference to the container where the canvas will be appended
+  const container = this.shadowRoot.getElementById('canvas-container');
+  
+  // Clear any existing canvas from the container
+  while (container.firstChild) {
+      container.removeChild(container.firstChild);
+  }
+
+  // Create a new canvas and append it to the container
+  const canvas = document.createElement('canvas');
+  container.appendChild(canvas);
+
   const context = canvas.getContext('2d');
   canvas.height = viewport.height;
   canvas.width = viewport.width;
 
   const renderContext = {
-    canvasContext: context,
-    viewport: viewport,
+      canvasContext: context,
+      viewport: viewport,
   };
 
   // Render the page
@@ -311,9 +312,6 @@ async loadAndRenderPage(pdf, pageNumber) {
 
   // Update the page number display
   this.updatePageNumberDisplay();
-
-  // Make the canvas visible (fade-in effect)
-  canvas.classList.add('visible');
 }
 
 
