@@ -226,18 +226,20 @@ class LibraryComponent extends HTMLElement {
       </div>
       <div class="documents"></div>
 
+  
       <div id="contentModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="canvas-container"></div> <!-- Container for the canvas -->
-        <!-- Navigation Controls -->
-        <div id="pdf-navigation-controls">
-            <button id="prev-page">Previous Page</button>
-            <span id="page-num"></span>
-            <button id="next-page">Next Page</button>
-        </div>
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="canvas-container"></div> <!-- Container for the canvas -->
+    <!-- Navigation Controls -->
+    <div id="pdf-navigation-controls">
+      <button id="prev-page">Previous Page</button>
+      <span id="page-num"></span>
+      <button id="next-page">Next Page</button>
     </div>
+  </div>
 </div>
+
 
 
     `;
@@ -283,14 +285,15 @@ class LibraryComponent extends HTMLElement {
 
 async loadAndRenderPage(pdf, pageNumber) {
   const page = await pdf.getPage(pageNumber);
-  const viewport = page.getViewport({ scale: 1.5 });
-
+  const scale = window.innerWidth / page.getViewport({ scale: 1 }).width; // Adjust scale based on the screen width
+  const viewport = page.getViewport({ scale });
+  
   // Reference to the container where the canvas will be appended
   const container = this.shadowRoot.getElementById('canvas-container');
   
   // Clear any existing canvas from the container
   while (container.firstChild) {
-      container.removeChild(container.firstChild);
+    container.removeChild(container.firstChild);
   }
 
   // Create a new canvas and append it to the container
@@ -302,17 +305,18 @@ async loadAndRenderPage(pdf, pageNumber) {
   canvas.width = viewport.width;
 
   const renderContext = {
-      canvasContext: context,
-      viewport: viewport,
+    canvasContext: context,
+    viewport: viewport,
   };
 
   // Render the page
   this.renderTask = page.render(renderContext);
   await this.renderTask.promise;
 
-  // Update the page number display
+  // Update page number display
   this.updatePageNumberDisplay();
 }
+
 
 
 updatePageNumberDisplay() {
