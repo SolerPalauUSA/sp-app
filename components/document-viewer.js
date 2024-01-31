@@ -4,10 +4,11 @@ class LibraryComponent extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.categories = []; // Store categories and their documents
     this.selectedCategory = null; // Store the currently selected category
-
+    this.currentSlideIndex = 1; // Initialize the current slide index
+    this.totalSlides = 0; // Initialize the total number of slides (pages in PDF)
     this.render();
     this.loadJSONData(); // Load JSON data (replace with your data loading logic)
-    this.handleSearchInput(); 
+    this.handleSearchInput();
   }
 
   render() {
@@ -193,14 +194,16 @@ class LibraryComponent extends HTMLElement {
       <div class="categories-outer">
       <div class="categories" id="categories-container"></div>
       </div>
-      
-      <div class="documents"></div>
+
+    
+
       <div id="contentModal" class="modal">
       <div class="modal-content">
           <span class="close">&times;</span>
           <canvas id="pdfCanvas"></canvas> <!-- Canvas for PDF.js -->
       </div>
   </div>
+
 
     `;
 
@@ -375,6 +378,20 @@ class LibraryComponent extends HTMLElement {
       });
     }
 
+    plusSlides(n) {
+      this.showSlides(this.currentSlideIndex += n);
+  }
+
+  showSlides(n) {
+      let slides = this.shadowRoot.querySelectorAll('.mySlides');
+      if (n > slides.length) { this.currentSlideIndex = 1 }
+      if (n < 1) { this.currentSlideIndex = slides.length }
+      for (let slide of slides) {
+          slide.style.display = "none";
+      }
+      slides[this.currentSlideIndex - 1].style.display = "block";
+  }
+
 
     displayPDF(url) {
       // Ensure PDF.js worker is set (if you're hosting the pdf.worker.js file yourself, set the path here)
@@ -413,13 +430,47 @@ class LibraryComponent extends HTMLElement {
       });
   }
 
-    displayContent(response, url) {
+  async displayContent(response, url) {
       const modal = this.shadowRoot.getElementById('contentModal');
       const span = this.shadowRoot.querySelector('.close');
 
       this.displayPDF(url); // Display the PDF
 
       modal.style.display = "block"; // Display the modal
+
+      const pdfjsLib = window['pdfjs-dist/build/pdf'];
+      pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
+
+      const loadingTask = pdfjsLib.getDocument(url);
+      const pdf = await loadingTask.promise;
+      
+      const slider = this.shadowRoot.getElementById('slider');
+      slider.innerHTML = ''; // Clear existing slides
+
+      for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+          const page = await pdf.getPage(pageNum);
+          const viewport = page.getViewport({ scale: 1 });
+          const canvas = document.createElement('canvas');
+          const context = canvas.getContext('2d');
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+
+          // Render PDF page into canvas context
+          const renderContext = {
+              canvasContext: context,
+              viewport: viewport
+          };
+          await page.render(renderContext).promise;
+
+          // Convert canvas to image and append to slider
+          const img = document.createElement('img');
+          img.src = canvas.toDataURL();
+          img.className = "mySlides";
+          slider.appendChild(img);
+      }
+
+      // Display the first slide
+      this.showSlides(this.currentSlideIndex);
 
       // Close the modal when the user clicks on <span> (x)
       span.onclick = () => {
