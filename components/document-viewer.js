@@ -193,14 +193,14 @@ class LibraryComponent extends HTMLElement {
       <div class="categories-outer">
       <div class="categories" id="categories-container"></div>
       </div>
+      
       <div class="documents"></div>
-
       <div id="contentModal" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <iframe id="contentFrame" frameborder="0"></iframe>
+          <span class="close">&times;</span>
+          <canvas id="pdfCanvas"></canvas> <!-- Canvas for PDF.js -->
       </div>
-    </div>
+  </div>
 
     `;
 
