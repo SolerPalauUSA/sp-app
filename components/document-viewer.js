@@ -4,11 +4,10 @@ class LibraryComponent extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.categories = []; // Store categories and their documents
     this.selectedCategory = null; // Store the currently selected category
-    this.currentSlideIndex = 1; // Initialize the current slide index
-    this.totalSlides = 0; // Initialize the total number of slides (pages in PDF)
+
     this.render();
     this.loadJSONData(); // Load JSON data (replace with your data loading logic)
-    this.handleSearchInput();
+    this.handleSearchInput(); 
   }
 
   render() {
@@ -30,24 +29,28 @@ class LibraryComponent extends HTMLElement {
         background-color: rgba(0,0,0,0.4);
       }
 
-      #pdfCanvas {
-        border: 1px solid #888; /* Add a border to the canvas */
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Box shadow for a lifted paper effect */
-        background-color: #fff; /* Canvas background */
-        width: 100%; /* Responsive width */
-        height: auto; /* Height is auto, it will be set by script based on PDF page */
-        margin-bottom: 20px; /* Margin at the bottom */
-        display: block; /* Canvas display block */
-    }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto; /* Reduced margin */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Adjust width */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        overflow: hidden; /* Hide scrollbars if modal body is not longer than screen */
+      }
 
-    .modal-content {
-        /* Adjust your modal content styles if needed */
-        display: flex; /* Use flexbox for centering */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        flex-direction: column; /* Stack elements vertically */
-        /* Other styles... */
-    }
+      iframe {
+        overflow: auto !important; /* Enable scrollbars if content overflows */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  width: 100%; /* Responsive width */
+  height: 80vh; /* Responsive height based on viewport height */
+  min-height: 500px; /* Minimum height */
+  border: none; /* Optional: remove border if you prefer */
+      }
       .close {
         color: #053658; /* Dark blue color */
         float: right;
@@ -194,16 +197,14 @@ class LibraryComponent extends HTMLElement {
       <div class="categories-outer">
       <div class="categories" id="categories-container"></div>
       </div>
-
-    
+      <div class="documents"></div>
 
       <div id="contentModal" class="modal">
       <div class="modal-content">
-          <span class="close">&times;</span>
-          <canvas id="pdfCanvas"></canvas> <!-- Canvas for PDF.js -->
+        <span class="close">&times;</span>
+        <iframe id="contentFrame" frameborder="0"></iframe>
       </div>
-  </div>
-
+    </div>
 
     `;
 
@@ -378,112 +379,28 @@ class LibraryComponent extends HTMLElement {
       });
     }
 
-    plusSlides(n) {
-      this.showSlides(this.currentSlideIndex += n);
-  }
-
-  showSlides(n) {
-      let slides = this.shadowRoot.querySelectorAll('.mySlides');
-      if (n > slides.length) { this.currentSlideIndex = 1 }
-      if (n < 1) { this.currentSlideIndex = slides.length }
-      for (let slide of slides) {
-          slide.style.display = "none";
-      }
-      slides[this.currentSlideIndex - 1].style.display = "block";
-  }
-
-
-    displayPDF(url) {
-      // Ensure PDF.js worker is set (if you're hosting the pdf.worker.js file yourself, set the path here)
-      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js';
-
-      const loadingTask = pdfjsLib.getDocument(url);
-      loadingTask.promise.then(pdf => {
-          console.log('PDF loaded');
-          
-          // Fetch the first page
-          const pageNumber = 1;
-          pdf.getPage(pageNumber).then(page => {
-              console.log('Page loaded');
-              
-              const scale = 1.5;
-              const viewport = page.getViewport({ scale: scale });
-
-              // Prepare canvas using PDF page dimensions
-              const canvas = this.shadowRoot.getElementById('pdfCanvas');
-              const context = canvas.getContext('2d');
-              canvas.height = viewport.height;
-              canvas.width = viewport.width;
-
-              // Render PDF page into canvas context
-              const renderContext = {
-                  canvasContext: context,
-                  viewport: viewport
-              };
-              const renderTask = page.render(renderContext);
-              renderTask.promise.then(() => {
-                  console.log('Page rendered');
-              });
-          });
-      }, reason => {
-          console.error(reason);
-      });
-  }
-
-  async displayContent(response, url) {
+    displayContent(response, url) {
       const modal = this.shadowRoot.getElementById('contentModal');
+      const frame = this.shadowRoot.getElementById('contentFrame');
       const span = this.shadowRoot.querySelector('.close');
-
-      this.displayPDF(url); // Display the PDF
-
+  
+      frame.src = url; // Set the iframe source to the URL
+  
       modal.style.display = "block"; // Display the modal
-
-      const pdfjsLib = window['pdfjs-dist/build/pdf'];
-      pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
-
-      const loadingTask = pdfjsLib.getDocument(url);
-      const pdf = await loadingTask.promise;
-      
-      const slider = this.shadowRoot.getElementById('slider');
-      slider.innerHTML = ''; // Clear existing slides
-
-      for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
-          const page = await pdf.getPage(pageNum);
-          const viewport = page.getViewport({ scale: 1 });
-          const canvas = document.createElement('canvas');
-          const context = canvas.getContext('2d');
-          canvas.height = viewport.height;
-          canvas.width = viewport.width;
-
-          // Render PDF page into canvas context
-          const renderContext = {
-              canvasContext: context,
-              viewport: viewport
-          };
-          await page.render(renderContext).promise;
-
-          // Convert canvas to image and append to slider
-          const img = document.createElement('img');
-          img.src = canvas.toDataURL();
-          img.className = "mySlides";
-          slider.appendChild(img);
-      }
-
-      // Display the first slide
-      this.showSlides(this.currentSlideIndex);
-
+  
       // Close the modal when the user clicks on <span> (x)
       span.onclick = () => {
-          modal.style.display = "none";
+        modal.style.display = "none";
       }
-
+  
       // Close the modal when the user clicks anywhere outside of the modal
       window.onclick = (event) => {
-          if (event.target === modal) {
-              modal.style.display = "none";
-          }
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
       }
-  }
+    }
+  
   
  
 findCategoryOfDocument(doc) {
