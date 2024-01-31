@@ -15,6 +15,16 @@ class LibraryComponent extends HTMLElement {
 
     
       <style>
+
+
+
+      #pdfCanvas {
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0; /* Start with the canvas transparent */
+    }
+    .visible {
+        opacity: 1; /* Full visibility */
+    }
         
 
       .modal {
@@ -293,10 +303,17 @@ async loadAndRenderPage(pdf, pageNumber) {
       viewport: viewport,
   };
 
+  // Before rendering the new page, hide the canvas
+  canvas.classList.remove('visible');
+
   // Render the page
   this.renderTask = page.render(renderContext);
   await this.renderTask.promise;
+
+  // After the page is rendered, show the canvas
+  canvas.classList.add('visible');
 }
+
 
 updatePageNumberDisplay() {
   this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNumber} of ${this.pdf.numPages}`;
