@@ -273,37 +273,36 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
-    const page = await pdf.getPage(pageNumber);
-    const viewport = page.getViewport({ scale: 1.5 });
-    const canvas = this.shadowRoot.getElementById('pdfCanvas');
-    canvas.width = viewport.width;
-    canvas.height = viewport.height;
+  // Cancel any ongoing rendering task
+  if (this.renderTask && !this.renderTask._internalRenderTask.capability.settled) {
+      this.renderTask.cancel();
+      await this.renderTask._internalRenderTask.capability.promise.catch(() => {});
+  }
 
-    const context = canvas.getContext('2d');
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
+  const page = await pdf.getPage(pageNumber);
+  const viewport = page.getViewport({ scale: 1.5 });
+  const canvas = this.shadowRoot.getElementById('pdfCanvas');
+  const context = canvas.getContext('2d');
 
-    const renderContext = {
-        canvasContext: context,
-        viewport: viewport,
-    };
+  // Reset the canvas dimensions to clear it
+  canvas.height = viewport.height;
+  canvas.width = viewport.width;
 
-      // Cancel the ongoing render task if it exists and is still running
-      if (this.renderTask && !this.renderTask._internalRenderTask.capability.settled) {
-        this.renderTask.cancel();
-    }
+  const renderContext = {
+      canvasContext: context,
+      viewport: viewport,
+  };
 
-    // Render the new page
-    this.renderTask = page.render(renderContext);
-    await this.renderTask.promise;
-
-
-    await page.render(renderContext).promise;
+  // Render the page
+  this.renderTask = page.render(renderContext);
+  await this.renderTask.promise;
 }
 
 updatePageNumberDisplay() {
-    this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNumber} of ${this.pdf.numPages}`;
+  this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNumber} of ${this.pdf.numPages}`;
 }
+
+
 
 
 
