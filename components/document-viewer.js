@@ -284,22 +284,23 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
-  const page = await pdf.getPage(pageNumber);
-  const scale = window.innerWidth / page.getViewport({ scale: 1 }).width; // Adjust scale based on the screen width
-  const viewport = page.getViewport({ scale });
-  
-  // Reference to the container where the canvas will be appended
-  const container = this.shadowRoot.getElementById('canvas-container');
-  
-  // Clear any existing canvas from the container
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
+  if (this.renderTask) {
+    // Cancel the ongoing rendering task if it exists
+    this.renderTask.cancel();
+    await this.renderTask.promise.catch(() => {});
   }
 
-  // Create a new canvas and append it to the container
+  const page = await pdf.getPage(pageNumber);
+  const viewport = page.getViewport({ scale: 1.5 });
+
+  // Clear the previous canvas content (if any)
+  const container = this.shadowRoot.getElementById('canvas-container');
+  container.innerHTML = '';
+
+  // Create a new canvas for the new page
   const canvas = document.createElement('canvas');
   container.appendChild(canvas);
-
+  
   const context = canvas.getContext('2d');
   canvas.height = viewport.height;
   canvas.width = viewport.width;
@@ -316,6 +317,7 @@ async loadAndRenderPage(pdf, pageNumber) {
   // Update page number display
   this.updatePageNumberDisplay();
 }
+
 
 
 
