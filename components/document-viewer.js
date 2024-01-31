@@ -29,28 +29,24 @@ class LibraryComponent extends HTMLElement {
         background-color: rgba(0,0,0,0.4);
       }
 
-      .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto; /* Reduced margin */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%; /* Adjust width */
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        overflow: hidden; /* Hide scrollbars if modal body is not longer than screen */
-      }
+      #pdfCanvas {
+        border: 1px solid #888; /* Add a border to the canvas */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Box shadow for a lifted paper effect */
+        background-color: #fff; /* Canvas background */
+        width: 100%; /* Responsive width */
+        height: auto; /* Height is auto, it will be set by script based on PDF page */
+        margin-bottom: 20px; /* Margin at the bottom */
+        display: block; /* Canvas display block */
+    }
 
-      iframe {
-        overflow: auto !important; /* Enable scrollbars if content overflows */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
-  border-width: 2px;
-  border-style: inset;
-  border-color: initial;
-  border-image: initial;
-  width: 100%; /* Responsive width */
-  height: 80vh; /* Responsive height based on viewport height */
-  min-height: 500px; /* Minimum height */
-  border: none; /* Optional: remove border if you prefer */
-      }
+    .modal-content {
+        /* Adjust your modal content styles if needed */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        flex-direction: column; /* Stack elements vertically */
+        /* Other styles... */
+    }
       .close {
         color: #053658; /* Dark blue color */
         float: right;
@@ -379,28 +375,64 @@ class LibraryComponent extends HTMLElement {
       });
     }
 
+
+    displayPDF(url) {
+      // Ensure PDF.js worker is set (if you're hosting the pdf.worker.js file yourself, set the path here)
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js';
+
+      const loadingTask = pdfjsLib.getDocument(url);
+      loadingTask.promise.then(pdf => {
+          console.log('PDF loaded');
+          
+          // Fetch the first page
+          const pageNumber = 1;
+          pdf.getPage(pageNumber).then(page => {
+              console.log('Page loaded');
+              
+              const scale = 1.5;
+              const viewport = page.getViewport({ scale: scale });
+
+              // Prepare canvas using PDF page dimensions
+              const canvas = this.shadowRoot.getElementById('pdfCanvas');
+              const context = canvas.getContext('2d');
+              canvas.height = viewport.height;
+              canvas.width = viewport.width;
+
+              // Render PDF page into canvas context
+              const renderContext = {
+                  canvasContext: context,
+                  viewport: viewport
+              };
+              const renderTask = page.render(renderContext);
+              renderTask.promise.then(() => {
+                  console.log('Page rendered');
+              });
+          });
+      }, reason => {
+          console.error(reason);
+      });
+  }
+
     displayContent(response, url) {
       const modal = this.shadowRoot.getElementById('contentModal');
-      const frame = this.shadowRoot.getElementById('contentFrame');
       const span = this.shadowRoot.querySelector('.close');
-  
-      frame.src = url; // Set the iframe source to the URL
-  
+
+      this.displayPDF(url); // Display the PDF
+
       modal.style.display = "block"; // Display the modal
-  
+
       // Close the modal when the user clicks on <span> (x)
       span.onclick = () => {
-        modal.style.display = "none";
+          modal.style.display = "none";
       }
-  
+
       // Close the modal when the user clicks anywhere outside of the modal
       window.onclick = (event) => {
-        if (event.target === modal) {
-          modal.style.display = "none";
-        }
+          if (event.target === modal) {
+              modal.style.display = "none";
+          }
       }
-    }
-  
+  }
   
  
 findCategoryOfDocument(doc) {
