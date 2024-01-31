@@ -281,40 +281,40 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
-  const canvas = this.shadowRoot.getElementById('pdfCanvas');
-  
-  // Cancel any ongoing rendering to avoid conflicts
   if (this.renderTask) {
-      this.renderTask.cancel();
-      await this.renderTask.promise.catch(() => {});
+    // Cancel the ongoing render task if it exists
+    this.renderTask.cancel();
+    try {
+      // Wait for the cancellation to complete
+      await this.renderTask.promise;
+    } catch (ex) {
+      // Catch and handle or ignore the expected cancellation exception
+      console.log('Rendering cancelled: ', ex.message);
+    }
   }
-  
-  // Start loading and rendering the new page
+
   const page = await pdf.getPage(pageNumber);
   const viewport = page.getViewport({ scale: 1.5 });
+  const canvas = this.shadowRoot.getElementById('pdfCanvas');
   const context = canvas.getContext('2d');
-  
-  // Clear the canvas and remove the 'visible' class to start the fade-out effect
   canvas.height = viewport.height;
   canvas.width = viewport.width;
-  canvas.classList.remove('visible');
 
   const renderContext = {
-      canvasContext: context,
-      viewport: viewport,
+    canvasContext: context,
+    viewport: viewport,
   };
 
-  // Render the page and wait for it to finish
+  // Render the page
   this.renderTask = page.render(renderContext);
   await this.renderTask.promise;
 
-  // After rendering, add the 'visible' class to start the fade-in effect
-  canvas.classList.add('visible');
-
   // Update the page number display
   this.updatePageNumberDisplay();
-}
 
+  // Make the canvas visible (fade-in effect)
+  canvas.classList.add('visible');
+}
 
 
 updatePageNumberDisplay() {
