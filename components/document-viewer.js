@@ -284,56 +284,47 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
-  // Cancel any ongoing rendering task if it exists
+  // Cancel any ongoing render task
   if (this.renderTask) {
       this.renderTask.cancel();
-      try {
-          await this.renderTask.promise;
-      } catch (e) {
-          console.log('Render task cancelled:', e);
-      }
+      await this.renderTask.promise.catch(() => {}); // ignore the error from the cancelled task
   }
 
   const page = await pdf.getPage(pageNumber);
-  const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
-  const viewport = page.getViewport({ scale });
-
-  const container = this.shadowRoot.getElementById('canvas-container');
-  // Clear any existing canvas from the container
-  while (container.firstChild) {
-      container.removeChild(container.firstChild);
+  const viewport = page.getViewport({ scale: window.innerWidth / page.getViewport({ scale: 1 }).width });
+  
+  const canvasContainer = this.shadowRoot.getElementById('canvas-container');
+  let canvas = canvasContainer.querySelector('canvas');
+  if (!canvas) {
+      canvas = document.createElement('canvas');
+      canvasContainer.appendChild(canvas);
   }
 
-  // Create a new canvas and append it to the container
-  const canvas = document.createElement('canvas');
-  container.appendChild(canvas);
   const context = canvas.getContext('2d');
   canvas.height = viewport.height;
   canvas.width = viewport.width;
 
   const renderContext = {
       canvasContext: context,
-      viewport: viewport,
+      viewport: viewport
   };
 
   // Render the page
   this.renderTask = page.render(renderContext);
   await this.renderTask.promise;
-
-  // Update the page number display
-  this.updatePageNumberDisplay();
+  this.updatePageNumberDisplay(); // Update the page number display
 }
 
 
-// Cleanup function when modal closes
+
 closeModalCleanup() {
   if (this.renderTask) {
-    this.renderTask.cancel();
+      this.renderTask.cancel();
   }
 
-  const container = this.shadowRoot.getElementById('canvas-container');
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
+  const canvasContainer = this.shadowRoot.getElementById('canvas-container');
+  while (canvasContainer.firstChild) {
+      canvasContainer.removeChild(canvasContainer.firstChild);
   }
 }
 
