@@ -360,15 +360,12 @@ async loadAndRenderPage(pdf, pageNum) {
 
 
 resetPDFState() {
-  if (this.pdf) {
-      this.pdf = null;
-  }
+  this.pdf = null;
   this.pageNum = 1;
   this.pageIsRendering = false;
   this.pageNumIsPending = null;
   this.updatePageNumberDisplay();
 }
-
 
 closeModalCleanup() {
   if (this.renderTask) {
@@ -379,19 +376,19 @@ closeModalCleanup() {
   while (canvasContainer.firstChild) {
       canvasContainer.removeChild(canvasContainer.firstChild);
   }
- // Reset the PDF-related states
- this.pdfDoc = null;
- this.pageNum = 1;
- this.pageIsRendering = false;
- this.pageNumIsPending = null;
- this.updatePageNumberDisplay();
+
+  this.resetPDFState();
 }
+
 
 
 updatePageNumberDisplay() {
-  this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
+  if (this.pdf) {
+      this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
+  } else {
+      console.error('PDF is not loaded.');
+  }
 }
-
 manageNavigationListeners() {
   const prevPageButton = this.shadowRoot.getElementById('prev-page');
   const nextPageButton = this.shadowRoot.getElementById('next-page');
