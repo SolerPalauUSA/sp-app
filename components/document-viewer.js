@@ -262,43 +262,43 @@ render() {
   }
 
 
-  async displayPDF(url) {
+async displayPDF(url) {
     // Initialize PDF.js
     const pdfjsLib = window['pdfjs-dist/build/pdf'];
     pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
-  
-    // Reset the state when a new PDF is loaded
-    this.pdfDoc = null;
-    this.pageNum = 1;
-    this.pageIsRendering = false;
-    this.pageNumIsPending = null;
-  
+
+     // Reset the state when a new PDF is loaded
+  this.pdfDoc = null;
+  this.pageNumber = 1;
+  this.pageIsRendering = false;
+  this.pageNumIsPending = null;
+
+
     const loadingTask = pdfjsLib.getDocument(url);
     this.pdf = await loadingTask.promise; // Store the loaded PDF
-    this.pageNum = 1; // Initialize the page number
-  
+    this.pageNumber = 1; // Initialize the page number
+
     // Load and render the first page
-    await this.loadAndRenderPage(this.pdf, this.pageNum);
+    await this.loadAndRenderPage(this.pdf, this.pageNumber);
     this.updatePageNumberDisplay(); // Update the page number display
-  
+
     // Event listeners for navigation
     this.shadowRoot.getElementById('prev-page').addEventListener('click', async () => {
-      if (this.pageNum > 1) {
-        this.pageNum--;
-        await this.loadAndRenderPage(this.pdf, this.pageNum);
-        this.updatePageNumberDisplay();
-      }
+        if (this.pageNumber > 1) {
+            this.pageNumber--;
+            await this.loadAndRenderPage(this.pdf, this.pageNumber);
+            this.updatePageNumberDisplay();
+        }
     });
-  
+
     this.shadowRoot.getElementById('next-page').addEventListener('click', async () => {
-      if (this.pageNum < this.pdf.numPages) {
-        this.pageNum++;
-        await this.loadAndRenderPage(this.pdf, this.pageNum);
-        this.updatePageNumberDisplay();
-      }
+        if (this.pageNumber < this.pdf.numPages) {
+            this.pageNumber++;
+            await this.loadAndRenderPage(this.pdf, this.pageNumber);
+            this.updatePageNumberDisplay();
+        }
     });
-  }
-  
+}
 
 
  // Add a method to show the loading indicator
