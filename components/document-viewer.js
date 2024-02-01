@@ -500,6 +500,7 @@ updatePageNumberDisplay() {
     displayContent(response, url) {
       const modal = this.shadowRoot.getElementById('contentModal');
       const span = this.shadowRoot.querySelector('.close');
+      const canvasContainer = this.shadowRoot.getElementById('canvas-container');
   
       // Call the displayPDF function to render the PDF into the canvas
       this.displayPDF(url);
@@ -510,15 +511,24 @@ updatePageNumberDisplay() {
       // Close the modal when the user clicks on <span> (x)
       span.onclick = () => {
           modal.style.display = "none";
+          // Clean up the canvas when the modal is closed
+          while (canvasContainer.firstChild) {
+              canvasContainer.removeChild(canvasContainer.firstChild);
+          }
       };
   
       // Close the modal when the user clicks anywhere outside of the modal
       window.onclick = (event) => {
           if (event.target === modal) {
               modal.style.display = "none";
+              // Clean up the canvas when the modal is closed
+              while (canvasContainer.firstChild) {
+                  canvasContainer.removeChild(canvasContainer.firstChild);
+              }
           }
       };
   }
+  
   
  
 findCategoryOfDocument(doc) {
