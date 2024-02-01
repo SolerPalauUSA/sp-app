@@ -311,67 +311,63 @@ hideLoadingIndicator() {
 
 async loadAndRenderPage(pdf, pageNum) {
   if (!pdf) {
-    console.error('PDF is not loaded yet.');
-    return;
+      console.error('PDF is not loaded yet.');
+      return;
   }
 
   if (pageNum < 1 || pageNum > pdf.numPages) {
-    console.error('Requested page number is out of range.');
-    return;
+      console.error('Requested page number is out of range.');
+      return;
   }
 
   if (this.pageIsRendering) {
-    this.pageNumIsPending = pageNum;
-    return;
+      this.pageNumIsPending = pageNum;
+      return;
   }
 
   this.pageIsRendering = true;
   this.showLoadingIndicator();
 
   try {
-    const page = await pdf.getPage(pageNum);
-    const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
-    const viewport = page.getViewport({ scale });
-    const container = this.shadowRoot.getElementById('canvas-container');
+      const page = await pdf.getPage(pageNum);
+      const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
+      const viewport = page.getViewport({ scale });
+      const container = this.shadowRoot.getElementById('canvas-container');
 
-    while (container.firstChild) {
-      container.removeChild(container.firstChild);
-    }
-
-    const canvas = document.createElement('canvas');
-    container.appendChild(canvas);
-    const context = canvas.getContext('2d');
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-
-    const renderContext = {
-      canvasContext: context,
-      viewport: viewport,
-    };
-
-    page.render(renderContext).promise.then(() => {
-      this.pageIsRendering = false;
-      if (this.pageNumIsPending !== null) {
-        const pageNumPending = this.pageNumIsPending;
-        this.pageNumIsPending = null; // Reset before rendering the next page
-        this.loadAndRenderPage(pdf, pageNumPending);
-      } else {
-        // Only update the page number display and hide the loading indicator if there's no pending page
-        this.hideLoadingIndicator();
-        this.pageNum = pageNum;
-        this.updatePageNumberDisplay();
+      while (container.firstChild) {
+          container.removeChild(container.firstChild);
       }
-    }).catch(e => {
-      console.error('Rendering page failed:', e);
+
+      const canvas = document.createElement('canvas');
+      container.appendChild(canvas);
+      const context = canvas.getContext('2d');
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      const renderContext = {
+          canvasContext: context,
+          viewport: viewport,
+      };
+
+      await page.render(renderContext).promise;
+      this.pageIsRendering = false;
+
+      if (this.pageNumIsPending !== null) {
+          const pageNumPending = this.pageNumIsPending;
+          this.pageNumIsPending = null;
+          this.loadAndRenderPage(pdf, pageNumPending);
+      } else {
+          this.hideLoadingIndicator(); // Hide the loading indicator when rendering is done
+          this.pageNum = pageNum; // Update the current page number
+          this.updatePageNumberDisplay(); // Update the page number display
+      }
+  } catch (e) {
+      console.error('Error loading or rendering page:', e);
       this.pageIsRendering = false;
       this.hideLoadingIndicator();
-    });
-        } catch (e) {
-            console.error('Error loading page:', e);
-            this.pageIsRendering = false;
-            this.hideLoadingIndicator();
-        }
-    }
+  }
+}
+
 
 
 
