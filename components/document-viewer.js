@@ -255,7 +255,7 @@ class LibraryComponent extends HTMLElement {
   async displayPDF(url) {
     // Initialize PDF.js
     const pdfjsLib = window['pdfjs-dist/build/pdf'];
-    pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs';
 
     const loadingTask = pdfjsLib.getDocument(url);
     this.pdf = await loadingTask.promise; // Store the loaded PDF
