@@ -4,14 +4,16 @@ class LibraryComponent extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.categories = []; // Store categories and their documents
     this.selectedCategory = null; // Store the currently selected category
-    this.pageRendering = false;
-    this.pageNumPending = null;
+    this.pdfDoc = null;
+    this.pageNum = 1;
+    this.pageIsRendering = false;
+    this.pageNumIsPending = null;
     this.render();
     this.loadJSONData(); // Load JSON data (replace with your data loading logic)
     this.handleSearchInput(); 
   }
 
-  render() {
+render() {
     this.shadowRoot.innerHTML = `
 
     
@@ -259,7 +261,7 @@ class LibraryComponent extends HTMLElement {
   }
 
 
-  async displayPDF(url) {
+async displayPDF(url) {
     // Initialize PDF.js
     const pdfjsLib = window['pdfjs-dist/build/pdf'];
     pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
@@ -291,17 +293,17 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
-  // Cancel any ongoing rendering task if it exists
-  if (this.renderTask) {
-    this.renderTask.cancel();
-    await this.renderTask.promise.catch(() => {}); // Catch the error from the cancelled task
+  if (this.pageIsRendering) {
+    this.pageNumIsPending = pageNumber;
+    return;
   }
+  this.pageIsRendering = true;
 
   const page = await pdf.getPage(pageNumber);
   const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
   const viewport = page.getViewport({ scale });
-
   const container = this.shadowRoot.getElementById('canvas-container');
+
   while (container.firstChild) {
     container.removeChild(container.firstChild);
   }
@@ -317,13 +319,17 @@ async loadAndRenderPage(pdf, pageNumber) {
     viewport: viewport,
   };
 
-  // Render the page
-  this.renderTask = page.render(renderContext);
-  await this.renderTask.promise;
+  page.render(renderContext).promise.then(() => {
+    this.pageIsRendering = false;
+    if (this.pageNumIsPending !== null) {
+      this.loadAndRenderPage(this.pdf, this.pageNumIsPending);
+      this.pageNumIsPending = null;
+    }
+  });
 
-  // Update the page number display
   this.updatePageNumberDisplay();
 }
+
 
 
 closeModalCleanup() {
@@ -342,11 +348,36 @@ updatePageNumberDisplay() {
   this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNumber} of ${this.pdf.numPages}`;
 }
 
+queueRenderPage(num) {
+  if (this.pageIsRendering) {
+    this.pageNumIsPending = num;
+  } else {
+    this.loadAndRenderPage(this.pdf, num);
+  }
+}
+
+showPrevPage() {
+  if (this.pageNum <= 1) {
+    return;
+  }
+  this.pageNum--;
+  this.queueRenderPage(this.pageNum);
+}
+
+showNextPage() {
+  if (this.pageNum >= this.pdf.numPages) {
+    return;
+  }
+  this.pageNum++;
+  this.queueRenderPage(this.pageNum);
+}
 
 
 
 
-  loadJSONData() {
+
+
+loadJSONData() {
     const jsonURL = '../data/documents.json';
   
     fetch(jsonURL)
@@ -368,13 +399,13 @@ updatePageNumberDisplay() {
       .catch((error) => {
         console.error('Error fetching or processing JSON data:', error);
       });
-  }
+}
 
-  clearCategories() {
+clearCategories() {
     this.categoryContainer.innerHTML = ''; // Clear the categories
-  }
+}
 
-  handleSearchInput() {
+handleSearchInput() {
     const searchInput = this.shadowRoot.getElementById('search-input');
     searchInput.addEventListener('input', (event) => {
       const query = event.target.value.trim().toLowerCase();
@@ -391,7 +422,7 @@ updatePageNumberDisplay() {
           // If input is empty but 'selected' class is present
           this.renderDocuments(); // Show all documents of the selected category
         }
-      } else {
+        } else {
         // If there's a query
         if (!categoriesContainerHasSelected) {
           this.clearCategories(); // Clear categories if 'selected' class is not present
@@ -403,7 +434,7 @@ updatePageNumberDisplay() {
   
 
 
-  renderCategories() {
+renderCategories() {
     this.categoryContainer.innerHTML = '';
     this.categories.forEach((category) => {
       const categoryButton = document.createElement('button');
@@ -416,7 +447,7 @@ updatePageNumberDisplay() {
   }
 
 
-  toggleCategory(categoryButton, category) {
+toggleCategory(categoryButton, category) {
     const categoriesContainer = this.categoryContainer;
     const documentsContainer = this.documentsContainer;
     const categoryButtons = this.shadowRoot.querySelectorAll('.category');
@@ -510,26 +541,31 @@ updatePageNumberDisplay() {
       });
     }
 
-  // Modify your displayContent function to call closeModalCleanup when closing the modal
-displayContent(response, url) {
-  const modal = this.shadowRoot.getElementById('contentModal');
-  const span = this.shadowRoot.querySelector('.close');
-
-  this.displayPDF(url);
-  modal.style.display = "block";
-
-  span.onclick = () => {
-    modal.style.display = "none";
-    this.closeModalCleanup();  // Reset canvas and cancel render task on close
-  };
-
-  window.onclick = (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-      this.closeModalCleanup();  // Reset canvas and cancel render task on close
+    displayContent(response, url) {
+      const modal = this.shadowRoot.getElementById('contentModal');
+      const span = this.shadowRoot.querySelector('.close');
+    
+      // Load and render the first page of the PDF
+      this.displayPDF(url);
+      modal.style.display = "block";
+    
+      // Attach event listeners for your 'Previous' and 'Next' buttons
+      this.shadowRoot.getElementById('prev-page').addEventListener('click', this.showPrevPage.bind(this));
+      this.shadowRoot.getElementById('next-page').addEventListener('click', this.showNextPage.bind(this));
+    
+      span.onclick = () => {
+        modal.style.display = "none";
+        this.closeModalCleanup();  // Reset canvas and cancel render task on close
+      };
+    
+      window.onclick = (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+          this.closeModalCleanup();  // Reset canvas and cancel render task on close
+        }
+      };
     }
-  };
-}
+    
   
   
  
