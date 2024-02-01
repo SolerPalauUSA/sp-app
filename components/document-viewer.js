@@ -284,40 +284,44 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
+  // Cancel any ongoing rendering task if it exists
   if (this.renderTask) {
-    // Cancel the ongoing rendering task if it exists
-    this.renderTask.cancel();
-    await this.renderTask.promise.catch(() => {});
+      this.renderTask.cancel();
+      await this.renderTask.promise.catch(() => {}); // Catch the error from the cancelled task
   }
 
   const page = await pdf.getPage(pageNumber);
-  const viewport = page.getViewport({ scale: 1.5 });
+  const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
+  const viewport = page.getViewport({ scale });
 
-  // Clear the previous canvas content (if any)
+  // Reference to the container where the canvas will be appended
   const container = this.shadowRoot.getElementById('canvas-container');
-  container.innerHTML = '';
+  
+  // Clear any existing canvas from the container
+  while (container.firstChild) {
+      container.removeChild(container.firstChild);
+  }
 
-  // Create a new canvas for the new page
+  // Create a new canvas and append it to the container
   const canvas = document.createElement('canvas');
   container.appendChild(canvas);
-  
+
   const context = canvas.getContext('2d');
   canvas.height = viewport.height;
   canvas.width = viewport.width;
 
   const renderContext = {
-    canvasContext: context,
-    viewport: viewport,
+      canvasContext: context,
+      viewport: viewport,
   };
 
   // Render the page
   this.renderTask = page.render(renderContext);
   await this.renderTask.promise;
 
-  // Update page number display
+  // Update the page number display
   this.updatePageNumberDisplay();
 }
-
 
 
 
