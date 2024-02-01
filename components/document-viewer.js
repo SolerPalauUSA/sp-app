@@ -284,45 +284,47 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
-  // Cancel any ongoing rendering task if it exists
   if (this.renderTask) {
-      this.renderTask.cancel();
-      await this.renderTask.promise.catch(() => {}); // Catch the error from the cancelled task
+    this.renderTask.cancel();
+    await this.renderTask.promise.catch(() => {});
   }
 
   const page = await pdf.getPage(pageNumber);
   const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
   const viewport = page.getViewport({ scale });
 
-  // Reference to the container where the canvas will be appended
   const container = this.shadowRoot.getElementById('canvas-container');
-  
-  // Clear any existing canvas from the container
   while (container.firstChild) {
-      container.removeChild(container.firstChild);
+    container.removeChild(container.firstChild);
   }
 
-  // Create a new canvas and append it to the container
   const canvas = document.createElement('canvas');
   container.appendChild(canvas);
-
   const context = canvas.getContext('2d');
   canvas.height = viewport.height;
   canvas.width = viewport.width;
 
   const renderContext = {
-      canvasContext: context,
-      viewport: viewport,
+    canvasContext: context,
+    viewport: viewport,
   };
 
-  // Render the page
   this.renderTask = page.render(renderContext);
   await this.renderTask.promise;
-
-  // Update the page number display
   this.updatePageNumberDisplay();
 }
 
+// Cleanup function when modal closes
+closeModalCleanup() {
+  if (this.renderTask) {
+    this.renderTask.cancel();
+  }
+
+  const container = this.shadowRoot.getElementById('canvas-container');
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+}
 
 
 updatePageNumberDisplay() {
@@ -497,37 +499,26 @@ updatePageNumberDisplay() {
       });
     }
 
-    displayContent(response, url) {
-      const modal = this.shadowRoot.getElementById('contentModal');
-      const span = this.shadowRoot.querySelector('.close');
-      const canvasContainer = this.shadowRoot.getElementById('canvas-container');
-  
-      // Call the displayPDF function to render the PDF into the canvas
-      this.displayPDF(url);
-  
-      // Show the modal
-      modal.style.display = "block";
-  
-      // Close the modal when the user clicks on <span> (x)
-      span.onclick = () => {
-          modal.style.display = "none";
-          // Clean up the canvas when the modal is closed
-          while (canvasContainer.firstChild) {
-              canvasContainer.removeChild(canvasContainer.firstChild);
-          }
-      };
-  
-      // Close the modal when the user clicks anywhere outside of the modal
-      window.onclick = (event) => {
-          if (event.target === modal) {
-              modal.style.display = "none";
-              // Clean up the canvas when the modal is closed
-              while (canvasContainer.firstChild) {
-                  canvasContainer.removeChild(canvasContainer.firstChild);
-              }
-          }
-      };
-  }
+  // Modify your displayContent function to call closeModalCleanup when closing the modal
+displayContent(response, url) {
+  const modal = this.shadowRoot.getElementById('contentModal');
+  const span = this.shadowRoot.querySelector('.close');
+
+  this.displayPDF(url);
+  modal.style.display = "block";
+
+  span.onclick = () => {
+    modal.style.display = "none";
+    this.closeModalCleanup();  // Reset canvas and cancel render task on close
+  };
+
+  window.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      this.closeModalCleanup();  // Reset canvas and cancel render task on close
+    }
+  };
+}
   
   
  
