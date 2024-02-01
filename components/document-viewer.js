@@ -352,17 +352,20 @@ async loadAndRenderPage(pdf, pageNum) {
     page.render(renderContext).promise.then(() => {
       this.pageIsRendering = false;
       if (this.pageNumIsPending !== null) {
-        this.loadAndRenderPage(pdf, this.pageNumIsPending);
-        this.pageNumIsPending = null;
+        const pageNumPending = this.pageNumIsPending;
+        this.pageNumIsPending = null; // Reset before rendering the next page
+        this.loadAndRenderPage(pdf, pageNumPending);
+      } else {
+        // Only update the page number display and hide the loading indicator if there's no pending page
+        this.hideLoadingIndicator();
+        this.pageNum = pageNum;
+        this.updatePageNumberDisplay();
       }
-      this.hideLoadingIndicator(); // Hide the loading indicator when rendering is done
-      this.pageNum = pageNum; // Update the current page number
-      this.updatePageNumberDisplay(); // Update the page number display
     }).catch(e => {
       console.error('Rendering page failed:', e);
-                this.pageIsRendering = false;
-                this.hideLoadingIndicator();
-            });
+      this.pageIsRendering = false;
+      this.hideLoadingIndicator();
+    });
         } catch (e) {
             console.error('Error loading page:', e);
             this.pageIsRendering = false;
