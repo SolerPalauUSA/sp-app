@@ -292,7 +292,18 @@ async displayPDF(url) {
     });
 }
 
+
 async loadAndRenderPage(pdf, pageNumber) {
+  if (!pdf) {
+    console.error('PDF is not loaded yet.');
+    return;
+  }
+
+  if (pageNumber < 1 || pageNumber > pdf.numPages) {
+    console.error('Requested page number is out of range.');
+    return;
+  }
+  
   if (this.pageIsRendering) {
     this.pageNumIsPending = pageNumber;
     return;
@@ -325,10 +336,11 @@ async loadAndRenderPage(pdf, pageNumber) {
       this.loadAndRenderPage(this.pdf, this.pageNumIsPending);
       this.pageNumIsPending = null;
     }
-  });
+  }).catch(e => console.error('Rendering page failed:', e));
 
   this.updatePageNumberDisplay();
 }
+
 
 
 
@@ -541,6 +553,20 @@ toggleCategory(categoryButton, category) {
       });
     }
 
+    showPrevPage() {
+      if (this.pageNum > 1) {
+        this.pageNum--;
+        this.queueRenderPage(this.pageNum);
+      }
+    }
+  
+    showNextPage() {
+      if (this.pdf && this.pageNum < this.pdf.numPages) {
+        this.pageNum++;
+        this.queueRenderPage(this.pageNum);
+      }
+    }
+
     displayContent(response, url) {
       const modal = this.shadowRoot.getElementById('contentModal');
       const span = this.shadowRoot.querySelector('.close');
@@ -549,19 +575,36 @@ toggleCategory(categoryButton, category) {
       this.displayPDF(url);
       modal.style.display = "block";
     
-      // Attach event listeners for your 'Previous' and 'Next' buttons
-      this.shadowRoot.getElementById('prev-page').addEventListener('click', this.showPrevPage.bind(this));
-      this.shadowRoot.getElementById('next-page').addEventListener('click', this.showNextPage.bind(this));
+      // Detach any previous event listeners to avoid duplicates
+      const prevPageButton = this.shadowRoot.getElementById('prev-page');
+      const nextPageButton = this.shadowRoot.getElementById('next-page');
+      prevPageButton.removeEventListener('click', this.prevPageClickHandler);
+      nextPageButton.removeEventListener('click', this.nextPageClickHandler);
     
+      // Bind the current instance ('this') to the handler functions
+      this.prevPageClickHandler = this.showPrevPage.bind(this);
+      this.nextPageClickHandler = this.showNextPage.bind(this);
+    
+      // Attach event listeners for your 'Previous' and 'Next' buttons
+      prevPageButton.addEventListener('click', this.prevPageClickHandler);
+      nextPageButton.addEventListener('click', this.nextPageClickHandler);
+    
+      // Close modal actions
       span.onclick = () => {
         modal.style.display = "none";
         this.closeModalCleanup();  // Reset canvas and cancel render task on close
+        // Remove event listeners when the modal is closed
+        prevPageButton.removeEventListener('click', this.prevPageClickHandler);
+        nextPageButton.removeEventListener('click', this.nextPageClickHandler);
       };
     
       window.onclick = (event) => {
         if (event.target === modal) {
           modal.style.display = "none";
           this.closeModalCleanup();  // Reset canvas and cancel render task on close
+          // Remove event listeners when the modal is closed
+          prevPageButton.removeEventListener('click', this.prevPageClickHandler);
+          nextPageButton.removeEventListener('click', this.nextPageClickHandler);
         }
       };
     }
