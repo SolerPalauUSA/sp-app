@@ -268,19 +268,27 @@ render() {
     const pdfjsLib = window['pdfjs-dist/build/pdf'];
     pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
 
-    const loadingTask = pdfjsLib.getDocument(url);
     try {
+        const loadingTask = pdfjsLib.getDocument(url);
         this.pdf = await loadingTask.promise;
         this.pageNum = 1;
 
         await this.loadAndRenderPage(this.pdf, this.pageNum);
-        this.updatePageNumberDisplay();  // Ensure this is called after the PDF is loaded
-
         this.manageNavigationListeners();
     } catch (error) {
         console.error('Error loading PDF:', error);
     }
 }
+
+updatePageNumberDisplay() {
+    if (this.pdf && this.pdf.numPages) {
+        this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
+    } else {
+        console.error('PDF is not loaded.');
+    }
+}
+
+
 
  // Add a method to show the loading indicator
  showLoadingIndicator() {
@@ -383,15 +391,6 @@ closeModalCleanup() {
   this.resetPDFState();
 }
 
-
-
-updatePageNumberDisplay() {
-  if (this.pdf && this.pdf.numPages) {
-      this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
-  } else {
-      console.error('PDF is not loaded.');
-  }
-}
 
 
 manageNavigationListeners() {
