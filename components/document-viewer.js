@@ -293,6 +293,7 @@ async displayPDF(url) {
 }
 
 
+
 async loadAndRenderPage(pdf, pageNumber) {
   if (!pdf) {
     console.error('PDF is not loaded yet.');
@@ -309,38 +310,47 @@ async loadAndRenderPage(pdf, pageNumber) {
     return;
   }
   this.pageIsRendering = true;
+  this.showLoadingIndicator(); // Show the loading indicator
 
-  const page = await pdf.getPage(pageNumber);
-  const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
-  const viewport = page.getViewport({ scale });
-  const container = this.shadowRoot.getElementById('canvas-container');
+  try {
+    const page = await pdf.getPage(pageNumber);
+    const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
+    const viewport = page.getViewport({ scale });
+    const container = this.shadowRoot.getElementById('canvas-container');
 
-  while (container.firstChild) {
-    container.removeChild(container.firstChild);
-  }
-
-  const canvas = document.createElement('canvas');
-  container.appendChild(canvas);
-  const context = canvas.getContext('2d');
-  canvas.height = viewport.height;
-  canvas.width = viewport.width;
-
-  const renderContext = {
-    canvasContext: context,
-    viewport: viewport,
-  };
-
-  page.render(renderContext).promise.then(() => {
-    this.pageIsRendering = false;
-    if (this.pageNumIsPending !== null) {
-      this.loadAndRenderPage(this.pdf, this.pageNumIsPending);
-      this.pageNumIsPending = null;
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
     }
-  }).catch(e => console.error('Rendering page failed:', e));
+
+    const canvas = document.createElement('canvas');
+    container.appendChild(canvas);
+    const context = canvas.getContext('2d');
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    const renderContext = {
+      canvasContext: context,
+      viewport: viewport,
+    };
+
+    page.render(renderContext).promise.then(() => {
+      this.pageIsRendering = false;
+      if (this.pageNumIsPending !== null) {
+        this.loadAndRenderPage(pdf, this.pageNumIsPending);
+        this.pageNumIsPending = null;
+      }
+      this.hideLoadingIndicator(); // Hide the loading indicator when rendering is done
+    }).catch(e => {
+      console.error('Rendering page failed:', e);
+      this.hideLoadingIndicator(); // Ensure the loading indicator is hidden on error
+    });
+  } catch (e) {
+    console.error('Error loading page:', e);
+    this.hideLoadingIndicator(); // Ensure the loading indicator is hidden on error
+  }
 
   this.updatePageNumberDisplay();
 }
-
 
 
 
@@ -353,6 +363,10 @@ closeModalCleanup() {
   while (canvasContainer.firstChild) {
       canvasContainer.removeChild(canvasContainer.firstChild);
   }
+  this.pdfDoc = null;
+  this.pageNum = 1;
+  this.pageIsRendering = false;
+  this.pageNumIsPending = null;
 }
 
 
@@ -580,8 +594,12 @@ toggleCategory(categoryButton, category) {
       // Detach any previous event listeners to avoid duplicates
       const prevPageButton = this.shadowRoot.getElementById('prev-page');
       const nextPageButton = this.shadowRoot.getElementById('next-page');
-      prevPageButton.removeEventListener('click', this.prevPageClickHandler);
-      nextPageButton.removeEventListener('click', this.nextPageClickHandler);
+      if (this.prevPageClickHandler) {
+        prevPageButton.removeEventListener('click', this.prevPageClickHandler);
+      }
+      if (this.nextPageClickHandler) {
+        nextPageButton.removeEventListener('click', this.nextPageClickHandler);
+      }
     
       // Bind the current instance ('this') to the handler functions
       this.prevPageClickHandler = this.showPrevPage.bind(this);
@@ -610,6 +628,7 @@ toggleCategory(categoryButton, category) {
         }
       };
     }
+    
     
 
  
