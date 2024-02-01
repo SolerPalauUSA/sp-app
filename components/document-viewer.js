@@ -284,9 +284,14 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
+  // Cancel any ongoing rendering task if it exists
   if (this.renderTask) {
-    this.renderTask.cancel();
-    await this.renderTask.promise.catch(() => {});
+      this.renderTask.cancel();
+      try {
+          await this.renderTask.promise;
+      } catch (e) {
+          console.log('Render task cancelled:', e);
+      }
   }
 
   const page = await pdf.getPage(pageNumber);
@@ -294,10 +299,12 @@ async loadAndRenderPage(pdf, pageNumber) {
   const viewport = page.getViewport({ scale });
 
   const container = this.shadowRoot.getElementById('canvas-container');
+  // Clear any existing canvas from the container
   while (container.firstChild) {
-    container.removeChild(container.firstChild);
+      container.removeChild(container.firstChild);
   }
 
+  // Create a new canvas and append it to the container
   const canvas = document.createElement('canvas');
   container.appendChild(canvas);
   const context = canvas.getContext('2d');
@@ -305,14 +312,18 @@ async loadAndRenderPage(pdf, pageNumber) {
   canvas.width = viewport.width;
 
   const renderContext = {
-    canvasContext: context,
-    viewport: viewport,
+      canvasContext: context,
+      viewport: viewport,
   };
 
+  // Render the page
   this.renderTask = page.render(renderContext);
   await this.renderTask.promise;
+
+  // Update the page number display
   this.updatePageNumberDisplay();
 }
+
 
 // Cleanup function when modal closes
 closeModalCleanup() {
