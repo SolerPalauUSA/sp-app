@@ -359,6 +359,8 @@ async loadAndRenderPage(pdf, pageNumber) {
         this.pageNumIsPending = null;
       }
       this.hideLoadingIndicator(); // Hide the loading indicator when rendering is done
+      this.pageNum = pageNumber; // Update the current page number
+      this.updatePageNumberDisplay(); // Update the page number display
     }).catch(e => {
       console.error('Rendering page failed:', e);
       this.hideLoadingIndicator(); // Ensure the loading indicator is hidden on error
@@ -367,10 +369,7 @@ async loadAndRenderPage(pdf, pageNumber) {
     console.error('Error loading page:', e);
     this.hideLoadingIndicator(); // Ensure the loading indicator is hidden on error
   }
-
-  this.updatePageNumberDisplay();
 }
-
 
 
 closeModalCleanup() {
