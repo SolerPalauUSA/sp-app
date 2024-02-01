@@ -1,17 +1,17 @@
 class LibraryComponent extends HTMLElement {
   constructor() {
-    super();
-    this.attachShadow({ mode: 'open' });
-    this.categories = []; // Store categories and their documents
-    this.selectedCategory = null; // Store the currently selected category
-    this.pdfDoc = null;
-    this.pageNum = 1;
-    this.pageIsRendering = false;
-    this.pageNumIsPending = null;
-    this.loadingIndicator = null;
-    this.render();
-    this.loadJSONData(); // Load JSON data (replace with your data loading logic)
-    this.handleSearchInput(); 
+      super();
+      this.attachShadow({ mode: 'open' });
+      this.categories = [];
+      this.selectedCategory = null;
+      this.pdf = null;
+      this.pageNum = 1;
+      this.pageIsRendering = false;
+      this.pageNumIsPending = null;
+      this.loadingIndicator = null;
+      this.render();
+      this.loadJSONData();
+      this.handleSearchInput();
   }
 
 render() {
@@ -262,42 +262,20 @@ render() {
   }
 
 
-async displayPDF(url) {
-    // Initialize PDF.js
+  async displayPDF(url) {
+    this.resetPDFState();
+
     const pdfjsLib = window['pdfjs-dist/build/pdf'];
     pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
 
-     // Reset the state when a new PDF is loaded
-  this.pdfDoc = null;
-  this.pageNumber = 1;
-  this.pageIsRendering = false;
-  this.pageNumIsPending = null;
-
-
     const loadingTask = pdfjsLib.getDocument(url);
-    this.pdf = await loadingTask.promise; // Store the loaded PDF
-    this.pageNumber = 1; // Initialize the page number
+    this.pdf = await loadingTask.promise;
+    this.pageNum = 1;
 
-    // Load and render the first page
-    await this.loadAndRenderPage(this.pdf, this.pageNumber);
-    this.updatePageNumberDisplay(); // Update the page number display
+    await this.loadAndRenderPage(this.pdf, this.pageNum);
+    this.updatePageNumberDisplay();
 
-    // Event listeners for navigation
-    this.shadowRoot.getElementById('prev-page').addEventListener('click', async () => {
-        if (this.pageNumber > 1) {
-            this.pageNumber--;
-            await this.loadAndRenderPage(this.pdf, this.pageNumber);
-            this.updatePageNumberDisplay();
-        }
-    });
-
-    this.shadowRoot.getElementById('next-page').addEventListener('click', async () => {
-        if (this.pageNumber < this.pdf.numPages) {
-            this.pageNumber++;
-            await this.loadAndRenderPage(this.pdf, this.pageNumber);
-            this.updatePageNumberDisplay();
-        }
-    });
+    this.manageNavigationListeners();
 }
 
 
@@ -320,26 +298,27 @@ hideLoadingIndicator() {
 
 
 
-async loadAndRenderPage(pdf, pageNumber) {
+async loadAndRenderPage(pdf, pageNum) {
   if (!pdf) {
     console.error('PDF is not loaded yet.');
     return;
   }
 
-  if (pageNumber < 1 || pageNumber > pdf.numPages) {
+  if (pageNum < 1 || pageNum > pdf.numPages) {
     console.error('Requested page number is out of range.');
     return;
   }
-  
+
   if (this.pageIsRendering) {
-    this.pageNumIsPending = pageNumber;
+    this.pageNumIsPending = pageNum;
     return;
   }
+
   this.pageIsRendering = true;
-  this.showLoadingIndicator(); // Show the loading indicator
+  this.showLoadingIndicator();
 
   try {
-    const page = await pdf.getPage(pageNumber);
+    const page = await pdf.getPage(pageNum);
     const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
     const viewport = page.getViewport({ scale });
     const container = this.shadowRoot.getElementById('canvas-container');
@@ -366,7 +345,7 @@ async loadAndRenderPage(pdf, pageNumber) {
         this.pageNumIsPending = null;
       }
       this.hideLoadingIndicator(); // Hide the loading indicator when rendering is done
-      this.pageNum = pageNumber; // Update the current page number
+      this.pageNum = pageNum; // Update the current page number
       this.updatePageNumberDisplay(); // Update the page number display
     }).catch(e => {
       console.error('Rendering page failed:', e);
@@ -376,6 +355,18 @@ async loadAndRenderPage(pdf, pageNumber) {
     console.error('Error loading page:', e);
     this.hideLoadingIndicator(); // Ensure the loading indicator is hidden on error
   }
+}
+
+
+
+resetPDFState() {
+  if (this.pdf) {
+      this.pdf = null;
+  }
+  this.pageNum = 1;
+  this.pageIsRendering = false;
+  this.pageNumIsPending = null;
+  this.updatePageNumberDisplay();
 }
 
 
@@ -401,32 +392,34 @@ updatePageNumberDisplay() {
   this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNumber} of ${this.pdf.numPages}`;
 }
 
-queueRenderPage(num) {
-  if (this.pageIsRendering) {
-    this.pageNumIsPending = num;
-  } else {
-    this.loadAndRenderPage(this.pdf, num);
-  }
+manageNavigationListeners() {
+  const prevPageButton = this.shadowRoot.getElementById('prev-page');
+  const nextPageButton = this.shadowRoot.getElementById('next-page');
+  prevPageButton.addEventListener('click', () => this.showPrevPage());
+  nextPageButton.addEventListener('click', () => this.showNextPage());
 }
 
 showPrevPage() {
-  if (this.pageNum <= 1) {
-    return;
+  if (this.pageNum > 1) {
+      this.pageNum--;
+      this.queueRenderPage(this.pageNum);
   }
-  this.pageNum--;
-  this.queueRenderPage(this.pageNum);
 }
 
 showNextPage() {
-  if (this.pageNum >= this.pdf.numPages) {
-    return;
+  if (this.pdf && this.pageNum < this.pdf.numPages) {
+      this.pageNum++;
+      this.queueRenderPage(this.pageNum);
   }
-  this.pageNum++;
-  this.queueRenderPage(this.pageNum);
 }
 
-
-
+queueRenderPage(num) {
+  if (this.pageIsRendering) {
+      this.pageNumIsPending = num;
+  } else {
+      this.loadAndRenderPage(this.pdf, num);
+  }
+}
 
 
 
