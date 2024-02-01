@@ -294,6 +294,24 @@ async displayPDF(url) {
 }
 
 
+ // Add a method to show the loading indicator
+ showLoadingIndicator() {
+  if (!this.loadingIndicator) {
+    this.loadingIndicator = document.createElement('div');
+    this.loadingIndicator.textContent = 'Loading...'; // Customize this as needed
+    this.shadowRoot.appendChild(this.loadingIndicator);
+  }
+  this.loadingIndicator.style.display = 'block';
+}
+
+// Add a method to hide the loading indicator
+hideLoadingIndicator() {
+  if (this.loadingIndicator) {
+    this.loadingIndicator.style.display = 'none';
+  }
+}
+
+
 
 async loadAndRenderPage(pdf, pageNumber) {
   if (!pdf) {
