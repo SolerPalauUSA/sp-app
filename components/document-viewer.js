@@ -4,7 +4,8 @@ class LibraryComponent extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.categories = []; // Store categories and their documents
     this.selectedCategory = null; // Store the currently selected category
-
+    this.pageRendering = false;
+    this.pageNumPending = null;
     this.render();
     this.loadJSONData(); // Load JSON data (replace with your data loading logic)
     this.handleSearchInput(); 
