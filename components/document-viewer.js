@@ -8,6 +8,7 @@ class LibraryComponent extends HTMLElement {
     this.pageNum = 1;
     this.pageIsRendering = false;
     this.pageNumIsPending = null;
+    this.loadingIndicator = null;
     this.render();
     this.loadJSONData(); // Load JSON data (replace with your data loading logic)
     this.handleSearchInput(); 
