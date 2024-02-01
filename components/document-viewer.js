@@ -383,7 +383,7 @@ closeModalCleanup() {
 
 
 updatePageNumberDisplay() {
-  if (this.pdf) {
+  if (this.pdf && this.pdf.numPages) {
       this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
   } else {
       console.error('PDF is not loaded.');
