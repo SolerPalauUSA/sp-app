@@ -657,6 +657,7 @@ toggleCategory(categoryButton, category) {
     }
     
     
+    
 
  
 findCategoryOfDocument(doc) {
