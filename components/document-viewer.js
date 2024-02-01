@@ -389,7 +389,7 @@ closeModalCleanup() {
 
 
 updatePageNumberDisplay() {
-  this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNumber} of ${this.pdf.numPages}`;
+  this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
 }
 
 manageNavigationListeners() {
