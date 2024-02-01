@@ -567,6 +567,8 @@ toggleCategory(categoryButton, category) {
       }
     }
 
+
+
     displayContent(response, url) {
       const modal = this.shadowRoot.getElementById('contentModal');
       const span = this.shadowRoot.querySelector('.close');
@@ -609,8 +611,7 @@ toggleCategory(categoryButton, category) {
       };
     }
     
-  
-  
+
  
 findCategoryOfDocument(doc) {
   // Find the category of a given document
