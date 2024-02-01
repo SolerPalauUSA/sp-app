@@ -17,6 +17,12 @@ class LibraryComponent extends HTMLElement {
       <style>
 
 
+      #canvas-container canvas {
+        max-width: 100%;
+        height: auto;
+      }
+
+
 
       #pdfCanvas.visible {
         opacity: 1; /* Fully visible when the class 'visible' is added */
@@ -284,37 +290,39 @@ class LibraryComponent extends HTMLElement {
 }
 
 async loadAndRenderPage(pdf, pageNumber) {
-  // Cancel any ongoing render task
+  // Cancel any ongoing rendering task if it exists
   if (this.renderTask) {
-      this.renderTask.cancel();
-      await this.renderTask.promise.catch(() => {}); // ignore the error from the cancelled task
+    this.renderTask.cancel();
+    await this.renderTask.promise.catch(() => {}); // Catch the error from the cancelled task
   }
 
   const page = await pdf.getPage(pageNumber);
-  const viewport = page.getViewport({ scale: window.innerWidth / page.getViewport({ scale: 1 }).width });
-  
-  const canvasContainer = this.shadowRoot.getElementById('canvas-container');
-  let canvas = canvasContainer.querySelector('canvas');
-  if (!canvas) {
-      canvas = document.createElement('canvas');
-      canvasContainer.appendChild(canvas);
+  const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
+  const viewport = page.getViewport({ scale });
+
+  const container = this.shadowRoot.getElementById('canvas-container');
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
   }
 
+  const canvas = document.createElement('canvas');
+  container.appendChild(canvas);
   const context = canvas.getContext('2d');
   canvas.height = viewport.height;
   canvas.width = viewport.width;
 
   const renderContext = {
-      canvasContext: context,
-      viewport: viewport
+    canvasContext: context,
+    viewport: viewport,
   };
 
   // Render the page
   this.renderTask = page.render(renderContext);
   await this.renderTask.promise;
-  this.updatePageNumberDisplay(); // Update the page number display
-}
 
+  // Update the page number display
+  this.updatePageNumberDisplay();
+}
 
 
 closeModalCleanup() {
@@ -536,3 +544,4 @@ findCategoryOfDocument(doc) {
 }
 
 customElements.define('library-component', LibraryComponent);
+
