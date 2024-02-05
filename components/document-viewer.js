@@ -32,7 +32,7 @@ render() {
 
       #pdfCanvas.visible {
         opacity: 1; /* Fully visible when the class 'visible' is added */
-    }
+      } 
         
 
       .modal {
@@ -68,6 +68,7 @@ render() {
         -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
       }
       
+      
       .close {
         color: #053658; /* Dark blue color */
         float: right;
@@ -99,8 +100,7 @@ render() {
       }
       
 
-
-        .categories-outer {
+       .categories-outer {
           position: sticky;
           top: 0;
           left: 0;
@@ -215,9 +215,7 @@ render() {
           background: #555!important; /* Adjust hover color as needed */
         }
 
-
-
-          #search-input {
+         #search-input {
             display: block; /* Ensures the input behaves as a block-level element */
             width: 80%; /* Adjust the width as needed */
             margin: 0 auto; /* Centers the input box and adds equal margins on both sides */
@@ -240,17 +238,17 @@ render() {
 
   
       <div id="contentModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div id="canvas-container"></div> <!-- Container for the canvas -->
-    <!-- Navigation Controls -->
-    <div id="pdf-navigation-controls">
+      <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="canvas-container"></div> <!-- Container for the canvas -->
+      <!-- Navigation Controls -->
+      <div id="pdf-navigation-controls">
       <button id="prev-page">Previous Page</button>
       <span id="page-num"></span>
       <button id="next-page">Next Page</button>
-    </div>
-  </div>
-</div>
+      </div>
+      </div>
+      </div>
 
 
 
@@ -313,9 +311,6 @@ handleSearchInput() {
     }
   });
 }
-
-
-
 
 
 
@@ -395,8 +390,6 @@ displayContent(response, url) {
 }
 
 
-
-
 renderPage(num) {
   if (!this.pdf) {
     console.error('PDF is not loaded.');
@@ -429,7 +422,7 @@ renderPage(num) {
   this.shadowRoot.getElementById('page-num').textContent = num;
 }
 
-// 2. queueRenderPage(num)
+
 queueRenderPage(num) {
   if (this.pageRendering) {
     this.pageNumPending = num;
@@ -438,7 +431,7 @@ queueRenderPage(num) {
   }
 }
 
-// 3. showPrevPage()
+
 showPrevPage() {
   if (this.pageNum <= 1) {
     return;
@@ -447,7 +440,7 @@ showPrevPage() {
   this.queueRenderPage(this.pageNum);
 }
 
-// 4. showNextPage()
+
 showNextPage() {
   if (this.pdf && this.pageNum >= this.pdf.numPages) {
     return;
@@ -456,18 +449,19 @@ showNextPage() {
   this.queueRenderPage(this.pageNum);
 }
 
-// 5. resetPDFState()
+
 resetPDFState() {
   if (this.pdf) {
     this.pdf = null;
+    console.log('PDF state reset.'); // Debugging log
   }
   this.pageNum = 1;
   this.pageRendering = false;
   this.pageNumPending = null;
-  this.updatePageNumberDisplay();
+  this.updatePageNumberDisplay(); // Call this only if it's certain the necessary elements and data are available
 }
 
-// 6. closeModalCleanup()
+
 closeModalCleanup() {
   if (this.renderTask) {
     this.renderTask.cancel();
@@ -478,7 +472,8 @@ closeModalCleanup() {
     canvasContainer.removeChild(canvasContainer.firstChild);
   }
 
-  this.resetPDFState();
+  this.resetPDFState(); // Consider if you need to call updatePageNumberDisplay here or if it should be called separately when appropriate
+  console.log('Modal cleaned up.'); // Debugging log
 }
 
 
@@ -486,6 +481,7 @@ updatePageNumberDisplay() {
   const pageNumElement = this.shadowRoot.getElementById('page-num');
   if (this.pdf && pageNumElement) {
     pageNumElement.textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
+    console.log(`Updated page number display: ${pageNumElement.textContent}`); // Debugging log
   } else {
     console.error('PDF is not loaded or page number element is not found.');
   }
@@ -597,15 +593,10 @@ renderDocuments(query = '') {
           }
         });
       });
- }
+}
 
 
   
-
- 
-
-
-
 findCategoryOfDocument(doc) {
   // Find the category of a given document
   for (const category of this.categories) {
@@ -615,6 +606,8 @@ findCategoryOfDocument(doc) {
   }
   return 'Unknown Category';
 }
+
+
 }
 
 customElements.define('library-component', LibraryComponent);
