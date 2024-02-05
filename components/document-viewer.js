@@ -20,6 +20,14 @@ render() {
       <style>
 
 
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px; /* Adjust padding as needed */
+      }
+
+
       .download-btn {
         padding: 5px 10px;
         background-color: #053658 ;
@@ -84,7 +92,7 @@ render() {
       .close {
         color: #053658; /* Dark blue color */
         float: right;
-        font-size: 28px;
+        font-size: 1.5rem;
         font-weight: bold;
         margin-right: 15px;
         cursor: pointer;
@@ -249,19 +257,23 @@ render() {
       <div class="documents"></div>
 
   
-      <div id="contentModal" class="modal">
-      <div class="modal-content">
-      <span class="close">&times;</span>
+      <div id="contentModal" class="modal" style="display: block;">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
       <button id="download-pdf" class="download-btn">Download PDF</button> <!-- Download button -->
-      <div id="canvas-container"></div> <!-- Container for the canvas -->
-      <!-- Navigation Controls -->
-      <div id="pdf-navigation-controls">
+    </div>
+    <div id="canvas-container">
+      <canvas id="the-canvas" height="1188" width="918"></canvas>
+    </div> <!-- Container for the canvas -->
+    <!-- Navigation Controls -->
+    <div id="pdf-navigation-controls">
       <button id="prev-page">Previous Page</button>
-      <span id="page-num"></span>
+      <span id="page-num">Page 1 of 4</span>
       <button id="next-page">Next Page</button>
-      </div>
-      </div>
-      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -423,38 +435,41 @@ displayContent(response, url) {
 
 
 renderPage(num) {
-  if (!this.pdf) {
-    console.error('PDF is not loaded.');
-    return;
-  }
+    if (!this.pdf) {
+        console.error('PDF is not loaded.');
+        return;
+    }
 
-  this.pageRendering = true;
-  this.pdf.getPage(num).then((page) => {
-    const viewport = page.getViewport({ scale: 1.5 });
-    const canvas = this.shadowRoot.getElementById('the-canvas');
-    const ctx = canvas.getContext('2d');
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
+    this.pageRendering = true;
+    this.pdf.getPage(num).then((page) => {
+        const canvas = this.shadowRoot.getElementById('the-canvas');
+        const canvasContainer = this.shadowRoot.getElementById('canvas-container');
+        
+        // Compute the scale such that the canvas fits the width of its container.
+        const scale = canvasContainer.clientWidth / page.getViewport({ scale: 1 }).width;
+        
+        const viewport = page.getViewport({ scale: scale });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+        
+        const ctx = canvas.getContext('2d');
 
-    const renderContext = {
-      canvasContext: ctx,
-      viewport: viewport
-    };
-    const renderTask = page.render(renderContext);
+        const renderContext = {
+            canvasContext: ctx,
+            viewport: viewport
+        };
+        const renderTask = page.render(renderContext);
 
-    renderTask.promise.then(() => {
-      this.pageRendering = false;
-      if (this.pageNumPending !== null) {
-        this.renderPage(this.pageNumPending);
-        this.pageNumPending = null;
-      } else {
-        // Call updatePageNumberDisplay only after successful rendering of the page
-        this.updatePageNumberDisplay();
-      }
+        renderTask.promise.then(() => {
+            this.pageRendering = false;
+            if (this.pageNumPending !== null) {
+                this.renderPage(this.pageNumPending);
+                this.pageNumPending = null;
+            }
+        });
     });
-  });
 
-  this.shadowRoot.getElementById('page-num').textContent = num;
+    this.shadowRoot.getElementById('page-num').textContent = num;
 }
 
 
