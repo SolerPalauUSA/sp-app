@@ -19,13 +19,6 @@ render() {
     
       <style>
 
-      .modal-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px; /* Adjust padding as needed */
-      }
-
 
       .download-btn {
         padding: 5px 10px;
