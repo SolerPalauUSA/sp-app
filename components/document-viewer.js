@@ -1,17 +1,12 @@
 class LibraryComponent extends HTMLElement {
   constructor() {
-      super();
-      this.attachShadow({ mode: 'open' });
-      this.categories = [];
-      this.selectedCategory = null;
-      this.pdf = null;
-      this.pageNum = 1;
-      this.pageIsRendering = false;
-      this.pageNumIsPending = null;
-      this.loadingIndicator = null;
-      this.render();
-      this.loadJSONData();
-      this.handleSearchInput();
+    super();
+    this.attachShadow({ mode: 'open' });
+    this.categories = [];
+    this.selectedCategory = null;
+    this.render();
+    this.loadJSONData();
+    this.handleSearchInput();
   }
 
 render() {
@@ -261,171 +256,7 @@ render() {
     this.categoryContainer = this.shadowRoot.querySelector('#categories-container');
   }
 
-
-  async displayPDF(url) {
-    this.resetPDFState();
-
-    const pdfjsLib = window['pdfjs-dist/build/pdf'];
-    pdfjsLib.GlobalWorkerOptions.workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
-
-    try {
-        const loadingTask = pdfjsLib.getDocument(url);
-        this.pdf = await loadingTask.promise;
-        this.pageNum = 1;
-
-        await this.loadAndRenderPage(this.pdf, this.pageNum);
-        this.manageNavigationListeners();
-    } catch (error) {
-        console.error('Error loading PDF:', error);
-    }
-}
-
-updatePageNumberDisplay() {
-    if (this.pdf && this.pdf.numPages) {
-        this.shadowRoot.getElementById('page-num').textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
-    } else {
-        console.error('PDF is not loaded.');
-    }
-}
-
-
-
- // Add a method to show the loading indicator
- showLoadingIndicator() {
-  if (!this.loadingIndicator) {
-    this.loadingIndicator = document.createElement('div');
-    this.loadingIndicator.textContent = 'Loading...'; // Customize this as needed
-    this.shadowRoot.appendChild(this.loadingIndicator);
-  }
-  this.loadingIndicator.style.display = 'block';
-}
-
-// Add a method to hide the loading indicator
-hideLoadingIndicator() {
-  if (this.loadingIndicator) {
-    this.loadingIndicator.style.display = 'none';
-  }
-}
-
-
-
-async loadAndRenderPage(pdf, pageNum) {
-    if (!pdf) {
-        console.error('PDF is not loaded yet.');
-        return;
-    }
-  
-    if (pageNum < 1 || pageNum > pdf.numPages) {
-        console.error('Requested page number is out of range.');
-        return;
-    }
-  
-    if (this.pageIsRendering) {
-        this.pageNumIsPending = pageNum;
-        return;
-    }
-  
-    this.pageIsRendering = true;
-    this.showLoadingIndicator();
-  
-    try {
-        const page = await pdf.getPage(pageNum);
-        const scale = window.innerWidth / page.getViewport({ scale: 1 }).width;
-        const viewport = page.getViewport({ scale });
-        const container = this.shadowRoot.getElementById('canvas-container');
-
-        while (container.firstChild) {
-            container.removeChild(container.firstChild);
-        }
-  
-        const canvas = document.createElement('canvas');
-        container.appendChild(canvas);
-        const context = canvas.getContext('2d');
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-  
-        const renderContext = {
-            canvasContext: context,
-            viewport: viewport,
-        };
-  
-        await page.render(renderContext).promise;
-        this.pageIsRendering = false;
-  
-        if (this.pageNumIsPending !== null) {
-            const pageNumPending = this.pageNumIsPending;
-            this.pageNumIsPending = null;
-            this.loadAndRenderPage(pdf, pageNumPending);
-        } else {
-            this.hideLoadingIndicator(); // Hide the loading indicator when rendering is done
-            this.pageNum = pageNum; // Update the current page number
-            this.updatePageNumberDisplay(); // Update the page number display
-        }
-    } catch (e) {
-        console.error('Error loading or rendering page:', e);
-        this.pageIsRendering = false;
-        this.hideLoadingIndicator();
-    }
-}
-
-
-
-
-resetPDFState() {
-  this.pdf = null;
-  this.pageNum = 1;
-  this.pageIsRendering = false;
-  this.pageNumIsPending = null;
-  this.updatePageNumberDisplay();
-}
-
-closeModalCleanup() {
-  if (this.renderTask) {
-      this.renderTask.cancel();
-  }
-
-  const canvasContainer = this.shadowRoot.getElementById('canvas-container');
-  while (canvasContainer.firstChild) {
-      canvasContainer.removeChild(canvasContainer.firstChild);
-  }
-
-  this.resetPDFState();
-}
-
-
-
-manageNavigationListeners() {
-  const prevPageButton = this.shadowRoot.getElementById('prev-page');
-  const nextPageButton = this.shadowRoot.getElementById('next-page');
-  prevPageButton.addEventListener('click', () => this.showPrevPage());
-  nextPageButton.addEventListener('click', () => this.showNextPage());
-}
-
-showPrevPage() {
-  if (this.pageNum > 1) {
-      this.pageNum--;
-      this.queueRenderPage(this.pageNum);
-  }
-}
-
-showNextPage() {
-  if (this.pdf && this.pageNum < this.pdf.numPages) {
-      this.pageNum++;
-      this.queueRenderPage(this.pageNum);
-  }
-}
-
-queueRenderPage(num) {
-  if (this.pageIsRendering) {
-      this.pageNumIsPending = num;
-  } else {
-      this.loadAndRenderPage(this.pdf, num);
-  }
-}
-
-
-
-loadJSONData() {
+  loadJSONData() {
     const jsonURL = '../data/documents.json';
   
     fetch(jsonURL)
@@ -449,37 +280,85 @@ loadJSONData() {
       });
 }
 
-clearCategories() {
-    this.categoryContainer.innerHTML = ''; // Clear the categories
+handleSearchInput() {
+  const searchInput = this.shadowRoot.getElementById('search-input');
+  searchInput.addEventListener('input', (event) => {
+    const query = event.target.value.trim().toLowerCase();
+
+    // Check if the categories container has the 'selected' class
+    const categoriesContainerHasSelected = this.categoryContainer.classList.contains('selected');
+
+    if (query === '') {
+      if (!categoriesContainerHasSelected) {
+        // If input is empty and 'selected' class is not present
+        this.renderCategories(); // Render categories
+        this.documentsContainer.innerHTML = ''; // Clear the documents
+      } else {
+        // If input is empty but 'selected' class is present
+        this.renderDocuments(); // Show all documents of the selected category
+      }
+      } else {
+      // If there's a query
+      if (!categoriesContainerHasSelected) {
+        this.clearCategories(); // Clear categories if 'selected' class is not present
+      }
+      this.renderDocuments(query); // Render documents based on the query
+    }
+  });
 }
 
-handleSearchInput() {
-    const searchInput = this.shadowRoot.getElementById('search-input');
-    searchInput.addEventListener('input', (event) => {
-      const query = event.target.value.trim().toLowerCase();
+displayContent(response, url) {
+  const modal = this.shadowRoot.getElementById('contentModal');
+  const span = this.shadowRoot.querySelector('.close');
+  const canvas = document.createElement('canvas');
+  canvas.id = 'the-canvas';
+  this.shadowRoot.getElementById('canvas-container').appendChild(canvas);
   
-      // Check if the categories container has the 'selected' class
-      const categoriesContainerHasSelected = this.categoryContainer.classList.contains('selected');
-  
-      if (query === '') {
-        if (!categoriesContainerHasSelected) {
-          // If input is empty and 'selected' class is not present
-          this.renderCategories(); // Render categories
-          this.documentsContainer.innerHTML = ''; // Clear the documents
-        } else {
-          // If input is empty but 'selected' class is present
-          this.renderDocuments(); // Show all documents of the selected category
-        }
-        } else {
-        // If there's a query
-        if (!categoriesContainerHasSelected) {
-          this.clearCategories(); // Clear categories if 'selected' class is not present
-        }
-        this.renderDocuments(query); // Render documents based on the query
+  const pdfjsLib = window['pdfjsLib'] || window['pdfjs-dist/build/pdf'];
+  pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.mjs';
+
+  pdfjsLib.getDocument(url).promise.then((pdfDoc) => {
+      const pageNum = 1;  // Start with the first page
+      pdfDoc.getPage(pageNum).then((page) => {
+          const scale = 1.5;
+          const viewport = page.getViewport({ scale: scale });
+          canvas.height = viewport.height;
+          canvas.width = viewport.width;
+          const ctx = canvas.getContext('2d');
+          const renderContext = {
+              canvasContext: ctx,
+              viewport: viewport
+          };
+          page.render(renderContext);
+      });
+
+      this.shadowRoot.getElementById('page-num').textContent = `Page 1 of ${pdfDoc.numPages}`;
+  });
+
+  modal.style.display = "block";
+
+  // Close modal actions
+  span.onclick = () => {
+      modal.style.display = "none";
+      while (canvas.firstChild) {
+          canvas.removeChild(canvas.firstChild);  // Clean up the canvas when closing the modal
       }
-    });
-  }
-  
+  };
+
+  window.onclick = (event) => {
+      if (event.target === modal) {
+          modal.style.display = "none";
+          while (canvas.firstChild) {
+              canvas.removeChild(canvas.firstChild);  // Clean up the canvas when closing the modal
+          }
+      }
+  };
+}
+
+
+
+
+
 
 
 renderCategories() {
@@ -492,7 +371,7 @@ renderCategories() {
       categoryButton.addEventListener('click', () => this.toggleCategory(categoryButton, category));
       this.categoryContainer.appendChild(categoryButton);
     });
-  }
+}
 
 
 toggleCategory(categoryButton, category) {
@@ -526,10 +405,10 @@ toggleCategory(categoryButton, category) {
   
       this.renderDocuments();
     }
-  }
+}
   
   
-  renderDocuments(query = '') {
+renderDocuments(query = '') {
     this.documentsContainer.innerHTML = '';
     let documents = [];
   
@@ -587,72 +466,10 @@ toggleCategory(categoryButton, category) {
           }
         });
       });
-    }
+ }
 
-    showPrevPage() {
-      if (this.pageNum > 1) {
-        this.pageNum--;
-        this.queueRenderPage(this.pageNum);
-      }
-    }
+
   
-    showNextPage() {
-      if (this.pdf && this.pageNum < this.pdf.numPages) {
-        this.pageNum++;
-        this.queueRenderPage(this.pageNum);
-      }
-    }
-
-
-
-    displayContent(response, url) {
-      const modal = this.shadowRoot.getElementById('contentModal');
-      const span = this.shadowRoot.querySelector('.close');
-    
-      // Load and render the first page of the PDF
-      this.displayPDF(url);
-      modal.style.display = "block";
-    
-      // Detach any previous event listeners to avoid duplicates
-      const prevPageButton = this.shadowRoot.getElementById('prev-page');
-      const nextPageButton = this.shadowRoot.getElementById('next-page');
-      if (this.prevPageClickHandler) {
-        prevPageButton.removeEventListener('click', this.prevPageClickHandler);
-      }
-      if (this.nextPageClickHandler) {
-        nextPageButton.removeEventListener('click', this.nextPageClickHandler);
-      }
-    
-      // Bind the current instance ('this') to the handler functions
-      this.prevPageClickHandler = this.showPrevPage.bind(this);
-      this.nextPageClickHandler = this.showNextPage.bind(this);
-    
-      // Attach event listeners for your 'Previous' and 'Next' buttons
-      prevPageButton.addEventListener('click', this.prevPageClickHandler);
-      nextPageButton.addEventListener('click', this.nextPageClickHandler);
-    
-      // Close modal actions
-      span.onclick = () => {
-        modal.style.display = "none";
-        this.closeModalCleanup();  // Reset canvas and cancel render task on close
-        // Remove event listeners when the modal is closed
-        prevPageButton.removeEventListener('click', this.prevPageClickHandler);
-        nextPageButton.removeEventListener('click', this.nextPageClickHandler);
-      };
-    
-      window.onclick = (event) => {
-        if (event.target === modal) {
-          modal.style.display = "none";
-          this.closeModalCleanup();  // Reset canvas and cancel render task on close
-          // Remove event listeners when the modal is closed
-          prevPageButton.removeEventListener('click', this.prevPageClickHandler);
-          nextPageButton.removeEventListener('click', this.nextPageClickHandler);
-        }
-      };
-    }
-    
-    
-    
 
  
 findCategoryOfDocument(doc) {
