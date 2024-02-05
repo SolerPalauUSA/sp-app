@@ -96,10 +96,10 @@ render() {
       }
       
       #pdf-navigation-controls button {
-        padding: 5px 10px;
-        margin-right: 5px;
-        background-color: #f2f2f2;
-        border: 1px solid #ddd;
+        padding: 5px 10px!important;
+        margin-right: 5px!important;
+        background-color: #f2f2f2!important;
+        border: 1px solid #ddd!important;
         cursor: pointer;
       }
       
