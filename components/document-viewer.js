@@ -519,7 +519,7 @@ closeModalCleanup() {
 updatePageNumberDisplay() {
   const pageNumElement = this.shadowRoot.getElementById('page-num');
   if (this.pdf && pageNumElement) {
-    pageNumElement.textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
+    pageNumElement.textContent = ` ${this.pageNum} / ${this.pdf.numPages}`;
     console.log(`Updated page number display: ${pageNumElement.textContent}`); // Debugging log
   } else {
     console.error('PDF is not loaded or page number element is not found.');
