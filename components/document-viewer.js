@@ -398,16 +398,7 @@ renderPage(num) {
 
   this.pageRendering = true;
   this.pdf.getPage(num).then((page) => {
-    const viewport = page.getViewport({ scale: 1.5 });
-    const canvas = this.shadowRoot.getElementById('the-canvas');
-    const ctx = canvas.getContext('2d');
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-
-    const renderContext = {
-      canvasContext: ctx,
-      viewport: viewport
-    };
+    // ...
     const renderTask = page.render(renderContext);
 
     renderTask.promise.then(() => {
@@ -415,11 +406,12 @@ renderPage(num) {
       if (this.pageNumPending !== null) {
         this.renderPage(this.pageNumPending);
         this.pageNumPending = null;
+      } else {
+        // Call updatePageNumberDisplay only after successful rendering of the page
+        this.updatePageNumberDisplay();
       }
     });
   });
-
-  this.shadowRoot.getElementById('page-num').textContent = num;
 }
 
 
@@ -458,9 +450,8 @@ resetPDFState() {
   this.pageNum = 1;
   this.pageRendering = false;
   this.pageNumPending = null;
-  this.updatePageNumberDisplay(); // Call this only if it's certain the necessary elements and data are available
+  // Do not call updatePageNumberDisplay here as the PDF is being reset
 }
-
 
 closeModalCleanup() {
   if (this.renderTask) {
