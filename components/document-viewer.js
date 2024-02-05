@@ -249,23 +249,19 @@ render() {
       <div class="documents"></div>
 
   
-      <div id="contentModal" class="modal" style="display: block;">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">×</span>
+      <div id="contentModal" class="modal">
+      <div class="modal-content">
+      <span class="close">&times;</span>
       <button id="download-pdf" class="download-btn">Download PDF</button> <!-- Download button -->
-    </div>
-    <div id="canvas-container">
-      <canvas id="the-canvas" height="1188" width="918"></canvas>
-    </div> <!-- Container for the canvas -->
-    <!-- Navigation Controls -->
-    <div id="pdf-navigation-controls">
+      <div id="canvas-container"></div> <!-- Container for the canvas -->
+      <!-- Navigation Controls -->
+      <div id="pdf-navigation-controls">
       <button id="prev-page">Previous Page</button>
-      <span id="page-num">Page 1 of 4</span>
+      <span id="page-num"></span>
       <button id="next-page">Next Page</button>
-    </div>
-  </div>
-</div>
+      </div>
+      </div>
+      </div>
 
 
 
