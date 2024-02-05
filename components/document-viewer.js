@@ -61,13 +61,14 @@ render() {
       
       .modal-content {
         position: relative;
-        background-color: #fefefe;
-        margin: 5% auto; /* Center the modal */
+        background-color: whitesmoke;
+        margin: 5% auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 80%; /* Adjust width */
+        width: 85%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-        overflow: hidden; /* Hide scrollbars if modal body is not longer than screen */
+        overflow: hidden;
+        border-radius: 10px;
       }
       
       #pdfCanvas {
@@ -91,8 +92,11 @@ render() {
       }
       
       #pdf-navigation-controls {
-        text-align: center; /* Center the navigation controls */
-        margin-top: 10px; /* Space between canvas and controls */
+        text-align: center;
+        margin-top: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
       
       #pdf-navigation-controls button {
@@ -113,7 +117,8 @@ render() {
       }
       
       #page-num {
-        font-size: 16px;
+        font-size: 20px;
+        color: #053658!important;
       }
       
 
