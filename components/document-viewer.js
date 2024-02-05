@@ -19,7 +19,6 @@ render() {
     
       <style>
 
-
       .modal-header {
         display: flex;
         justify-content: space-between;
@@ -92,7 +91,7 @@ render() {
       .close {
         color: #053658; /* Dark blue color */
         float: right;
-        font-size: 1.5rem;
+        font-size: 28px;
         font-weight: bold;
         margin-right: 15px;
         cursor: pointer;
@@ -435,41 +434,38 @@ displayContent(response, url) {
 
 
 renderPage(num) {
-    if (!this.pdf) {
-        console.error('PDF is not loaded.');
-        return;
-    }
+  if (!this.pdf) {
+    console.error('PDF is not loaded.');
+    return;
+  }
 
-    this.pageRendering = true;
-    this.pdf.getPage(num).then((page) => {
-        const canvas = this.shadowRoot.getElementById('the-canvas');
-        const canvasContainer = this.shadowRoot.getElementById('canvas-container');
-        
-        // Compute the scale such that the canvas fits the width of its container.
-        const scale = canvasContainer.clientWidth / page.getViewport({ scale: 1 }).width;
-        
-        const viewport = page.getViewport({ scale: scale });
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-        
-        const ctx = canvas.getContext('2d');
+  this.pageRendering = true;
+  this.pdf.getPage(num).then((page) => {
+    const viewport = page.getViewport({ scale: 1.5 });
+    const canvas = this.shadowRoot.getElementById('the-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
 
-        const renderContext = {
-            canvasContext: ctx,
-            viewport: viewport
-        };
-        const renderTask = page.render(renderContext);
+    const renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    const renderTask = page.render(renderContext);
 
-        renderTask.promise.then(() => {
-            this.pageRendering = false;
-            if (this.pageNumPending !== null) {
-                this.renderPage(this.pageNumPending);
-                this.pageNumPending = null;
-            }
-        });
+    renderTask.promise.then(() => {
+      this.pageRendering = false;
+      if (this.pageNumPending !== null) {
+        this.renderPage(this.pageNumPending);
+        this.pageNumPending = null;
+      } else {
+        // Call updatePageNumberDisplay only after successful rendering of the page
+        this.updatePageNumberDisplay();
+      }
     });
+  });
 
-    this.shadowRoot.getElementById('page-num').textContent = num;
+  this.shadowRoot.getElementById('page-num').textContent = num;
 }
 
 
