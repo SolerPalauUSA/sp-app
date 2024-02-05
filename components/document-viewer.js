@@ -479,7 +479,14 @@ closeModalCleanup() {
 }
 
 
-
+updatePageNumberDisplay() {
+  const pageNumElement = this.shadowRoot.getElementById('page-num');
+  if (this.pdf && pageNumElement) {
+    pageNumElement.textContent = `Page ${this.pageNum} of ${this.pdf.numPages}`;
+  } else {
+    console.error('PDF is not loaded or page number element is not found.');
+  }
+}
 
 
 renderCategories() {
