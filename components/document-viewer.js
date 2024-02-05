@@ -398,7 +398,16 @@ renderPage(num) {
 
   this.pageRendering = true;
   this.pdf.getPage(num).then((page) => {
-    // ...
+    const viewport = page.getViewport({ scale: 1.5 });
+    const canvas = this.shadowRoot.getElementById('the-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    const renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
     const renderTask = page.render(renderContext);
 
     renderTask.promise.then(() => {
@@ -412,6 +421,8 @@ renderPage(num) {
       }
     });
   });
+
+  this.shadowRoot.getElementById('page-num').textContent = num;
 }
 
 
@@ -453,6 +464,7 @@ resetPDFState() {
   // Do not call updatePageNumberDisplay here as the PDF is being reset
 }
 
+
 closeModalCleanup() {
   if (this.renderTask) {
     this.renderTask.cancel();
@@ -463,8 +475,7 @@ closeModalCleanup() {
     canvasContainer.removeChild(canvasContainer.firstChild);
   }
 
-  this.resetPDFState(); // Consider if you need to call updatePageNumberDisplay here or if it should be called separately when appropriate
-  console.log('Modal cleaned up.'); // Debugging log
+  this.resetPDFState();
 }
 
 
