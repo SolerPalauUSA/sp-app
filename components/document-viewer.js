@@ -98,11 +98,14 @@ render() {
       #pdf-navigation-controls button {
         padding: 5px 10px!important;
         margin-right: 5px!important;
-        background-color: #f2f2f2!important;
-        border: 1px solid #ddd!important;
+        background-color: transparent!important;
+        border: none!important;
         cursor: pointer;
-        color: white!important;
-        
+        color: #053658!important;
+        font-size:1rem;
+        text-decoration: underline #053658!important;
+
+
       }
       
       #pdf-navigation-controls button:hover {
