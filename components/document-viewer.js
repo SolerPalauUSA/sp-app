@@ -21,11 +21,8 @@ render() {
 
 
       .download-btn {
-        position: absolute;
-        top: 10px;
-        left: 10px;
         padding: 5px 10px;
-        background-color: #4CAF50; /* Green background */
+        background-color: #053658 ;
         color: white;
         border: none;
         border-radius: 5px;
@@ -33,9 +30,6 @@ render() {
         font-size: 16px;
     }
     
-    .download-btn:hover {
-        background-color: #45a049; /* Darker green */
-    }
 
 
       #canvas-container canvas {
