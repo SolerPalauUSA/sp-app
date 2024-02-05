@@ -20,6 +20,24 @@ render() {
       <style>
 
 
+      .download-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+        background-color: #4CAF50; /* Green background */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .download-btn:hover {
+        background-color: #45a049; /* Darker green */
+    }
+
+
       #canvas-container canvas {
         max-width: 100%;
         height: auto;
@@ -240,6 +258,7 @@ render() {
       <div id="contentModal" class="modal">
       <div class="modal-content">
       <span class="close">&times;</span>
+      <button id="download-pdf" class="download-btn">Download PDF</button> <!-- Download button -->
       <div id="canvas-container"></div> <!-- Container for the canvas -->
       <!-- Navigation Controls -->
       <div id="pdf-navigation-controls">
@@ -309,6 +328,21 @@ handleSearchInput() {
       }
       this.renderDocuments(query); // Render documents based on the query
     }
+  });
+}
+
+setupDownloadButton() {
+  const downloadBtn = this.shadowRoot.getElementById('download-pdf');
+  downloadBtn.addEventListener('click', () => {
+      if (this.pdf) {
+          // Assuming 'this.pdf' holds your PDF data
+          const link = document.createElement('a');
+          link.href = this.pdfUrl; // URL to the PDF file
+          link.download = 'downloaded.pdf'; // Name of the downloaded file
+          link.click();
+      } else {
+          console.error('No PDF available to download.');
+      }
   });
 }
 
@@ -387,6 +421,10 @@ displayContent(response, url) {
           nextPageButton.removeEventListener('click', this.nextPageClickHandler);
       }
   };
+
+
+  this.setupDownloadButton();
+
 }
 
 
