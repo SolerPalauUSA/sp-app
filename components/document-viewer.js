@@ -101,6 +101,8 @@ render() {
         background-color: #f2f2f2!important;
         border: 1px solid #ddd!important;
         cursor: pointer;
+        color: white!important;
+        
       }
       
       #pdf-navigation-controls button:hover {
