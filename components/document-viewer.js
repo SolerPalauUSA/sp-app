@@ -11,6 +11,7 @@ class LibraryComponent extends HTMLElement {
     this.render();
     this.loadJSONData();
     this.handleSearchInput();
+    this.currentPdfUrl = null; // Initialize the variable to hold the current PDF URL
   }
 
 render() {
@@ -336,17 +337,14 @@ handleSearchInput() {
 }
 
 setupDownloadButton() {
-  const downloadBtn = this.shadowRoot.getElementById('download-pdf');
-  downloadBtn.addEventListener('click', () => {
-      if (this.pdf) {
-          // Assuming 'this.pdf' holds your PDF data
-          const link = document.createElement('a');
-          link.href = this.pdfUrl; // URL to the PDF file
-          link.download = 'downloaded.pdf'; // Name of the downloaded file
-          link.click();
-      } else {
-          console.error('No PDF available to download.');
-      }
+  const downloadButton = this.shadowRoot.getElementById('download-pdf');
+  downloadButton.addEventListener('click', () => {
+    if (this.currentPdfUrl) {
+      // Open the PDF URL in a new tab
+      window.open(this.currentPdfUrl, '_blank');
+    } else {
+      console.error('No PDF URL found');
+    }
   });
 }
 
@@ -426,7 +424,7 @@ displayContent(response, url) {
       }
   };
 
-
+  this.currentPdfUrl = url;
   this.setupDownloadButton();
 
 }
