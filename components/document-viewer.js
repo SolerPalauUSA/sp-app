@@ -336,7 +336,17 @@ handleSearchInput() {
   });
 }
 
-
+setupDownloadButton() {
+  const downloadButton = this.shadowRoot.getElementById('download-pdf');
+  downloadButton.addEventListener('click', () => {
+    if (this.currentPdfUrl) {
+      // Open the PDF URL in a new tab
+      window.open(this.currentPdfUrl, '_blank');
+    } else {
+      console.error('No PDF URL found');
+    }
+  });
+}
 
 
 
@@ -420,29 +430,6 @@ displayContent(response, url) {
 }
 
 
-setupDownloadButton() {
-  const downloadButton = this.shadowRoot.getElementById('download-pdf');
-  downloadButton.addEventListener('click', () => {
-    if (this.currentPdfUrl) {
-      // Create a hidden anchor element for direct download
-      const link = document.createElement('a');
-      link.href = this.currentPdfUrl;
-      link.download = 'downloadedFile.pdf'; // You can set a specific file name here
-      link.style.display = 'none';
-      document.body.appendChild(link);
-
-      // Programmatically click the link to trigger the download
-      link.click();
-
-      // Clean up by removing the link from the document
-      document.body.removeChild(link);
-    } else {
-      console.error('No PDF URL found');
-    }
-  });
-}
-
-
 renderPage(num) {
   if (!this.pdf) {
     console.error('PDF is not loaded.');
@@ -477,8 +464,6 @@ renderPage(num) {
 
   this.shadowRoot.getElementById('page-num').textContent = num;
 }
-
-
 
 
 queueRenderPage(num) {
