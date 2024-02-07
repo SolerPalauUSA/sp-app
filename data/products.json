@@ -9,6 +9,7 @@
         "name": "Ceiling Mount Ventilator",
         "image": "../assets/images/Losone-Select-Ceiling.webp",
         "description": "Incredibly reliable. Unbelievably quiet. Offering the CFM choices you need at the lowest sound levels in the industry.",
+        "keywords": ["Losone Select Series", "E-series"],
         "models": [
           {
             "id": 1,
@@ -77,6 +78,7 @@
         "name": "Cabinet Ventilator",
         "image": "../assets/images/Losone-Select-Inline.webp",
         "description": "Incredibly reliable. Unbelievably quiet. Offering the CFM choices you need at the lowest sound levels in the industry.",
+        "keywords": ["Losone Select Series", "EL-series"],
         "models": [
           {
             "id": 1,
