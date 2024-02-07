@@ -121,7 +121,6 @@ const essentialCacheResources = [
 ].map(url => encodeURI(url));
 
 
-
 // Install event: Cache essential resources when the service worker is installed
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -141,53 +140,10 @@ self.addEventListener('install', (event) => {
         return Promise.all(cachePromises);
       })
   );
+  
+  // Update the service worker immediately after installation
+  self.skipWaiting();
 });
-
-
-
-self.addEventListener('fetch', (event) => {
-  const url = new URL(event.request.url);
-
-  // Bypass service worker for Firebase SDKs or specific API requests
-  if (url.origin === 'https://www.gstatic.com' && url.pathname.startsWith('/firebasejs')) {
-      return fetch(event.request); // Perform a regular fetch
-  }
-
-  // Bypass service worker for Firebase Identity Toolkit API
-  if (url.origin === 'https://identitytoolkit.googleapis.com' && url.pathname.startsWith('/v1/accounts:lookup')) {
-      return fetch(event.request); // Perform a regular fetch
-  }
-
-  // Respond with cached resource or fetch and cache
-  event.respondWith(
-      caches.match(event.request)
-          .then((cachedResponse) => {
-              if (cachedResponse) {
-                  // Return the cached resource if found
-                  return cachedResponse;
-              }
-
-              // Fetch the resource from the network
-              return fetch(event.request).then((networkResponse) => {
-                  // Don't cache opaque responses or responses that are not ok
-                  if (!networkResponse.ok || networkResponse.type === 'opaque') {
-                      return networkResponse;
-                  }
-
-                  // Clone and cache the response if it's ok
-                  const responseToCache = networkResponse.clone();
-                  caches.open(cacheName).then((cache) => {
-                      cache.put(event.request, responseToCache);
-                  });
-
-                  return networkResponse;
-              }).catch((error) => {
-                  console.error(`Fetching and caching new data failed: ${error.message}`);
-              });
-          })
-  );
-});
-
 
 // Activate event: Clear old caches
 self.addEventListener('activate', (event) => {
@@ -205,3 +161,15 @@ self.addEventListener('activate', (event) => {
     })
   );
 });
+
+// Update event: Force the waiting service worker to become the active service worker
+self.addEventListener('message', event => {
+  if (event.data.action === 'refreshContent') {
+      self.skipWaiting();
+  }
+});
+
+// Update the service worker periodically
+setInterval(() => {
+  self.registration.update();
+}, 24 * 60 * 60 * 1000); // Check for updates every 24 hours

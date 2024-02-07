@@ -50,6 +50,15 @@ if ('serviceWorker' in navigator) {
                     }
                 });
             }
+
+            // Add event listener for message from service worker
+            navigator.serviceWorker.addEventListener('message', (event) => {
+                if (event.data.action === 'refreshContent') {
+                    // Display UI element or notification to refresh content
+                    document.getElementById('update-notification').style.display = 'block';
+                }
+            });
+
         })
         .catch((error) => {
             console.error('Service Worker registration failed:', error);
@@ -63,7 +72,6 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
-
 
 
   </script>
@@ -169,13 +177,18 @@ if ('serviceWorker' in navigator) {
 
       <!-- Android Install Button -->
         <button id="install-button-android">Install App</button>
+        
+        <div id="update-notification" style="display: none;">
+            <p>New version available</p>
+            <button onclick="window.location.reload(true)">Update</button>
+          </div>
 
         <!-- Update Notification Modal -->
-<div id="update-notification" style="display: none; position: fixed; bottom: 10px; right: 10px; background: white; padding: 20px; box-shadow: 0 0 5px rgba(0,0,0,0.2); z-index: 1000;">
+<!--<div id="update-notification" style="display: none; position: fixed; bottom: 10px; right: 10px; background: white; padding: 20px; box-shadow: 0 0 5px rgba(0,0,0,0.2); z-index: 1000;">
     New content is available. 
     <button onclick="document.location.reload(true)">Refresh</button>
     <button onclick="document.getElementById('update-notification').style.display='none'">Close</button>
-</div>
+</div>-->
 
 
 <script type="module" src="firebase.js"></script>
