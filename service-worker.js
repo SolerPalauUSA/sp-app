@@ -158,6 +158,13 @@ self.addEventListener('activate', (event) => {
       );
     }).then(() => {
       return self.clients.claim();
+    }).then(() => {
+      // Send message to clients to trigger refresh
+      self.clients.matchAll().then(clients => {
+        clients.forEach(client => {
+          client.postMessage({ action: 'refreshContent' });
+        });
+      });
     })
   );
 });
