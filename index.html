@@ -178,7 +178,7 @@ if ('serviceWorker' in navigator) {
       <!-- Android Install Button -->
         <button id="install-button-android">Install App</button>
         
-        <div id="update-notification" style="display: none;">
+        <div id="update-notification" style="display: none; position: fixed; bottom: 10px; right: 10px; background: white; padding: 20px; box-shadow: 0 0 5px rgba(0,0,0,0.2); z-index: 1000;">
             <p>New version available</p>
             <button onclick="window.location.reload(true)">Update</button>
           </div>
