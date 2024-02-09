@@ -114,7 +114,7 @@ class BottomNavbar extends HTMLElement {
      margin-top: 20px;
      display: none;
      padding: 0.5rem;
-     height: 85%;
+     height: auto;
      background: white;
      position: static;
      border-radius: 8px;
