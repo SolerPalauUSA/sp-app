@@ -38,7 +38,7 @@ class BottomNavbar extends HTMLElement {
     transform: scale(0.9); /* Start slightly scaled down */
     transition: opacity 0.3s, transform 0.3s; /* Add transition for opacity and scale */
     overflow: auto;
-    height: 700px;
+    height: auto;
 }
 
 /* Overlay CSS styles */
@@ -114,17 +114,21 @@ class BottomNavbar extends HTMLElement {
      margin-top: 20px;
      display: none;
      padding: 0.5rem;
-     height: auto;
-     background: white;
      position: static;
      border-radius: 8px;
      width: 80%;
+     height: 700px;
+     margin-bottom: 10px;
+     overflow: auto;
 
 }
 
 .search-results-item {
     width: 100%;
     padding: .5rem;
+    background: whitesmoke;
+    color: #053658;
+    
 }
 
 
