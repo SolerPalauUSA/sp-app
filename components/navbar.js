@@ -24,22 +24,20 @@ class BottomNavbar extends HTMLElement {
         <style>
 
        
-  .search-modal {
-    overflow: auto;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #f5f5f5;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    z-index: 9999;
-    opacity: 0; /* Start with 0 opacity */
-    transform: scale(0.9); /* Start slightly scaled down */
-    transition: opacity 0.3s, transform 0.3s; /* Add transition for opacity and scale */
-    height: 100%;
-    width: 100%;
-}
+        .search-modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #f5f5f5;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          padding: 20px;
+          z-index: 9999;
+          opacity: 0; /* Start with 0 opacity */
+          transform: scale(0.9); /* Start slightly scaled down */
+          transition: opacity 0.3s, transform 0.3s; /* Add transition for opacity and scale */
+      }
 
 /* Overlay CSS styles */
   .overlay {
@@ -86,27 +84,23 @@ class BottomNavbar extends HTMLElement {
     /* Modal Container */
 
 
-/* Close Button */
-   .close-button {
-    position: absolute;
-    top: -13px;
-    right: 15px;
-    font-size: 40px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #053658;
-}
+    /* Close Button */
+    .close-button {
+      position: absolute;
+      top: 6px;
+      right: 54px;
+      font-size: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #053658;
+ }
 
-/* Search Input */
-   #search-input {
-     width: 80%;
-     padding: .5rem;
-     font-size: 16px;
-     margin-top: 1rem;
-     outline: none;
-     border-radius: 5px;
-     border: 1px solid rgba(0, 0, 0, 0.2)!important;
-}
+
+ .search-results {
+  margin-top: 20px;
+  display: none;
+  width: 390px;
+  padding: 0.5rem;
 
 /* Search Results Container */
   .search-results {
@@ -263,19 +257,16 @@ class BottomNavbar extends HTMLElement {
     filterData(data, query) {
       let results = [];
       data.forEach(product => {
-        const matchesQuery = (str) => str.toLowerCase().includes(query);
-        // Safely check for keywords match
-        const hasKeywordMatch = product.keywords ? product.keywords.some(matchesQuery) : false;
-    
-        // Safely check for models match, ensuring models array exists
-        const hasModelMatch = product.models && product.models.some(model => matchesQuery(model.name));
-    
-        if (matchesQuery(product.name) || matchesQuery(product.description) || hasKeywordMatch || hasModelMatch) {
-          results.push(product);
-        }
+        product.series.forEach(series => {
+          if (series.name.toLowerCase().includes(query) || series.description.toLowerCase().includes(query)) {
+            results.push({ product: product.name, series: series });
+          }
+        });
       });
       return results;
     }
+
+
     searchInJSON(data, query) {
       let results = [];
     
