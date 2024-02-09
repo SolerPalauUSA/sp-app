@@ -38,6 +38,7 @@ class BottomNavbar extends HTMLElement {
     transform: scale(0.9); /* Start slightly scaled down */
     transition: opacity 0.3s, transform 0.3s; /* Add transition for opacity and scale */
     height: 100%;
+    width: 100%;
 }
 
 /* Overlay CSS styles */
