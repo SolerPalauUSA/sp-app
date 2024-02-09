@@ -25,11 +25,11 @@ class BottomNavbar extends HTMLElement {
 
        
   .search-modal {
+    overflow: auto;
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: #f5f5f5;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -37,6 +37,7 @@ class BottomNavbar extends HTMLElement {
     opacity: 0; /* Start with 0 opacity */
     transform: scale(0.9); /* Start slightly scaled down */
     transition: opacity 0.3s, transform 0.3s; /* Add transition for opacity and scale */
+    height: 100%;
 }
 
 /* Overlay CSS styles */
@@ -86,13 +87,13 @@ class BottomNavbar extends HTMLElement {
 
 /* Close Button */
    .close-button {
-     position: absolute;
-     top: 6px;
-     right: 54px;
-     font-size: 40px;
-     font-weight: 600;
-     cursor: pointer;
-     color: #053658;
+    position: absolute;
+    top: -13px;
+    right: 15px;
+    font-size: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #053658;
 }
 
 /* Search Input */
@@ -110,8 +111,14 @@ class BottomNavbar extends HTMLElement {
   .search-results {
      margin-top: 20px;
      display: none;
-     width: 390px;
      padding: 0.5rem;
+     height: 85%;
+     overflow: auto;
+     background: white;
+     position: static;
+     border-radius: 8px;
+
+
 
 }
 
