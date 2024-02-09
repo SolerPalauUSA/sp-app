@@ -24,20 +24,20 @@ class BottomNavbar extends HTMLElement {
         <style>
 
        
-        .search-modal {
-          display: none;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          background-color: #f5f5f5;
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-          padding: 20px;
-          z-index: 9999;
-          opacity: 0; /* Start with 0 opacity */
-          transform: scale(0.9); /* Start slightly scaled down */
-          transition: opacity 0.3s, transform 0.3s; /* Add transition for opacity and scale */
-      }
+ .search-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 9999;
+    opacity: 0; /* Start with 0 opacity */
+    transform: scale(0.9); /* Start slightly scaled down */
+    transition: opacity 0.3s, transform 0.3s; /* Add transition for opacity and scale */
+}
 
 /* Overlay CSS styles */
   .overlay {
@@ -96,11 +96,16 @@ class BottomNavbar extends HTMLElement {
  }
 
 
- .search-results {
-  margin-top: 20px;
-  display: none;
-  width: 390px;
-  padding: 0.5rem;
+/* Search Input */
+   #search-input {
+     width: 80%;
+     padding: .5rem;
+     font-size: 16px;
+     margin-top: 1rem;
+     outline: none;
+     border-radius: 5px;
+     border: 1px solid rgba(0, 0, 0, 0.2)!important;
+}
 
 /* Search Results Container */
   .search-results {
