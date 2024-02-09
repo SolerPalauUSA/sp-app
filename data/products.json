@@ -2049,6 +2049,7 @@
         "name": "TR",
         "image": "../assets/images/TR-recat.png",
         "description": "S&P's TR Series ensures optimal indoor air quality by efficiently exchanging stale air with fresh, using an advanced energy exchange core to maintain comfort and prevent contamination in all climates.",
+        "keywords": ["ERV"],
         "models": [
           {
             "id": 1,
@@ -2122,6 +2123,7 @@
         "name": "TRe",
         "image": "../assets/images/TRe2-recat.png",
         "description": "Total Recovery Premium, TRe, is the latest edition to S&P USA's line of Energy Recovery Ventilators. TRe can be used in any orientation and features an EC motor for great energy efficiency. Utilize TRe for any residential or light commercial project by individually balancing each airstream to account for variations of duct run lengths.",
+        "keywords": ["ERV"],
         "models": [
           {
             "id": 1,
@@ -2182,6 +2184,7 @@
         "name": "TRC",
         "image": "../assets/images/TRC-recat.png",
         "description": "S&P's TRC Series efficiently refreshes indoor air in all climates, using an advanced energy exchange core to separate and prevent contamination between incoming and outgoing air streams, while transferring heat and humidity.",
+        "keywords": ["ERV"],
         "models": [
           {
             "id": 1,
@@ -2304,6 +2307,7 @@
         "name": "TRCeN",
         "image": "../assets/images/trcen-cat.png",
         "description": "S&P's TRCe Series with EC Motor revitalizes indoor air by exchanging stale air for fresh in all climates, using an advanced \"air-to-air\" core to prevent contamination and efficiently transfer heat and humidity, ideal for commercial applications.",
+        "keywords": ["ERV"],
         "models": [
           {
             "id": 1,
@@ -2378,6 +2382,7 @@
         "name": "TRLPe",
         "image": "../assets/images/TRLPe110_RGB.webp",
         "description": "The Total Recovery series with EC Motor offers balanced energy ventilation through a multi-speed control and compact design, ideal for space-constrained residential and light commercial applications, ensuring efficient air-to-air energy exchange.",
+        "keywords": ["ERV"],
         "models": [
           {
             "id": 1,

@@ -262,11 +262,16 @@ class BottomNavbar extends HTMLElement {
     filterData(data, query) {
       let results = [];
       data.forEach(product => {
-        product.series.forEach(series => {
-          if (series.name.toLowerCase().includes(query) || series.description.toLowerCase().includes(query)) {
-            results.push({ product: product.name, series: series });
-          }
-        });
+        const matchesQuery = (str) => str.toLowerCase().includes(query);
+        // Safely check for keywords match
+        const hasKeywordMatch = product.keywords ? product.keywords.some(matchesQuery) : false;
+    
+        // Safely check for models match, ensuring models array exists
+        const hasModelMatch = product.models && product.models.some(model => matchesQuery(model.name));
+    
+        if (matchesQuery(product.name) || matchesQuery(product.description) || hasKeywordMatch || hasModelMatch) {
+          results.push(product);
+        }
       });
       return results;
     }
