@@ -89,8 +89,8 @@ class BottomNavbar extends HTMLElement {
     /* Close Button */
     .close-button {
       position: absolute;
-      top: 6px;
-      right: 54px;
+      top: 16px;
+      right: 50px;
       font-size: 40px;
       font-weight: 600;
       cursor: pointer;
@@ -115,7 +115,7 @@ class BottomNavbar extends HTMLElement {
      display: none;
      position: static;
      border-radius: 8px;
-     width: 85%;
+     width: 93%;
      height: 700px;
      margin-bottom: 10px;
      overflow: auto;
