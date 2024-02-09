@@ -37,6 +37,8 @@ class BottomNavbar extends HTMLElement {
     opacity: 0; /* Start with 0 opacity */
     transform: scale(0.9); /* Start slightly scaled down */
     transition: opacity 0.3s, transform 0.3s; /* Add transition for opacity and scale */
+    overflow: auto;
+    height: 700px;
 }
 
 /* Overlay CSS styles */
@@ -113,12 +115,10 @@ class BottomNavbar extends HTMLElement {
      display: none;
      padding: 0.5rem;
      height: 85%;
-     overflow: auto;
      background: white;
      position: static;
      border-radius: 8px;
-
-
+     width: 80px;
 
 }
 
@@ -226,6 +226,14 @@ class BottomNavbar extends HTMLElement {
       setTimeout(() => {
         overlay.style.display = 'none';
       }, 300);
+
+      // Clear the search input and results
+  this.clearSearchResults(this.shadowRoot.getElementById('search-results'));
+
+  // Additionally clear the search input field
+  const searchInput = this.shadowRoot.getElementById('search-input');
+  searchInput.value = '';
+
     }
 
     performSearch() {
