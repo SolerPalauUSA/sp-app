@@ -123,7 +123,7 @@ class BottomNavbar extends HTMLElement {
 
 }
 
-.search-results-item {
+.search-result-item {
     width: 100%;
     padding: .5rem;
     background: whitesmoke;
