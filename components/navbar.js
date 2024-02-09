@@ -30,7 +30,7 @@ class BottomNavbar extends HTMLElement {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: whitesmoke;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     z-index: 9999;
@@ -113,10 +113,9 @@ class BottomNavbar extends HTMLElement {
   .search-results {
      margin-top: 20px;
      display: none;
-     padding: 0.5rem;
      position: static;
      border-radius: 8px;
-     width: 80%;
+     width: 85%;
      height: 700px;
      margin-bottom: 10px;
      overflow: auto;
@@ -124,10 +123,13 @@ class BottomNavbar extends HTMLElement {
 }
 
 .search-result-item {
-    width: 100%;
-    padding: .5rem;
-    background: whitesmoke;
-    color: #053658;
+  width: auto;
+  padding: 0.5rem;
+  background: white;
+  color: #053658;
+  margin-bottom: 23px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1)!important;
     
 }
 
