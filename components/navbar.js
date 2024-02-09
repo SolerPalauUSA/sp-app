@@ -352,35 +352,7 @@ class BottomNavbar extends HTMLElement {
       return linksHtml;
     }
     
-    
-    renderLinks(links) {
-      if (!links || links.length === 0) {
-        return '<p>No documents available</p>';
-      }
-    
-      const linksHtml = links.map((link) => {
-        return `<a href="${link.url}" target="_blank">${link.type}</a>`;
-      }).join('<br>');
-    
-      return linksHtml;
-    }
-    
-    
-    renderLinks(links) {
-      if (!links || links.length === 0) {
-        return '<p>No documents available</p>';
-      }
-    
-      const linksHtml = links.map((link) => {
-        return `<a href="${link.url}" target="_blank">${link.type}</a>`;
-      }).join('<br>');
-    
-      return linksHtml;
-    }
-
-    
-
-    
+  
     
   }
 
