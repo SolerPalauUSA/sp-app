@@ -160,7 +160,7 @@ class BottomNavbar extends HTMLElement {
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    margin-bottom: .5rem
+    margin-bottom: .5rem;
     font-weight: 700;
 
 }
