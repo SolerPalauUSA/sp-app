@@ -138,12 +138,13 @@ class BottomNavbar extends HTMLElement {
 
 .search-result-item img {
 
-  width: 50px;
-  height: 50px;
+  width: auto;
+  height: 60px;
   object-fit: cover;
   margin-right: 10px;
   display: flex;
-  margin-top: 1.5rem;
+  align-self: flex-start;
+  padding: .25rem;
 
 
 }
@@ -171,6 +172,8 @@ class BottomNavbar extends HTMLElement {
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-size: .8rem;
+  opacity: .7;
 
 }
 
