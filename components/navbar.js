@@ -9,7 +9,6 @@ class BottomNavbar extends HTMLElement {
       super();
       const shadowRoot = this.attachShadow({ mode: 'open' });
       const currentPage = getCurrentPage();
-      this.preventScroll = this.preventScroll.bind(this);
       // Hide the nav-link that matches the current page
       const navLinks = shadowRoot.querySelectorAll('.nav-link');
       navLinks.forEach((link) => {
@@ -118,7 +117,7 @@ class BottomNavbar extends HTMLElement {
      width: 93%;
      height: 700px;
      margin-bottom: 10px;
-     overflow-y: auto;
+     overflow: auto;
 
 }
 
@@ -216,8 +215,7 @@ class BottomNavbar extends HTMLElement {
           <input type="text" id="search-input" placeholder="Search...">
           <div id="search-results" class="search-results">
             <!-- Display search results here -->
-          </div>
-        </div>
+          </di
   
         <!-- Overlay -->
         <div id="overlay" class="overlay"></div>
@@ -242,52 +240,55 @@ class BottomNavbar extends HTMLElement {
        });
      }
 
+
+  
   openSearchModal() {
+      // Show the search modal with animation
       const searchModal = this.shadowRoot.getElementById('search-modal');
       searchModal.style.display = 'block';
       document.body.style.overflow = 'hidden'; // Disables scrolling on the body
-      // Add this line to prevent scrolling on mobile outside the search modal
-      document.addEventListener('touchmove', this.preventScroll, { passive: false });
-    
+     
+
       setTimeout(() => {
         searchModal.style.opacity = '1';
         searchModal.style.transform = 'scale(1)';
       }, 10);
-    
+  
+      // Show the overlay with animation
       const overlay = this.shadowRoot.getElementById('overlay');
       overlay.style.display = 'block';
       setTimeout(() => {
         overlay.style.opacity = '1';
       }, 10);
   }
-    
+  
   closeSearchModal() {
+      // Hide the search modal with animation
       const searchModal = this.shadowRoot.getElementById('search-modal');
+      searchModal.style.opacity = '0';
+      searchModal.style.transform = 'scale(0.9)';
       setTimeout(() => {
         searchModal.style.display = 'none';
         document.body.style.overflow = 'auto'; // Re-enables scrolling on the body
-        // Remove the listener to re-enable scrolling on mobile
-        document.removeEventListener('touchmove', this.preventScroll, { passive: false });
+
       }, 300);
-    
+  
+      // Hide the overlay with animation
       const overlay = this.shadowRoot.getElementById('overlay');
+      overlay.style.opacity = '0';
       setTimeout(() => {
-        overlay.style.opacity = '0';
         overlay.style.display = 'none';
       }, 300);
-    
+
+      // Clear the search input and results
       this.clearSearchResults(this.shadowRoot.getElementById('search-results'));
+
+      // Additionally clear the search input field
       const searchInput = this.shadowRoot.getElementById('search-input');
       searchInput.value = '';
   }
-    
-  preventScroll(e) {
-    let isScrollable = this.shadowRoot.querySelector('.search-results').contains(e.target);
-    if (!isScrollable) {
-      e.preventDefault();
-    }
-  }
-    
+
+
   
 
   performSearch() {
