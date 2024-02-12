@@ -118,7 +118,7 @@ class BottomNavbar extends HTMLElement {
      width: 93%;
      height: 700px;
      margin-bottom: 10px;
-     overflow: auto;
+     overflow-y: auto;
 
 }
 
@@ -282,7 +282,8 @@ class BottomNavbar extends HTMLElement {
   }
     
   preventScroll(e) {
-    if (!this.shadowRoot.getElementById('search-results').contains(e.target)) {
+    let isScrollable = this.shadowRoot.querySelector('#search-results').contains(e.target);
+    if (!isScrollable) {
       e.preventDefault();
     }
   }
