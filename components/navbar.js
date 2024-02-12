@@ -252,7 +252,7 @@ class BottomNavbar extends HTMLElement {
       const searchModal = this.shadowRoot.getElementById('search-modal');
       searchModal.style.display = 'block';
       document.body.style.overflow = 'hidden'; // Disables scrolling on the body
-      document.body.addEventListener('touchmove', preventScroll, {passive: false}); // Disable scrolling on mobile
+      document.body.addEventListener('touchmove', this.preventScroll, { passive: false });
 
       setTimeout(() => {
         searchModal.style.opacity = '1';
@@ -275,7 +275,7 @@ class BottomNavbar extends HTMLElement {
       setTimeout(() => {
         searchModal.style.display = 'none';
         document.body.style.overflow = 'auto'; // Re-enables scrolling on the body
-        document.body.removeEventListener('touchmove', preventScroll, {passive: false}); // Re-enable scrolling on mobile
+        document.body.removeEventListener('touchmove', this.preventScroll, { passive: false });
 
       }, 300);
   
