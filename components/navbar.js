@@ -132,7 +132,7 @@ class BottomNavbar extends HTMLElement {
   border: 1px solid rgba(0, 0, 0, 0.1)!important;
   display: flex;
   align-items: center;
-  flex-direction: column;
+ 
     
 }
 
@@ -143,6 +143,11 @@ class BottomNavbar extends HTMLElement {
   object-fit: cover;
   margin-right: 10px;
 
+}
+
+.search-item-info {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -360,9 +365,12 @@ class BottomNavbar extends HTMLElement {
     
           // Customize the HTML structure to display the result data as needed
           resultItem.innerHTML = `
+        
             <img src="${results[i].series.image}" alt="${results[i].series.name}">
+            <div class="search-item-info">
             <h3>${results[i].product} - ${results[i].series.name}</h3>
             <p>${results[i].series.description}</p>
+            </div>
           `;
     
           searchResultsContainer.appendChild(resultItem);
