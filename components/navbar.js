@@ -250,6 +250,7 @@ class BottomNavbar extends HTMLElement {
       const searchModal = this.shadowRoot.getElementById('search-modal');
       searchModal.style.display = 'block';
       document.body.style.overflow = 'hidden'; // Disables scrolling on the body
+      document.body.addEventListener('touchmove', preventScroll, {passive: false}); // Disable scrolling on mobile
 
       setTimeout(() => {
         searchModal.style.opacity = '1';
@@ -272,6 +273,7 @@ class BottomNavbar extends HTMLElement {
       setTimeout(() => {
         searchModal.style.display = 'none';
         document.body.style.overflow = 'auto'; // Re-enables scrolling on the body
+        document.body.removeEventListener('touchmove', preventScroll, {passive: false}); // Re-enable scrolling on mobile
 
       }, 300);
   
@@ -289,6 +291,11 @@ class BottomNavbar extends HTMLElement {
       const searchInput = this.shadowRoot.getElementById('search-input');
       searchInput.value = '';
   }
+  
+  preventScroll(e) {
+    e.preventDefault();
+  }
+  
 
   performSearch() {
       const searchInput = this.shadowRoot.getElementById('search-input');
