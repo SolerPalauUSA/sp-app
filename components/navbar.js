@@ -9,6 +9,7 @@ class BottomNavbar extends HTMLElement {
       super();
       const shadowRoot = this.attachShadow({ mode: 'open' });
       const currentPage = getCurrentPage();
+      
       // Hide the nav-link that matches the current page
       const navLinks = shadowRoot.querySelectorAll('.nav-link');
       navLinks.forEach((link) => {
@@ -215,7 +216,8 @@ class BottomNavbar extends HTMLElement {
           <input type="text" id="search-input" placeholder="Search...">
           <div id="search-results" class="search-results">
             <!-- Display search results here -->
-          </di
+          </div>
+        </div>
   
         <!-- Overlay -->
         <div id="overlay" class="overlay"></div>
@@ -240,14 +242,16 @@ class BottomNavbar extends HTMLElement {
        });
      }
 
-
+     
+      preventScroll(e) {
+      e.preventDefault();
+    }
   
-  openSearchModal() {
+    openSearchModal() {
       // Show the search modal with animation
       const searchModal = this.shadowRoot.getElementById('search-modal');
       searchModal.style.display = 'block';
       document.body.style.overflow = 'hidden'; // Disables scrolling on the body
-     
 
       setTimeout(() => {
         searchModal.style.opacity = '1';
@@ -287,7 +291,6 @@ class BottomNavbar extends HTMLElement {
       const searchInput = this.shadowRoot.getElementById('search-input');
       searchInput.value = '';
   }
-
 
   
 
