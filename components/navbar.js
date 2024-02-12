@@ -282,9 +282,9 @@ class BottomNavbar extends HTMLElement {
   }
     
   preventScroll(e) {
-      if (!this.shadowRoot.getElementById('search-modal').contains(e.target)) {
-        e.preventDefault();
-      }
+    if (!this.shadowRoot.getElementById('search-results').contains(e.target)) {
+      e.preventDefault();
+    }
   }
     
   
