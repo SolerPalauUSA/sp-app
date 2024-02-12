@@ -249,6 +249,8 @@ class BottomNavbar extends HTMLElement {
       // Show the search modal with animation
       const searchModal = this.shadowRoot.getElementById('search-modal');
       searchModal.style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Disables scrolling on the body
+
       setTimeout(() => {
         searchModal.style.opacity = '1';
         searchModal.style.transform = 'scale(1)';
@@ -269,6 +271,8 @@ class BottomNavbar extends HTMLElement {
       searchModal.style.transform = 'scale(0.9)';
       setTimeout(() => {
         searchModal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enables scrolling on the body
+
       }, 300);
   
       // Hide the overlay with animation
