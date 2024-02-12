@@ -142,6 +142,9 @@ class BottomNavbar extends HTMLElement {
   height: 50px;
   object-fit: cover;
   margin-right: 10px;
+  display: flex;
+  margin-top: 1.5rem;
+
 
 }
 
@@ -149,6 +152,28 @@ class BottomNavbar extends HTMLElement {
   display: flex;
   flex-direction: column;
 }
+
+.search-item-info h3 {
+    display: block;
+    font-size: 1rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: .5rem
+    font-weight: 700;
+
+}
+
+.search-item-info p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+}
+
 
 
  </style>
