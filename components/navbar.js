@@ -130,7 +130,18 @@ class BottomNavbar extends HTMLElement {
   margin-bottom: 23px;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1)!important;
+  display: flex;
+  align-items: center;
     
+}
+
+img {
+
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+
 }
 
 
@@ -146,7 +157,7 @@ class BottomNavbar extends HTMLElement {
           <a class="nav-link" id="search-icon">
           <img src="../assets/images/search-icon.svg" alt="Search" class="icon-color">
           <span class="nav-icon"></span><br>Search
-      </a>
+          </a>
           <a class="nav-link" href="../pages/products.html">
           <img src="../assets/images/fan-white.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Products
@@ -200,7 +211,7 @@ class BottomNavbar extends HTMLElement {
      
      
   
-    openSearchModal() {
+  openSearchModal() {
       // Show the search modal with animation
       const searchModal = this.shadowRoot.getElementById('search-modal');
       searchModal.style.display = 'block';
@@ -215,9 +226,9 @@ class BottomNavbar extends HTMLElement {
       setTimeout(() => {
         overlay.style.opacity = '1';
       }, 10);
-    }
+  }
   
-    closeSearchModal() {
+  closeSearchModal() {
       // Hide the search modal with animation
       const searchModal = this.shadowRoot.getElementById('search-modal');
       searchModal.style.opacity = '0';
@@ -234,15 +245,14 @@ class BottomNavbar extends HTMLElement {
       }, 300);
 
       // Clear the search input and results
-  this.clearSearchResults(this.shadowRoot.getElementById('search-results'));
+      this.clearSearchResults(this.shadowRoot.getElementById('search-results'));
 
-  // Additionally clear the search input field
-  const searchInput = this.shadowRoot.getElementById('search-input');
-  searchInput.value = '';
+      // Additionally clear the search input field
+      const searchInput = this.shadowRoot.getElementById('search-input');
+      searchInput.value = '';
+  }
 
-    }
-
-    performSearch() {
+  performSearch() {
       const searchInput = this.shadowRoot.getElementById('search-input');
       const query = searchInput.value.trim().toLowerCase();
     
@@ -270,10 +280,10 @@ class BottomNavbar extends HTMLElement {
         .catch((error) => {
           console.error('Error fetching data:', error);
         });
-    }
+  }
     
     
-    filterData(data, query) {
+  filterData(data, query) {
       let results = [];
       data.forEach(product => {
         product.series.forEach(series => {
@@ -283,10 +293,10 @@ class BottomNavbar extends HTMLElement {
         });
       });
       return results;
-    }
+  }
 
 
-    searchInJSON(data, query) {
+  searchInJSON(data, query) {
       let results = [];
     
       for (const item of data) {
@@ -308,16 +318,16 @@ class BottomNavbar extends HTMLElement {
       }
     
       return results;
-    }
+  }
 
   
-    clearSearchResults(searchResultsContainer) {
+  clearSearchResults(searchResultsContainer) {
       // Clear the search results
       searchResultsContainer.innerHTML = '';
       searchResultsContainer.style.display = 'none'; // Hide the search results
-    }
+  }
   
-    displaySearchResults(results) {
+  displaySearchResults(results) {
       const searchResultsContainer = this.shadowRoot.getElementById('search-results');
     
       // Check if there are results
@@ -349,6 +359,7 @@ class BottomNavbar extends HTMLElement {
     
           // Customize the HTML structure to display the result data as needed
           resultItem.innerHTML = `
+            <img src="${results[i].series.image}" alt="${results[i].series.name}">
             <h3>${results[i].product} - ${results[i].series.name}</h3>
             <p>${results[i].series.description}</p>
           `;
@@ -359,11 +370,11 @@ class BottomNavbar extends HTMLElement {
         // If there are no results, hide the search results container
         searchResultsContainer.style.display = 'none';
       }
-    }
+  }
     
     
     
-    renderLinks(links) {
+  renderLinks(links) {
       if (!links || links.length === 0) {
         return '<p>No documents available</p>';
       }
@@ -374,9 +385,6 @@ class BottomNavbar extends HTMLElement {
     
       return linksHtml;
     }
-    
-  
-    
   }
 
   
