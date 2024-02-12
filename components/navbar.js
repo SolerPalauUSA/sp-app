@@ -282,7 +282,7 @@ class BottomNavbar extends HTMLElement {
   }
     
   preventScroll(e) {
-    let isScrollable = this.shadowRoot.querySelector('#search-results').contains(e.target);
+    let isScrollable = this.shadowRoot.querySelector('.search-results').contains(e.target);
     if (!isScrollable) {
       e.preventDefault();
     }
