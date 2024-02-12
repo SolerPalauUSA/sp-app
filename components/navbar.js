@@ -132,10 +132,11 @@ class BottomNavbar extends HTMLElement {
   border: 1px solid rgba(0, 0, 0, 0.1)!important;
   display: flex;
   align-items: center;
+  flex-direction: column;
     
 }
 
-img {
+.search-result-item img {
 
   width: 50px;
   height: 50px;
