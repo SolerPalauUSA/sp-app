@@ -9,7 +9,7 @@ class BottomNavbar extends HTMLElement {
       super();
       const shadowRoot = this.attachShadow({ mode: 'open' });
       const currentPage = getCurrentPage();
-
+      this.preventScroll = this.preventScroll.bind(this);
       // Hide the nav-link that matches the current page
       const navLinks = shadowRoot.querySelectorAll('.nav-link');
       navLinks.forEach((link) => {
@@ -243,7 +243,9 @@ class BottomNavbar extends HTMLElement {
      }
 
      
-     
+      preventScroll(e) {
+      e.preventDefault();
+    }
   
   openSearchModal() {
       // Show the search modal with animation
@@ -291,10 +293,8 @@ class BottomNavbar extends HTMLElement {
       const searchInput = this.shadowRoot.getElementById('search-input');
       searchInput.value = '';
   }
-  
-  preventScroll(e) {
-    e.preventDefault();
-  }
+
+
   
 
   performSearch() {
