@@ -43,7 +43,7 @@ function displayDescription(product, selectedSeries) {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
   
 
   // Function to extract URL parameters
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // Add the popstate event listener to handle browser back button clicks
-window.addEventListener("popstate", (event) => {
+  window.addEventListener("popstate", (event) => {
   // Check the event state for the previous state
   const previousState = event.state;
 
@@ -69,7 +69,7 @@ window.addEventListener("popstate", (event) => {
     window.history.pushState({ path: updatedUrl }, "", updatedUrl);
   }
 
-});
+  });
 
 
 
@@ -210,7 +210,7 @@ window.addEventListener("popstate", (event) => {
 
 
 
-backArrow.addEventListener("click", () => {
+  backArrow.addEventListener("click", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const productParam = urlParams.get('product');
   const seriesParam = urlParams.get('series');
@@ -233,7 +233,7 @@ backArrow.addEventListener("click", () => {
 
 
   
-});
+  });
 
   function displayDescription(product, selectedSeries) {
     // Clear existing content in the descriptionContainer
