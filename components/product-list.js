@@ -287,6 +287,11 @@ function displayDescription(product, selectedSeries) {
         isProductInfoVisible = true;
         const updatedUrl = `../pages/products.html?product=${encodeURIComponent(product.name)}`;
         window.history.pushState({ path: updatedUrl }, "", updatedUrl);
+        gtag('event', 'select_content', {
+          'content_type': 'product',
+          'item_id': product.name // or any unique identifier for the product
+      });
+      
       });
 
       seriesContainer.appendChild(productListing);
