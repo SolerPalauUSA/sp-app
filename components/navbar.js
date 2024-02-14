@@ -243,9 +243,7 @@ class BottomNavbar extends HTMLElement {
      }
 
      
-      preventScroll(e) {
-      e.preventDefault();
-    }
+
   
     openSearchModal() {
       // Show the search modal with animation
