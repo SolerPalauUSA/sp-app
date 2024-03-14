@@ -5,22 +5,22 @@ function getCurrentPage() {
 }
 
 class BottomNavbar extends HTMLElement {
-    constructor() {
-      super();
-      const shadowRoot = this.attachShadow({ mode: 'open' });
-      const currentPage = getCurrentPage();
-      
-      // Hide the nav-link that matches the current page
-      const navLinks = shadowRoot.querySelectorAll('.nav-link');
-      navLinks.forEach((link) => {
-        const href = link.getAttribute('href').replace('.html', ''); // Remove ".html" extension
-        if (href === `/${currentPage}`) {
-          link.style.display = 'none';
-        }
-      });
+  constructor() {
+    super();
+    const shadowRoot = this.attachShadow({ mode: 'open' });
+    const currentPage = getCurrentPage();
 
-  
-      shadowRoot.innerHTML = `
+    // Hide the nav-link that matches the current page
+    const navLinks = shadowRoot.querySelectorAll('.nav-link');
+    navLinks.forEach((link) => {
+      const href = link.getAttribute('href').replace('.html', ''); // Remove ".html" extension
+      if (href === `/${currentPage}`) {
+        link.style.display = 'none';
+      }
+    });
+
+
+    shadowRoot.innerHTML = `
         <style>
 
        
@@ -177,6 +177,35 @@ class BottomNavbar extends HTMLElement {
 
 }
 
+.document-links {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  width: 80%;
+}
+
+
+.document-links h4 {
+  font-weight: 600;
+  border-bottom: 1px lightgray solid;
+
+}
+
+.document-links a {
+  padding: .25rem;
+  font-size: .8rem;
+  opacity: .7;
+  text-decoration: none;
+  color: #053658;
+}
+
+.sub-warp {
+  flex-direction: column;
+}
+
+.lit-wrap {
+  flex-direction: column;
+}
+
 
 
  </style>
@@ -222,214 +251,215 @@ class BottomNavbar extends HTMLElement {
         <!-- Overlay -->
         <div id="overlay" class="overlay"></div>
       `;
-  
-       // Event listeners for search and close functionality
-       const searchIcon = shadowRoot.getElementById('search-icon');
-       const closeButton = shadowRoot.getElementById('close-button');
-       const searchInput = shadowRoot.getElementById('search-input');
-       const searchResultsContainer = shadowRoot.getElementById('search-results'); // Get the search results container
-   
-       searchIcon.addEventListener('click', this.openSearchModal.bind(this));
-       closeButton.addEventListener('click', this.closeSearchModal.bind(this));
-       searchInput.addEventListener('input', this.performSearch.bind(this));
 
-   
-       // Add event listener for the "keydown" event to clear results on backspace
-       searchInput.addEventListener('keydown', (event) => {
-         if (event.key === 'Backspace') {
-           this.clearSearchResults(searchResultsContainer);
-         }
-       });
-     }
+    // Event listeners for search and close functionality
+    const searchIcon = shadowRoot.getElementById('search-icon');
+    const closeButton = shadowRoot.getElementById('close-button');
+    const searchInput = shadowRoot.getElementById('search-input');
+    const searchResultsContainer = shadowRoot.getElementById('search-results'); // Get the search results container
 
-     
+    searchIcon.addEventListener('click', this.openSearchModal.bind(this));
+    closeButton.addEventListener('click', this.closeSearchModal.bind(this));
+    searchInput.addEventListener('input', this.performSearch.bind(this));
 
-  
-    openSearchModal() {
-      // Show the search modal with animation
-      const searchModal = this.shadowRoot.getElementById('search-modal');
-      searchModal.style.display = 'block';
-      document.body.style.overflow = 'hidden'; // Disables scrolling on the body
 
-      setTimeout(() => {
-        searchModal.style.opacity = '1';
-        searchModal.style.transform = 'scale(1)';
-      }, 10);
-  
-      // Show the overlay with animation
-      const overlay = this.shadowRoot.getElementById('overlay');
-      overlay.style.display = 'block';
-      setTimeout(() => {
-        overlay.style.opacity = '1';
-      }, 10);
+    // Add event listener for the "keydown" event to clear results on backspace
+    searchInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Backspace') {
+        this.clearSearchResults(searchResultsContainer);
+      }
+    });
   }
-  
+
+
+
+
+  openSearchModal() {
+    // Show the search modal with animation
+    const searchModal = this.shadowRoot.getElementById('search-modal');
+    searchModal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Disables scrolling on the body
+
+    setTimeout(() => {
+      searchModal.style.opacity = '1';
+      searchModal.style.transform = 'scale(1)';
+    }, 10);
+
+    // Show the overlay with animation
+    const overlay = this.shadowRoot.getElementById('overlay');
+    overlay.style.display = 'block';
+    setTimeout(() => {
+      overlay.style.opacity = '1';
+    }, 10);
+  }
+
   closeSearchModal() {
-      // Hide the search modal with animation
-      const searchModal = this.shadowRoot.getElementById('search-modal');
-      searchModal.style.opacity = '0';
-      searchModal.style.transform = 'scale(0.9)';
-      setTimeout(() => {
-        searchModal.style.display = 'none';
-        document.body.style.overflow = 'auto'; // Re-enables scrolling on the body
+    // Hide the search modal with animation
+    const searchModal = this.shadowRoot.getElementById('search-modal');
+    searchModal.style.opacity = '0';
+    searchModal.style.transform = 'scale(0.9)';
+    setTimeout(() => {
+      searchModal.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Re-enables scrolling on the body
 
-      }, 300);
-  
-      // Hide the overlay with animation
-      const overlay = this.shadowRoot.getElementById('overlay');
-      overlay.style.opacity = '0';
-      setTimeout(() => {
-        overlay.style.display = 'none';
-      }, 300);
+    }, 300);
 
-      // Clear the search input and results
-      this.clearSearchResults(this.shadowRoot.getElementById('search-results'));
+    // Hide the overlay with animation
+    const overlay = this.shadowRoot.getElementById('overlay');
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+      overlay.style.display = 'none';
+    }, 300);
 
-      // Additionally clear the search input field
-      const searchInput = this.shadowRoot.getElementById('search-input');
-      searchInput.value = '';
+    // Clear the search input and results
+    this.clearSearchResults(this.shadowRoot.getElementById('search-results'));
+
+    // Additionally clear the search input field
+    const searchInput = this.shadowRoot.getElementById('search-input');
+    searchInput.value = '';
   }
 
-  
+
 
   performSearch() {
-      const searchInput = this.shadowRoot.getElementById('search-input');
-      const query = searchInput.value.trim().toLowerCase();
-    
-      // Clear the search results if the input is empty or only contains spaces
-      if (query === '') {
-        this.clearSearchResults(this.shadowRoot.getElementById('search-results'));
-        return;
-      }
-    
-      // Fetch the data from your JSON file
-      fetch('../data/products.json') // Replace with the actual path to your JSON file
-        .then((response) => response.json())
-        .then((data) => {
-          // Filter the data based on the query
-          const filteredResults = this.filterData(data, query);
-    
-          // Dispatch a custom event with the search results
-          const searchResults = filteredResults;
-          const event = new CustomEvent("searchResultsUpdated", { detail: searchResults });
-          document.dispatchEvent(event);
-    
-          // Display the search results
-          this.displaySearchResults(filteredResults);
-        })
-        .catch((error) => {
-          console.error('Error fetching data:', error);
-        });
-  }
-    
-    
-  filterData(data, query) {
-      let results = [];
-      data.forEach(product => {
-        product.series.forEach(series => {
-          if (series.name.toLowerCase().includes(query) || series.description.toLowerCase().includes(query)) {
-            results.push({ product: product.name, series: series });
-          }
-        });
+    const searchInput = this.shadowRoot.getElementById('search-input');
+    const query = searchInput.value.trim().toLowerCase();
+
+    // Clear the search results if the input is empty or only contains spaces
+    if (query === '') {
+      this.clearSearchResults(this.shadowRoot.getElementById('search-results'));
+      return;
+    }
+
+    // Fetch the data from your JSON file
+    fetch('../data/products.json') // Replace with the actual path to your JSON file
+      .then((response) => response.json())
+      .then((data) => {
+        // Filter the data based on the query
+        const filteredResults = this.filterData(data, query);
+
+        // Dispatch a custom event with the search results
+        const searchResults = filteredResults;
+        const event = new CustomEvent("searchResultsUpdated", { detail: searchResults });
+        document.dispatchEvent(event);
+
+        // Display the search results
+        this.displaySearchResults(filteredResults);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
       });
-      return results;
+  }
+
+
+  filterData(data, query) {
+    let results = [];
+    data.forEach(product => {
+      product.series.forEach(series => {
+        if (series.name.toLowerCase().includes(query) || series.description.toLowerCase().includes(query)) {
+          results.push({ product: product.name, series: series });
+        }
+      });
+    });
+    return results;
   }
 
 
   searchInJSON(data, query) {
-      let results = [];
-    
-      for (const item of data) {
-        // Check if the item's properties contain the query
-        for (const key in item) {
-          if (typeof item[key] === 'string' && item[key].toLowerCase().includes(query)) {
-            results.push(item);
-            break; // Once a match is found in this item, no need to check further
-          }
-        }
-    
-        // Recursively search through nested arrays and objects
-        for (const key in item) {
-          if (Array.isArray(item[key]) || (typeof item[key] === 'object' && item[key] !== null)) {
-            const nestedResults = this.searchInJSON([item[key]], query);
-            results = results.concat(nestedResults);
-          }
+    let results = [];
+
+    for (const item of data) {
+      // Check if the item's properties contain the query
+      for (const key in item) {
+        if (typeof item[key] === 'string' && item[key].toLowerCase().includes(query)) {
+          results.push(item);
+          break; // Once a match is found in this item, no need to check further
         }
       }
-    
-      return results;
+
+      // Recursively search through nested arrays and objects
+      for (const key in item) {
+        if (Array.isArray(item[key]) || (typeof item[key] === 'object' && item[key] !== null)) {
+          const nestedResults = this.searchInJSON([item[key]], query);
+          results = results.concat(nestedResults);
+        }
+      }
+    }
+
+    return results;
   }
 
-  
+
   clearSearchResults(searchResultsContainer) {
-      // Clear the search results
-      searchResultsContainer.innerHTML = '';
-      searchResultsContainer.style.display = 'none'; // Hide the search results
+    // Clear the search results
+    searchResultsContainer.innerHTML = '';
+    searchResultsContainer.style.display = 'none'; // Hide the search results
   }
-  
+
   displaySearchResults(results) {
-      const searchResultsContainer = this.shadowRoot.getElementById('search-results');
-    
-      // Check if there are results
-      if (results.length > 0) {
-        // Display the search results container
-        searchResultsContainer.style.display = 'block';
-    
-        // Clear any previous results
-        searchResultsContainer.innerHTML = '';
-    
-        // Display up to 5 results
-        const maxResults = 5;
-        for (let i = 0; i < Math.min(results.length, maxResults); i++) {
-          const resultItem = document.createElement('div');
-          resultItem.classList.add('search-result-item');
-    
-          // Store the product name and series in data attributes
-          resultItem.dataset.productName = results[i].product;
-          resultItem.dataset.seriesName = results[i].series.name;
-    
-          resultItem.addEventListener('click', () => {
-            // Retrieve the product name and series from data attributes
-            const selectedProductName = resultItem.dataset.productName;
-            const selectedSeriesName = resultItem.dataset.seriesName;
-    
-            // Call the handleSearchResultClick function with the selected product and series
-            handleSearchResultClick(selectedProductName, selectedSeriesName);
-          });
-    
-          // Customize the HTML structure to display the result data as needed
-          resultItem.innerHTML = `
-        
-            <img src="${results[i].series.image}" alt="${results[i].series.name}">
-            <div class="search-item-info">
+    const searchResultsContainer =
+      this.shadowRoot.getElementById("search-results");
+  
+    // Check if there are results
+    if (results.length > 0) {
+      // Display the search results container
+      searchResultsContainer.style.display = "block";
+  
+      // Clear any previous results
+      searchResultsContainer.innerHTML = "";
+  
+      // Display up to 5 results
+      const maxResults = 5;
+      for (let i = 0; i < Math.min(results.length, maxResults); i++) {
+        const resultItem = document.createElement("div");
+        resultItem.classList.add("search-result-item");
+  
+        // Additional HTML for displaying submittals and otherDocs
+        const submittalsHtml = this.renderLinks(results[i].series.submittals);
+        const otherDocsHtml = this.renderLinks(results[i].series.otherDocs);
+  
+        // Customize the HTML structure to display the result data as needed
+        resultItem.innerHTML = `
+          <img src="${results[i].series.image}" alt="${results[i].series.name}">
+          <div class="search-item-info">
             <h3>${results[i].product} - ${results[i].series.name}</h3>
             <p>${results[i].series.description}</p>
+            <div class="document-links">
+            <div class="sub-wrap">
+            <h4>Submittals</h4>
+              ${submittalsHtml}
             </div>
-          `;
-    
-          searchResultsContainer.appendChild(resultItem);
-        }
-      } else {
-        // If there are no results, hide the search results container
-        searchResultsContainer.style.display = 'none';
+            <div class="lit-wrap">  
+              <h4>Literature</h4>
+              ${otherDocsHtml}
+             </div> 
+            </div>
+          </div>
+        `;
+  
+        searchResultsContainer.appendChild(resultItem);
       }
-  }
-    
-    
-    
-  renderLinks(links) {
-      if (!links || links.length === 0) {
-        return '<p>No documents available</p>';
-      }
-    
-      const linksHtml = links.map((link) => {
-        return `<a href="${link.url}" target="_blank">${link.type}</a>`;
-      }).join('<br>');
-    
-      return linksHtml;
+    } else {
+      // If there are no results, hide the search results container
+      searchResultsContainer.style.display = "none";
     }
   }
 
-  
-  
-  customElements.define('bottom-navbar', BottomNavbar);
+
+
+  renderLinks(links) {
+    if (!links || links.length === 0) {
+      return '<p>No documents available</p>';
+    }
+
+    const linksHtml = links.map((link) => {
+      return `<a href="${link.url}" target="_blank">${link.type}</a>`;
+    }).join('<br>');
+
+    return linksHtml;
+  }
+}
+
+
+
+customElements.define('bottom-navbar', BottomNavbar);
