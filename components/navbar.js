@@ -398,50 +398,61 @@ class BottomNavbar extends HTMLElement {
   }
 
   displaySearchResults(results) {
-    const searchResultsContainer =
-      this.shadowRoot.getElementById("search-results");
+    const searchResultsContainer = this.shadowRoot.getElementById("search-results");
   
-    // Check if there are results
     if (results.length > 0) {
-      // Display the search results container
       searchResultsContainer.style.display = "block";
+      searchResultsContainer.innerHTML = ""; // Clear any previous results
   
-      // Clear any previous results
-      searchResultsContainer.innerHTML = "";
-  
-      // Display up to 5 results
       const maxResults = 5;
       for (let i = 0; i < Math.min(results.length, maxResults); i++) {
         const resultItem = document.createElement("div");
         resultItem.classList.add("search-result-item");
+        resultItem.dataset.productName = results[i].product;
+        resultItem.dataset.seriesName = results[i].series.name;
   
-        // Additional HTML for displaying submittals and otherDocs
         const submittalsHtml = this.renderLinks(results[i].series.submittals);
         const otherDocsHtml = this.renderLinks(results[i].series.otherDocs);
   
-        // Customize the HTML structure to display the result data as needed
+        // Event listener for the entire result item
+        resultItem.addEventListener('click', () => {
+          // Retrieve the product name and series from data attributes
+          const selectedProductName = resultItem.dataset.productName;
+          const selectedSeriesName = resultItem.dataset.seriesName;
+  
+          // Call the handleSearchResultClick function with the selected product and series
+          handleSearchResultClick(selectedProductName, selectedSeriesName);
+        });
+  
         resultItem.innerHTML = `
           <img src="${results[i].series.image}" alt="${results[i].series.name}">
           <div class="search-item-info">
             <h3>${results[i].product} - ${results[i].series.name}</h3>
             <p>${results[i].series.description}</p>
             <div class="document-links">
-            <div class="sub-wrap">
-            <h4>Submittals</h4>
-              ${submittalsHtml}
-            </div>
-            <div class="lit-wrap">  
-              <h4>Literature</h4>
-              ${otherDocsHtml}
-             </div> 
+              <div class="sub-wrap">
+                <h4>Submittals</h4>
+                ${submittalsHtml}
+              </div>
+              <div class="lit-wrap">  
+                <h4>Literature</h4>
+                ${otherDocsHtml}
+              </div> 
             </div>
           </div>
         `;
   
+        // Attach event listener to links to stop propagation
+        const links = resultItem.querySelectorAll('.document-links a');
+        links.forEach(link => {
+          link.addEventListener('click', event => {
+            event.stopPropagation(); // Stop event from bubbling up to the search result item
+          });
+        });
+  
         searchResultsContainer.appendChild(resultItem);
       }
     } else {
-      // If there are no results, hide the search results container
       searchResultsContainer.style.display = "none";
     }
   }
