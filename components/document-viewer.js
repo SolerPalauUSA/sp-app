@@ -193,7 +193,8 @@ render() {
         .documents {
     
           transition: max-height 0.3s ease;
-        
+          height: 100vh;
+          margin-bottom: 2rem;
        
         }
         .documents.active {
@@ -335,6 +336,11 @@ handleSearchInput() {
     }
   });
 }
+
+clearCategories() {
+  this.categoryContainer.innerHTML = ''; // Clear the categories
+}
+
 
 setupDownloadButton() {
   const downloadButton = this.shadowRoot.getElementById('download-pdf');
@@ -577,7 +583,7 @@ toggleCategory(categoryButton, category) {
 }
   
   
-renderDocuments(query = '') {
+renderDocuments(query = '', isSearchMode = false) {
     this.documentsContainer.innerHTML = '';
     let documents = [];
   
@@ -653,4 +659,3 @@ findCategoryOfDocument(doc) {
 }
 
 customElements.define('library-component', LibraryComponent);
-
