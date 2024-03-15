@@ -187,11 +187,12 @@ class BottomNavbar extends HTMLElement {
 .document-links h4 {
   font-weight: 600;
   border-bottom: 1px lightgray solid;
+  margin: 5px;
 
 }
 
 .document-links a {
-  padding: .25rem;
+  padding: .5rem;
   font-size: .8rem;
   opacity: .7;
   text-decoration: none;
