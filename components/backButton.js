@@ -37,6 +37,7 @@ class BackButton {
                 bottom: 90px; /* Adjust as needed */
                 left: 10px; /* Adjust as needed */
                 z-index: 9997; /* Ensure it's above other elements */
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             }
         `;
         document.head.appendChild(style);
