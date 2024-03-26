@@ -209,6 +209,7 @@ class BottomNavbar extends HTMLElement {
 
 .model-name a {
   font-size: 13px;
+  color: #053658;
 
 }
 
