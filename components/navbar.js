@@ -424,17 +424,16 @@ class BottomNavbar extends HTMLElement {
     searchResultsContainer.style.display = 'none'; // Hide the search results
   }
 
+
+
   displaySearchResults(results) {
     const searchResultsContainer = this.shadowRoot.getElementById("search-results");
-  
-    // Clear any previous results
-    searchResultsContainer.innerHTML = ""; 
+    searchResultsContainer.innerHTML = ""; // Clear any previous results
 
     if (results.length > 0) {
         searchResultsContainer.style.display = "block";
 
-        // Maximum number of results to display
-        const maxResults = 5;
+        const maxResults = 5; // Maximum number of results to display
         for (let i = 0; i < Math.min(results.length, maxResults); i++) {
             const resultItem = document.createElement("div");
             resultItem.classList.add("search-result-item");
@@ -444,25 +443,15 @@ class BottomNavbar extends HTMLElement {
             const submittalsHtml = this.renderLinks(results[i].series.submittals);
             const otherDocsHtml = this.renderLinks(results[i].series.otherDocs);
 
-            // Determine if there are models to display
             const hasModels = results[i].models && results[i].models.length > 0;
-            let modelsDisplayHtml = '';
+            const initialModelsHtml = hasModels ? results[i].models.slice(0, 3).map(model => 
+                `<span class="model-name"><a href="../pages/products.html?product=${results[i].product}&series=${results[i].series.name}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`
+            ).join(', ') : '';
 
-            if (hasModels) {
-                // Prepare HTML for initial models display
-                const initialModelsHtml = results[i].models.slice(0, 3).map(model => 
-                    `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${results[i].product}&series=${results[i].series.name}&model=${model.name}" target="_blank">${model.name}</a></span>`
-                ).join(', ');
+            const modelsToggleHtml = hasModels && results[i].models.length > 3 ? `<span class="models-toggle" style="cursor: pointer; font-size: 14px; margin-left: 5px;">More...</span>` : '';
 
-                // Adding a 'More/Less' toggle button if needed
-                const needsToggle = results[i].models.length > 3;
-                const modelsToggleHtml = needsToggle ? `<span class="models-toggle" style="cursor: pointer; font-size: 14px; margin-left: 5px;">More...</span>` : '';
-                
-                // Models container
-                modelsDisplayHtml = `Models: <span class="models-list">${initialModelsHtml}</span>${modelsToggleHtml}`;
-            }
+            let modelsDisplayHtml = hasModels ? `Models: <span class="models-list">${initialModelsHtml}</span>${modelsToggleHtml}` : '';
 
-            // Set the innerHTML of the result item
             resultItem.innerHTML = `
                 <img src="${results[i].series.image}" alt="${results[i].series.name}">
                 <div class="search-item-info">
@@ -476,19 +465,18 @@ class BottomNavbar extends HTMLElement {
                 </div>
             `;
 
-            // Append the result item to the search results container
             searchResultsContainer.appendChild(resultItem);
 
-            // Toggle functionality for models
-            if (needsToggle) {
+            // Toggle functionality
+            if (hasModels && results[i].models.length > 3) {
                 const toggleButton = resultItem.querySelector('.models-toggle');
                 toggleButton.addEventListener('click', () => {
+                    const modelsListSpan = resultItem.querySelector('.models-list');
                     const isExpanded = toggleButton.textContent.includes("Less");
                     const fullModelsHtml = results[i].models.map(model => 
-                        `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${results[i].product}&series=${results[i].series.name}&model=${model.name}" target="_blank">${model.name}</a></span>`
+                        `<span class="model-name"><a href="../pages/products.html?product=${results[i].product}&series=${results[i].series.name}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`
                     ).join(', ');
 
-                    const modelsListSpan = resultItem.querySelector('.models-list');
                     modelsListSpan.innerHTML = isExpanded ? initialModelsHtml : fullModelsHtml;
                     toggleButton.textContent = isExpanded ? 'More...' : 'Less';
                 });
