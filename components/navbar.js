@@ -207,6 +207,11 @@ class BottomNavbar extends HTMLElement {
   flex-direction: column;
 }
 
+.model-name a {
+  font-size: 13px;
+
+}
+
 
 
  </style>
@@ -352,19 +357,40 @@ class BottomNavbar extends HTMLElement {
       });
   }
 
-
   filterData(data, query) {
     let results = [];
     data.forEach(product => {
       product.series.forEach(series => {
-        if (series.name.toLowerCase().includes(query) || series.description.toLowerCase().includes(query)) {
-          results.push({ product: product.name, series: series });
+        // Keep the array check for models
+        const models = Array.isArray(series.models) ? series.models : [];
+        
+        // Determine if the series name or description matches the query
+        const seriesMatchesQuery = series.name.toLowerCase().includes(query) || series.description.toLowerCase().includes(query);
+        
+        // If the series matches the query, include all models from this series
+        if (seriesMatchesQuery) {
+          results.push({
+            product: product.name,
+            series: series,
+            models: models // Include all models since the series matches
+          });
+        } else {
+          // If the series doesn't match, filter models that match the query
+          const matchingModels = models.filter(model => model.name.toLowerCase().includes(query));
+          if (matchingModels.length > 0) {
+            // Only include series if there are matching models
+            results.push({
+              product: product.name,
+              series: series,
+              models: matchingModels
+            });
+          }
         }
       });
     });
     return results;
   }
-
+  
 
   searchInJSON(data, query) {
     let results = [];
@@ -399,63 +425,70 @@ class BottomNavbar extends HTMLElement {
 
   displaySearchResults(results) {
     const searchResultsContainer = this.shadowRoot.getElementById("search-results");
-  
+    searchResultsContainer.innerHTML = ""; // Clear any previous results
+
     if (results.length > 0) {
-      searchResultsContainer.style.display = "block";
-      searchResultsContainer.innerHTML = ""; // Clear any previous results
-  
-      const maxResults = 5;
-      for (let i = 0; i < Math.min(results.length, maxResults); i++) {
-        const resultItem = document.createElement("div");
-        resultItem.classList.add("search-result-item");
-        resultItem.dataset.productName = results[i].product;
-        resultItem.dataset.seriesName = results[i].series.name;
-  
-        const submittalsHtml = this.renderLinks(results[i].series.submittals);
-        const otherDocsHtml = this.renderLinks(results[i].series.otherDocs);
-  
-        // Event listener for the entire result item
-        resultItem.addEventListener('click', () => {
-          // Retrieve the product name and series from data attributes
-          const selectedProductName = resultItem.dataset.productName;
-          const selectedSeriesName = resultItem.dataset.seriesName;
-  
-          // Call the handleSearchResultClick function with the selected product and series
-          handleSearchResultClick(selectedProductName, selectedSeriesName);
-        });
-  
-        resultItem.innerHTML = `
-          <img src="${results[i].series.image}" alt="${results[i].series.name}">
-          <div class="search-item-info">
-            <h3>${results[i].product} - ${results[i].series.name}</h3>
-            <p>${results[i].series.description}</p>
-            <div class="document-links">
-              <div class="sub-wrap">
-                <h4>Submittals</h4>
-                ${submittalsHtml}
-              </div>
-              <div class="lit-wrap">  
-                <h4>Literature</h4>
-                ${otherDocsHtml}
-              </div> 
-            </div>
-          </div>
-        `;
-  
-        // Attach event listener to links to stop propagation
-        const links = resultItem.querySelectorAll('.document-links a');
-        links.forEach(link => {
-          link.addEventListener('click', event => {
-            event.stopPropagation(); // Stop event from bubbling up to the search result item
-          });
-        });
-  
-        searchResultsContainer.appendChild(resultItem);
-      }
+        searchResultsContainer.style.display = "block";
+
+        const maxResults = 5; // Maximum number of results to display
+        for (let i = 0; i < Math.min(results.length, maxResults); i++) {
+            const resultItem = document.createElement("div");
+            resultItem.classList.add("search-result-item");
+            resultItem.dataset.productName = results[i].product;
+            resultItem.dataset.seriesName = results[i].series.name;
+
+            const submittalsHtml = this.renderLinks(results[i].series.submittals);
+            const otherDocsHtml = this.renderLinks(results[i].series.otherDocs);
+
+            // Prepare HTML for models
+            const initialModelsHtml = results[i].models.slice(0, 3).map(model => 
+                `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${encodeURIComponent(results[i].product)}&series=${encodeURIComponent(results[i].series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`
+            ).join(', ');
+
+            const fullModelsHtml = results[i].models.map(model => 
+                `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${encodeURIComponent(results[i].product)}&series=${encodeURIComponent(results[i].series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`
+            ).join(', ');
+
+            // Determine if a toggle is needed
+            const needsToggle = results[i].models.length > 3;
+            const modelsToggleHtml = needsToggle ? `<span class="models-toggle" style="cursor: pointer; font-size: 10px; margin-left: 5px;"> ... More</span>` : '';
+
+            // Models container
+            const modelsContainerHtml = `Models: <span class="models-list">${initialModelsHtml}</span>${modelsToggleHtml}`;
+
+            resultItem.innerHTML = `
+                <img src="${results[i].series.image}" alt="${results[i].series.name}">
+                <div class="search-item-info">
+                    <h3>${results[i].product} - ${results[i].series.name}</h3>
+                    <p>${results[i].series.description}</p>
+                    <div style="font-size: 14px; margin-top: 2rem;">${modelsContainerHtml}</div>
+                    <div class="document-links">
+                        <div class="sub-wrap"><h4>Submittals</h4>${submittalsHtml}</div>
+                        <div class="lit-wrap"><h4>Literature</h4>${otherDocsHtml}</div>
+                    </div>
+                </div>
+            `;
+
+            searchResultsContainer.appendChild(resultItem);
+
+            // Toggle functionality
+            if (needsToggle) {
+                const toggleButton = resultItem.querySelector('.models-toggle');
+                toggleButton.addEventListener('click', () => {
+                    const modelsListSpan = resultItem.querySelector('.models-list');
+                    const isExpanded = toggleButton.textContent === "Less";
+                    modelsListSpan.innerHTML = isExpanded ? initialModelsHtml : fullModelsHtml;
+                    toggleButton.textContent = isExpanded ? ' ... More' : 'Less';
+                });
+            }
+        }
     } else {
-      searchResultsContainer.style.display = "none";
+        searchResultsContainer.style.display = "none";
     }
-  }
+}
+
+
+
 
 
 
