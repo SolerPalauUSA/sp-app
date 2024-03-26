@@ -451,7 +451,7 @@ class BottomNavbar extends HTMLElement {
 
             // Determine if a toggle is needed
             const needsToggle = results[i].models.length > 3;
-            const modelsToggleHtml = needsToggle ? `<span class="models-toggle" style="cursor: pointer; font-size: 10px; margin-left: 5px;"> ... More</span>` : '';
+            const modelsToggleHtml = needsToggle ? `<span class="models-toggle" style="cursor: pointer; font-size: 10px; margin-left: 5px;"> More...</span>` : '';
 
             // Models container
             const modelsContainerHtml = `Models: <span class="models-list">${initialModelsHtml}</span>${modelsToggleHtml}`;
@@ -478,7 +478,7 @@ class BottomNavbar extends HTMLElement {
                     const modelsListSpan = resultItem.querySelector('.models-list');
                     const isExpanded = toggleButton.textContent === "Less";
                     modelsListSpan.innerHTML = isExpanded ? initialModelsHtml : fullModelsHtml;
-                    toggleButton.textContent = isExpanded ? ' ... More' : 'Less';
+                    toggleButton.textContent = isExpanded ? ' More...' : 'Less';
                 });
             }
         }
