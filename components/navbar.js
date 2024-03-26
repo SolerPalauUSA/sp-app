@@ -440,28 +440,30 @@ class BottomNavbar extends HTMLElement {
             const submittalsHtml = this.renderLinks(results[i].series.submittals);
             const otherDocsHtml = this.renderLinks(results[i].series.otherDocs);
 
-            // Prepare HTML for models
-            const initialModelsHtml = results[i].models.slice(0, 3).map(model => 
+            // Check if there are models to display
+            const hasModels = results[i].models && results[i].models.length > 0;
+            const initialModelsHtml = hasModels ? results[i].models.slice(0, 3).map(model => 
                 `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${encodeURIComponent(results[i].product)}&series=${encodeURIComponent(results[i].series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`
-            ).join(', ');
+            ).join(', ') : '';
 
-            const fullModelsHtml = results[i].models.map(model => 
+            const fullModelsHtml = hasModels ? results[i].models.map(model => 
                 `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${encodeURIComponent(results[i].product)}&series=${encodeURIComponent(results[i].series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`
-            ).join(', ');
+            ).join(', ') : '';
 
-            // Determine if a toggle is needed
-            const needsToggle = results[i].models.length > 3;
-            const modelsToggleHtml = needsToggle ? `<span class="models-toggle" style="cursor: pointer; font-size: 10px; margin-left: 5px;"> More...</span>` : '';
-
-            // Models container
-            const modelsContainerHtml = `Models: <span class="models-list">${initialModelsHtml}</span>${modelsToggleHtml}`;
+            // Only add models display if there are models
+            let modelsDisplayHtml = '';
+            if (hasModels) {
+                const needsToggle = results[i].models.length > 3;
+                const modelsToggleHtml = needsToggle ? `<span class="models-toggle" style="cursor: pointer; font-size: 12px; margin-left: 5px;"> More...</span>` : '';
+                modelsDisplayHtml = `Models: <span class="models-list">${initialModelsHtml}</span>${modelsToggleHtml}`;
+            }
 
             resultItem.innerHTML = `
                 <img src="${results[i].series.image}" alt="${results[i].series.name}">
                 <div class="search-item-info">
                     <h3>${results[i].product} - ${results[i].series.name}</h3>
                     <p>${results[i].series.description}</p>
-                    <div style="font-size: 14px; margin-top: 2rem;">${modelsContainerHtml}</div>
+                    <div style="font-size: 14px; margin-top: 2rem;">${modelsDisplayHtml}</div>
                     <div class="document-links">
                         <div class="sub-wrap"><h4>Submittals</h4>${submittalsHtml}</div>
                         <div class="lit-wrap"><h4>Literature</h4>${otherDocsHtml}</div>
@@ -471,12 +473,12 @@ class BottomNavbar extends HTMLElement {
 
             searchResultsContainer.appendChild(resultItem);
 
-            // Toggle functionality
-            if (needsToggle) {
+            // Add toggle functionality if there are models and more than 3
+            if (hasModels && results[i].models.length > 3) {
                 const toggleButton = resultItem.querySelector('.models-toggle');
                 toggleButton.addEventListener('click', () => {
                     const modelsListSpan = resultItem.querySelector('.models-list');
-                    const isExpanded = toggleButton.textContent === "Less";
+                    const isExpanded = toggleButton.textContent.includes("Less");
                     modelsListSpan.innerHTML = isExpanded ? initialModelsHtml : fullModelsHtml;
                     toggleButton.textContent = isExpanded ? ' More...' : 'Less';
                 });
@@ -486,6 +488,7 @@ class BottomNavbar extends HTMLElement {
         searchResultsContainer.style.display = "none";
     }
 }
+
 
 
 
