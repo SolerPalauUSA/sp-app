@@ -426,39 +426,43 @@ class BottomNavbar extends HTMLElement {
 
   displaySearchResults(results) {
     const searchResultsContainer = this.shadowRoot.getElementById("search-results");
-    searchResultsContainer.innerHTML = ""; // Clear any previous results
+  
+    // Clear any previous results
+    searchResultsContainer.innerHTML = ""; 
 
     if (results.length > 0) {
         searchResultsContainer.style.display = "block";
 
-        const maxResults = 5; // Maximum number of results to display
+        // Maximum number of results to display
+        const maxResults = 5;
         for (let i = 0; i < Math.min(results.length, maxResults); i++) {
             const resultItem = document.createElement("div");
             resultItem.classList.add("search-result-item");
-            resultItem.dataset.productName = results[i].product;
-            resultItem.dataset.seriesName = results[i].series.name;
+            resultItem.dataset.productName = encodeURIComponent(results[i].product);
+            resultItem.dataset.seriesName = encodeURIComponent(results[i].series.name);
 
             const submittalsHtml = this.renderLinks(results[i].series.submittals);
             const otherDocsHtml = this.renderLinks(results[i].series.otherDocs);
 
-            // Check if there are models to display
+            // Determine if there are models to display
             const hasModels = results[i].models && results[i].models.length > 0;
-            const initialModelsHtml = hasModels ? results[i].models.slice(0, 3).map(model => 
-                `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${encodeURIComponent(results[i].product)}&series=${encodeURIComponent(results[i].series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`
-            ).join(', ') : '';
-
-            const fullModelsHtml = hasModels ? results[i].models.map(model => 
-                `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${encodeURIComponent(results[i].product)}&series=${encodeURIComponent(results[i].series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`
-            ).join(', ') : '';
-
-            // Only add models display if there are models
             let modelsDisplayHtml = '';
+
             if (hasModels) {
+                // Prepare HTML for initial models display
+                const initialModelsHtml = results[i].models.slice(0, 3).map(model => 
+                    `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${results[i].product}&series=${results[i].series.name}&model=${model.name}" target="_blank">${model.name}</a></span>`
+                ).join(', ');
+
+                // Adding a 'More/Less' toggle button if needed
                 const needsToggle = results[i].models.length > 3;
-                const modelsToggleHtml = needsToggle ? `<span class="models-toggle" style="cursor: pointer; font-size: 12px; margin-left: 5px;"> More...</span>` : '';
+                const modelsToggleHtml = needsToggle ? `<span class="models-toggle" style="cursor: pointer; font-size: 14px; margin-left: 5px;">More...</span>` : '';
+                
+                // Models container
                 modelsDisplayHtml = `Models: <span class="models-list">${initialModelsHtml}</span>${modelsToggleHtml}`;
             }
 
+            // Set the innerHTML of the result item
             resultItem.innerHTML = `
                 <img src="${results[i].series.image}" alt="${results[i].series.name}">
                 <div class="search-item-info">
@@ -472,25 +476,35 @@ class BottomNavbar extends HTMLElement {
                 </div>
             `;
 
+            // Append the result item to the search results container
             searchResultsContainer.appendChild(resultItem);
 
-            // Add toggle functionality if there are models and more than 3
-            if (hasModels && results[i].models.length > 3) {
+            // Toggle functionality for models
+            if (needsToggle) {
                 const toggleButton = resultItem.querySelector('.models-toggle');
                 toggleButton.addEventListener('click', () => {
-                    const modelsListSpan = resultItem.querySelector('.models-list');
                     const isExpanded = toggleButton.textContent.includes("Less");
+                    const fullModelsHtml = results[i].models.map(model => 
+                        `<span class="model-name" style="font-size: 14px;"><a href="../pages/products.html?product=${results[i].product}&series=${results[i].series.name}&model=${model.name}" target="_blank">${model.name}</a></span>`
+                    ).join(', ');
+
+                    const modelsListSpan = resultItem.querySelector('.models-list');
                     modelsListSpan.innerHTML = isExpanded ? initialModelsHtml : fullModelsHtml;
-                    toggleButton.textContent = isExpanded ? ' More...' : 'Less';
+                    toggleButton.textContent = isExpanded ? 'More...' : 'Less';
                 });
             }
+
+            // Click event for the entire result item excluding model links and toggle
+            resultItem.addEventListener('click', event => {
+                if (!event.target.closest('.model-name a, .models-toggle')) {
+                    window.location.href = `../pages/products.html?product=${resultItem.dataset.productName}&series=${resultItem.dataset.seriesName}`;
+                }
+            });
         }
     } else {
         searchResultsContainer.style.display = "none";
     }
 }
-
-
 
 
 
