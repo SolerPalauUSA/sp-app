@@ -480,15 +480,16 @@ class BottomNavbar extends HTMLElement {
                     toggleButton.textContent = isExpanded ? 'More...' : 'Less';
                 });
             }
-
-            // Adding click event listener for the entire result item
             resultItem.addEventListener('click', (event) => {
-                // Ignore if click was on model link or toggle
-                if (!event.target.closest('.model-name a, .models-toggle')) {
-                    window.location.href = `../pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}`;
-                }
-            });
-        });
+              // Check if the click is within a document link or any other link, and also model links or toggle
+              if (!event.target.closest('.document-links a, .model-name a, .models-toggle')) {
+                  // Prevent the default action if not clicking on links to allow navigation
+                  event.preventDefault();
+                  window.location.href = `../pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}`;
+              }
+              // For clicks on links, allow the default action (navigation) to proceed
+          });
+      });
     } else {
         searchResultsContainer.style.display = "none";
     }
