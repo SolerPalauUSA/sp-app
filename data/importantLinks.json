@@ -1,19 +1,17 @@
 [
+
     {
-        "Title": "Blog",
-        "Icon": "../assets/images/blog.svg",
-        "Link": "https://blog.solerpalau-usa.com/"
+        "Title": "Optisizer",
+        "Icon": "../assets/images/optisizer.svg",
+        "Link": "https://www.solerpalau-usa.com/resources/optisizer.html"
     },
+
     {
         "Title": "Help Center",
         "Icon": "../assets/images/helpcenter.svg",
         "Link": "https://sp-usa-ventilation-systems-llc.helpscoutdocs.com/"
     },
-    {
-        "Title": "Events",
-        "Icon": "../assets/images/events.svg",
-        "Link": "https://www.solerpalau-usa.com/resources/events.html"
-    },
+   
     {
         "Title": "New Branch",
         "Icon": "../assets/images/new-branch.svg",
@@ -24,19 +22,10 @@
         "Icon": "../assets/images/new-rep.svg",
         "Link": "https://www.solerpalau-usa.com/sp-form/account-setup.html"
     },
-    {
-        "Title": "Optisizer",
-        "Icon": "../assets/images/optisizer.svg",
-        "Link": "https://www.solerpalau-usa.com/resources/optisizer.html"
-    },
+    
     {
         "Title": "Product Returns",
         "Icon": "../assets/images/product-returns.svg",
         "Link": "https://www.solerpalau-usa.com/resources/returns.html"
-    },
-    {
-        "Title": "Print Shop",
-        "Icon": "../assets/images/print-shop.svg",
-        "Link": "https://custompoint.rrd.com/xs2/prelogin?CMPID=8081&qwerty=23120503"
     }
 ]
