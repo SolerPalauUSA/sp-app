@@ -3594,7 +3594,7 @@
   },
   {
     "id": 8,
-    "name": "Jet Fans Series",
+    "name": "Jet Fans",
     "description": "Jet Fans are a pollution control solution that help induce air to a common exhaust point through directed airflow.",
     "series": [
       {
@@ -3700,7 +3700,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "Outside Air Motorized Damper Kits",
     "description": "The MDX-ES24VK from S&P allows air to enter dwellings to meet building code and ventilation standards requirements through a motorized damper controlled by a 24V temperature/humidity monitoring control.",
     "series": [
@@ -3751,7 +3751,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 10,
     "name": "Premium CHOICE Series",
     "description": "Premium CHOICE Series ventilation fans give you the flexibility to create the ventilation system you need with our unique plug-&-play technology developed by S&P.",
     "series": [
@@ -3954,7 +3954,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "reFresh Series",
     "description": "The reFresh Series is engineered to meet building and energy codes that call for ASHRAE 62.2 CFM requirements with a design that provides homeowners with the best IAQ solution in an all-in-one unit.",
     "series": [
@@ -4162,7 +4162,313 @@
     ]
   },
   {
-    "id": 14,
+    "id": 12,
+    "name": "Roof Propeller Fans",
+    "description": "The Roof-Mounted Propeller fans are installed on the roofs of buildings to remove or supply air from commercial and industrial facilities economically.",
+    "series": [
+      {
+        "id": 1,
+        "name": "UBS and UBS-P",
+        "image": "../assets/images/UBS-recat.png",
+        "description": "UBS and UBS-P are high capacity roof mounted exhausters rated from 7,000 to 51,000 CFM. They are general ventilation units designed to economically remove large volumes of air, fumes, and vapors from commercial and industrial buildings such as warehouses, manufacturing and assembly plants, chemical plants, foundries and paper mills.",
+      
+        "submittals": [
+          {
+            "type": "UBS and UBS-P",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubs.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubs.pdf"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "ARE and ARS",
+        "image": "../assets/images/AR.png",
+        "description": "The AR series, available in four model sizes, offers robust axial exhaust (ARE) or supply (intake) (ARS) performance in a compact, roof-mounted design, suitable for a range of applications including factories, shops, and offices. With a CFM range of 167 to 2,827 and up to 3/4\" static pressure, its direct drive design requires minimal maintenance. The series features a sleek, low-profile design with durable all-aluminum housing, catering to light to moderate static pressure environments.",
+        "models": [
+          {
+            "id": 1,
+            "name": "ARE12MH1AS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 2,
+            "name": "ARE12MH1CS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 3,
+            "name": "ARE12MM1AS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 4,
+            "name": "ARE12MM1CS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 5,
+            "name": "ARE16MM1AS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 6,
+            "name": "ARE16MM1CS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 7,
+            "name": "ARE16PH1AS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 8,
+            "name": "ARE16PH1CS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 9,
+            "name": "ARE20MM1AS",
+            "price": "$1,911.00"
+          },
+          {
+            "id": 10,
+            "name": "ARE20MM1CS",
+            "price": "$1,911.00"
+          },
+          {
+            "id": 11,
+            "name": "ARS12MH1AS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 12,
+            "name": "ARS12MH1CS",
+            "price": "$1,280.00"
+          },
+          {
+            "id": 13,
+            "name": "ARS12MM1AS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 14,
+            "name": "ARS12MM1CS",
+            "price": "$1,255.00"
+          },
+          {
+            "id": 15,
+            "name": "ARS16MM1AS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 16,
+            "name": "ARS16MM1CS",
+            "price": "$1,460.00"
+          },
+          {
+            "id": 17,
+            "name": "ARS16PH1AS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 18,
+            "name": "ARS16PH1CS",
+            "price": "$1,512.00"
+          },
+          {
+            "id": 19,
+            "name": "ARS20MM1AS",
+            "price": "$1,911.00"
+          },
+          {
+            "id": 20,
+            "name": "ARS20MM1CS",
+            "price": "$1,911.00"
+          }
+        ],
+        "submittals": [
+          {
+            "type": "ARE and ARS",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ar.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ar.pdf"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "HRSB and HRSD",
+        "image": "../assets/images/HRS-recat.png",
+        "description": "HRSB and HRSD are roof mounted supply fans rated from 4,000 to over 56,000 CFM, with static pressure capability up to 3/4\". They are used in a variety of commercial and industrial operations such as warehouses manufacturing plants, equipment and machinery rooms, assembly plants and similar facilities to provide fresh outside air for personal comfort and to reduce negative pressure caused by exhaust systems.",
+      
+        "submittals": [
+          {
+            "type": "HRSB and HRSD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-hrs.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-hrs.pdf"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "HREB-C, HREB-P, and HRED-C",
+        "image": "../assets/images/HRE-recat.png",
+        "description": "Models HREB-C, HREB-P, and HRED-C are roof-mounted, low-profile exhaust fans rated from 4,000 to over 90,000 CFM with 1” static pressure. Eight sizes from 24-72 inches are available. Available in galvanized or aluminum construction, they are used to exhaust air from a variety of commercial and industrial operations such as manufacturing and assembly plants, warehouses, garages, laundries, and similar buildings.",
+      
+        "submittals": [
+          {
+            "type": "HREB-C, HREB-P, and HRED-C",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-hre.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-hre.pdf"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "UBSRD and UBSRD-P",
+        "image": "../assets/images/UBSRD-recat.png",
+        "description": "Model UBSRD units are high capacity, belt driven roof mounted exhausters rated from 3,700 to 67,000 CFM. The motor and drives are located outside of the exhaust airstream, making these units especially suited for the removal of heated or contaminated air from commercial and industrial buildings or processes where these conditions exist. All models are capable of continuous operation exhausting air to 200°F.",
+      
+        "submittals": [
+          {
+            "type": "UBSRD and UBSRD-P",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubsrd-ubsrd-p.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubsrd.pdf"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "UBSRD-HT and UBSRD-HT1",
+        "image": "../assets/images/UBSRD-recat.png",
+        "description": "UBSRD-HT and UBSRD-HT1 are available in 24, 30, 36, 42, 48, 54 and 60 inch sizes. Horsepower and CFM range to 52,000 CFM and 10HP. These units have been designed and tested for emergency heat and smoke removal. This design also lends itself to everyday non-emergency high capacity industrial and commercial roof exhaust applications. These fans successfully passed heat tests of 1000°F for fifteen (15) minutes, and 500°F for over four (4) hours by an independent testing agency.",
+      
+        "submittals": [
+          {
+            "type": "UBSRD-HT",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubsrd-ht.pdf"
+          },
+          {
+            "type": "UBSRD-HT1",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubsrd-ht1.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubsrd-ht.pdf"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "TUB",
+        "image": "../assets/images/TUB-HT-recat.png",
+        "description": "Tubeaxial Upblast Propeller Roof Exhauster Fans (TUB) are designed for high capacity industrial and commercial roof exhaust applications with capacities ranging from 6,210 to 60,116 CFM, with static pressure capability up to 1\". The remote drive configuration of the TUB is especially suited for the removal of fumes, vapors, steam, dust, smoke and contaminated or heated air for continuous operation in air temperatures to 200°F. For temperature ratings to 1000°F and/or IRI requirements refer to TUB-HT.",
+      
+        "submittals": [
+          {
+            "type": "TUB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tub.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tub.pdf"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "TUB-HT",
+        "image": "../assets/images/TUB-HT-recat.png",
+        "description": "Tubeaxial Upblast Propeller Roof Exhauster for Heat and Smoke Removal Fans (TUB-HT) has been designed and tested for emergency heat, and smoke removal with horsepower's up to 15 HP and CFM up to 57,000. This design also lends itself to normal non-emergency high capacity industrial and commercial roof exhaust applications. TUB-HT's successfully passed heat tests of 1000°F for fifteen (15) minutes, and 500°F for over four (4) hours by an independent testing agency. TUB-HT exceeds I.R.I (Industrial Risk Insurers) guidelines and is UL-793 Listed as \"Power Ventilator for Smoke Control Systems.\"",
+      
+        "submittals": [
+          {
+            "type": "TUB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tub-ht.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tub-ht.pdf"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "UBB and UBX",
+        "image": "../assets/images/UB-recat.png",
+        "description": "UBB and UBX are high capacity roof mounted exhausters rated from 5,900 to 78,000 CFM. They are general ventilation units designed to economically remove large volumes of air, fumes, and vapors from commercial and industrial buildings such as warehouses, manufacturing and assembly plants, distribution centers, chemical plants, foundries and paper mills.",
+      
+        "submittals": [
+          {
+            "type": "UBB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubb.pdf"
+          },
+          {
+            "type": "UBX",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubx.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubb-ubx.pdf"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "UBRD",
+        "image": "../assets/images/UBRD-recat.png",
+        "description": "UBRD units are high capacity belt driven roof mounted exhausters rated from 4,500 to 72,000 CFM. The motor and drives are located outside of the exhaust airstream, making these units especially suited for the removal of heated or contaminated air from commercial and industrial buildings or processes where these conditions exist. All models are capable of continuous operation exhausting air to 200°F.",
+      
+        "submittals": [
+          {
+            "type": "UBRD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubrd.pdf"
+          }
+        ],
+        "otherDocs": [
+          {
+            "type": "IOM",
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubrd.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
     "name": "Sidewall Propeller Fans",
     "description": "Sidewall Propeller fans are installed on the exterior wall of a building. These types of fans are used to pull air inside the building and expel it outside.",
     "series": [
@@ -5245,313 +5551,61 @@
     ]
   },
   {
-    "id": 15,
-    "name": "Roof Propeller Fans",
-    "description": "The Roof-Mounted Propeller fans are installed on the roofs of buildings to remove or supply air from commercial and industrial facilities economically.",
+    "id": 14,
+    "name": "Tubeaxial Fans",
+    "description": "The Duct-Mounted Tubeaxial fans are designed to supply, exhaust, and boost air in applications with moderate static pressure.",
     "series": [
       {
         "id": 1,
-        "name": "UBS and UBS-P",
-        "image": "../assets/images/UBS-recat.png",
-        "description": "UBS and UBS-P are high capacity roof mounted exhausters rated from 7,000 to 51,000 CFM. They are general ventilation units designed to economically remove large volumes of air, fumes, and vapors from commercial and industrial buildings such as warehouses, manufacturing and assembly plants, chemical plants, foundries and paper mills.",
-      
+        "name": "TDB",
+        "image": "../assets/images/TDB-recat.png",
+        "description": "The Tubeaxial line offers the widest range of sizes, horsepower, and performance in the industry. TDB's are high capacity belt drive tubeaxial fans rated from 900 to 75,490 CFM, with static pressure capability up to 1-1/2\". They are used to exhaust air from or supply air to commercial and industrial applications, such as general building ventilation, enclosed garages, paint spray booths, heat and smoke ventilation systems and other applications where the air is moved through a duct system against moderate static pressure.",
+    
         "submittals": [
           {
-            "type": "UBS and UBS-P",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubs.pdf"
+            "type": "TDB",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tdb.pdf"
           }
         ],
         "otherDocs": [
           {
             "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubs.pdf"
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tdb.pdf"
+          },
+          {
+            "type": "Mounting Diagram",
+            "url": "https://www.solerpalau-usa.com/documents/Resource/mounting-arrangement(tdb).pdf"
           }
         ]
       },
       {
         "id": 2,
-        "name": "ARE and ARS",
-        "image": "../assets/images/AR.png",
-        "description": "The AR series, available in four model sizes, offers robust axial exhaust (ARE) or supply (intake) (ARS) performance in a compact, roof-mounted design, suitable for a range of applications including factories, shops, and offices. With a CFM range of 167 to 2,827 and up to 3/4\" static pressure, its direct drive design requires minimal maintenance. The series features a sleek, low-profile design with durable all-aluminum housing, catering to light to moderate static pressure environments.",
-        "models": [
-          {
-            "id": 1,
-            "name": "ARE12MH1AS",
-            "price": "$1,280.00"
-          },
-          {
-            "id": 2,
-            "name": "ARE12MH1CS",
-            "price": "$1,280.00"
-          },
-          {
-            "id": 3,
-            "name": "ARE12MM1AS",
-            "price": "$1,255.00"
-          },
-          {
-            "id": 4,
-            "name": "ARE12MM1CS",
-            "price": "$1,255.00"
-          },
-          {
-            "id": 5,
-            "name": "ARE16MM1AS",
-            "price": "$1,460.00"
-          },
-          {
-            "id": 6,
-            "name": "ARE16MM1CS",
-            "price": "$1,460.00"
-          },
-          {
-            "id": 7,
-            "name": "ARE16PH1AS",
-            "price": "$1,512.00"
-          },
-          {
-            "id": 8,
-            "name": "ARE16PH1CS",
-            "price": "$1,512.00"
-          },
-          {
-            "id": 9,
-            "name": "ARE20MM1AS",
-            "price": "$1,911.00"
-          },
-          {
-            "id": 10,
-            "name": "ARE20MM1CS",
-            "price": "$1,911.00"
-          },
-          {
-            "id": 11,
-            "name": "ARS12MH1AS",
-            "price": "$1,280.00"
-          },
-          {
-            "id": 12,
-            "name": "ARS12MH1CS",
-            "price": "$1,280.00"
-          },
-          {
-            "id": 13,
-            "name": "ARS12MM1AS",
-            "price": "$1,255.00"
-          },
-          {
-            "id": 14,
-            "name": "ARS12MM1CS",
-            "price": "$1,255.00"
-          },
-          {
-            "id": 15,
-            "name": "ARS16MM1AS",
-            "price": "$1,460.00"
-          },
-          {
-            "id": 16,
-            "name": "ARS16MM1CS",
-            "price": "$1,460.00"
-          },
-          {
-            "id": 17,
-            "name": "ARS16PH1AS",
-            "price": "$1,512.00"
-          },
-          {
-            "id": 18,
-            "name": "ARS16PH1CS",
-            "price": "$1,512.00"
-          },
-          {
-            "id": 19,
-            "name": "ARS20MM1AS",
-            "price": "$1,911.00"
-          },
-          {
-            "id": 20,
-            "name": "ARS20MM1CS",
-            "price": "$1,911.00"
-          }
-        ],
+        "name": "TDD",
+        "image": "../assets/images/TDD-recat.png",
+        "description": "The Tubeaxial line offers the widest range of sizes, horsepower, and performance in the industry. TDD's are high capacity tubeaxial fans rated from 643 to 39,194 CFM, with static pressure capability up to 1-1/4\". They are used to exhaust air from or supply air to commercial and industrial applications, such as general building ventilation, enclosed garages, and other applications where the air is moved through a duct system against moderate static pressure.",
+    
         "submittals": [
           {
-            "type": "ARE and ARS",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ar.pdf"
+            "type": "TDD",
+            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tdd.pdf"
           }
         ],
         "otherDocs": [
           {
             "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ar.pdf"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "HRSB and HRSD",
-        "image": "../assets/images/HRS-recat.png",
-        "description": "HRSB and HRSD are roof mounted supply fans rated from 4,000 to over 56,000 CFM, with static pressure capability up to 3/4\". They are used in a variety of commercial and industrial operations such as warehouses manufacturing plants, equipment and machinery rooms, assembly plants and similar facilities to provide fresh outside air for personal comfort and to reduce negative pressure caused by exhaust systems.",
-      
-        "submittals": [
-          {
-            "type": "HRSB and HRSD",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-hrs.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-hrs.pdf"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "name": "HREB-C, HREB-P, and HRED-C",
-        "image": "../assets/images/HRE-recat.png",
-        "description": "Models HREB-C, HREB-P, and HRED-C are roof-mounted, low-profile exhaust fans rated from 4,000 to over 90,000 CFM with 1” static pressure. Eight sizes from 24-72 inches are available. Available in galvanized or aluminum construction, they are used to exhaust air from a variety of commercial and industrial operations such as manufacturing and assembly plants, warehouses, garages, laundries, and similar buildings.",
-      
-        "submittals": [
-          {
-            "type": "HREB-C, HREB-P, and HRED-C",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-hre.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-hre.pdf"
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "name": "UBSRD and UBSRD-P",
-        "image": "../assets/images/UBSRD-recat.png",
-        "description": "Model UBSRD units are high capacity, belt driven roof mounted exhausters rated from 3,700 to 67,000 CFM. The motor and drives are located outside of the exhaust airstream, making these units especially suited for the removal of heated or contaminated air from commercial and industrial buildings or processes where these conditions exist. All models are capable of continuous operation exhausting air to 200°F.",
-      
-        "submittals": [
-          {
-            "type": "UBSRD and UBSRD-P",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubsrd-ubsrd-p.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubsrd.pdf"
-          }
-        ]
-      },
-      {
-        "id": 6,
-        "name": "UBSRD-HT and UBSRD-HT1",
-        "image": "../assets/images/UBSRD-recat.png",
-        "description": "UBSRD-HT and UBSRD-HT1 are available in 24, 30, 36, 42, 48, 54 and 60 inch sizes. Horsepower and CFM range to 52,000 CFM and 10HP. These units have been designed and tested for emergency heat and smoke removal. This design also lends itself to everyday non-emergency high capacity industrial and commercial roof exhaust applications. These fans successfully passed heat tests of 1000°F for fifteen (15) minutes, and 500°F for over four (4) hours by an independent testing agency.",
-      
-        "submittals": [
-          {
-            "type": "UBSRD-HT",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubsrd-ht.pdf"
+            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tdd.pdf"
           },
           {
-            "type": "UBSRD-HT1",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubsrd-ht1.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubsrd-ht.pdf"
-          }
-        ]
-      },
-      {
-        "id": 7,
-        "name": "TUB",
-        "image": "../assets/images/TUB-HT-recat.png",
-        "description": "Tubeaxial Upblast Propeller Roof Exhauster Fans (TUB) are designed for high capacity industrial and commercial roof exhaust applications with capacities ranging from 6,210 to 60,116 CFM, with static pressure capability up to 1\". The remote drive configuration of the TUB is especially suited for the removal of fumes, vapors, steam, dust, smoke and contaminated or heated air for continuous operation in air temperatures to 200°F. For temperature ratings to 1000°F and/or IRI requirements refer to TUB-HT.",
-      
-        "submittals": [
-          {
-            "type": "TUB",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tub.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tub.pdf"
-          }
-        ]
-      },
-      {
-        "id": 7,
-        "name": "TUB-HT",
-        "image": "../assets/images/TUB-HT-recat.png",
-        "description": "Tubeaxial Upblast Propeller Roof Exhauster for Heat and Smoke Removal Fans (TUB-HT) has been designed and tested for emergency heat, and smoke removal with horsepower's up to 15 HP and CFM up to 57,000. This design also lends itself to normal non-emergency high capacity industrial and commercial roof exhaust applications. TUB-HT's successfully passed heat tests of 1000°F for fifteen (15) minutes, and 500°F for over four (4) hours by an independent testing agency. TUB-HT exceeds I.R.I (Industrial Risk Insurers) guidelines and is UL-793 Listed as \"Power Ventilator for Smoke Control Systems.\"",
-      
-        "submittals": [
-          {
-            "type": "TUB",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tub-ht.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tub-ht.pdf"
-          }
-        ]
-      },
-      {
-        "id": 8,
-        "name": "UBB and UBX",
-        "image": "../assets/images/UB-recat.png",
-        "description": "UBB and UBX are high capacity roof mounted exhausters rated from 5,900 to 78,000 CFM. They are general ventilation units designed to economically remove large volumes of air, fumes, and vapors from commercial and industrial buildings such as warehouses, manufacturing and assembly plants, distribution centers, chemical plants, foundries and paper mills.",
-      
-        "submittals": [
-          {
-            "type": "UBB",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubb.pdf"
-          },
-          {
-            "type": "UBX",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubx.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubb-ubx.pdf"
-          }
-        ]
-      },
-      {
-        "id": 9,
-        "name": "UBRD",
-        "image": "../assets/images/UBRD-recat.png",
-        "description": "UBRD units are high capacity belt driven roof mounted exhausters rated from 4,500 to 72,000 CFM. The motor and drives are located outside of the exhaust airstream, making these units especially suited for the removal of heated or contaminated air from commercial and industrial buildings or processes where these conditions exist. All models are capable of continuous operation exhausting air to 200°F.",
-      
-        "submittals": [
-          {
-            "type": "UBRD",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-ubrd.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-ubrd.pdf"
+            "type": "Mounting Diagram",
+            "url": "https://www.solerpalau-usa.com/documents/Resource/mounting-arrangement(tdd).pdf"
           }
         ]
       }
     ]
   },
+  
   {
-    "id": 16,
+    "id": 15,
     "name": "Utility Vent Sets",
     "description": "The Roof-Mounted Centrifugal Utility Vent sets are designed to work in medium and high-pressure static pressure applications to exhaust or supply air.",
     "series": [
@@ -7236,59 +7290,7 @@
         ]
       }
     ]
-  },
-  {
-    "id": 17,
-    "name": "Tubeaxial Fans",
-    "description": "The Duct-Mounted Tubeaxial fans are designed to supply, exhaust, and boost air in applications with moderate static pressure.",
-    "series": [
-      {
-        "id": 1,
-        "name": "TDB",
-        "image": "../assets/images/TDB-recat.png",
-        "description": "The Tubeaxial line offers the widest range of sizes, horsepower, and performance in the industry. TDB's are high capacity belt drive tubeaxial fans rated from 900 to 75,490 CFM, with static pressure capability up to 1-1/2\". They are used to exhaust air from or supply air to commercial and industrial applications, such as general building ventilation, enclosed garages, paint spray booths, heat and smoke ventilation systems and other applications where the air is moved through a duct system against moderate static pressure.",
-    
-        "submittals": [
-          {
-            "type": "TDB",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tdb.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tdb.pdf"
-          },
-          {
-            "type": "Mounting Diagram",
-            "url": "https://www.solerpalau-usa.com/documents/Resource/mounting-arrangement(tdb).pdf"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "TDD",
-        "image": "../assets/images/TDD-recat.png",
-        "description": "The Tubeaxial line offers the widest range of sizes, horsepower, and performance in the industry. TDD's are high capacity tubeaxial fans rated from 643 to 39,194 CFM, with static pressure capability up to 1-1/4\". They are used to exhaust air from or supply air to commercial and industrial applications, such as general building ventilation, enclosed garages, and other applications where the air is moved through a duct system against moderate static pressure.",
-    
-        "submittals": [
-          {
-            "type": "TDD",
-            "url": "https://www.solerpalau-usa.com/documents/Submittal/sub-tdd.pdf"
-          }
-        ],
-        "otherDocs": [
-          {
-            "type": "IOM",
-            "url": "https://www.solerpalau-usa.com/documents/IOM/iom-tdd.pdf"
-          },
-          {
-            "type": "Mounting Diagram",
-            "url": "https://www.solerpalau-usa.com/documents/Resource/mounting-arrangement(tdd).pdf"
-          }
-        ]
-      }
-    ]
   }
+  
  
 ]
