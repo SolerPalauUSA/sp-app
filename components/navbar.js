@@ -433,9 +433,7 @@ class BottomNavbar extends HTMLElement {
     if (results.length > 0) {
         searchResultsContainer.style.display = "block";
 
-        results.forEach((result, index) => {
-            if (index >= 5) return; // Display up to 5 results
-
+        results.slice(0, 5).forEach((result) => { // Limit to the first 5 results directly
             const resultItem = document.createElement("div");
             resultItem.classList.add("search-result-item");
 
@@ -447,6 +445,14 @@ class BottomNavbar extends HTMLElement {
                 const initialModelsHtml = result.models.slice(0, 3)
                     .map(model => `<span class="model-name"><a href="../pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`)
                     .join(', ');
+
+                const fullModelsHtml = result.models
+                    .map(model => `<span class="model-name"><a href="../pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`)
+                    .join(', ');
+
+                // Storing initial and full HTML directly on the item to be accessible from the toggle event
+                resultItem.dataset.initialModelsHtml = initialModelsHtml;
+                resultItem.dataset.fullModelsHtml = fullModelsHtml;
 
                 const modelsToggleHtml = result.models.length > 3 ? `<span class="models-toggle" style="cursor: pointer; font-size: 14px; margin-left: 5px;">More...</span>` : '';
                 modelsDisplayHtml = `Models: <span class="models-list">${initialModelsHtml}</span>${modelsToggleHtml}`;
@@ -470,30 +476,26 @@ class BottomNavbar extends HTMLElement {
             if (result.models && result.models.length > 3) {
                 const toggleButton = resultItem.querySelector('.models-toggle');
                 toggleButton.addEventListener('click', () => {
-                    const isExpanded = toggleButton.textContent.includes("Less");
-                    const fullModelsHtml = result.models
-                        .map(model => `<span class="model-name"><a href="../pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`)
-                        .join(', ');
-
                     const modelsListSpan = resultItem.querySelector('.models-list');
-                    modelsListSpan.innerHTML = isExpanded ? initialModelsHtml : fullModelsHtml;
+                    const isExpanded = toggleButton.textContent.includes("Less");
+                    modelsListSpan.innerHTML = isExpanded ? resultItem.dataset.initialModelsHtml : resultItem.dataset.fullModelsHtml;
                     toggleButton.textContent = isExpanded ? 'More...' : 'Less';
                 });
             }
+
+            // Click event for navigation excluding model links, document links, and toggle
             resultItem.addEventListener('click', (event) => {
-              // Check if the click is within a document link or any other link, and also model links or toggle
-              if (!event.target.closest('.document-links a, .model-name a, .models-toggle')) {
-                  // Prevent the default action if not clicking on links to allow navigation
-                  event.preventDefault();
-                  window.location.href = `../pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}`;
-              }
-              // For clicks on links, allow the default action (navigation) to proceed
-          });
-      });
+                if (!event.target.closest('.document-links a, .model-name a, .models-toggle')) {
+                    event.preventDefault(); // This might not be necessary unless further actions are needed
+                    window.location.href = `../pages/products.html?product=${resultItem.dataset.productName}&series=${resultItem.dataset.seriesName}`;
+                }
+            });
+        });
     } else {
         searchResultsContainer.style.display = "none";
     }
 }
+
 
 
 
