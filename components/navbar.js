@@ -437,6 +437,10 @@ class BottomNavbar extends HTMLElement {
             const resultItem = document.createElement("div");
             resultItem.classList.add("search-result-item");
 
+             // Correctly set data attributes for product and series names
+             resultItem.dataset.productName = encodeURIComponent(result.product);
+             resultItem.dataset.seriesName = encodeURIComponent(result.series.name);
+
             const submittalsHtml = this.renderLinks(result.series.submittals);
             const otherDocsHtml = this.renderLinks(result.series.otherDocs);
 
