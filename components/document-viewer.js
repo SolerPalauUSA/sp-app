@@ -377,7 +377,7 @@ displayContent(response, url) {
 
   // Set up PDF.js
   const pdfjsLib = window['pdfjsLib'] || window['pdfjs-dist/build/pdf'];
-  pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.mjs';
+  pdfjsLib.GlobalWorkerOptions.workerSrc = '//unpkg.com/pdfjs-dist@4.0.379/build/pdf.worker.mjs';
 
   // Load and display the PDF
   pdfjsLib.getDocument(url).promise.then((pdfDoc) => {
