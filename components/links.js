@@ -63,6 +63,9 @@ class ImportantLinks extends HTMLElement {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* Creates two columns */
             gap: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+
         }
         .link-item {
             display: flex;
