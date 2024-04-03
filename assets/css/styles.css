@@ -109,13 +109,13 @@ main {
 
 .product-listing {
 
-    border: 1px solid #ddd;
-    padding: .5rem;
-    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .product-image {
-    height: 130px;
+    height: 125px;
     /* Adjust the height as needed */
     background-size: inherit;
     background-position: center;
