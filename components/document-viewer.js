@@ -146,15 +146,14 @@ render() {
         .category {
           cursor: pointer;
           padding: 10px;
-          margin: 5px;
-          background-color: whitesmoke;
-          border: 1px solid #ccc;
+          margin: 10px;
+          background-color: transparent;
+          border: 1.5px solid #ccc;
           border-radius: 5px;
-          width: 185px;
-          font-size: 18px;
+          width: 150px;
+          font-size: 20px;
           color: #053658!important;
           transition: width 0.3s ease; /* Smooth transition for category buttons */
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         }
         
         /* Set height when .categories.selected is active */
