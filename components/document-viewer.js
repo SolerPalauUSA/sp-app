@@ -133,7 +133,7 @@ render() {
         .categories {
           display: flex;
           flex-wrap: wrap;
-          margin-top: 1rem;
+          margin-top: 2rem;
           justify-content: center;
         }
 
@@ -145,13 +145,13 @@ render() {
 
         .category {
           cursor: pointer;
-          padding: 10px;
+          padding: .5rem;
           margin: 10px;
           background-color: transparent;
           border: 1.5px solid #ccc;
           border-radius: 5px;
-          width: 150px;
-          font-size: 20px;
+          width: 170px;
+          font-size: 22px;
           color: #053658!important;
           transition: width 0.3s ease; /* Smooth transition for category buttons */
         }
