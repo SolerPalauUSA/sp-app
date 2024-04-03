@@ -62,9 +62,9 @@ class ImportantLinks extends HTMLElement {
             padding: 1rem;
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* Creates two columns */
-            gap: 10px;
-            width: 300px;
-            border: 1px solid #ddd;
+            gap: 20px;
+        
+           
 
         }
         .link-item {
@@ -74,7 +74,13 @@ class ImportantLinks extends HTMLElement {
             text-decoration: none;
             color: inherit;
             height: 125px;
+            border: 1px solid #ddd;
+            align-self: center;
+            justify-content: center;
+            border-radius: 8px;
+            padding: 1.5rem;
         }
+
         .link-icon {
             width: 50px;
             height: 50px;
