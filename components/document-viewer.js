@@ -164,6 +164,7 @@ render() {
           white-space: nowrap!important; /* Correct property */
           text-align: center!important;
           align-content: center!important;
+          margin: 2px!important;
         }
         
         /* Set height when .categories.selected is not active */
