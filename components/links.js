@@ -73,12 +73,14 @@ class ImportantLinks extends HTMLElement {
             align-items: center;
             text-decoration: none;
             color: inherit;
-            height: 125px;
-            border: 1px solid #ddd;
+            height: 150px;
+            border: 1.5px solid #ccc;
             align-self: center;
             justify-content: center;
-            border-radius: 8px;
-            padding: 1.5rem;
+            border-radius: 5px;
+            padding: .5rem;
+            width: 150px;
+        }
         }
 
         .link-icon {
