@@ -152,7 +152,7 @@ render() {
           border-radius: 5px;
           width: 170px;
           font-size: 22px;
-          color: #053658!important;
+          color: #000000c2!important;
           transition: width 0.3s ease; /* Smooth transition for category buttons */
         }
         
@@ -244,7 +244,6 @@ render() {
             width: 80%; /* Adjust the width as needed */
             margin: 0 auto; /* Centers the input box and adds equal margins on both sides */
             margin-top: 7rem;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example box-shadow, you can customize this */
             border: 1px solid #ccc!important;
             border-radius: 5px!important;
             padding: .5rem!important;

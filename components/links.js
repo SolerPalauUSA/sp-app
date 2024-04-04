@@ -72,7 +72,7 @@ class ImportantLinks extends HTMLElement {
             flex-direction: column;
             align-items: center;
             text-decoration: none;
-            color: inherit;
+            color: #000000c2;
             height: 150px;
             border: 1.5px solid #ccc;
             align-self: center;
@@ -90,6 +90,7 @@ class ImportantLinks extends HTMLElement {
         .link-title {
             margin-top: 5px;
             text-align: center;
+            font-size: 20px;
         }
 
 

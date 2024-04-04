@@ -48,7 +48,7 @@ main {
 
 .icon a {
     text-decoration: none;
-    color: black;
+    color: #000000c2;
     font-size: 20px;
 }
 
@@ -132,8 +132,8 @@ main {
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    color: #636262;
-    font-weight: 600;
+    color: #000000c2;
+    font-weight: 500;
 
     /* Add other styles like color, font, etc. as desired */
 }

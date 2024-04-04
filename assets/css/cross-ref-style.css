@@ -35,7 +35,7 @@ table {
 
 tbody {
     background-color: white;
-    color: black;
+    color: #000000c2;
     padding-top: 50px; /* Adjust the height as per your sticky header's height */
     overflow-y: scroll; 
 }
