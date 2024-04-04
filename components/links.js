@@ -50,10 +50,10 @@ class ImportantLinks extends HTMLElement {
         
         .links-wrapper {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            align-content: center;
             flex-direction: column;
-            margin-left: 1rem;
-            margin-right: 1rem;
             max-height: 100vh;
             overflow: hidden;
         }
