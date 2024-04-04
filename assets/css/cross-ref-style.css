@@ -159,7 +159,7 @@ label {
    
 
     .table-wrapper {
-        max-height: 450px;
+        max-height: 500px;
         overflow-y: auto;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
