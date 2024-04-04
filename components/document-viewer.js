@@ -65,11 +65,11 @@ render() {
         background-color: whitesmoke;
         margin: 5% auto;
         padding: 20px;
-        border: 1px solid #888;
+        border: 1px solid #ccc;
         width: 85%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 5px;
       }
       
       #pdfCanvas {
@@ -148,7 +148,7 @@ render() {
           padding: .5rem;
           margin: 10px;
           background-color: transparent;
-          border: 1.5px solid #ccc;
+          border: 1px solid #ccc;
           border-radius: 5px;
           width: 170px;
           font-size: 22px;
@@ -209,7 +209,7 @@ render() {
           min-width: calc(50% - 10px);
           padding: 10px;
           background-color: whitesmoke;
-          border: 1px solid #ddd;
+          border: 1px solid #ccc;
         }
 
         /* Styling the scrollbar */
@@ -246,7 +246,7 @@ render() {
             margin-top: 7rem;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example box-shadow, you can customize this */
             border: 1px solid #ccc!important;
-            border-radius: 8px!important;
+            border-radius: 5px!important;
             padding: .5rem!important;
             font-size: 16px;
           }

@@ -106,7 +106,7 @@ class BottomNavbar extends HTMLElement {
      margin-top: 1rem;
      outline: none;
      border-radius: 5px;
-     border: 1px solid rgba(0, 0, 0, 0.2)!important;
+     border: 1px solid #ccc;
 }
 
 /* Search Results Container */
@@ -114,7 +114,7 @@ class BottomNavbar extends HTMLElement {
      margin-top: 20px;
      display: none;
      position: static;
-     border-radius: 8px;
+     border-radius: 5px;
      width: 93%;
      height: 700px;
      margin-bottom: 10px;
@@ -128,8 +128,8 @@ class BottomNavbar extends HTMLElement {
   background: white;
   color: #053658;
   margin-bottom: 23px;
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1)!important;
+  border-radius: 5px;
+  border: 1px solid #ccc!important;
   display: flex;
   align-items: center;
  
