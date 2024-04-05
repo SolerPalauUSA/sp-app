@@ -447,11 +447,11 @@ class BottomNavbar extends HTMLElement {
             let modelsDisplayHtml = '';
             if (result.models && result.models.length > 0) {
                 const initialModelsHtml = result.models.slice(0, 3)
-                    .map(model => `<span class="model-name"><a href="../pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`)
+                    .map(model => `<span class="model-name"><a href="https://solerpalauusa.github.io/sp-app/pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`)
                     .join(', ');
 
                 const fullModelsHtml = result.models
-                    .map(model => `<span class="model-name"><a href="../pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`)
+                    .map(model => `<span class="model-name"><a href="https://solerpalauusa.github.io/sp-app/pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`)
                     .join(', ');
 
                 // Storing initial and full HTML directly on the item to be accessible from the toggle event
@@ -491,7 +491,7 @@ class BottomNavbar extends HTMLElement {
             resultItem.addEventListener('click', (event) => {
                 if (!event.target.closest('.document-links a, .model-name a, .models-toggle')) {
                     event.preventDefault(); // This might not be necessary unless further actions are needed
-                    window.location.href = `../pages/products.html?product=${resultItem.dataset.productName}&series=${resultItem.dataset.seriesName}`;
+                    window.location.href = `https://solerpalauusa.github.io/sp-app/pages/products.html?product=${resultItem.dataset.productName}&series=${resultItem.dataset.seriesName}`;
                 }
             });
         });
