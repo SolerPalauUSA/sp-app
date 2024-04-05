@@ -221,26 +221,26 @@ class BottomNavbar extends HTMLElement {
   
         <nav>
           <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/">
-          <img src="../assets/images/home.svg" alt="home" class="icon-color">
+          <img src="https://solerpalauusa.github.io/sp-app/assets/images/home.svg" alt="home" class="icon-color">
             <span class="nav-icon"></span><br>Home
           </a>
           <a class="nav-link" id="search-icon">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/search-icon.svg" alt="Search" class="icon-color">
           <span class="nav-icon"></span><br>Search
           </a>
-          <a class="nav-link" href="../pages/products.html">
+          <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/pages/products.html">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/fan-white.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Products
           </a>
-          <a class="nav-link" href="../pages/library.html">
+          <a class="nav-link" href="href="https://solerpalauusa.github.io/sp-app/pages/library.html">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/library.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Library
           </a>
-          <a class="nav-link" href="../pages/cross-ref.html">
+          <a class="nav-link" href="href="https://solerpalauusa.github.io/sp-app/pages/cross-ref.html">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/right-left-white.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Cross-Ref
           </a>
-          <a class="nav-link" href="../pages/important-links.html">
+          <a class="nav-link" href="href="https://solerpalauusa.github.io/sp-app/pages/important-links.html">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/links-nav.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Links
           </a>
