@@ -232,15 +232,15 @@ class BottomNavbar extends HTMLElement {
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/fan-white.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Products
           </a>
-          <a class="nav-link" href="href="https://solerpalauusa.github.io/sp-app/pages/library.html">
+          <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/pages/library.html">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/library.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Library
           </a>
-          <a class="nav-link" href="href="https://solerpalauusa.github.io/sp-app/pages/cross-ref.html">
+          <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/pages/cross-ref.html">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/right-left-white.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Cross-Ref
           </a>
-          <a class="nav-link" href="href="https://solerpalauusa.github.io/sp-app/pages/important-links.html">
+          <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/pages/important-links.html">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/links-nav.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Links
           </a>
@@ -339,7 +339,7 @@ class BottomNavbar extends HTMLElement {
     }
 
     // Fetch the data from your JSON file
-    fetch('../data/products.json') // Replace with the actual path to your JSON file
+    fetch('https://solerpalauusa.github.io/sp-app/data/products.json') // Replace with the actual path to your JSON file
       .then((response) => response.json())
       .then((data) => {
         // Filter the data based on the query
