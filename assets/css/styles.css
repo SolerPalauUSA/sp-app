@@ -11,13 +11,14 @@ main {
     align-items: center;
     /* Center horizontally */
     height: 100vh;
+    background: linear-gradient(180deg, #C3E0E5 0%, whitesmoke 100%);
     /* Full viewport height */
 
 }
 
 .top-div {
     color: whitesmoke;
-    background: #053658;
+    background: #274472;
     font-size: 18px;
     width: 100%;
     position: fixed;
@@ -48,7 +49,10 @@ main {
     flex-direction: column;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: -2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #C3E0E5 0%, #f5f5f5 30%);
+    
 }
 
 .icon-grid {
