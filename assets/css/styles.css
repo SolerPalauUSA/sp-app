@@ -66,7 +66,7 @@ main {
 }
 
 .icon {
-
+    background-color: whitesmoke;
     transition: background-color 0.3s ease;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -75,8 +75,9 @@ main {
 
 .icon a {
     text-decoration: none;
-    color: #000000c2;
+    color: #274472;
     font-size: 20px;
+
 }
 
 .icon:hover {
