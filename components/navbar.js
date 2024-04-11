@@ -69,6 +69,7 @@ class BottomNavbar extends HTMLElement {
       z-index: 999;
       opacity: 1;
       box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+      border-top: 2px #F5333F solid;
 }
 
     .nav-link {
