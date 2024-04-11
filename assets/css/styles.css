@@ -103,6 +103,18 @@ main {
     font-weight: bold;
 }
 
+.icon-titles {
+    padding: .25rem;
+    font-size: 20px;
+    background-color: #274472;
+    color: whitesmoke;
+    margin-top: -.5rem;
+    border-radius: 5px;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    letter-spacing: .5px;
+}
+
 .series-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
