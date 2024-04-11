@@ -11,7 +11,7 @@ main {
     align-items: center;
     /* Center horizontally */
     height: 100vh;
-    background: linear-gradient(180deg, #C3E0E5 30%, whitesmoke 60%);
+    background-color:whitesmoke;
     /* Full viewport height */
 
 }
