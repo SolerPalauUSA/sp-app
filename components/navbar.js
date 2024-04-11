@@ -59,8 +59,8 @@ class BottomNavbar extends HTMLElement {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #053658;
-      color: #fff;
+      background-color: #274472;
+      color: whitesmoke;
       padding: 15px;
       position: fixed;
       bottom: 0;
@@ -68,7 +68,6 @@ class BottomNavbar extends HTMLElement {
       right: 0;
       z-index: 999;
       opacity: 1;
-      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
     .nav-link {
