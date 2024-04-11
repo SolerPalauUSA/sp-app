@@ -29,7 +29,7 @@ main {
     justify-content: center;
     opacity: 1;
     z-index: 9990;
-    height: 15vh; /* Adjust height as needed */
+    height: 12vh; /* Adjust height as needed */
     padding-top: 10px; /* Adjust padding to center content vertically */
     box-sizing: border-box;
     
@@ -65,9 +65,14 @@ main {
 
 }
 
-.icon {
+.icon-wrapper {
     display: flex;
     flex-direction: column;
+
+}
+
+.icon {
+  
     background-color: #C3E0E5;
     transition: background-color 0.3s ease;
     border-radius: 8px;
