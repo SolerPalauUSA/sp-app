@@ -29,14 +29,15 @@ main {
     justify-content: center;
     opacity: 1;
     z-index: 9990;
-    height: 12vh; /* Adjust height as needed */
+    height: 13vh; /* Adjust height as needed */
     padding-top: 10px; /* Adjust padding to center content vertically */
     box-sizing: border-box;
+    border-bottom: 2px #EE3741 solid;
     
 }
 
 .top-div img {
-    width: 70px; /* Adjust based on your preference */
+    width: 80px; /* Adjust based on your preference */
     margin: auto; /* Center the image horizontally */
 }
 
@@ -73,9 +74,9 @@ main {
 
 .icon {
   
-    background-color: #C3E0E5;
-    transition: background-color 0.3s ease;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
    
 }
