@@ -155,10 +155,11 @@ main {
 
 
 .product-listing {
-
-    border: 1.5px solid #ccc;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    
 }
 
 .product-image {
