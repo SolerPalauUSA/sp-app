@@ -166,6 +166,7 @@ render() {
           text-align: center!important;
           align-content: center!important;
           margin: 2px!important;
+          border-radius: 10px!important;
         }
         
         /* Set height when .categories.selected is not active */
