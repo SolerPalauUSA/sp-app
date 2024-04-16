@@ -245,7 +245,7 @@ render() {
             display: block; /* Ensures the input behaves as a block-level element */
             width: 80%; /* Adjust the width as needed */
             margin: 0 auto; /* Centers the input box and adds equal margins on both sides */
-            margin-top: 7rem;
+            margin-top: 8rem;
             border: 1px solid #ccc!important;
             border-radius: 20px!important;
             padding: .5rem!important;
