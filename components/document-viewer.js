@@ -147,12 +147,13 @@ render() {
           cursor: pointer;
           padding: .5rem;
           margin: 10px;
-          background-color: transparent;
+          background-color: whitesmoke;
           border: 1px solid #ccc;
-          border-radius: 5px;
+          border-radius: 20px;
           width: 170px;
           font-size: 22px;
-          color: #000000c2!important;
+          color: #274472!important;
+          box-shadow:rgba(0, 0, 0, 0.15) 0px 2px 8px;
           transition: width 0.3s ease; /* Smooth transition for category buttons */
         }
         
@@ -248,6 +249,7 @@ render() {
             border-radius: 5px!important;
             padding: .5rem!important;
             font-size: 16px;
+            box-shadow:rgba(0, 0, 0, 0.15) 0px 2px 8px;
           }
 
       </style>
