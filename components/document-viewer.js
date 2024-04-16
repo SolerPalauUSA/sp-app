@@ -21,14 +21,6 @@ render() {
       <style>
 
 
-      :host {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* Full viewport height */
-        margin: 0; /* Reset any default margin */
-    }
-
 
       .download-btn {
         padding: 5px 10px;
@@ -204,7 +196,6 @@ render() {
         .documents {
     
           transition: max-height 0.3s ease;
-          height: 100vh;
           margin-bottom: 2rem;
        
         }
