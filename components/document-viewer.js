@@ -246,7 +246,7 @@ render() {
             margin: 0 auto; /* Centers the input box and adds equal margins on both sides */
             margin-top: 7rem;
             border: 1px solid #ccc!important;
-            border-radius: 5px!important;
+            border-radius: 20px!important;
             padding: .5rem!important;
             font-size: 16px;
             box-shadow:rgba(0, 0, 0, 0.15) 0px 2px 8px;
