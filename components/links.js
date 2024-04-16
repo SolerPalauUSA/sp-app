@@ -65,24 +65,25 @@ class ImportantLinks extends HTMLElement {
             grid-template-columns: repeat(2, 1fr); /* Creates two columns */
             gap: 20px;
         
-           
-
         }
+
         .link-item {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-decoration: none;
-            color: #000000c2;
+            color: #274472;
             height: 150px;
             border: 1.5px solid #ccc;
             align-self: center;
             justify-content: center;
-            border-radius: 5px;
+            border-radius: 20px;
             padding: .5rem;
             width: 150px;
+            background-color: whitesmoke;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
         }
-        }
+ 
 
         .link-icon {
             width: 50px;
