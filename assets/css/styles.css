@@ -175,12 +175,12 @@ main {
 
 /* Style for the product name (optional) */
 .product-title {
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 5px;
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    color: #000000c2;
+    color: #274472;
     font-weight: 500;
 
     /* Add other styles like color, font, etc. as desired */
