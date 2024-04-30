@@ -228,7 +228,7 @@ class BottomNavbar extends HTMLElement {
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/search-icon.svg" alt="Search" class="icon-color">
           <span class="nav-icon"></span><br>Search
           </a>
-          <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/pages/products.html">
+          <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/pages/productsgrid.html">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/fan-white.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Products
           </a>
