@@ -5,7 +5,7 @@
     "start_url": "/sp-app",
     "display": "standalone",
     "background_color": "whitesmoke",
-    "theme_color": "#053658",
+    "theme_color": "#274472",
     "orientation": "any",
    
     "icons": [

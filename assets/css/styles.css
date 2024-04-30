@@ -200,7 +200,7 @@ main {
 
     padding: 0.5rem;
     letter-spacing: 1px;
-    color: #053658;
+    color: #274472;
 }
 
 .back-arrow {
@@ -244,7 +244,7 @@ select.series-dropdown {
     border-radius: 5px !important;
     border: 1px solid #ccc!important;
     background-color: whitesmoke !important;
-    color: #053658 !important;
+    color: #274472 !important;
     font-size: 15px !important;
     
 
@@ -257,7 +257,7 @@ select.series-dropdown {
     border-radius: 5px !important;
     border: 1px solid #ccc!important;
     background-color: whitesmoke !important;
-    color: #053658 !important;
+    color: #274472 !important;
     font-size: 15px !important;
     
 }
@@ -286,7 +286,7 @@ button {
     border-radius: 5px !important;
     border: 1px solid #ccc!important;
     background-color: whitesmoke !important;
-    color: #053658 !important;
+    color: #274472 !important;
 
 }
 
@@ -296,7 +296,7 @@ button#install-button-android {
     border: 1px solid #ccc!important;
     border-radius: 0px !important;
     background-color: whitesmoke !important;
-    color: #053658 !important;
+    color: #274472 !important;
     position: absolute !important;
     top: 0;
     display: none;
@@ -307,7 +307,7 @@ button#close-ios-instructions {
     padding: 0.75rem !important;
     border: 1px solid #ccc!important;
     background-color: transparent !important;
-    color: #053658 !important;
+    color: #274472 !important;
     position: static !important;
     float: right !important;
     border-radius: 5px !important;
@@ -320,7 +320,7 @@ button#close-chrome-instructions {
     padding: 0.5rem !important;
     border: 1px solid #ccc!important;
     background-color: transparent !important;
-    color: #053658 !important;
+    color: #274472 !important;
     position: static !important;
     float: left !important;
     border-radius: 5px !important;
@@ -393,7 +393,7 @@ button#close-chrome-instructions {
     letter-spacing: 1px;
     font-weight: 400;
     border-bottom: #63626270 solid .5px;
-    color: #053658;
+    color: #274472;
 }
 
 ul {
@@ -479,7 +479,7 @@ li {
 }
 
 .title-img-series {
-    color: #053658;
+    color: #274472;
     padding: 8px;
     text-align: center;
     position: absolute;
