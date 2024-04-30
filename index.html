@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="theme-color" content="#053658"/>
-     <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#053658" />
+    <meta name="robots" content="noindex, nofollow">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="./assets/css/styles.css">
-     <link rel="stylesheet" href="./globleStyles.css">
+    <link rel="stylesheet" href="./globleStyles.css">
     <title>Soler Palau USA | App</title>
-     <style>
+    <style>
         body {
             background-color: whitesmoke;
-            overflow: hidden; /* This prevents scrolling */
+            overflow: hidden;
+            /* This prevents scrolling */
+        }
+
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 1s ease;
         }
     </style>
 
-<script>
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sp-app/service-worker.js', {
-            scope: '/sp-app/'
-        })
-        .then((registration) => {
-            let serviceWorker;
-            if (registration.installing) {
-                serviceWorker = registration.installing;
-                console.log('Service worker installing');
-            } else if (registration.waiting) {
-                serviceWorker = registration.waiting;
-                console.log('Service worker installed & waiting');
-            } else if (registration.active) {
-                serviceWorker = registration.active;
-                console.log('Service worker active');
-            }
-
-            if (serviceWorker) {
-                serviceWorker.addEventListener('statechange', (e) => {
-                    console.log('Service worker state change:', e.target.state);
-                    if (e.target.state === 'activated') {
-                        // Check if this is the first service worker to control the page or not
-                        if (!navigator.serviceWorker.controller) {
-                            console.log('Service worker activated for the first time!');
-                        } else {
-                            // New service worker has taken over, show notification
-                            console.log('New content is available; please refresh.');
-                            document.getElementById('update-notification').style.display = 'block';
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sp-app/service-worker.js', {
+                    scope: '/sp-app/'
+                })
+                    .then((registration) => {
+                        let serviceWorker;
+                        if (registration.installing) {
+                            serviceWorker = registration.installing;
+                            console.log('Service worker installing');
+                        } else if (registration.waiting) {
+                            serviceWorker = registration.waiting;
+                            console.log('Service worker installed & waiting');
+                        } else if (registration.active) {
+                            serviceWorker = registration.active;
+                            console.log('Service worker active');
                         }
-                    }
+
+                        if (serviceWorker) {
+                            serviceWorker.addEventListener('statechange', (e) => {
+                                console.log('Service worker state change:', e.target.state);
+                                if (e.target.state === 'activated') {
+                                    // Check if this is the first service worker to control the page or not
+                                    if (!navigator.serviceWorker.controller) {
+                                        console.log('Service worker activated for the first time!');
+                                    } else {
+                                        // New service worker has taken over, show notification
+                                        console.log('New content is available; please refresh.');
+                                        document.getElementById('update-notification').style.display = 'block';
+                                    }
+                                }
+                            });
+                        }
+
+                        // Add event listener for message from service worker
+                        navigator.serviceWorker.addEventListener('message', (event) => {
+                            if (event.data.action === 'refreshContent') {
+                                // Display UI element or notification to refresh content
+                                document.getElementById('update-notification').style.display = 'block';
+                            }
+                        });
+
+                    })
+                    .catch((error) => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+
+                let refreshing;
+                navigator.serviceWorker.addEventListener('controllerchange', () => {
+                    if (refreshing) return;
+                    window.location.reload();
+                    refreshing = true;
                 });
-            }
-
-            // Add event listener for message from service worker
-            navigator.serviceWorker.addEventListener('message', (event) => {
-                if (event.data.action === 'refreshContent') {
-                    // Display UI element or notification to refresh content
-                    document.getElementById('update-notification').style.display = 'block';
-                }
             });
-
-        })
-        .catch((error) => {
-            console.error('Service Worker registration failed:', error);
-        });
-
-        let refreshing;
-        navigator.serviceWorker.addEventListener('controllerchange', () => {
-            if (refreshing) return;
-            window.location.reload();
-            refreshing = true;
-        });
-    });
-}
+        }
 
 
-  </script>
+    </script>
 
 
 
@@ -83,28 +99,33 @@ if ('serviceWorker' in navigator) {
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T89QEGBKP"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-5T89QEGBKP');
+    gtag('config', 'G-5T89QEGBKP');
 </script>
+
 <body>
+
+    
+    <div id="loader" class="loader-container">
+        <img style="margin-left: 18px;" src="./assets/images/loader.gif" alt="Loading...">
+    </div>
+
+    <div id="content" style="display:none;">
 
     <div class="top-div top-div-iphone-se">
         <img src="./assets/images/whitelogo.png" alt="logo" />
-      </div>
+    </div>
 
 
-   <main>
+    <main>
 
-
-
-        
         <!-- Grid of icons and links -->
 
         <div class="grid-container">
-           
+
             <div style="font-size: 48px;
             margin-top: 0px;
             display: flex;
@@ -116,51 +137,51 @@ if ('serviceWorker' in navigator) {
             padding: .5rem;
             
             ">Explore S&P USA</div>
-        <div class="icon-grid">
+            <div class="icon-grid">
 
-            <div class="icon-wrapper">
-            <div class="icon" >
-                <a href="./pages/cross-ref.html">
-                    <img src="assets/images/right-left-solid.svg" alt="Cross References" class="icon-color">
-                </a>
+                <div class="icon-wrapper">
+                    <div class="icon">
+                        <a href="./pages/cross-ref.html">
+                            <img src="assets/images/right-left-solid.svg" alt="Cross References" class="icon-color">
+                        </a>
+                    </div>
+                    <div class="icon-titles">Cross Reference</div>
+                </div>
+
+                <div class="icon-wrapper">
+                    <div class="icon">
+                        <a href="./pages/products.html">
+                            <img src="assets/images/fan-solid.svg" alt="Products" class="icon-color">
+                        </a>
+                    </div>
+                    <div class="icon-titles">Products</div>
+                </div>
+
+                <div class="icon-wrapper">
+                    <div class="icon">
+                        <a href="./pages/library.html">
+                            <img src="assets/images/home-library.svg" alt="Documents" class="icon-color">
+                        </a>
+                    </div>
+                    <div class="icon-titles">Library</div>
+                </div>
+
+                <div class="icon-wrapper">
+                    <div class="icon">
+                        <a href="./pages/important-links.html">
+                            <img src="assets/images/links.svg" alt="links" class="icon-color">
+
+                        </a>
+                    </div>
+                    <div class="icon-titles">Important Links</div>
+                </div>
+
             </div>
-            <div class="icon-titles">Cross Reference</div>
-        </div>
-
-        <div class="icon-wrapper">
-            <div class="icon">
-                <a href="./pages/products.html">
-                    <img src="assets/images/fan-solid.svg" alt="Products" class="icon-color">
-                </a>
-            </div>
-            <div class="icon-titles">Products</div>
-        </div>
-
-        <div class="icon-wrapper">
-            <div class="icon">
-                <a href="./pages/library.html">
-                    <img src="assets/images/home-library.svg" alt="Documents" class="icon-color">
-                </a>
-            </div>
-            <div class="icon-titles">Library</div>
-        </div>
-
-        <div class="icon-wrapper">
-           <div class="icon">
-                <a href="./pages/important-links.html">
-                    <img src="assets/images/links.svg" alt="links" class="icon-color">
-                  
-                </a>
-            </div>
-            <div class="icon-titles">Important Links</div>
-        </div>
 
         </div>
 
-    </div>
-
-    <div id="ios-install-instructions" style="display: none;">
-        <div style="
+        <div id="ios-install-instructions" style="display: none;">
+            <div style="
             background-color: rgba(0, 0, 0, 0.5); 
             position: fixed; 
             top: 0; left: 0; 
@@ -170,155 +191,193 @@ if ('serviceWorker' in navigator) {
             display: flex; 
             justify-content: center; 
             align-items: center;">
-            <div id="ios-model-container" class="ios-model">
-                <button id="close-ios-instructions">X</button>
-                <p>To install this application on your mobile device.</p>
-                <p>Tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon" style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon below, and then tap on "Add to home screen".</p>
+                <div id="ios-model-container" class="ios-model">
+                    <button id="close-ios-instructions">X</button>
+                    <p>To install this application on your mobile device.</p>
+                    <p>Tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon"
+                            style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon below, and then tap on
+                        "Add to home screen".</p>
+                </div>
             </div>
         </div>
-    </div>
- </main>
- <bottom-navbar></bottom-navbar>
-      <!-- Android Install Button -->
-        <button id="install-button-android">Install App</button>
-        
-        <div id="update-notification" style="display: none; position: fixed; bottom: 10px; right: 10px; background: white; padding: 20px; box-shadow: 0 0 5px rgba(0,0,0,0.2); z-index: 1000;">
-            <p>New version available</p>
-            <button onclick="window.location.reload(true)">Update</button>
-          </div>
+    </main>
+    <bottom-navbar></bottom-navbar>
 
-        <!-- Update Notification Modal -->
-<!--<div id="update-notification" style="display: none; position: fixed; bottom: 10px; right: 10px; background: white; padding: 20px; box-shadow: 0 0 5px rgba(0,0,0,0.2); z-index: 1000;">
+    </div>
+    <!-- Android Install Button -->
+    <button id="install-button-android">Install App</button>
+
+    <div id="update-notification"
+        style="display: none; position: fixed; bottom: 10px; right: 10px; background: white; padding: 20px; box-shadow: 0 0 5px rgba(0,0,0,0.2); z-index: 1000;">
+        <p>New version available</p>
+        <button onclick="window.location.reload(true)">Update</button>
+    </div>
+
+    <!-- Update Notification Modal -->
+    <!--<div id="update-notification" style="display: none; position: fixed; bottom: 10px; right: 10px; background: white; padding: 20px; box-shadow: 0 0 5px rgba(0,0,0,0.2); z-index: 1000;">
     New content is available. 
     <button onclick="document.location.reload(true)">Refresh</button>
     <button onclick="document.getElementById('update-notification').style.display='none'">Close</button>
 </div>-->
 
 
-<script type="module" src="firebase.js"></script>
+    <script type="module" src="firebase.js"></script>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    let deferredPrompt;
-    const installButtonAndroid = document.getElementById('install-button-android');
-    const iosInstallInstructions = document.getElementById('ios-install-instructions');
-    const closeIosInstructions = document.getElementById('close-ios-instructions');
-    const closeChromeInstructions = document.getElementById('close-chrome-instructions');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let deferredPrompt;
+            const installButtonAndroid = document.getElementById('install-button-android');
+            const iosInstallInstructions = document.getElementById('ios-install-instructions');
+            const closeIosInstructions = document.getElementById('close-ios-instructions');
+            const closeChromeInstructions = document.getElementById('close-chrome-instructions');
 
-    // Function to check if the app has been installed
-    function isAppInstalled() {
-      return localStorage.getItem('appInstalled') === 'true';
-    }
+            // Function to check if the app has been installed
+            function isAppInstalled() {
+                return localStorage.getItem('appInstalled') === 'true';
+            }
 
-    // Function to check if the browser is Chrome on iOS
-    const isIosChrome = () => {
-        const userAgent = window.navigator.userAgent.toLowerCase();
-        return /crios/.test(userAgent) && isIos();
-    };
+            // Function to check if the browser is Chrome on iOS
+            const isIosChrome = () => {
+                const userAgent = window.navigator.userAgent.toLowerCase();
+                return /crios/.test(userAgent) && isIos();
+            };
 
-    // Check if the device is on iOS
-    const isIos = () => {
-      const userAgent = window.navigator.userAgent.toLowerCase();
-      return /iphone|ipad|ipod/.test(userAgent);
-    };
+            // Check if the device is on iOS
+            const isIos = () => {
+                const userAgent = window.navigator.userAgent.toLowerCase();
+                return /iphone|ipad|ipod/.test(userAgent);
+            };
 
-    // Check if the user has closed the instructions
-    const iosInstructionsClosed = localStorage.getItem('iosInstructionsClosed');
+            // Check if the user has closed the instructions
+            const iosInstructionsClosed = localStorage.getItem('iosInstructionsClosed');
 
-    // Check if the user is anonymous (modify this condition based on your Firebase authentication logic)
-    const isUserAnonymous = true; // You need to implement the user check logic here
+            // Check if the user is anonymous (modify this condition based on your Firebase authentication logic)
+            const isUserAnonymous = true; // You need to implement the user check logic here
 
-    function hideIosInstallInstructions() {
-  iosInstallInstructions.style.display = 'none';
-  localStorage.setItem('iosInstructionsClosed', 'true');
-}
+            function hideIosInstallInstructions() {
+                iosInstallInstructions.style.display = 'none';
+                localStorage.setItem('iosInstructionsClosed', 'true');
+            }
 
-closeIosInstructions.addEventListener('click', hideIosInstallInstructions);
+            closeIosInstructions.addEventListener('click', hideIosInstallInstructions);
 
 
-    if (isIos() && (!isAppInstalled() || isUserAnonymous) && !iosInstructionsClosed) {
-  installButtonAndroid.style.display = 'none';
-  iosInstallInstructions.style.display = 'flex';
+            if (isIos() && (!isAppInstalled() || isUserAnonymous) && !iosInstructionsClosed) {
+                installButtonAndroid.style.display = 'none';
+                iosInstallInstructions.style.display = 'flex';
 
-  // Check if the browser is Chrome on iOS
-  if (isIosChrome()) {
-    const iosModelContainer = document.getElementById('ios-model-container');
-    iosModelContainer.classList.add('chrome-style');
-    iosModelContainer.style.alignSelf = 'start';
+                // Check if the browser is Chrome on iOS
+                if (isIosChrome()) {
+                    const iosModelContainer = document.getElementById('ios-model-container');
+                    iosModelContainer.classList.add('chrome-style');
+                    iosModelContainer.style.alignSelf = 'start';
 
-    // Apply additional styles for Chrome on iOS
-    iosModelContainer.style.borderRadius = '0px';
-    iosModelContainer.style.marginLeft = '.25rem';
-    iosModelContainer.style.marginRight = '.25rem';
-    iosModelContainer.style.marginTop = '2rem';
+                    // Apply additional styles for Chrome on iOS
+                    iosModelContainer.style.borderRadius = '0px';
+                    iosModelContainer.style.marginLeft = '.25rem';
+                    iosModelContainer.style.marginRight = '.25rem';
+                    iosModelContainer.style.marginTop = '2rem';
 
-    // Update the modal content for Chrome on iOS
-    iosModelContainer.innerHTML = `
+                    // Update the modal content for Chrome on iOS
+                    iosModelContainer.innerHTML = `
         <button id="close-chrome-instructions">X</button>
         <p>To install this application on your mobile device.</p>
         <p>Tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon" style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon above, and then tap on "Add to home screen".</p>
     `;
 
-    // Add event listener for Chrome-style close button
-    const closeChromeInstructions = document.getElementById('close-chrome-instructions');
-    closeChromeInstructions.addEventListener('click', hideIosInstallInstructions);
+                    // Add event listener for Chrome-style close button
+                    const closeChromeInstructions = document.getElementById('close-chrome-instructions');
+                    closeChromeInstructions.addEventListener('click', hideIosInstallInstructions);
 
-  } else if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-    const iosModelContainer = document.getElementById('ios-model-container');
-    iosModelContainer.classList.add('safari-style');
-    iosModelContainer.style.alignSelf = 'end';
-  }
+                } else if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                    const iosModelContainer = document.getElementById('ios-model-container');
+                    iosModelContainer.classList.add('safari-style');
+                    iosModelContainer.style.alignSelf = 'end';
+                }
 
-      // Check if the app is running in standalone mode
-      if (window.matchMedia('(display-mode: standalone)').matches) {
-        iosInstallInstructions.style.display = 'none'; // Hide iOS instructions
-        installButtonAndroid.style.display = 'none'; // Hide Android button
-      }
-    }
+                // Check if the app is running in standalone mode
+                if (window.matchMedia('(display-mode: standalone)').matches) {
+                    iosInstallInstructions.style.display = 'none'; // Hide iOS instructions
+                    installButtonAndroid.style.display = 'none'; // Hide Android button
+                }
+            }
 
-    window.addEventListener('beforeinstallprompt', (event) => {
-      // Check if the app is not installed
-      if (!isAppInstalled()) {
-        event.preventDefault();
-        deferredPrompt = event;
-       
-    // Delay the display of the install button
-    setTimeout(() => {
-      // Check again if the app isn't installed after the delay
-      if (!isAppInstalled()) {
-        installButtonAndroid.style.display = 'block';
-      }
-    }, 1000); // Delay in milliseconds (e.g., 1000ms = 1 second)
-  }
+            window.addEventListener('beforeinstallprompt', (event) => {
+                // Check if the app is not installed
+                if (!isAppInstalled()) {
+                    event.preventDefault();
+                    deferredPrompt = event;
+
+                    // Delay the display of the install button
+                    setTimeout(() => {
+                        // Check again if the app isn't installed after the delay
+                        if (!isAppInstalled()) {
+                            installButtonAndroid.style.display = 'block';
+                        }
+                    }, 1000); // Delay in milliseconds (e.g., 1000ms = 1 second)
+                }
+            });
+
+            installButtonAndroid.addEventListener('click', async () => {
+                if (!deferredPrompt) {
+                    return;
+                }
+
+                const result = await deferredPrompt.prompt();
+                console.log(`Install prompt result: ${result.outcome}`);
+
+                if (result.outcome === 'accepted') {
+                    console.log('User accepted the install prompt');
+
+
+                    // Set the flag to indicate that the app has been installed
+                    localStorage.setItem('appInstalled', 'true');
+
+                    // Hide the install button
+                    installButtonAndroid.style.display = 'none';
+                } else {
+                    console.log('User dismissed the install prompt');
+                }
+
+                deferredPrompt = null;
+            });
+        });
+    </script>
+
+    
+<script>
+    window.addEventListener('load', function () {
+  const loader = document.getElementById('loader');
+  const content = document.getElementById('content');
+
+  // Ensure the loader is visible
+  loader.style.opacity = '1';
+
+  // Simulate loading process
+  setTimeout(() => {
+      // Begin fade out effect
+      loader.style.opacity = '0';
+
+      // Wait for the fade out to finish
+      setTimeout(() => {
+          // Hide loader and show content
+          loader.style.display = 'none';
+          content.style.display = 'block';
+
+          // Optionally, fade in the content if desired
+          content.style.opacity = '0';
+          content.style.transition = 'opacity 1s ease';
+          setTimeout(() => content.style.opacity = '1', 50);
+      }, 1000); // This timeout must match the CSS transition time
+  }, 3000); // Adjust this time for the simulated loading process
 });
 
-    installButtonAndroid.addEventListener('click', async () => {
-      if (!deferredPrompt) {
-        return;
-      }
+  </script>
 
-      const result = await deferredPrompt.prompt();
-      console.log(`Install prompt result: ${result.outcome}`);
 
-      if (result.outcome === 'accepted') {
-        console.log('User accepted the install prompt');
-
-       
-      // Set the flag to indicate that the app has been installed
-      localStorage.setItem('appInstalled', 'true');
-
-// Hide the install button
-installButtonAndroid.style.display = 'none';
-} else {
-console.log('User dismissed the install prompt');
-}
-
-deferredPrompt = null;
-});
-});
-</script>
-<script src="./components/navbar.js"></script>
+    <script src="./components/navbar.js"></script>
 
 
 </body>
+
 </html>
