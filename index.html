@@ -11,12 +11,6 @@
     <link rel="stylesheet" href="./globleStyles.css">
     <title>Soler Palau USA | App</title>
     <style>
-        body {
-            background-color: whitesmoke;
-            overflow: hidden;
-            /* Prevents scrolling during load */
-        }
-
         .loader-container {
             position: fixed;
             top: 0;
@@ -31,25 +25,23 @@
             opacity: 1;
             visibility: visible;
             transition: opacity 1s ease, visibility 0s 1s;
-            /* Visibility transitions to hidden after opacity */
         }
-
         .content {
             display: none;
             opacity: 0;
             transition: opacity 1s ease;
         }
-
         .session-active .loader-container {
             opacity: 0;
             visibility: hidden;
             transition: visibility 0s 0s, opacity 1s ease;
-            /* Immediately make visibility hidden when transitioning */
         }
-
         .session-active .content {
             display: block;
             opacity: 1;
+        }
+        body.no-scroll {
+            overflow: hidden;
         }
     </style>
 
@@ -134,7 +126,7 @@
         <img style="margin-left: 30px; margin-bottom: 100px;" src="./assets/images/loader.gif" alt="Loading...">
     </div>
 
-    <div id="content" class="content">
+    <div id="content"  style="display:none;">
 
         <div class="top-div top-div-iphone-se">
             <img src="./assets/images/whitelogo.png" alt="logo" />
@@ -366,40 +358,32 @@
         });
     </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const loader = document.getElementById('loader');
-            const content = document.getElementById('content');
-            const hasShownGif = sessionStorage.getItem('gifShown');
-
-            if (!hasShownGif) {
-                // Show loader only if not shown in this session
-                loader.style.display = 'flex';
-                loader.style.opacity = '1';
-                sessionStorage.setItem('gifShown', 'true');  // Mark as shown for this session immediately to prevent re-show on quick reloads
-
-                setTimeout(() => {
-                    loader.style.opacity = '0';  // Begin fade out
-
-                    loader.addEventListener('transitionend', () => {
-                        loader.style.visibility = 'hidden';  // Ensure loader is not visible after fade out
-                        content.style.display = 'block';
-                        content.style.opacity = '0';
-
-                        setTimeout(() => {
-                            content.style.opacity = '1';  // Fade in content after loader is hidden
-                        }, 50);
-                    }, { once: true });
-                }, 3000); // Time the loader shows before fading out
-            } else {
-                // Directly display content if loader has been shown
-                loader.style.display = 'none';
-                loader.style.visibility = 'hidden';
-                content.style.display = 'block';
-                content.style.opacity = '1';
-            }
-        });
-    </script>
+<script>
+    if (sessionStorage.getItem('gifShown')) {
+        document.body.classList.add('session-active');
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        const loader = document.getElementById('loader');
+        const content = document.getElementById('content');
+        if (!sessionStorage.getItem('gifShown')) {
+            sessionStorage.setItem('gifShown', 'true'); // Set immediately to prevent re-show on reload
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.addEventListener('transitionend', () => {
+                    loader.style.display = 'none';
+                    content.style.display = 'block';
+                    setTimeout(() => {
+                        content.style.opacity = '1';
+                    }, 50);
+                }, { once: true });
+            }, 3000); // Simulate loading time
+        } else {
+            loader.style.display = 'none';
+            content.style.display = 'block';
+            content.style.opacity = '1';
+        }
+    });
+</script>
 
 
     <script src="./components/navbar.js"></script>
