@@ -14,13 +14,13 @@
         body {
             background-color: whitesmoke;
             overflow: hidden;
-            /* This prevents scrolling */
+            /* Prevents scrolling during load */
         }
 
         .loader-container {
             position: fixed;
             top: 0;
-            left: 0px;
+            left: 0;
             width: 100%;
             height: 100%;
             background-color: white;
@@ -28,7 +28,28 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 1s ease, visibility 0s 1s;
+            /* Visibility transitions to hidden after opacity */
+        }
+
+        .content {
+            display: none;
+            opacity: 0;
             transition: opacity 1s ease;
+        }
+
+        .session-active .loader-container {
+            opacity: 0;
+            visibility: hidden;
+            transition: visibility 0s 0s, opacity 1s ease;
+            /* Immediately make visibility hidden when transitioning */
+        }
+
+        .session-active .content {
+            display: block;
+            opacity: 1;
         }
     </style>
 
@@ -108,25 +129,25 @@
 
 <body>
 
-    
+
     <div id="loader" class="loader-container">
         <img style="margin-left: 30px; margin-bottom: 100px;" src="./assets/images/loader.gif" alt="Loading...">
     </div>
 
-    <div id="content" style="display:none;">
+    <div id="content" class="content">
 
-    <div class="top-div top-div-iphone-se">
-        <img src="./assets/images/whitelogo.png" alt="logo" />
-    </div>
+        <div class="top-div top-div-iphone-se">
+            <img src="./assets/images/whitelogo.png" alt="logo" />
+        </div>
 
 
-    <main>
+        <main>
 
-        <!-- Grid of icons and links -->
+            <!-- Grid of icons and links -->
 
-        <div class="grid-container">
+            <div class="grid-container">
 
-            <div style="font-size: 48px;
+                <div style="font-size: 48px;
             margin-top: 0px;
             display: flex;
             align-self: flex-start; 
@@ -137,51 +158,51 @@
             padding: .5rem;
             
             ">Explore S&P USA</div>
-            <div class="icon-grid">
+                <div class="icon-grid">
 
-                <div class="icon-wrapper">
-                    <div class="icon">
-                        <a href="./pages/cross-ref.html">
-                            <img src="assets/images/right-left-solid.svg" alt="Cross References" class="icon-color">
-                        </a>
+                    <div class="icon-wrapper">
+                        <div class="icon">
+                            <a href="./pages/cross-ref.html">
+                                <img src="assets/images/right-left-solid.svg" alt="Cross References" class="icon-color">
+                            </a>
+                        </div>
+                        <div class="icon-titles">Cross Reference</div>
                     </div>
-                    <div class="icon-titles">Cross Reference</div>
-                </div>
 
-                <div class="icon-wrapper">
-                    <div class="icon">
-                        <a href="./pages/products.html">
-                            <img src="assets/images/fan-solid.svg" alt="Products" class="icon-color">
-                        </a>
+                    <div class="icon-wrapper">
+                        <div class="icon">
+                            <a href="./pages/products.html">
+                                <img src="assets/images/fan-solid.svg" alt="Products" class="icon-color">
+                            </a>
+                        </div>
+                        <div class="icon-titles">Products</div>
                     </div>
-                    <div class="icon-titles">Products</div>
-                </div>
 
-                <div class="icon-wrapper">
-                    <div class="icon">
-                        <a href="./pages/library.html">
-                            <img src="assets/images/home-library.svg" alt="Documents" class="icon-color">
-                        </a>
+                    <div class="icon-wrapper">
+                        <div class="icon">
+                            <a href="./pages/library.html">
+                                <img src="assets/images/home-library.svg" alt="Documents" class="icon-color">
+                            </a>
+                        </div>
+                        <div class="icon-titles">Library</div>
                     </div>
-                    <div class="icon-titles">Library</div>
-                </div>
 
-                <div class="icon-wrapper">
-                    <div class="icon">
-                        <a href="./pages/important-links.html">
-                            <img src="assets/images/links.svg" alt="links" class="icon-color">
+                    <div class="icon-wrapper">
+                        <div class="icon">
+                            <a href="./pages/important-links.html">
+                                <img src="assets/images/links.svg" alt="links" class="icon-color">
 
-                        </a>
+                            </a>
+                        </div>
+                        <div class="icon-titles">Important Links</div>
                     </div>
-                    <div class="icon-titles">Important Links</div>
+
                 </div>
 
             </div>
 
-        </div>
-
-        <div id="ios-install-instructions" style="display: none;">
-            <div style="
+            <div id="ios-install-instructions" style="display: none;">
+                <div style="
             background-color: rgba(0, 0, 0, 0.5); 
             position: fixed; 
             top: 0; left: 0; 
@@ -191,17 +212,18 @@
             display: flex; 
             justify-content: center; 
             align-items: center;">
-                <div id="ios-model-container" class="ios-model">
-                    <button id="close-ios-instructions">X</button>
-                    <p>To install this application on your mobile device.</p>
-                    <p>Tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon"
-                            style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon below, and then tap on
-                        "Add to home screen".</p>
+                    <div id="ios-model-container" class="ios-model">
+                        <button id="close-ios-instructions">X</button>
+                        <p>To install this application on your mobile device.</p>
+                        <p>Tap the <img src="assets/images/Share-outline-01.svg" alt="Share Icon"
+                                style="vertical-align: middle; height: 24px; margin: 0 4px;"> icon below, and then tap
+                            on
+                            "Add to home screen".</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <bottom-navbar></bottom-navbar>
+        </main>
+        <bottom-navbar></bottom-navbar>
 
     </div>
     <!-- Android Install Button -->
@@ -344,45 +366,39 @@
         });
     </script>
 
-    
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const loader = document.querySelector('.loader-container');
-      const content = document.getElementById('content');
-      const hasShownGif = sessionStorage.getItem('gifShown');
-    
-      // Ensure the loader is setup correctly from the start
-      if (!hasShownGif) {
-        loader.style.opacity = '0';  // Start invisible to fade in
-        loader.style.display = 'flex';  // Make sure loader is set to display flex
-        window.addEventListener('load', function() {
-          loader.style.opacity = '1';  // Fade in the loader
-    
-          // Simulate the loading process
-          setTimeout(() => {
-            loader.style.opacity = '0'; // Start fade out
-    
-            setTimeout(() => {
-              loader.style.display = 'none';
-              content.style.display = 'block';   // Ensure content is visible
-              content.style.opacity = '0';
-              content.style.transition = 'opacity 1s ease';
-    
-              setTimeout(() => {
-                content.style.opacity = '1';   // Fade in the content
-                sessionStorage.setItem('gifShown', 'true');  // Set session storage
-              }, 50);
-    
-            }, 1000); // Ensure this matches the CSS transition time
-          }, 3000); // Adjust as necessary for simulated loading time
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+            const hasShownGif = sessionStorage.getItem('gifShown');
+
+            if (!hasShownGif) {
+                // Show loader only if not shown in this session
+                loader.style.display = 'flex';
+                loader.style.opacity = '1';
+                sessionStorage.setItem('gifShown', 'true');  // Mark as shown for this session immediately to prevent re-show on quick reloads
+
+                setTimeout(() => {
+                    loader.style.opacity = '0';  // Begin fade out
+
+                    loader.addEventListener('transitionend', () => {
+                        loader.style.visibility = 'hidden';  // Ensure loader is not visible after fade out
+                        content.style.display = 'block';
+                        content.style.opacity = '0';
+
+                        setTimeout(() => {
+                            content.style.opacity = '1';  // Fade in content after loader is hidden
+                        }, 50);
+                    }, { once: true });
+                }, 3000); // Time the loader shows before fading out
+            } else {
+                // Directly display content if loader has been shown
+                loader.style.display = 'none';
+                loader.style.visibility = 'hidden';
+                content.style.display = 'block';
+                content.style.opacity = '1';
+            }
         });
-      } else {
-        // If the GIF has been shown, adjust CSS properties immediately
-        loader.style.display = 'none';
-        content.style.display = 'block';
-        content.style.opacity = '1';
-      }
-    });
     </script>
 
 
