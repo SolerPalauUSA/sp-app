@@ -140,7 +140,7 @@ class SeriesSelector extends HTMLElement {
             const seriesItem = document.createElement('div');
             seriesItem.className = 'series-item';
             seriesItem.innerHTML = `
-                <img src="../images/${s.image}" alt="${s.name}">
+                <img src="${s.image}" alt="${s.name}">
                 <div class="series-title">${s.name}</div>
             `;
             seriesItem.addEventListener('click', () => this.selectSeries(s));
