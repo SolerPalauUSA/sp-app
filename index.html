@@ -354,10 +354,10 @@
     // Set initial CSS to prevent flashing
     if (hasShownGif) {
         loader.style.display = 'none';
-        content.style.display = 'flex';
+        content.style.display = 'block';
         content.style.opacity = '1';
     } else {
-        loader.style.display = 'block';
+        loader.style.display = 'flex';
         loader.style.opacity = '0'; // Start invisible to fade in if needed
     }
 
@@ -374,7 +374,7 @@
             setTimeout(() => {
                 // Hide loader and show content
                 loader.style.display = 'none';
-                content.style.display = 'flex';
+                content.style.display = 'block';
 
                 // Fade in the content
                 content.style.opacity = '0';
