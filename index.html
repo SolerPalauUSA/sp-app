@@ -346,49 +346,44 @@
 
     
 <script>
-   document.addEventListener('DOMContentLoaded', function() {
-    const loader = document.getElementById('loader');
-    const content = document.getElementById('content');
-    const hasShownGif = sessionStorage.getItem('gifShown');
-
-    // Set initial CSS to prevent flashing
-    if (hasShownGif) {
+    document.addEventListener('DOMContentLoaded', function() {
+      const loader = document.querySelector('.loader-container');
+      const content = document.getElementById('content');
+      const hasShownGif = sessionStorage.getItem('gifShown');
+    
+      // Ensure the loader is setup correctly from the start
+      if (!hasShownGif) {
+        loader.style.opacity = '0';  // Start invisible to fade in
+        loader.style.display = 'flex';  // Make sure loader is set to display flex
+        window.addEventListener('load', function() {
+          loader.style.opacity = '1';  // Fade in the loader
+    
+          // Simulate the loading process
+          setTimeout(() => {
+            loader.style.opacity = '0'; // Start fade out
+    
+            setTimeout(() => {
+              loader.style.display = 'none';
+              content.style.display = 'block';   // Ensure content is visible
+              content.style.opacity = '0';
+              content.style.transition = 'opacity 1s ease';
+    
+              setTimeout(() => {
+                content.style.opacity = '1';   // Fade in the content
+                sessionStorage.setItem('gifShown', 'true');  // Set session storage
+              }, 50);
+    
+            }, 1000); // Ensure this matches the CSS transition time
+          }, 3000); // Adjust as necessary for simulated loading time
+        });
+      } else {
+        // If the GIF has been shown, adjust CSS properties immediately
         loader.style.display = 'none';
         content.style.display = 'block';
         content.style.opacity = '1';
-    } else {
-        loader.style.display = 'flex';
-        loader.style.opacity = '0'; // Start invisible to fade in if needed
-    }
-
-    window.addEventListener('load', function() {
-      if (!hasShownGif) {
-        loader.style.opacity = '1';
-
-        // Simulate loading process
-        setTimeout(() => {
-            // Begin fade out effect
-            loader.style.opacity = '0';
-
-            // Wait for the fade out to finish
-            setTimeout(() => {
-                // Hide loader and show content
-                loader.style.display = 'none';
-                content.style.display = 'block';
-
-                // Fade in the content
-                content.style.opacity = '0';
-                content.style.transition = 'opacity 1s ease';
-                setTimeout(() => content.style.opacity = '1', 50);
-
-                // Set session storage to indicate the GIF has been shown
-                sessionStorage.setItem('gifShown', 'true');
-            }, 1000); // This timeout must match the CSS transition time
-        }, 3000); // Adjust this time for the simulated loading process
       }
     });
-  });
-  </script>
+    </script>
   
 
 
