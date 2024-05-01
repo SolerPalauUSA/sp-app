@@ -223,12 +223,12 @@ class SeriesSelector extends HTMLElement {
         const modelItem = document.createElement('div');
         modelItem.className = 'model-item';
         modelItem.innerHTML = `
-            <img src="${model.image || series.image}" alt="${model.name}" style="height: 80px; width: 100px;">
+            <img src="${model.image || series.image}" alt="${model.name}" style="height: 80px; width: auto;">
             <div class="model-info">
                 <p style="font-size: 20px; font-weight: 700; margin-bottom: .25rem;">${model.name}</p>
                 <p style="margin-top: .25rem; font-size: 18px;">${model.price}</p>
             </div>
-            <a href="https://www.optisizer.com/Default.aspx"><span>Order Now</span></a>
+            <a href="https://www.optisizer.com/Default.aspx" target="_blank" ><span>Order Now</span></a>
         `;
         return modelItem;
     }
