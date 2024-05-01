@@ -60,6 +60,13 @@ class SeriesSelector extends HTMLElement {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background: whitesmoke;
+            margin: 5px;
         }
         
         .model-item a {
