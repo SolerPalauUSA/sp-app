@@ -18,7 +18,7 @@ class SeriesSelector extends HTMLElement {
         
         }
         
-        .series-item, .model-item {
+        .series-item {
             border: 1px solid #ccc;
             padding: 10px;
             margin: 5px;
