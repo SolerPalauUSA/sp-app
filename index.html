@@ -366,24 +366,20 @@
     </script>
 
 <script>
-    if (sessionStorage.getItem('gifShown')) {
-        document.body.classList.add('session-active');
-    }
     document.addEventListener('DOMContentLoaded', function() {
-        const loader = document.getElementById('loader');
+        const loader = document.querySelector('.loader-container');
         const content = document.getElementById('content');
         if (!sessionStorage.getItem('gifShown')) {
-            sessionStorage.setItem('gifShown', 'true'); // Set immediately to prevent re-show on reload
+            sessionStorage.setItem('gifShown', 'true');
+            loader.style.opacity = '1';
             setTimeout(() => {
                 loader.style.opacity = '0';
                 loader.addEventListener('transitionend', () => {
                     loader.style.display = 'none';
                     content.style.display = 'block';
-                    setTimeout(() => {
-                        content.style.opacity = '1';
-                    }, 50);
+                    setTimeout(() => content.style.opacity = '1', 50);
                 }, { once: true });
-            }, 4000); // Simulate loading time
+            }, 3000);
         } else {
             loader.style.display = 'none';
             content.style.display = 'block';
