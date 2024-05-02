@@ -11,13 +11,8 @@
     <link rel="stylesheet" href="./globleStyles.css">
     <title>Soler Palau USA | App</title>
     <style>
-            .body-container {
-            position: relative;
-            width: 100%;
-            min-height: 100vh;
-        }
-            .loader-container {
-            position: absolute;
+        .loader-container {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -126,7 +121,7 @@
 
 <body>
 
-<div class="body-container">
+
     <div id="loader" class="loader-container">
         <img style="margin-left: 30px; margin-bottom: 100px;" src="./assets/images/loader.gif" alt="Loading...">
     </div>
@@ -223,8 +218,6 @@
         <bottom-navbar></bottom-navbar>
 
     </div>
-
-</div>
     <!-- Android Install Button -->
     <button id="install-button-android">Install App</button>
 
@@ -366,20 +359,24 @@
     </script>
 
 <script>
+    if (sessionStorage.getItem('gifShown')) {
+        document.body.classList.add('session-active');
+    }
     document.addEventListener('DOMContentLoaded', function() {
-        const loader = document.querySelector('.loader-container');
+        const loader = document.getElementById('loader');
         const content = document.getElementById('content');
         if (!sessionStorage.getItem('gifShown')) {
-            sessionStorage.setItem('gifShown', 'true');
-            loader.style.opacity = '1';
+            sessionStorage.setItem('gifShown', 'true'); // Set immediately to prevent re-show on reload
             setTimeout(() => {
                 loader.style.opacity = '0';
                 loader.addEventListener('transitionend', () => {
                     loader.style.display = 'none';
                     content.style.display = 'block';
-                    setTimeout(() => content.style.opacity = '1', 50);
+                    setTimeout(() => {
+                        content.style.opacity = '1';
+                    }, 50);
                 }, { once: true });
-            }, 3000);
+            }, 4000); // Simulate loading time
         } else {
             loader.style.display = 'none';
             content.style.display = 'block';
