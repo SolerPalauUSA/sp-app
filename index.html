@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./globleStyles.css">
     <title>Soler Palau USA | App</title>
     <style>
-        .loader-container {
+            .loader-container {
             position: fixed;
             top: 0;
             left: 0;
@@ -22,23 +22,13 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            opacity: 1;
-            visibility: visible;
-            transition: opacity 1s ease, visibility 0s 1s;
+            opacity: 1; /* Start fully visible */
+            transition: opacity 1s ease; /* Smooth transition for opacity */
         }
         .content {
-            display: none;
-            opacity: 0;
-            transition: opacity 1s ease;
-        }
-        .session-active .loader-container {
-            opacity: 0;
-            visibility: hidden;
-            transition: visibility 0s 0s, opacity 1s ease;
-        }
-        .session-active .content {
-            display: block;
-            opacity: 1;
+            display: block; /* Start with display block but hidden */
+            opacity: 0; /* Start fully transparent */
+            transition: opacity 1s ease; /* Smooth transition for opacity */
         }
         body.no-scroll {
             overflow: hidden;
@@ -358,29 +348,26 @@
         });
     </script>
 
+
 <script>
-    if (sessionStorage.getItem('gifShown')) {
-        document.body.classList.add('session-active');
-    }
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', () => {
         const loader = document.getElementById('loader');
         const content = document.getElementById('content');
+
         if (!sessionStorage.getItem('gifShown')) {
-            sessionStorage.setItem('gifShown', 'true'); // Set immediately to prevent re-show on reload
+            // Set the session storage to prevent re-showing the loader gif
+            sessionStorage.setItem('gifShown', 'true');
+            // Set a timeout corresponding to your GIF's duration
             setTimeout(() => {
-                loader.style.opacity = '0';
+                loader.style.opacity = '0'; // Begin to fade out the loader
                 loader.addEventListener('transitionend', () => {
-                    loader.style.display = 'none';
-                    content.style.display = 'block';
-                    setTimeout(() => {
-                        content.style.opacity = '1';
-                    }, 50);
+                    loader.style.display = 'none'; // Hide loader after fade
+                    content.style.opacity = '1'; // Start fading in the content
                 }, { once: true });
-            }, 4000); // Simulate loading time
+            }, 5000); // Assume GIF lasts 5 seconds
         } else {
-            loader.style.display = 'none';
-            content.style.display = 'block';
-            content.style.opacity = '1';
+            loader.style.display = 'none'; // Hide loader immediately
+            content.style.opacity = '1'; // Show content immediately
         }
     });
 </script>
