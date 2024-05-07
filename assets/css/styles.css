@@ -18,7 +18,7 @@ main {
 
 .top-div {
     color: whitesmoke;
-    background: #274472;
+    background: var(--primary-blue);
     font-size: 18px;
     width: 100%;
     position: fixed;
@@ -32,7 +32,7 @@ main {
     height: 15vh; /* Adjust height as needed */
     padding-top: 10px; /* Adjust padding to center content vertically */
     box-sizing: border-box;
-    border-bottom: 4px #EE3741 solid;
+    border-bottom: 4px var(--primary-red) solid;
     
 }
 

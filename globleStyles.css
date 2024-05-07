@@ -10,3 +10,16 @@ body {
     padding: 0;
 }
 
+
+
+:root {
+    /* Default Theme */
+    --primary-blue: #003b5c; /* Dark blue */
+    --primary-red: #ef3340; /* Red */
+    --secondary-blue: #407ec9; /* blue */
+    --secondary-lightblue: #99d6ea; /* light blue */
+    --primary-white: whitesmoke;
+
+
+}
+
