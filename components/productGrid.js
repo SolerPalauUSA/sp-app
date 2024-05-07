@@ -59,7 +59,7 @@ class ProductGrid extends HTMLElement {
                     text-align: center;
                     background: whitesmoke;
                     width: 100%; /* Text covers the width */
-                    color: #274472;
+                    color: var(--primary-blue);
                     height: 20px;
 
                 }

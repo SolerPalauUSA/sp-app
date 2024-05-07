@@ -37,14 +37,14 @@ class SeriesSelector extends HTMLElement {
         }
         
         .series-title {
-            color: #274472;
+            color: var(--primary-blue);
             font-size: 20px;
         } 
         
         .header-title {
             margin-top: 8.5rem;
             padding-left: 1rem;
-            color: #EE3741;
+            color: var(--primary-red);
             font-size: 28px;
             font-weight: 500;
         }
@@ -73,7 +73,7 @@ class SeriesSelector extends HTMLElement {
             font-size: 20px;
             padding: .5rem;
             text-decoration: none;
-            background-color: #274472;
+            background-color: var(--primary-blue);
             color: white;
             border-radius: 10px;
            

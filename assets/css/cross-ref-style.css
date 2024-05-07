@@ -56,7 +56,7 @@ tbody {
     overflow: hidden;
     text-overflow: ellipsis;
     background-color: whitesmoke;
-    color: #053658;
+    color: var(--primary-blue);
     font-weight: 500;
     padding: 0.5rem;
     position: relative; /* Add relative positioning to the header */

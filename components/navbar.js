@@ -59,7 +59,7 @@ class BottomNavbar extends HTMLElement {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #274472;
+      background-color: var(--primary-blue);
       color: whitesmoke;
       padding: 15px;
       position: fixed;
@@ -94,7 +94,7 @@ class BottomNavbar extends HTMLElement {
       font-size: 40px;
       font-weight: 600;
       cursor: pointer;
-      color: #053658;
+      color: var(--primary-blue);
  }
 
 
