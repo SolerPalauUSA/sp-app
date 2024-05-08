@@ -24,7 +24,7 @@
             z-index: 1000;
             opacity: 1; /* Start fully visible */
             visibility: visible;
-            transition: opacity 1s ease; /* Smooth transition for opacity */
+            transition: opacity 1s ease, visibility 0s 1s; /* Smooth transition for opacity */
         }
         .content {
             display: block; /* Start with display block but hidden */
@@ -365,7 +365,7 @@
                     loader.style.display = 'none'; // Hide loader after fade
                     content.style.opacity = '1'; // Start fading in the content
                 }, { once: true });
-            }, 4000); // Assume GIF lasts 5 seconds
+            }, 3000); // Assume GIF lasts 5 seconds
         } else {
             loader.style.display = 'none'; // Hide loader immediately
             content.style.opacity = '1'; // Show content immediately
