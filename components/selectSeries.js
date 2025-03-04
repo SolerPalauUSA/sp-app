@@ -177,6 +177,7 @@ class SeriesSelector extends HTMLElement {
             
             // Optionally, add a CTA link to the product configurator
             const configuratorLink = document.createElement('a');
+            configuratorLink.className = 'no-message-cta';
             configuratorLink.href = 'https://www.optisizer.com/Default.aspx';
             configuratorLink.textContent = 'Visit our Configurator';
             configuratorLink.style.display = 'block';  // Display link on a new line
