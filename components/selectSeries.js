@@ -108,6 +108,9 @@ class SeriesSelector extends HTMLElement {
                 text-decoration: none;
                 background-color: var(--primary-blue);
                 color: white;
+                text-align: center;
+                border-radius:8px;
+                margin-top: 2rem;
 
             }
         
