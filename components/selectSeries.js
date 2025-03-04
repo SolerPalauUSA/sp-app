@@ -2,7 +2,7 @@
 class SeriesSelector extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({mode: 'open'});
+        this.attachShadow({ mode: 'open' });
         this.products = [];
         this.initializeStyles(); // Call this in the constructor to ensure styles are set up initially.
     }
@@ -101,6 +101,15 @@ class SeriesSelector extends HTMLElement {
             .no-message {
                 padding: 1rem;
             }
+
+            .no-message-cta {
+                font-size: 20px;
+                padding: .5rem;
+                text-decoration: none;
+                background-color: var(--primary-blue);
+                color: white;
+
+            }
         
         }
         `;
@@ -163,18 +172,18 @@ class SeriesSelector extends HTMLElement {
         headerTitle.className = 'header-title';
         headerTitle.textContent = `${series.name} - Models`;
         this.shadowRoot.appendChild(headerTitle);
-    
+
         if (!series.models || series.models.length === 0) {
             // Create a wrapper for the no models message
             const noModelsWrapper = document.createElement('div');
             noModelsWrapper.className = 'no-message';
-    
+
             // Create the message paragraph inside the wrapper
             const noModelsMessage = document.createElement('p');
             noModelsMessage.textContent = "No models available for this series. For more information, please visit our configurator.";
             noModelsWrapper.appendChild(noModelsMessage);
 
-            
+
             // Optionally, add a CTA link to the product configurator
             const configuratorLink = document.createElement('a');
             configuratorLink.className = 'no-message-cta';
@@ -182,27 +191,27 @@ class SeriesSelector extends HTMLElement {
             configuratorLink.textContent = 'Visit our Configurator';
             configuratorLink.style.display = 'block';  // Display link on a new line
             noModelsMessage.appendChild(configuratorLink);
-    
-    
-    
+
+
+
             // Append the no models wrapper to the shadow DOM
             this.shadowRoot.appendChild(noModelsWrapper);
-            
+
             return;
         }
-    
+
         // If models are available, proceed with normal setup
         const inputWrapper = document.createElement('div');
         inputWrapper.className = 'input-wrapper';
-    
+
         const searchInput = document.createElement('input');
         searchInput.type = 'text';
         searchInput.placeholder = 'Search models...';
         searchInput.className = 'search-input';
-    
+
         inputWrapper.appendChild(searchInput);
         this.shadowRoot.appendChild(inputWrapper);
-    
+
         const modelsContainer = document.createElement('div');
         modelsContainer.className = 'models-container';
         series.models.forEach(model => {
@@ -210,7 +219,7 @@ class SeriesSelector extends HTMLElement {
             modelsContainer.appendChild(modelItem);
         });
         this.shadowRoot.appendChild(modelsContainer);
-    
+
         // Add event listener for the search input
         searchInput.addEventListener('input', () => {
             const searchText = searchInput.value.toLowerCase();
@@ -220,8 +229,8 @@ class SeriesSelector extends HTMLElement {
             });
         });
     }
-    
-    
+
+
     createModelItem(model, series) {
         const modelItem = document.createElement('div');
         modelItem.className = 'model-item';
@@ -235,7 +244,7 @@ class SeriesSelector extends HTMLElement {
         `;
         return modelItem;
     }
-    
+
     removeExistingContainers() {
         const existingContainers = this.shadowRoot.querySelectorAll('.series-container, .models-container, .header-title');
         existingContainers.forEach(container => container.remove());
