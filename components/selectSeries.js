@@ -171,7 +171,7 @@ class SeriesSelector extends HTMLElement {
     
             // Create the message paragraph inside the wrapper
             const noModelsMessage = document.createElement('p');
-            noModelsMessage.textContent = "No models available for this series. For more information, please contact our customer service or visit our configurator.";
+            noModelsMessage.textContent = "No models available for this series. For more information, please visit our configurator.";
             noModelsWrapper.appendChild(noModelsMessage);
 
             
@@ -182,11 +182,6 @@ class SeriesSelector extends HTMLElement {
             configuratorLink.style.display = 'block';  // Display link on a new line
             noModelsMessage.appendChild(configuratorLink);
     
-            // Add a CTA link to customer service email
-            const emailLink = document.createElement('a');
-            emailLink.href = 'mailto:custserv.jax@solerpalau.com';
-            emailLink.textContent = 'Email Customer Service';
-            noModelsMessage.appendChild(emailLink);
     
     
             // Append the no models wrapper to the shadow DOM
