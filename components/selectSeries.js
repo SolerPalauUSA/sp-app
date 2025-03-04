@@ -180,28 +180,43 @@ class SeriesSelector extends HTMLElement {
             // Create a wrapper for the no models message
             const noModelsWrapper = document.createElement('div');
             noModelsWrapper.className = 'no-message';
-
+        
             // Create the message paragraph inside the wrapper
             const noModelsMessage = document.createElement('p');
-            noModelsMessage.textContent = "No models available for this series. For more information, please visit our configurator.";
+        
+            // Create the text before the email link
+            const messageText = document.createTextNode(
+                "No models available for this series. For more information, please contact our "
+            );
+        
+            // Create the email link element
+            const emailLink = document.createElement('a');
+            emailLink.href = "mailto:custserv.jax@solerpalau.com"; // Change to actual email
+            emailLink.textContent = "customer service department";
+        
+            // Create the text after the email link
+            const afterText = document.createTextNode(" or visit our configurator.");
+        
+            // Append everything in order
+            noModelsMessage.appendChild(messageText);
+            noModelsMessage.appendChild(emailLink);
+            noModelsMessage.appendChild(afterText);
             noModelsWrapper.appendChild(noModelsMessage);
-
-
+        
             // Optionally, add a CTA link to the product configurator
             const configuratorLink = document.createElement('a');
             configuratorLink.className = 'no-message-cta';
             configuratorLink.href = 'https://www.optisizer.com/Default.aspx';
             configuratorLink.textContent = 'Visit our Configurator';
-            configuratorLink.style.display = 'block';  // Display link on a new line
-            noModelsMessage.appendChild(configuratorLink);
-
-
-
+            configuratorLink.style.display = 'block'; // Display link on a new line
+            noModelsWrapper.appendChild(configuratorLink);
+        
             // Append the no models wrapper to the shadow DOM
             this.shadowRoot.appendChild(noModelsWrapper);
-
+        
             return;
         }
+        
 
         // If models are available, proceed with normal setup
         const inputWrapper = document.createElement('div');
