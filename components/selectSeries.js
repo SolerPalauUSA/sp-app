@@ -186,7 +186,7 @@ class SeriesSelector extends HTMLElement {
         
             // Create the text before the email link
             const messageText = document.createTextNode(
-                "No models available for this series. For more information, please contact our "
+                "No models are available for this series. For more information, please contact our "
             );
         
             // Create the email link element
