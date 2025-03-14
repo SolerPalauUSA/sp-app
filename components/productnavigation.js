@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         .product-item h3 {
             padding: 0.5rem;
-            font-size: 17px;
+            font-size: 16px;
             text-align: center;
             background: white;
             width: 100%;
