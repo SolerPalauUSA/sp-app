@@ -68,7 +68,7 @@ class BottomNavbar extends HTMLElement {
       right: 0;
       z-index: 999;
       opacity: 1;
-      border-top: 4px #EE3741 solid;
+      border-top: 4px var(--primary-red) solid;
 }
 
     .nav-link {
@@ -132,7 +132,7 @@ class BottomNavbar extends HTMLElement {
   width: auto;
   padding: 0.5rem;
   background: white;
-  color: #053658;
+  color: var(--primary-blue);
   margin-bottom: 23px;
   border-radius: 5px;
   border: 1px solid #ccc!important;
@@ -202,7 +202,7 @@ class BottomNavbar extends HTMLElement {
   font-size: .8rem;
   opacity: .7;
   text-decoration: none;
-  color: #053658;
+  color: var(--primary-blue);
 }
 
 .sub-warp {
@@ -215,7 +215,7 @@ class BottomNavbar extends HTMLElement {
 
 .model-name a {
   font-size: 13px;
-  color: #053658;
+  color: var(--primary-blue);
 
 }
 

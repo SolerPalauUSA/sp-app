@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         .product-item h3 {
             padding: 0.5rem;
-            font-size: 16px;
+            font-size: 17px;
             text-align: center;
             background: white;
             width: 100%;
@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             line-height: 1.4;
+            font-weight: 400;
         }
 
         .model-list-container, .series-list-container {
@@ -85,7 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
             padding: 10px;
             margin: 5px;
             cursor: pointer;
-            background: whitesmoke;
             border-radius: 8px;
             display: flex;
             flex-direction: column;
@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
             padding: 0.5rem;
             font-size: 20px;
             text-align: center;
-            background: whitesmoke;
             width: 100%;
             color: var(--primary-blue);
             height: auto;
@@ -336,7 +335,6 @@ document.addEventListener("DOMContentLoaded", function () {
             padding: 10px;
             font-size: 16px;
             text-align: center;
-            background: whitesmoke;
             width: 100%;
             color: var(--primary-blue);
             height: 20px;

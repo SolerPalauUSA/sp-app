@@ -22,7 +22,7 @@ class BackButton {
         style.textContent = `
             .back-button {
                 padding: 10px 12px 10px;
-                color: #053658;
+                color: var(--primary-blue);
                 border: none;
                 cursor: pointer;
                 font-size: 18px;

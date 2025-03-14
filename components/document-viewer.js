@@ -24,7 +24,7 @@ render() {
 
       .download-btn {
         padding: 5px 10px;
-        background-color: #053658 ;
+        background-color: var(--primary-blue) ;
         color: white;
         border: none;
         border-radius: 5px;
@@ -85,7 +85,7 @@ render() {
       
       
       .close {
-        color: #053658; /* Dark blue color */
+        color: var(--primary-blue); /* Dark blue color */
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -107,9 +107,9 @@ render() {
         background-color: transparent!important;
         border: none!important;
         cursor: pointer;
-        color: #053658!important;
+        color: var(--primary-blue)!important;
         font-size:1rem;
-        text-decoration: underline #053658!important;
+        text-decoration: underline var(--primary-blue)!important;
 
 
       }
@@ -140,7 +140,7 @@ render() {
 
         a {
           text-decoration: none!important;
-          color: #053658!important;
+          color: var(--primary-blue)!important;
         }
        
 
@@ -148,12 +148,12 @@ render() {
           cursor: pointer;
           padding: .5rem;
           margin: 10px;
-          background-color: whitesmoke;
+          background-color: white;
           border: 1px solid #ccc;
           border-radius: 20px;
           width: 170px;
           font-size: 22px;
-          color: #274472!important;
+          color: var(--primary-blue)!important;
           box-shadow:rgba(0, 0, 0, 0.15) 0px 2px 8px;
           transition: width 0.3s ease; /* Smooth transition for category buttons */
         }

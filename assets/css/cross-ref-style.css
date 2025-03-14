@@ -14,7 +14,6 @@ html, body {
 
 /* Table Styles */
 table {
-    font-family: Arial, sans-serif;
     width: 100%; /* Make the table responsive to its container */
     font-size: 14px; /* Increase font size for better readability */
     border-collapse: collapse; /* Remove spacing between table cells */
@@ -35,7 +34,7 @@ table {
 
 tbody {
     background-color: white;
-    color: #000000c2;
+    color: var(--primary-blue);
     padding-top: 50px; /* Adjust the height as per your sticky header's height */
     overflow-y: scroll; 
 }
