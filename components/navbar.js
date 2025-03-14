@@ -79,6 +79,12 @@ class BottomNavbar extends HTMLElement {
       letter-spacing: 1px;
 }
 
+    .nav-link img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 4px;
+    }
+
     #search-icon {
       cursor: pointer;
 }
@@ -228,7 +234,7 @@ class BottomNavbar extends HTMLElement {
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/search-icon.svg" alt="Search" class="icon-color">
           <span class="nav-icon"></span><br>Search
           </a>
-          <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/pages/productsgrid.html">
+          <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/pages/products.html">
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/fan-white.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Products
           </a>
@@ -240,9 +246,9 @@ class BottomNavbar extends HTMLElement {
           <img src="https://solerpalauusa.github.io/sp-app/assets/images/right-left-white.svg" alt="Products" class="icon-color">
             <span class="nav-icon"></span><br>Cross-Ref
           </a>
-          <a class="nav-link" href="https://solerpalauusa.github.io/sp-app/pages/important-links.html">
-          <img src="https://solerpalauusa.github.io/sp-app/assets/images/links-nav.svg" alt="Products" class="icon-color">
-            <span class="nav-icon"></span><br>Links
+          <a class="nav-link" href="https://www.solerpalau-usa.com/resources/optisizer.html" target="_blank">
+          <img src="https://solerpalauusa.github.io/sp-app/assets/images/optisizer-white.svg" alt="Optisizer" class="icon-color">
+            <span class="nav-icon"></span><br>Optisizer
           </a>
         </nav>
 
@@ -360,32 +366,38 @@ class BottomNavbar extends HTMLElement {
 
   filterData(data, query) {
     let results = [];
+    // Clean up the query to handle different formats
+    const cleanQuery = query.toLowerCase().replace(/[-\s]/g, '');
+
     data.forEach(product => {
       product.series.forEach(series => {
         // Keep the array check for models
         const models = Array.isArray(series.models) ? series.models : [];
         
-        // Determine if the series name or description matches the query
-        const seriesMatchesQuery = series.name.toLowerCase().includes(query) || series.description.toLowerCase().includes(query);
+        // Check if series name or description matches
+        const seriesMatchesQuery = 
+          series.name.toLowerCase().includes(query) || 
+          series.description.toLowerCase().includes(query);
+
+        // Check for series number matches in model names
+        const modelMatches = models.some(model => {
+          const modelName = model.name.toLowerCase().replace(/[-\s]/g, '');
+          return modelName.includes(cleanQuery);
+        });
         
-        // If the series matches the query, include all models from this series
-        if (seriesMatchesQuery) {
+        // If either series matches or any model matches, include in results
+        if (seriesMatchesQuery || modelMatches) {
+          // Find all matching models
+          const matchingModels = models.filter(model => {
+            const modelName = model.name.toLowerCase().replace(/[-\s]/g, '');
+            return modelName.includes(cleanQuery);
+          });
+
           results.push({
             product: product.name,
             series: series,
-            models: models // Include all models since the series matches
+            models: matchingModels.length > 0 ? matchingModels : models // If we found specific matches, show only those, otherwise show all models
           });
-        } else {
-          // If the series doesn't match, filter models that match the query
-          const matchingModels = models.filter(model => model.name.toLowerCase().includes(query));
-          if (matchingModels.length > 0) {
-            // Only include series if there are matching models
-            results.push({
-              product: product.name,
-              series: series,
-              models: matchingModels
-            });
-          }
         }
       });
     });
@@ -433,13 +445,13 @@ class BottomNavbar extends HTMLElement {
     if (results.length > 0) {
         searchResultsContainer.style.display = "block";
 
-        results.slice(0, 5).forEach((result) => { // Limit to the first 5 results directly
+        results.slice(0, 5).forEach((result) => {
             const resultItem = document.createElement("div");
             resultItem.classList.add("search-result-item");
 
-             // Correctly set data attributes for product and series names
-             resultItem.dataset.productName = encodeURIComponent(result.product);
-             resultItem.dataset.seriesName = encodeURIComponent(result.series.name);
+            // Set data attributes for product and series names
+            resultItem.dataset.productName = encodeURIComponent(result.product);
+            resultItem.dataset.seriesName = encodeURIComponent(result.series.name);
 
             const submittalsHtml = this.renderLinks(result.series.submittals);
             const otherDocsHtml = this.renderLinks(result.series.otherDocs);
@@ -447,18 +459,26 @@ class BottomNavbar extends HTMLElement {
             let modelsDisplayHtml = '';
             if (result.models && result.models.length > 0) {
                 const initialModelsHtml = result.models.slice(0, 3)
-                    .map(model => `<span class="model-name"><a href="https://solerpalauusa.github.io/sp-app/pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`)
+                    .map(model => `<span class="model-name">
+                        <a href="products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}">
+                            ${model.name}
+                        </a>
+                    </span>`)
                     .join(', ');
 
                 const fullModelsHtml = result.models
-                    .map(model => `<span class="model-name"><a href="https://solerpalauusa.github.io/sp-app/pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}" target="_blank">${model.name}</a></span>`)
+                    .map(model => `<span class="model-name">
+                        <a href="products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}">
+                            ${model.name}
+                        </a>
+                    </span>`)
                     .join(', ');
 
-                // Storing initial and full HTML directly on the item to be accessible from the toggle event
                 resultItem.dataset.initialModelsHtml = initialModelsHtml;
                 resultItem.dataset.fullModelsHtml = fullModelsHtml;
 
-                const modelsToggleHtml = result.models.length > 3 ? `<span class="models-toggle" style="cursor: pointer; font-size: 14px; margin-left: 5px;">More...</span>` : '';
+                const modelsToggleHtml = result.models.length > 3 ? 
+                    `<span class="models-toggle" style="cursor: pointer; font-size: 14px; margin-left: 5px;">More...</span>` : '';
                 modelsDisplayHtml = `Models: <span class="models-list">${initialModelsHtml}</span>${modelsToggleHtml}`;
             }
 
@@ -487,11 +507,13 @@ class BottomNavbar extends HTMLElement {
                 });
             }
 
-            // Click event for navigation excluding model links, document links, and toggle
+            // Click event for navigation
             resultItem.addEventListener('click', (event) => {
                 if (!event.target.closest('.document-links a, .model-name a, .models-toggle')) {
-                    event.preventDefault(); // This might not be necessary unless further actions are needed
-                    window.location.href = `https://solerpalauusa.github.io/sp-app/pages/products.html?product=${resultItem.dataset.productName}&series=${resultItem.dataset.seriesName}`;
+                    const productName = resultItem.dataset.productName;
+                    const seriesName = resultItem.dataset.seriesName;
+                    window.location.href = `products.html?product=${productName}&series=${seriesName}`;
+                    this.closeSearchModal(); // Close the search modal after navigation
                 }
             });
         });
