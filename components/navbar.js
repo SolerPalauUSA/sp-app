@@ -460,7 +460,7 @@ class BottomNavbar extends HTMLElement {
             if (result.models && result.models.length > 0) {
                 const initialModelsHtml = result.models.slice(0, 3)
                     .map(model => `<span class="model-name">
-                        <a href="products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}">
+                        <a href="https://solerpalauusa.github.io/sp-app/pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}">
                             ${model.name}
                         </a>
                     </span>`)
@@ -468,7 +468,7 @@ class BottomNavbar extends HTMLElement {
 
                 const fullModelsHtml = result.models
                     .map(model => `<span class="model-name">
-                        <a href="products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}">
+                        <a href="https://solerpalauusa.github.io/sp-app/pages/products.html?product=${encodeURIComponent(result.product)}&series=${encodeURIComponent(result.series.name)}&model=${encodeURIComponent(model.name)}">
                             ${model.name}
                         </a>
                     </span>`)
