@@ -444,7 +444,7 @@ document.addEventListener("DOMContentLoaded", function () {
     seriesView.dataset.product = product.name;
     seriesView.innerHTML = "";
 
-    seriesView.appendChild(createBackButton("← Back to Models", modelView));
+    seriesView.appendChild(createBackButton("← Back to Series", modelView));
 
     // Add Title
     const headerTitle = document.createElement("h2");
@@ -509,7 +509,7 @@ document.addEventListener("DOMContentLoaded", function () {
     seriesDetailsView.innerHTML = "";
 
     // Add back button first
-    const backButton = createBackButton("← Series", seriesView);
+    const backButton = createBackButton("← Models", seriesView);
     seriesDetailsView.appendChild(backButton);
 
     // Create content container
