@@ -255,7 +255,7 @@ class BottomNavbar extends HTMLElement {
         <!-- Search Modal -->
         <div id="search-modal" class="search-modal">
           <span class="close-button" id="close-button">&times;</span>
-          <input type="text" id="search-input" placeholder="Search...">
+          <input type="text" id="search-input" placeholder="Enter product name or model number...">
           <div id="search-results" class="search-results">
             <!-- Display search results here -->
           </div>
