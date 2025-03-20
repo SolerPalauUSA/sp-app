@@ -1,6 +1,6 @@
 {
-    "name": "Soler Palau-USA App",
-    "short_name": "S&P App",
+    "name": "S&P USA Ventilation Systems App",
+    "short_name": "S&P USA App",
     "description": "Resource hub for reps to access product information, submittals, specsheets, IOMs, and more.",
     "start_url": "/sp-app",
     "display": "standalone",
